@@ -8,6 +8,7 @@ import { StatusBadge } from '@/components/StatusBadge';
 import { CommandSnippets } from '@/components/CommandSnippets';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
 import { RootGuideSection } from '@/components/RootGuideSection';
+import { ShareButton } from '@/components/ShareButton';
 import {
   ChevronLeft,
   ChevronRight,
@@ -264,21 +265,24 @@ export default async function DevicePage({ params }: DevicePageProps) {
         />
       )}
 
-      {/* Semantic Breadcrumb Navigation */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
-        <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
-        <Link
-          href={`/?brand=${encodeURIComponent(device.brand)}`}
-          className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors"
-        >
-          {device.brand}
-        </Link>
-        <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
-        <span className="text-foreground font-bold">{device.name}</span>
-      </nav>
+      {/* Semantic Breadcrumb Navigation & Share Button */}
+      <div className="flex items-center justify-between gap-3 flex-wrap">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
+          <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
+            Home
+          </Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
+          <Link
+            href={`/?brand=${encodeURIComponent(device.brand)}`}
+            className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors"
+          >
+            {device.brand}
+          </Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
+          <span className="text-foreground font-bold">{device.name}</span>
+        </nav>
+        <ShareButton title={`${device.brand} ${device.name} Root Guide`} />
+      </div>
 
       {/* Hero Header with Contrast Container */}
       <div className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>

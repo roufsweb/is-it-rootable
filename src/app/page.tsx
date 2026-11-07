@@ -1,9 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 import searchData from '@/data/search-index.json';
 import { SearchItem } from '@/types/device';
 import { SearchBar } from '@/components/SearchBar';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
-import { Terminal, ShieldCheck, Monitor, AlertTriangle, Disc, Cpu, HelpCircle } from 'lucide-react';
+import { Terminal, ShieldCheck, Monitor, AlertTriangle, Disc, Cpu, HelpCircle, ExternalLink } from 'lucide-react';
 
 export default function HomePage() {
   const devices = searchData as SearchItem[];
@@ -159,6 +160,38 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* About Section Banner with Live GitHub Page Link */}
+      <section className="p-4 sm:p-5 rounded-xl border border-border bg-surface-elevated flex flex-col sm:flex-row items-center justify-between gap-4 shadow-contrast-sm font-mono text-xs">
+        <div className="space-y-1">
+          <div className="text-sm font-bold text-foreground flex items-center gap-2">
+            <span>About IsItRootable</span>
+            <span className="text-[10px] px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30">
+              Open Source
+            </span>
+          </div>
+          <p className="text-muted leading-relaxed font-medium">
+            An open-source, community-driven database running serverless on GitHub Pages. Curating regional model suffix data, KernelSU support, and DisplayPort capabilities.
+          </p>
+        </div>
+        <div className="flex items-center gap-2 shrink-0">
+          <a
+            href="https://roufsweb.github.io/is-it-rootable/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors"
+          >
+            <span>GitHub Page</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+          <Link
+            href="/about/"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface border border-border text-foreground hover:text-cyan-500 font-bold transition-colors"
+          >
+            <span>About Project</span>
+          </Link>
         </div>
       </section>
 

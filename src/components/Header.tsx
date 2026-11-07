@@ -36,7 +36,14 @@ export function Header() {
         </Link>
 
         {/* Navigation / Actions */}
-        <div className="flex items-center gap-2.5 sm:gap-4">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <Link
+            href="/about/"
+            className="font-mono text-xs px-2.5 py-1.5 rounded-lg border border-border bg-surface hover:bg-surface-elevated text-foreground hover:text-cyan-600 dark:hover:text-cyan-400 transition-all font-semibold"
+          >
+            About
+          </Link>
+
           <ThemeToggle />
 
           <a

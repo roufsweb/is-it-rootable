@@ -1,0 +1,186 @@
+import React from 'react';
+import { Metadata } from 'next';
+import Link from 'next/link';
+import Image from 'next/image';
+import {
+  Terminal,
+  ExternalLink,
+  ShieldCheck,
+  Cpu,
+  Monitor,
+  Github,
+  CheckCircle2,
+  AlertTriangle,
+  Heart,
+  ChevronLeft,
+} from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'About IsItRootable - Android Bootloader & Root Intelligence Database',
+  description:
+    'Learn about IsItRootable, the open-source model-suffix sensitive Android bootloader unlock and root database hosted on GitHub Pages.',
+  alternates: {
+    canonical: 'https://roufsweb.github.io/is-it-rootable/about/',
+  },
+};
+
+export default function AboutPage() {
+  return (
+    <div className="max-w-4xl mx-auto space-y-8 sm:space-y-10 py-2 sm:py-6">
+      {/* Back to Home */}
+      <Link
+        href="/"
+        className="inline-flex items-center gap-1.5 font-mono text-xs text-muted hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors"
+      >
+        <ChevronLeft className="w-4 h-4" />
+        <span>Back to Search</span>
+      </Link>
+
+      {/* Hero Section */}
+      <section className="rounded-2xl p-6 sm:p-8 border border-border bg-surface shadow-contrast-md space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden shadow-contrast-sm">
+              <Image
+                src="/logo.svg"
+                alt="IsItRootable Logo"
+                width={48}
+                height={48}
+                priority
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-black text-foreground font-mono">
+                About IsIt<span className="text-cyan-500">Rootable</span>
+              </h1>
+              <p className="font-mono text-xs text-muted font-medium">
+                The Model-Suffix Sensitive Android Root &amp; Bootloader Database
+              </p>
+            </div>
+          </div>
+
+          <span className="self-start sm:self-center font-mono text-xs px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 font-bold">
+            Open Source v1.1
+          </span>
+        </div>
+
+        <p className="font-mono text-xs sm:text-sm text-foreground leading-relaxed font-medium">
+          IsItRootable was founded to solve a pervasive problem across the Android enthusiast and developer community: generic advice that fails to distinguish regional hardware variants. A phone marketed under a single commercial name (such as the Samsung Galaxy S24 Ultra or Google Pixel 8) has fundamentally distinct regional bootloaders, hardware e-fuses, and carrier lockouts depending on its exact model suffix.
+        </p>
+
+        {/* Official Links Banner */}
+        <div className="p-4 rounded-xl border border-cyan-500/40 bg-cyan-50/50 dark:bg-cyan-950/20 font-mono text-xs space-y-2">
+          <div className="text-[10px] font-bold uppercase tracking-wider text-cyan-700 dark:text-cyan-400">
+            Official Production Deployment &amp; Repository
+          </div>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+            <a
+              href="https://roufsweb.github.io/is-it-rootable/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-background font-bold transition-colors shadow-xs"
+            >
+              <span>GitHub Page: roufsweb.github.io/is-it-rootable</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+
+            <a
+              href="https://github.com/roufsweb/is-it-rootable"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-border bg-surface hover:bg-surface-elevated text-foreground hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors"
+            >
+              <Github className="w-3.5 h-3.5" />
+              <span>GitHub Repository</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Architectural Tenets */}
+      <section className="space-y-4">
+        <h2 className="text-lg font-bold text-foreground font-mono flex items-center gap-2">
+          <Terminal className="w-4 h-4 text-cyan-500" />
+          <span>Core Engineering Principles</span>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+          <div className="p-4 rounded-xl border border-border bg-surface space-y-2 shadow-contrast-sm">
+            <div className="font-bold text-foreground flex items-center gap-1.5 text-sm">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+              <span>Model-Suffix Precision</span>
+            </div>
+            <p className="text-muted leading-relaxed font-medium">
+              We never lump carrier devices with unlocked editions. Samsung <strong className="text-emerald-700 dark:text-emerald-400">SM-G950F</strong> (Global Exynos) is treated as a completely different platform from the permanently locked <strong className="text-rose-700 dark:text-rose-400">SM-G950U</strong> (North American Snapdragon).
+            </p>
+          </div>
+
+          <div className="p-4 rounded-xl border border-border bg-surface space-y-2 shadow-contrast-sm">
+            <div className="font-bold text-foreground flex items-center gap-1.5 text-sm">
+              <Cpu className="w-4 h-4 text-cyan-500" />
+              <span>Zero-Latency Search</span>
+            </div>
+            <p className="text-muted leading-relaxed font-medium">
+              100% of search queries run locally in your browser using an optimized MiniSearch Trie (<strong className="text-cyan-600 dark:text-cyan-400">&lt;150KB bundle</strong>). No network round-trips, no tracking cookies, and sub-20ms response times.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-xl border border-border bg-surface space-y-2 shadow-contrast-sm">
+            <div className="font-bold text-foreground flex items-center gap-1.5 text-sm">
+              <Monitor className="w-4 h-4 text-purple-500" />
+              <span>Hardware Auditing</span>
+            </div>
+            <p className="text-muted leading-relaxed font-medium">
+              Beyond root, we verify productivity essentials: wired DisplayPort Alt Mode video output, Samsung DeX, Motorola Ready For, MicroSD expansion slots, and 3.5mm analog headphone jacks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Maintainer & Credits Section */}
+      <section className="p-6 rounded-2xl border border-border bg-surface space-y-4 shadow-contrast-sm font-mono text-xs">
+        <h2 className="text-base font-bold text-foreground flex items-center gap-2">
+          <Heart className="w-4 h-4 text-rose-500" />
+          <span>Maintainer &amp; Authorship</span>
+        </h2>
+
+        <p className="text-muted leading-relaxed font-medium">
+          IsItRootable is architected and actively maintained by{' '}
+          <a
+            href="https://github.com/roufsweb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-600 dark:text-cyan-400 font-bold hover:underline"
+          >
+            Rouf (@roufsweb)
+          </a>
+          . All device definitions are validated against strict schema rules and vetted against official firmware drops, Google Play certified hardware logs, and open-source recovery repositories.
+        </p>
+
+        <div className="pt-2 flex flex-wrap gap-2">
+          <a
+            href="https://github.com/roufsweb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-surface-elevated text-foreground hover:text-cyan-400 font-bold transition-colors"
+          >
+            <Github className="w-3.5 h-3.5" />
+            <span>Follow @roufsweb</span>
+          </a>
+          <a
+            href="https://github.com/roufsweb/is-it-rootable/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-surface-elevated text-foreground hover:text-cyan-400 font-bold transition-colors"
+          >
+            <span>Submit Device Request or Correction</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </section>
+    </div>
+  );
+}
+

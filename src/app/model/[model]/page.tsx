@@ -7,6 +7,7 @@ import { StatusBadge } from '@/components/StatusBadge';
 import { CommandSnippets } from '@/components/CommandSnippets';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
 import { RootGuideSection } from '@/components/RootGuideSection';
+import { ShareButton } from '@/components/ShareButton';
 import {
   ChevronLeft,
   ChevronRight,
@@ -246,20 +247,23 @@ export default async function ModelPage({ params }: ModelPageProps) {
         />
       )}
 
-      {/* Semantic Breadcrumb Navigation */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
-        <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
-          Home
-        </Link>
-        <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
-        <Link href={`/device/${device.slug}/`} className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
-          {device.brand} {device.name}
-        </Link>
-        <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
-        <span className="text-cyan-600 dark:text-cyan-300 font-bold px-1.5 py-0.5 rounded bg-surface-elevated border border-border">
-          {exactModel}
-        </span>
-      </nav>
+      {/* Semantic Breadcrumb Navigation & Share Button */}
+      <div className="flex items-center justify-between gap-3 flex-wrap">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
+          <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
+            Home
+          </Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
+          <Link href={`/device/${device.slug}/`} className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
+            {device.brand} {device.name}
+          </Link>
+          <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
+          <span className="text-cyan-600 dark:text-cyan-300 font-bold px-1.5 py-0.5 rounded bg-surface-elevated border border-border">
+            {exactModel}
+          </span>
+        </nav>
+        <ShareButton title={`${device.name} (${exactModel}) Root Status`} />
+      </div>
 
       {/* High-Impact SEO Answer Hero Banner */}
       <div className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
