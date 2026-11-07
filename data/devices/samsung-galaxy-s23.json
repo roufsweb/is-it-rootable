@@ -1,0 +1,44 @@
+{
+  "slug": "samsung-galaxy-s23",
+  "brand": "Samsung",
+  "name": "Galaxy S23",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["SM-S911B", "SM-S911B/DS"],
+      "codename": "dm1q",
+      "region": "Global / Europe",
+      "soc": "Snapdragon 8 Gen 2 for Galaxy",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit revision, downgrade is blocked by Knox roll-back prevention.",
+      "root_status": "CONDITIONAL",
+      "root_methods": ["Magisk", "KernelSU", "APatch"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s23.12711/"
+      }
+    },
+    {
+      "models": ["SM-S911U", "SM-S911U1", "SM-S911W"],
+      "codename": "kalama",
+      "region": "USA / Canada",
+      "soc": "Snapdragon 8 Gen 2 for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s23.12711/"
+      }
+    }
+  ]
+}

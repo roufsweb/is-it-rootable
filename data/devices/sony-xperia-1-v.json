@@ -1,0 +1,44 @@
+{
+  "slug": "sony-xperia-1-v",
+  "brand": "Sony",
+  "name": "Xperia 1 V",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode)",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": ["XQ-DQ54", "XQ-DQ72"],
+      "codename": "yupik",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": ["KernelSU", "APatch", "Magisk"],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/c/sony-xperia-1-v.12759/"
+      }
+    },
+    {
+      "models": ["SO-51D", "SOG10"],
+      "codename": "yupik_jp",
+      "region": "Japan Docomo / au Carrier",
+      "soc": "Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Carrier locked; Bootloader unlock allowed shows 'No' in service menu",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/sony-xperia-1-v.12759/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "xiaomi-13",
+  "brand": "Xiaomi",
+  "name": "Xiaomi 13",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["2211133G"],
+      "codename": "fuxi",
+      "region": "Global / Europe / International",
+      "soc": "Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing + Mi Unlock Tool (requires waiting period and community permissions on HyperOS)",
+      "root_status": "FULL",
+      "root_methods": ["KernelSU", "Magisk", "APatch"],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/c/xiaomi-13.12705/",
+        "twrp": "https://twrp.me/xiaomi/xiaomi13.html"
+      }
+    },
+    {
+      "models": ["2211133C"],
+      "codename": "fuxi_cn",
+      "region": "China Domestic",
+      "soc": "Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": ["KernelSU", "Magisk"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/c/xiaomi-13.12705/"
+      }
+    }
+  ]
+}

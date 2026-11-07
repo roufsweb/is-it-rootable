@@ -1,0 +1,59 @@
+{
+  "slug": "samsung-galaxy-s21",
+  "brand": "Samsung",
+  "name": "Galaxy S21 5G",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["SM-G991B", "SM-G991B/DS", "SM-G991N"],
+      "codename": "o1s",
+      "region": "Global / Europe / Korea",
+      "soc": "Exynos 2100",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Volume Up in Download Mode",
+      "root_status": "FULL",
+      "root_methods": ["Magisk", "KernelSU", "APatch"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s21.12151/"
+      }
+    },
+    {
+      "models": ["SM-G991U", "SM-G991U1", "SM-G991W"],
+      "codename": "o1q",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 888",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked bootloader; OEM unlock toggle missing or non-functional",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s21.12151/"
+      }
+    },
+    {
+      "models": ["SM-G9910"],
+      "codename": "o1qchn",
+      "region": "China / Hong Kong / Taiwan",
+      "soc": "Snapdragon 888",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": ["Magisk", "APatch"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s21.12151/"
+      }
+    }
+  ]
+}

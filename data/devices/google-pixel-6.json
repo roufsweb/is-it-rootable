@@ -1,0 +1,44 @@
+{
+  "slug": "google-pixel-6",
+  "brand": "Google",
+  "name": "Pixel 6",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["GB7N6", "GR1YH"],
+      "codename": "oriole",
+      "region": "Global / Factory Unlocked",
+      "soc": "Google Tensor G1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking toggle + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": ["KernelSU", "APatch", "Magisk"],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/c/google-pixel-6.12301/"
+      }
+    },
+    {
+      "models": ["G9S9B"],
+      "codename": "oriole_vzw",
+      "region": "Verizon / Carrier Locked",
+      "soc": "Google Tensor G1",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Carrier locked bootloader; OEM Unlocking greyed out",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/google-pixel-6.12301/"
+      }
+    }
+  ]
+}

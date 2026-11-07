@@ -1,0 +1,59 @@
+{
+  "slug": "samsung-galaxy-s25",
+  "brand": "Samsung",
+  "name": "Galaxy S25",
+  "release_year": 2025,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["SM-S931B", "SM-S931B/DS"],
+      "codename": "q5q",
+      "region": "Global / Europe",
+      "soc": "Snapdragon 8 Elite for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Factory One UI 8.0+ lockdown. OEM Unlock disabled by Knox Vault hardware e-fuse enforcement.",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": ["SM-S931U", "SM-S931U1", "SM-S931W"],
+      "codename": "q5qu",
+      "region": "USA / Canada",
+      "soc": "Snapdragon 8 Elite for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": ["SM-S9310"],
+      "codename": "q5qchn",
+      "region": "China / Hong Kong",
+      "soc": "Snapdragon 8 Elite for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Factory One UI 8.0+ locked bootloader",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

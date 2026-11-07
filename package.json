@@ -1,0 +1,33 @@
+{
+  "name": "is-it-rootable",
+  "version": "1.0.0",
+  "description": "Lightning-fast database and search platform for Android rooting, bootloader status, and hardware features",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/validate_schema.mjs && node scripts/build_search_index.mjs && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "validate": "node scripts/validate_schema.mjs",
+    "index": "node scripts/build_search_index.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "minisearch": "^7.1.0",
+    "next": "^15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  }
+}
