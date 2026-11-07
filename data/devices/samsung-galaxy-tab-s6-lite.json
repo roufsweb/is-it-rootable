@@ -1,0 +1,83 @@
+{
+  "slug": "samsung-galaxy-tab-s6-lite",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S6 Lite",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-P615N",
+        "SM-P619N"
+      ],
+      "codename": "gta4xls",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 9611 / Snapdragon 720G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-GalaxyTabS6LiteU"
+      ],
+      "codename": "gta4xl_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Exynos 9611 / Snapdragon 720G",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-P610",
+        "SM-P620"
+      ],
+      "codename": "gta4xl_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Exynos 9611 / Snapdragon 720G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "xiaomi-mi-10t-pro",
+  "brand": "Xiaomi",
+  "name": "Xiaomi Mi 10T / Mi 10T Pro",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "M2007J3SP",
+        "M2007J3SY"
+      ],
+      "codename": "apollo",
+      "region": "Global / Europe / India",
+      "soc": "Snapdragon 865",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "APOLLO-CN"
+      ],
+      "codename": "apollo_cn",
+      "region": "China Domestic",
+      "soc": "Snapdragon 865",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

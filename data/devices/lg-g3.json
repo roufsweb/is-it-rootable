@@ -1,0 +1,58 @@
+{
+  "slug": "lg-g3",
+  "brand": "LG",
+  "name": "LG G3",
+  "release_year": 2014,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "SlimPort 4K HDMI Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "AS985",
+        "LG-AS990",
+        "LG-D850",
+        "LG-D851",
+        "LG-D852",
+        "LG-D852G",
+        "LG-D855",
+        "LG-D856",
+        "LG-D857",
+        "LG-D858",
+        "LG-D858HK",
+        "LG-D859",
+        "LG-F400K",
+        "LG-F400L",
+        "LG-F400S",
+        "LGL24",
+        "LGLS990",
+        "LGUS990",
+        "LGV31",
+        "VS985 4G"
+      ],
+      "codename": "g3",
+      "region": "Global / Europe / Unlocked",
+      "soc": "Snapdragon 801",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Havoc-OS",
+        "DotOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

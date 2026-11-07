@@ -1,0 +1,58 @@
+{
+  "slug": "samsung-galaxy-tab-a9-plus",
+  "brand": "Samsung",
+  "name": "Galaxy Tab A9+",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": "Samsung DeX On-Device (Windowed UI)",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-GalaxyTabA9B"
+      ],
+      "codename": "device",
+      "region": "Global / Europe / International",
+      "soc": "Snapdragon 695 5G",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-GalaxyTabA9U"
+      ],
+      "codename": "device_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 695 5G",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

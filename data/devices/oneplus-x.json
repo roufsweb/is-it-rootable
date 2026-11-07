@@ -1,0 +1,41 @@
+{
+  "slug": "oneplus-x",
+  "brand": "OnePlus",
+  "name": "OnePlus X",
+  "release_year": 2015,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "ONE E1003"
+      ],
+      "codename": "OnePlus",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 801",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Developer Options toggle + fastboot oem unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "oneplus-nord-ce-3-lite-5g",
+  "brand": "OnePlus",
+  "name": "OnePlus Nord CE 3 Lite 5G",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "CPH2465",
+        "CPH2467"
+      ],
+      "codename": "OP5958L1",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 695 5G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

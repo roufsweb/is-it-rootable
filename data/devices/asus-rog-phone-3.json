@@ -1,0 +1,41 @@
+{
+  "slug": "asus-rog-phone-3",
+  "brand": "Asus",
+  "name": "Asus ROG Phone 3",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "ROG Side Mount DisplayPort 4K Out",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "ASUS_I003D",
+        "ASUS_I003DD",
+        "ZS661KS"
+      ],
+      "codename": "ASUS_I003_1",
+      "region": "Global / Official",
+      "soc": "Snapdragon 865+",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / TWRP",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

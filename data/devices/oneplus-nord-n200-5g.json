@@ -1,0 +1,42 @@
+{
+  "slug": "oneplus-nord-n200-5g",
+  "brand": "OnePlus",
+  "name": "OnePlus Nord N200 5G",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "DE2117",
+        "DE2118"
+      ],
+      "codename": "OnePlusN200",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 480 5G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

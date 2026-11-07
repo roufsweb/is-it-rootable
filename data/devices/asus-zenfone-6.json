@@ -1,0 +1,39 @@
+{
+  "slug": "asus-zenfone-6",
+  "brand": "Asus",
+  "name": "Asus ZenFone 6",
+  "release_year": 2019,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "ASUS_T00G"
+      ],
+      "codename": "ASUS_T00G",
+      "region": "Global / Official",
+      "soc": "Snapdragon 855",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / TWRP",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "samsung-galaxy-s4",
+  "brand": "Samsung",
+  "name": "Galaxy S4",
+  "release_year": 2013,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "MHL 2.0 HDMI Video Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "GT-I9515L",
+        "SC-04E",
+        "SCH-I545L",
+        "SGH-M919N",
+        "SGH-S970G",
+        "SHV-E300K",
+        "SHV-E300L",
+        "SHV-E300S",
+        "SHV-E330K",
+        "SHV-E330L",
+        "SM-S975L"
+      ],
+      "codename": "jaltektt",
+      "region": "Global / Europe / International",
+      "soc": "Snapdragon 600 / Exynos 5410",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "GT-I9507V",
+        "GT-I9508V",
+        "SCH-I545PP",
+        "SGH-M919V",
+        "SPH-L720T"
+      ],
+      "codename": "SC-04E_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 600",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "GT-I9500",
+        "SCH-R970",
+        "SPH-L720"
+      ],
+      "codename": "SC-04E_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 600",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

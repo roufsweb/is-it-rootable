@@ -1,0 +1,41 @@
+{
+  "slug": "google-nexus-one",
+  "brand": "Google",
+  "name": "Nexus One",
+  "release_year": 2010,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Nexus One"
+      ],
+      "codename": "passion",
+      "region": "Global / Factory Unlocked",
+      "soc": "Qualcomm QSD8250 Snapdragon",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "SuperSU",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "Paranoid Android",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

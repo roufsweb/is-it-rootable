@@ -1,0 +1,46 @@
+{
+  "slug": "sony-xperia-z3",
+  "brand": "Sony",
+  "name": "Sony Xperia Z3",
+  "release_year": 2014,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "MHL 3.0 4K Video Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "401SO",
+        "D6603",
+        "D6616",
+        "D6643",
+        "D6646",
+        "D6653",
+        "SO-01G",
+        "SOL26"
+      ],
+      "codename": "401SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 801",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

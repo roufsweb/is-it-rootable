@@ -1,0 +1,42 @@
+{
+  "slug": "sony-xperia-10-iii",
+  "brand": "Sony",
+  "name": "Sony Xperia 10 III",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "A102SO",
+        "SO-52B",
+        "SOG04",
+        "XQ-BT52"
+      ],
+      "codename": "A102SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 690 5G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

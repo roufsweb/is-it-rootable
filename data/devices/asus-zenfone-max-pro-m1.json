@@ -1,0 +1,41 @@
+{
+  "slug": "asus-zenfone-max-pro-m1",
+  "brand": "Asus",
+  "name": "Asus ZenFone Max Pro M1",
+  "release_year": 2018,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "ASUS_X00TD",
+        "ASUS_X00TDB",
+        "ZB602KL"
+      ],
+      "codename": "ASUS_X00T_2",
+      "region": "Global / Official",
+      "soc": "Snapdragon 636",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / TWRP",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

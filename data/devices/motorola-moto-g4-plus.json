@@ -1,0 +1,39 @@
+{
+  "slug": "motorola-moto-g4-plus",
+  "brand": "Motorola",
+  "name": "Motorola Moto G4 Plus",
+  "release_year": 2016,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Moto G Play",
+        "XT1609"
+      ],
+      "codename": "harpia",
+      "region": "Global / Retail Unlocked",
+      "soc": "Snapdragon 617",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

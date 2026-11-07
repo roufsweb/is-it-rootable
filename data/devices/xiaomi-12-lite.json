@@ -1,0 +1,66 @@
+{
+  "slug": "xiaomi-12-lite",
+  "brand": "Xiaomi",
+  "name": "Xiaomi 12 Lite",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "2203129G"
+      ],
+      "codename": "taoyao",
+      "region": "Global / Europe / India",
+      "soc": "Snapdragon 778G 5G",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "TAOYAO-CN"
+      ],
+      "codename": "taoyao_cn",
+      "region": "China Domestic",
+      "soc": "Snapdragon 778G 5G",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

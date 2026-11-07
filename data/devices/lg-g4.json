@@ -1,0 +1,54 @@
+{
+  "slug": "lg-g4",
+  "brand": "LG",
+  "name": "LG G4",
+  "release_year": 2015,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "AS986",
+        "LG-AS811",
+        "LG-AS991",
+        "LG-F500K",
+        "LG-F500L",
+        "LG-F500S",
+        "LG-H810",
+        "LG-H811",
+        "LG-H812",
+        "LG-H815",
+        "LG-H818",
+        "LG-H819",
+        "LGLS991",
+        "LGUS991",
+        "LGV32",
+        "VS986"
+      ],
+      "codename": "p1",
+      "region": "Global / Europe / Unlocked",
+      "soc": "Snapdragon 808",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Havoc-OS",
+        "DotOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

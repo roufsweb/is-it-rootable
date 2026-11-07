@@ -1,0 +1,44 @@
+{
+  "slug": "sony-xperia-10-ii",
+  "brand": "Sony",
+  "name": "Sony Xperia 10 II",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "A001SO",
+        "SO-41A",
+        "SOV43",
+        "XQ-AU42",
+        "XQ-AU51",
+        "XQ-AU52"
+      ],
+      "codename": "A001SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 665",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

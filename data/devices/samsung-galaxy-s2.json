@@ -1,0 +1,88 @@
+{
+  "slug": "samsung-galaxy-s2",
+  "brand": "Samsung",
+  "name": "Galaxy S2",
+  "release_year": 2011,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "MHL HDMI Video Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SC-02C",
+        "SGH-S959G",
+        "SHV-E110S",
+        "SHW-M250K",
+        "SHW-M250L",
+        "SHW-M250S"
+      ],
+      "codename": "SHV-E110S",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 4210 Dual",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "GT-I9100P",
+        "GT-I9100T",
+        "GT-I9210T"
+      ],
+      "codename": "GT-I9100_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Exynos 4210",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "GT-I9100"
+      ],
+      "codename": "GT-I9100",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Exynos 4210",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

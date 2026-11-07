@@ -1,0 +1,41 @@
+{
+  "slug": "google-nexus-6p",
+  "brand": "Google",
+  "name": "Nexus 6P",
+  "release_year": 2015,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Nexus 6P"
+      ],
+      "codename": "angler",
+      "region": "Global / Factory Unlocked",
+      "soc": "Snapdragon 810 v2.1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "SuperSU",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "Paranoid Android",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "htc-one-x",
+  "brand": "HTC",
+  "name": "HTC One X",
+  "release_year": 2012,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "MHL Video Out",
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "HTC One X",
+        "HTC S720e"
+      ],
+      "codename": "endeavoru",
+      "region": "Global / Unlocked",
+      "soc": "Nvidia Tegra 3",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "ViperOne"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

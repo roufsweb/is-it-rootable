@@ -1,0 +1,44 @@
+{
+  "slug": "oneplus-nord-n10-5g",
+  "brand": "OnePlus",
+  "name": "OnePlus Nord N10 5G",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "BE2025",
+        "BE2026",
+        "BE2028",
+        "BE2029"
+      ],
+      "codename": "OnePlusN10",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 690 5G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

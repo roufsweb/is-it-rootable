@@ -1,0 +1,97 @@
+{
+  "slug": "samsung-galaxy-s3",
+  "brand": "Samsung",
+  "name": "Galaxy S3",
+  "release_year": 2012,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "MHL HDMI Video Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "GT-I9305N",
+        "SC-03E",
+        "SC-06D",
+        "SCH-S960L",
+        "SGH-T999L",
+        "SGH-T999N",
+        "SHV-E210K",
+        "SHV-E210L",
+        "SHV-E210S",
+        "SHW-M440S"
+      ],
+      "codename": "d2lteMetroPCS",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 4412 Quad",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "GT-I9300T",
+        "GT-I9305T",
+        "SCH-I535PP",
+        "SCH-R530U",
+        "SGH-T999V",
+        "SPH-L710T"
+      ],
+      "codename": "SC-03E_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon S4 Plus",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "GT-I9300",
+        "SCH-L710",
+        "SPH-L710"
+      ],
+      "codename": "m0",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Exynos 4412",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

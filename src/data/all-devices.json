@@ -1,5 +1,89 @@
 [
   {
+    "slug": "asus-rog-phone-3",
+    "brand": "Asus",
+    "name": "Asus ROG Phone 3",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "ROG Side Mount DisplayPort 4K Out",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_I003D",
+          "ASUS_I003DD",
+          "ZS661KS"
+        ],
+        "codename": "ASUS_I003_1",
+        "region": "Global / Official",
+        "soc": "Snapdragon 865+",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "asus-rog-phone-5",
+    "brand": "Asus",
+    "name": "Asus ROG Phone 5",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "ROG Side Mount DisplayPort 4K Out",
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_I005D",
+          "ASUS_I005DA",
+          "ASUS_I005DB",
+          "ZS673KS",
+          "ZS676KS"
+        ],
+        "codename": "ASUS_I005_1",
+        "region": "Global / Official",
+        "soc": "Snapdragon 888",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "asus-rog-phone-6",
     "brand": "Asus",
     "name": "Asus ROG Phone 6",
@@ -123,6 +207,48 @@
     ]
   },
   {
+    "slug": "asus-rog-phone-ii",
+    "brand": "Asus",
+    "name": "Asus ROG Phone II",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "ROG Side Mount DisplayPort 4K Out",
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_I001D",
+          "ASUS_I001DC",
+          "ASUS_I001DE",
+          "ZS660KL"
+        ],
+        "codename": "ASUS_I001_1",
+        "region": "Global / Official",
+        "soc": "Snapdragon 855+",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "asus-zenfone-10",
     "brand": "Asus",
     "name": "Asus Zenfone 10",
@@ -162,6 +288,126 @@
     ]
   },
   {
+    "slug": "asus-zenfone-6",
+    "brand": "Asus",
+    "name": "Asus ZenFone 6",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_T00G"
+        ],
+        "codename": "ASUS_T00G",
+        "region": "Global / Official",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "asus-zenfone-7",
+    "brand": "Asus",
+    "name": "Asus ZenFone 7 / 7 Pro",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_I002D",
+          "ZS670KS",
+          "ZS671KS"
+        ],
+        "codename": "ASUS_I002D",
+        "region": "Global / Official",
+        "soc": "Snapdragon 865 / 865+",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "asus-zenfone-8",
+    "brand": "Asus",
+    "name": "Asus Zenfone 8",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_I006D",
+          "ZS590KS"
+        ],
+        "codename": "ASUS_I006D",
+        "region": "Global / Official",
+        "soc": "Snapdragon 888",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "asus-zenfone-9",
     "brand": "Asus",
     "name": "Asus Zenfone 9",
@@ -180,6 +426,87 @@
         "codename": "ASUS_AI2202",
         "region": "Global / Official",
         "soc": "Snapdragon 8+ Gen 1",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "asus-zenfone-max-pro-m1",
+    "brand": "Asus",
+    "name": "Asus ZenFone Max Pro M1",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_X00TD",
+          "ASUS_X00TDB",
+          "ZB602KL"
+        ],
+        "codename": "ASUS_X00T_2",
+        "region": "Global / Official",
+        "soc": "Snapdragon 636",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "asus-zenfone-max-pro-m2",
+    "brand": "Asus",
+    "name": "Asus ZenFone Max Pro M2",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ASUS_X01BDA",
+          "ZB631KL"
+        ],
+        "codename": "ASUS_X01BD_1",
+        "region": "Global / Official",
+        "soc": "Snapdragon 660",
         "bootloader_unlockable": "CONDITIONAL",
         "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
         "root_status": "FULL",
@@ -354,6 +681,417 @@
           "e/OS/ Official",
           "PostmarketOS",
           "Ubuntu Touch"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-galaxy-nexus",
+    "brand": "Google",
+    "name": "Galaxy Nexus",
+    "release_year": 2011,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Galaxy Nexus",
+          "Galaxy X"
+        ],
+        "codename": "maguro",
+        "region": "Global / Factory Unlocked",
+        "soc": "TI OMAP 4460",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-10",
+    "brand": "Google",
+    "name": "Nexus 10",
+    "release_year": 2012,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Micro-HDMI Video Out",
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 10"
+        ],
+        "codename": "manta",
+        "region": "Global / Factory Unlocked",
+        "soc": "Exynos 5250",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-4",
+    "brand": "Google",
+    "name": "Nexus 4",
+    "release_year": 2012,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 4"
+        ],
+        "codename": "mako",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon S4 Pro",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-5",
+    "brand": "Google",
+    "name": "Nexus 5",
+    "release_year": 2013,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 5"
+        ],
+        "codename": "hammerhead",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 800",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-5x",
+    "brand": "Google",
+    "name": "Nexus 5X",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 5X"
+        ],
+        "codename": "bullhead",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 808",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-6",
+    "brand": "Google",
+    "name": "Nexus 6",
+    "release_year": 2014,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 6"
+        ],
+        "codename": "shamu",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 805",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-6p",
+    "brand": "Google",
+    "name": "Nexus 6P",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 6P"
+        ],
+        "codename": "angler",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 810 v2.1",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-7-2013",
+    "brand": "Google",
+    "name": "Nexus 7 (2013)",
+    "release_year": 2013,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 7 (2013)"
+        ],
+        "codename": "device",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon S4 Pro",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-9",
+    "brand": "Google",
+    "name": "Nexus 9",
+    "release_year": 2014,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus 9"
+        ],
+        "codename": "flounder",
+        "region": "Global / Factory Unlocked",
+        "soc": "Nvidia Tegra K1-Denver",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-nexus-one",
+    "brand": "Google",
+    "name": "Nexus One",
+    "release_year": 2010,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Nexus One"
+        ],
+        "codename": "passion",
+        "region": "Global / Factory Unlocked",
+        "soc": "Qualcomm QSD8250 Snapdragon",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "SuperSU",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "Paranoid Android",
+          "OmniROM"
         ],
         "links": {
           "xda": "https://xdaforums.com/"
@@ -606,6 +1344,67 @@
     ]
   },
   {
+    "slug": "google-pixel-3a-xl",
+    "brand": "Google",
+    "name": "Pixel 3a XL",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 3a XL"
+        ],
+        "codename": "bonito",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 670",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "BONITO-VZW"
+        ],
+        "codename": "bonito_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Snapdragon 670",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "google-pixel-3a",
     "brand": "Google",
     "name": "Pixel 3a",
@@ -775,6 +1574,67 @@
         "codename": "flame_vzw",
         "region": "Verizon / Carrier Locked",
         "soc": "Snapdragon 855",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-4a-5g",
+    "brand": "Google",
+    "name": "Pixel 4a 5G",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel Pixel 4a 5G"
+        ],
+        "codename": "device",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 765G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "DEVICE-VZW"
+        ],
+        "codename": "device_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Snapdragon 765G",
         "bootloader_unlockable": "NO",
         "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
         "root_status": "LOCKED",
@@ -2152,6 +3012,129 @@
     ]
   },
   {
+    "slug": "htc-one-m9",
+    "brand": "HTC",
+    "name": "HTC One M9",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL 3.0 Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "0PJA10",
+          "0PJA2",
+          "HTC 0PJA10",
+          "HTC One M9",
+          "HTC6535LRA",
+          "HTC6535LVW",
+          "HTC_0PJA10",
+          "HTC_M9u"
+        ],
+        "codename": "htc_himauhl",
+        "region": "Global / Unlocked",
+        "soc": "Snapdragon 810",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "ViperOne"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "htc-one-x",
+    "brand": "HTC",
+    "name": "HTC One X",
+    "release_year": 2012,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL Video Out",
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "HTC One X",
+          "HTC S720e"
+        ],
+        "codename": "endeavoru",
+        "region": "Global / Unlocked",
+        "soc": "Nvidia Tegra 3",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "ViperOne"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "htc-u11-life",
+    "brand": "HTC",
+    "name": "HTC U11 Life",
+    "release_year": 2017,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "HTC U11 Life",
+          "HTC U11 life"
+        ],
+        "codename": "htc_ocla1_sprout",
+        "region": "Global / Unlocked",
+        "soc": "Snapdragon 630",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Resurrection Remix",
+          "ViperOne"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "htc-u11",
     "brand": "HTC",
     "name": "HTC U11",
@@ -2220,6 +3203,223 @@
           "LineageOS Official",
           "Resurrection Remix",
           "ViperOne"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "lg-g2",
+    "brand": "LG",
+    "name": "LG G2",
+    "release_year": 2013,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "SlimPort 1080p HDMI Out",
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "LG-D800",
+          "LG-D801",
+          "LG-D802",
+          "LG-D802T",
+          "LG-D802TR",
+          "LG-D803",
+          "LG-D805",
+          "LG-D806",
+          "LG-F320K",
+          "LG-F320L",
+          "LG-F320S",
+          "LG-LS980",
+          "VS980 4G"
+        ],
+        "codename": "g2",
+        "region": "Global / Europe / Unlocked",
+        "soc": "Snapdragon 800",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Havoc-OS",
+          "DotOS"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "lg-g3",
+    "brand": "LG",
+    "name": "LG G3",
+    "release_year": 2014,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "SlimPort 4K HDMI Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "AS985",
+          "LG-AS990",
+          "LG-D850",
+          "LG-D851",
+          "LG-D852",
+          "LG-D852G",
+          "LG-D855",
+          "LG-D856",
+          "LG-D857",
+          "LG-D858",
+          "LG-D858HK",
+          "LG-D859",
+          "LG-F400K",
+          "LG-F400L",
+          "LG-F400S",
+          "LGL24",
+          "LGLS990",
+          "LGUS990",
+          "LGV31",
+          "VS985 4G"
+        ],
+        "codename": "g3",
+        "region": "Global / Europe / Unlocked",
+        "soc": "Snapdragon 801",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Havoc-OS",
+          "DotOS"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "lg-g4",
+    "brand": "LG",
+    "name": "LG G4",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "AS986",
+          "LG-AS811",
+          "LG-AS991",
+          "LG-F500K",
+          "LG-F500L",
+          "LG-F500S",
+          "LG-H810",
+          "LG-H811",
+          "LG-H812",
+          "LG-H815",
+          "LG-H818",
+          "LG-H819",
+          "LGLS991",
+          "LGUS991",
+          "LGV32",
+          "VS986"
+        ],
+        "codename": "p1",
+        "region": "Global / Europe / Unlocked",
+        "soc": "Snapdragon 808",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Havoc-OS",
+          "DotOS"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "lg-g5",
+    "brand": "LG",
+    "name": "LG G5",
+    "release_year": 2016,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort over Type-C & B&O Hi-Fi Plus Module",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "LG-F700K",
+          "LG-F700L",
+          "LG-F700S",
+          "LG-H820",
+          "LG-H820PR",
+          "LG-H830",
+          "LG-H831",
+          "LG-H850",
+          "LG-H858",
+          "LG-H860",
+          "LG-H868",
+          "LGAS992",
+          "LGLS992",
+          "LGUS992",
+          "RS988",
+          "VS987"
+        ],
+        "codename": "h1",
+        "region": "Global / Europe / Unlocked",
+        "soc": "Snapdragon 820",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Havoc-OS",
+          "DotOS"
         ],
         "links": {
           "xda": "https://xdaforums.com/"
@@ -2388,6 +3588,46 @@
         "codename": "joan",
         "region": "Global / Europe / Unlocked",
         "soc": "Snapdragon 835",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Havoc-OS",
+          "DotOS"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "lg-v40-thinq",
+    "brand": "LG",
+    "name": "LG V40 ThinQ",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort 4K Out & 32-bit Hi-Fi Quad DAC",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "LM-V405",
+          "LM-V409N"
+        ],
+        "codename": "judypn",
+        "region": "Global / Europe / Unlocked",
+        "soc": "Snapdragon 845",
         "bootloader_unlockable": "CONDITIONAL",
         "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
         "root_status": "FULL",
@@ -2724,6 +3964,120 @@
     ]
   },
   {
+    "slug": "motorola-moto-g-1st-gen",
+    "brand": "Motorola",
+    "name": "Motorola Moto G (1st Gen)",
+    "release_year": 2013,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "XT-MotorolaMotoG1stGen"
+        ],
+        "codename": "device",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 400",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-g-2nd-gen",
+    "brand": "Motorola",
+    "name": "Motorola Moto G (2nd Gen)",
+    "release_year": 2014,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "XT-MotorolaMotoG2ndGen"
+        ],
+        "codename": "device",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 400",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-g-3rd-gen",
+    "brand": "Motorola",
+    "name": "Motorola Moto G (3rd Gen)",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "XT-MotorolaMotoG3rdGen"
+        ],
+        "codename": "device",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 410",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "motorola-moto-g100",
     "brand": "Motorola",
     "name": "Motorola Moto G100",
@@ -2742,6 +4096,84 @@
         "codename": "nio",
         "region": "Global / Retail Unlocked",
         "soc": "Snapdragon 870",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-g200-5g",
+    "brand": "Motorola",
+    "name": "Motorola Moto G200 5G",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Motorola Ready For (Wired Desktop DisplayPort)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "moto g200 5G",
+          "motorola edge 20 pro"
+        ],
+        "codename": "xpeng",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 888+",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-g4-plus",
+    "brand": "Motorola",
+    "name": "Motorola Moto G4 Plus",
+    "release_year": 2016,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Moto G Play",
+          "XT1609"
+        ],
+        "codename": "harpia",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 617",
         "bootloader_unlockable": "YES",
         "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
         "root_status": "FULL",
@@ -2820,6 +4252,159 @@
         "codename": "bangkk",
         "region": "Global / Retail Unlocked",
         "soc": "Snapdragon 695 5G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-x4",
+    "brand": "Motorola",
+    "name": "Motorola Moto X4",
+    "release_year": 2017,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "XT-MotorolaMotoX4"
+        ],
+        "codename": "device",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 630",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-z",
+    "brand": "Motorola",
+    "name": "Motorola Moto Z",
+    "release_year": 2016,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": "Moto Mods Projector / Display",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "XT1650",
+          "XT1650-05"
+        ],
+        "codename": "griffin",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 820",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-z2-force",
+    "brand": "Motorola",
+    "name": "Motorola Moto Z2 Force",
+    "release_year": 2017,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": "Moto Mods Display Support",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "XT-MotorolaMotoZ2Force"
+        ],
+        "codename": "device",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 835",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-moto-z3-play",
+    "brand": "Motorola",
+    "name": "Motorola Moto Z3 Play",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": "Moto Mods Support",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Moto Z3 Play"
+        ],
+        "codename": "beckham",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 636",
         "bootloader_unlockable": "YES",
         "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
         "root_status": "FULL",
@@ -3117,6 +4702,48 @@
     ]
   },
   {
+    "slug": "oneplus-10r-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus 10R 5G",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "CPH2411",
+          "CPH2423"
+        ],
+        "codename": "OP5566L1",
+        "region": "Global / Europe / North America / India",
+        "soc": "MediaTek Dimensity 8100-Max",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "oneplus-10t-5g",
     "brand": "OnePlus",
     "name": "OnePlus 10T 5G",
@@ -3362,6 +4989,47 @@
           "Magisk"
         ],
         "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-2",
+    "brand": "OnePlus",
+    "name": "OnePlus 2",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ONE A2003"
+        ],
+        "codename": "OnePlus2",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 810",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Developer Options toggle + fastboot oem unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official",
         "custom_kernel_support": "HIGH",
         "custom_roms": [
           "LineageOS Official",
@@ -4023,6 +5691,48 @@
     ]
   },
   {
+    "slug": "oneplus-9r",
+    "brand": "OnePlus",
+    "name": "OnePlus 9R",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "USB 3.1 DP Video Out",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "LE2100",
+          "LE2101"
+        ],
+        "codename": "OnePlus9R",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 870",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "oneplus-9rt-5g",
     "brand": "OnePlus",
     "name": "OnePlus 9RT 5G",
@@ -4191,6 +5901,89 @@
     ]
   },
   {
+    "slug": "oneplus-nord-ce-2-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord CE 2 5G",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "IV2201"
+        ],
+        "codename": "OP555BL1",
+        "region": "Global / Europe / North America / India",
+        "soc": "MediaTek Dimensity 900",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-nord-ce-3-lite-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "CPH2465",
+          "CPH2467"
+        ],
+        "codename": "OP5958L1",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 695 5G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "oneplus-nord-ce-4",
     "brand": "OnePlus",
     "name": "OnePlus Nord CE 4",
@@ -4209,6 +6002,178 @@
         "codename": "OP5D3FL1",
         "region": "Global / Europe / North America / India",
         "soc": "Snapdragon 7 Gen 3",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-nord-ce-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord CE 5G",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "EB2101",
+          "EB2103"
+        ],
+        "codename": "OnePlusNordCE",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 750G 5G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-nord-n10-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord N10 5G",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "BE2025",
+          "BE2026",
+          "BE2028",
+          "BE2029"
+        ],
+        "codename": "OnePlusN10",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 690 5G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-nord-n100",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord N100",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "BE2011",
+          "BE2012",
+          "BE2013",
+          "BE2015"
+        ],
+        "codename": "OnePlusN100",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 460",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-nord-n200-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord N200 5G",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "DE2117",
+          "DE2118"
+        ],
+        "codename": "OnePlusN200",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 480 5G",
         "bootloader_unlockable": "YES",
         "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
         "root_status": "FULL",
@@ -4433,6 +6398,113 @@
           "Nameless AOSP",
           "crDroid",
           "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-x",
+    "brand": "OnePlus",
+    "name": "OnePlus X",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ONE E1003"
+        ],
+        "codename": "OnePlus",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 801",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Developer Options toggle + fastboot oem unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "poco-f2-pro",
+    "brand": "POCO",
+    "name": "POCO F2 Pro / Redmi K30 Pro",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "POCO F2 Pro"
+        ],
+        "codename": "lmi",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "LMI-CN"
+        ],
+        "codename": "lmi_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
         ],
         "links": {
           "xda": "https://xdaforums.com/"
@@ -4774,6 +6846,72 @@
     ]
   },
   {
+    "slug": "poco-m6-pro",
+    "brand": "POCO",
+    "name": "POCO M6 Pro",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "2312FPCA6G"
+        ],
+        "codename": "emerald",
+        "region": "Global / Europe / India",
+        "soc": "MediaTek Helio G99-Ultra",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "EMERALD-CN"
+        ],
+        "codename": "emerald_cn",
+        "region": "China Domestic",
+        "soc": "MediaTek Helio G99-Ultra",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "poco-x3-nfc",
     "brand": "POCO",
     "name": "POCO X3 NFC",
@@ -4954,6 +7092,73 @@
         "codename": "redwood_cn",
         "region": "China Domestic",
         "soc": "Snapdragon 778G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "poco-x6-5g",
+    "brand": "POCO",
+    "name": "POCO X6 5G",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "23122PCD1G",
+          "23122PCD1I"
+        ],
+        "codename": "garnet",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 7s Gen 2",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GARNET-CN"
+        ],
+        "codename": "garnet_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 7s Gen 2",
         "bootloader_unlockable": "CONDITIONAL",
         "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
         "root_status": "CONDITIONAL",
@@ -5275,6 +7480,142 @@
         "codename": "chopin_cn",
         "region": "China Domestic",
         "soc": "Snapdragon 732G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "redmi-note-10",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 10",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "M2101K7AG",
+          "M2101K7AI"
+        ],
+        "codename": "camellia",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 678",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "M2103K19C"
+        ],
+        "codename": "camellia_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 678",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "redmi-note-11",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 11",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "2201117TG",
+          "2201117TI",
+          "2201117TL",
+          "2201117TY"
+        ],
+        "codename": "spes",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 680 4G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SPES-CN"
+        ],
+        "codename": "spes_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 680 4G",
         "bootloader_unlockable": "CONDITIONAL",
         "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
         "root_status": "CONDITIONAL",
@@ -5694,6 +8035,73 @@
     ]
   },
   {
+    "slug": "redmi-note-8-pro",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 8 Pro",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Redmi Note 8 Pro",
+          "begonia"
+        ],
+        "codename": "begonia",
+        "region": "Global / Europe / India",
+        "soc": "MediaTek Helio G90T",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "BEGONIA-CN"
+        ],
+        "codename": "begonia_cn",
+        "region": "China Domestic",
+        "soc": "MediaTek Helio G90T",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "redmi-note-8",
     "brand": "Xiaomi",
     "name": "Redmi Note 8",
@@ -5822,6 +8230,198 @@
           "Xiaomi.eu Community ROM",
           "LineageOS Unofficial"
         ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "redmi-note-9s",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 9S",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Redmi Note 9 Pro",
+          "Redmi Note 9S"
+        ],
+        "codename": "curtana",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 720G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "CURTANA-CN"
+        ],
+        "codename": "curtana_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 720G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-a12",
+    "brand": "Samsung",
+    "name": "Galaxy A12",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-A125F",
+          "SM-A125N",
+          "SM-A127F",
+          "SM-S127DL"
+        ],
+        "codename": "a12s",
+        "region": "Global / Europe / International",
+        "soc": "MediaTek Helio P35 / Exynos 850",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-A125U",
+          "SM-A125U1",
+          "SM-A125W",
+          "SM-S127DL"
+        ],
+        "codename": "a12_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "MediaTek Helio P35 / Exynos 850",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-a13",
+    "brand": "Samsung",
+    "name": "Galaxy A13",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-A135F",
+          "SM-A135N",
+          "SM-A137F"
+        ],
+        "codename": "a13",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 850",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-A135U",
+          "SM-A135U1"
+        ],
+        "codename": "a13_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 850",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
         "links": {
           "xda": "https://xdaforums.com/"
         }
@@ -5975,6 +8575,74 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-a20",
+    "brand": "Samsung",
+    "name": "Galaxy A20",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SC-02M",
+          "SM-A205F",
+          "SM-A205FN",
+          "SM-A205G",
+          "SM-A205GN",
+          "SM-A205YN",
+          "SM-S205DL"
+        ],
+        "codename": "SC-02M",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 7884",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SCV46-u",
+          "SM-A205U",
+          "SM-A205U1",
+          "SM-A205W",
+          "SM-S205DL"
+        ],
+        "codename": "SC-02M_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 7884",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-a25-5g",
     "brand": "Samsung",
     "name": "Galaxy A25 5G",
@@ -6053,6 +8721,65 @@
         "custom_roms": [
           "LineageOS Unofficial"
         ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-a32",
+    "brand": "Samsung",
+    "name": "Galaxy A32",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-A325F",
+          "SM-A325N"
+        ],
+        "codename": "a32",
+        "region": "Global / Europe / International",
+        "soc": "MediaTek Helio G80",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-GalaxyA32U"
+        ],
+        "codename": "a32_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "MediaTek Helio G80",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
         "links": {
           "xda": "https://xdaforums.com/"
         }
@@ -6302,6 +9029,65 @@
         "custom_roms": [
           "LineageOS Unofficial"
         ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-a40",
+    "brand": "Samsung",
+    "name": "Galaxy A40",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-A405FN",
+          "SM-A405S"
+        ],
+        "codename": "a40",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 7904",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-GalaxyA40U"
+        ],
+        "codename": "a40_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 7904",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
         "links": {
           "xda": "https://xdaforums.com/"
         }
@@ -6811,6 +9597,91 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-a70",
+    "brand": "Samsung",
+    "name": "Galaxy A70",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-A705F",
+          "SM-A705FN",
+          "SM-A705MN",
+          "SM-A705YN"
+        ],
+        "codename": "a70q",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 675",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-A705U",
+          "SM-A705W"
+        ],
+        "codename": "a70q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 675",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-A7050"
+        ],
+        "codename": "a70q_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 675",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-a71",
     "brand": "Samsung",
     "name": "Galaxy A71",
@@ -7068,6 +9939,122 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-m31",
+    "brand": "Samsung",
+    "name": "Galaxy M31",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-M315F"
+        ],
+        "codename": "m31",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 9611",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-GalaxyM31U"
+        ],
+        "codename": "m31_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 9611",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-m51",
+    "brand": "Samsung",
+    "name": "Galaxy M51",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-M515F"
+        ],
+        "codename": "m51",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 730G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-GalaxyM51U"
+        ],
+        "codename": "m51_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 730G",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-note-10-lite",
     "brand": "Samsung",
     "name": "Galaxy Note 10 Lite",
@@ -7274,6 +10261,94 @@
         "codename": "d1_chn",
         "region": "China / Hong Kong Open Market",
         "soc": "Snapdragon 855",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-note-2",
+    "brand": "Samsung",
+    "name": "Galaxy Note 2",
+    "release_year": 2012,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL HDMI Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SC-02E",
+          "SHV-E250K",
+          "SHV-E250L",
+          "SHV-E250S"
+        ],
+        "codename": "t03gchnduos",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 4412 Quad",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-N7100T",
+          "GT-N7105T",
+          "SGH-T889V"
+        ],
+        "codename": "SC-02E_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 4412 Quad",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-N7100",
+          "SCH-R950",
+          "SPH-L900"
+        ],
+        "codename": "t03gchn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Exynos 4412",
         "bootloader_unlockable": "YES",
         "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
         "root_status": "FULL",
@@ -7906,6 +10981,67 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-note-fe",
+    "brand": "Samsung",
+    "name": "Galaxy Note Fan Edition",
+    "release_year": 2017,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort over Type-C",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-N935F",
+          "SM-N935K",
+          "SM-N935L",
+          "SM-N935S"
+        ],
+        "codename": "gracerlte",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 8890",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-GalaxyNoteFanEditionU"
+        ],
+        "codename": "gracerlte_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 8890",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-s10-5g",
     "brand": "Samsung",
     "name": "Galaxy S10 5G",
@@ -8260,6 +11396,94 @@
         "codename": "beyond0",
         "region": "China / Hong Kong Open Market",
         "soc": "Snapdragon 855",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s2",
+    "brand": "Samsung",
+    "name": "Galaxy S2",
+    "release_year": 2011,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL HDMI Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SC-02C",
+          "SGH-S959G",
+          "SHV-E110S",
+          "SHW-M250K",
+          "SHW-M250L",
+          "SHW-M250S"
+        ],
+        "codename": "SHV-E110S",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 4210 Dual",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-I9100P",
+          "GT-I9100T",
+          "GT-I9210T"
+        ],
+        "codename": "GT-I9100_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 4210",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-I9100"
+        ],
+        "codename": "GT-I9100",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Exynos 4210",
         "bootloader_unlockable": "YES",
         "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
         "root_status": "FULL",
@@ -10021,6 +13245,200 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-s3",
+    "brand": "Samsung",
+    "name": "Galaxy S3",
+    "release_year": 2012,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL HDMI Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "GT-I9305N",
+          "SC-03E",
+          "SC-06D",
+          "SCH-S960L",
+          "SGH-T999L",
+          "SGH-T999N",
+          "SHV-E210K",
+          "SHV-E210L",
+          "SHV-E210S",
+          "SHW-M440S"
+        ],
+        "codename": "d2lteMetroPCS",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 4412 Quad",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-I9300T",
+          "GT-I9305T",
+          "SCH-I535PP",
+          "SCH-R530U",
+          "SGH-T999V",
+          "SPH-L710T"
+        ],
+        "codename": "SC-03E_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon S4 Plus",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-I9300",
+          "SCH-L710",
+          "SPH-L710"
+        ],
+        "codename": "m0",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Exynos 4412",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s4",
+    "brand": "Samsung",
+    "name": "Galaxy S4",
+    "release_year": 2013,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL 2.0 HDMI Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "GT-I9515L",
+          "SC-04E",
+          "SCH-I545L",
+          "SGH-M919N",
+          "SGH-S970G",
+          "SHV-E300K",
+          "SHV-E300L",
+          "SHV-E300S",
+          "SHV-E330K",
+          "SHV-E330L",
+          "SM-S975L"
+        ],
+        "codename": "jaltektt",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 600 / Exynos 5410",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-I9507V",
+          "GT-I9508V",
+          "SCH-I545PP",
+          "SGH-M919V",
+          "SPH-L720T"
+        ],
+        "codename": "SC-04E_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 600",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "GT-I9500",
+          "SCH-R970",
+          "SPH-L720"
+        ],
+        "codename": "SC-04E_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 600",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-s5",
     "brand": "Samsung",
     "name": "Galaxy S5",
@@ -10682,6 +14100,230 @@
         "codename": "starqltechn",
         "region": "China / Hong Kong Open Market",
         "soc": "Snapdragon 845",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-tab-a9-plus",
+    "brand": "Samsung",
+    "name": "Galaxy Tab A9+",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": "Samsung DeX On-Device (Windowed UI)",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-GalaxyTabA9B"
+        ],
+        "codename": "device",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 695 5G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-GalaxyTabA9U"
+        ],
+        "codename": "device_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 695 5G",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-tab-s5e",
+    "brand": "Samsung",
+    "name": "Galaxy Tab S5e",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX On-Device & External Display",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-T725N"
+        ],
+        "codename": "gts4lv",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 670",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-T727A",
+          "SM-T727U",
+          "SM-T727V"
+        ],
+        "codename": "gts4lv_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 670",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-T720"
+        ],
+        "codename": "gts4lvwifichn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 670",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-tab-s6-lite",
+    "brand": "Samsung",
+    "name": "Galaxy Tab S6 Lite",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-P615N",
+          "SM-P619N"
+        ],
+        "codename": "gta4xls",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 9611 / Snapdragon 720G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-GalaxyTabS6LiteU"
+        ],
+        "codename": "gta4xl_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 9611 / Snapdragon 720G",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "custom_roms": [],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-P610",
+          "SM-P620"
+        ],
+        "codename": "gta4xl_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Exynos 9611 / Snapdragon 720G",
         "bootloader_unlockable": "YES",
         "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
         "root_status": "FULL",
@@ -11917,6 +15559,181 @@
     ]
   },
   {
+    "slug": "sony-xperia-1",
+    "brand": "Sony",
+    "name": "Sony Xperia 1",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort 4K HDR Out",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "802SO",
+          "J8110",
+          "J8170",
+          "J9110",
+          "J9180",
+          "SO-03L",
+          "SOV40"
+        ],
+        "codename": "802SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-10-ii",
+    "brand": "Sony",
+    "name": "Sony Xperia 10 II",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "A001SO",
+          "SO-41A",
+          "SOV43",
+          "XQ-AU42",
+          "XQ-AU51",
+          "XQ-AU52"
+        ],
+        "codename": "A001SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 665",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-10-iii",
+    "brand": "Sony",
+    "name": "Sony Xperia 10 III",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "A102SO",
+          "SO-52B",
+          "SOG04",
+          "XQ-BT52"
+        ],
+        "codename": "A102SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 690 5G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-10-iv",
+    "brand": "Sony",
+    "name": "Sony Xperia 10 IV",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "A202SO",
+          "SO-52C",
+          "SOG07",
+          "XQ-CC44",
+          "XQ-CC54",
+          "XQ-CC72"
+        ],
+        "codename": "A202SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 695 5G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "sony-xperia-10-v",
     "brand": "Sony",
     "name": "Xperia 10 V",
@@ -12138,6 +15955,51 @@
     ]
   },
   {
+    "slug": "sony-xperia-5",
+    "brand": "Sony",
+    "name": "Sony Xperia 5",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort HDR Out",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "901SO",
+          "J8210",
+          "J8270",
+          "J9210",
+          "J9260",
+          "SO-01M",
+          "SOV41"
+        ],
+        "codename": "901SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "sony-xperia-xz-premium",
     "brand": "Sony",
     "name": "Xperia XZ Premium",
@@ -12159,6 +16021,137 @@
         "codename": "G8141",
         "region": "Global / Europe / Asia Unlocked",
         "soc": "Snapdragon 835",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-z2",
+    "brand": "Sony",
+    "name": "Sony Xperia Z2",
+    "release_year": 2014,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL 3.0 Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "D6502",
+          "D6503",
+          "D6543",
+          "SO-03F"
+        ],
+        "codename": "D6502",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 801",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-z3",
+    "brand": "Sony",
+    "name": "Sony Xperia Z3",
+    "release_year": 2014,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL 3.0 4K Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "401SO",
+          "D6603",
+          "D6616",
+          "D6643",
+          "D6646",
+          "D6653",
+          "SO-01G",
+          "SOL26"
+        ],
+        "codename": "401SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 801",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-z5",
+    "brand": "Sony",
+    "name": "Sony Xperia Z5",
+    "release_year": 2015,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "MHL 3.0 4K Video Out",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "501SO",
+          "E6603",
+          "E6653",
+          "SO-01H",
+          "SOV32"
+        ],
+        "codename": "501SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 810",
         "bootloader_unlockable": "YES",
         "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
         "root_status": "FULL",
@@ -12228,6 +16221,72 @@
         "codename": "vili_cn",
         "region": "China Domestic",
         "soc": "Snapdragon 888",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-12-lite",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 12 Lite",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "2203129G"
+        ],
+        "codename": "taoyao",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 778G 5G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "TAOYAO-CN"
+        ],
+        "codename": "taoyao_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 778G 5G",
         "bootloader_unlockable": "CONDITIONAL",
         "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
         "root_status": "CONDITIONAL",
@@ -12360,6 +16419,141 @@
         "codename": "cupid_cn",
         "region": "China Domestic",
         "soc": "Snapdragon 8 Gen 1",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-12t-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 12T Pro",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "22081212R",
+          "22081212UG",
+          "22200414R",
+          "A201XM"
+        ],
+        "codename": "diting",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 8+ Gen 1",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "22081212C"
+        ],
+        "codename": "diting_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 8+ Gen 1",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-12t",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 12T",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "22071212AG"
+        ],
+        "codename": "plato",
+        "region": "Global / Europe / India",
+        "soc": "MediaTek Dimensity 8100-Ultra",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "PLATO-CN"
+        ],
+        "codename": "plato_cn",
+        "region": "China Domestic",
+        "soc": "MediaTek Dimensity 8100-Ultra",
         "bootloader_unlockable": "CONDITIONAL",
         "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
         "root_status": "CONDITIONAL",
@@ -12912,6 +17106,139 @@
     ]
   },
   {
+    "slug": "xiaomi-mi-10-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi 10 Pro",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Cmi",
+          "Mi 10 Pro"
+        ],
+        "codename": "cmi",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "CMI-CN"
+        ],
+        "codename": "cmi_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-10-ultra",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi 10 Ultra",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "M2007J1SC"
+        ],
+        "codename": "cas",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "M2007J1SC"
+        ],
+        "codename": "cas_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "xiaomi-mi-10",
     "brand": "Xiaomi",
     "name": "Xiaomi Mi 10",
@@ -12959,6 +17286,205 @@
         "codename": "umi_cn",
         "region": "China Domestic",
         "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-10t-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi 10T / Mi 10T Pro",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "M2007J3SP",
+          "M2007J3SY"
+        ],
+        "codename": "apollo",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "APOLLO-CN"
+        ],
+        "codename": "apollo_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-11-lite-5g",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi 11 Lite 5G",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "M2101K9G"
+        ],
+        "codename": "renoir",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 780G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "M2101K9C"
+        ],
+        "codename": "renoir_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 780G",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-11-ultra",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi 11 Ultra",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "M2102K1G"
+        ],
+        "codename": "star",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 888",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "M2102K1C"
+        ],
+        "codename": "star_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 888",
         "bootloader_unlockable": "CONDITIONAL",
         "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
         "root_status": "CONDITIONAL",
@@ -13309,6 +17835,405 @@
     ]
   },
   {
+    "slug": "xiaomi-mi-9t-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi 9T Pro / Redmi K20 Pro",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Mi 9T Pro",
+          "Redmi K20 Pro",
+          "Redmi K20 Pro Premium Edition"
+        ],
+        "codename": "raphael",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "RAPHAEL-CN"
+        ],
+        "codename": "raphael_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-9t",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi 9T / Redmi K20",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Mi 9T"
+        ],
+        "codename": "davinci",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 730",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "DAVINCI-CN"
+        ],
+        "codename": "davinci_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 730",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-a1",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi A1",
+    "release_year": 2017,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "MI A1",
+          "Mi A1"
+        ],
+        "codename": "tissot_sprout",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 625",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "TISSOT_SPROUT-CN"
+        ],
+        "codename": "tissot_sprout_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 625",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-a2",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi A2",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Mi A2"
+        ],
+        "codename": "jasmine_sprout",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 660",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "JASMINE_SPROUT-CN"
+        ],
+        "codename": "jasmine_sprout_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 660",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-a3",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi A3",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Mi A3"
+        ],
+        "codename": "laurel_sprout",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 665",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "LAUREL_SPROUT-CN"
+        ],
+        "codename": "laurel_sprout_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 665",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-mi-mix-2s",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Mi Mix 2S",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Mi MIX 2S"
+        ],
+        "codename": "polaris",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 845",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "POLARIS-CN"
+        ],
+        "codename": "polaris_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 845",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "xiaomi-mi-mix-3",
     "brand": "Xiaomi",
     "name": "Xiaomi Mi Mix 3",
@@ -13367,6 +18292,215 @@
         "custom_kernel_support": "MODERATE",
         "custom_roms": [
           "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-pad-5",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Pad 5",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": "MIUI Pad PC Mode",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "21051182G"
+        ],
+        "codename": "nabu",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 860",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "21051182C"
+        ],
+        "codename": "nabu_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 860",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-pad-6",
+    "brand": "Xiaomi",
+    "name": "Xiaomi Pad 6",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "HyperOS Workstation DisplayPort Out (USB 3.2 Gen 1)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "23043RP34G",
+          "23043RP34I"
+        ],
+        "codename": "pipa",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 870",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "23043RP34C"
+        ],
+        "codename": "pipa_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 870",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "zte-axon-7",
+    "brand": "ZTE",
+    "name": "ZTE Axon 7",
+    "release_year": 2016,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort over Type-C & AKM Hi-Fi Audio",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ZTE A2017"
+        ],
+        "codename": "ailsa_ii",
+        "region": "Global / Official",
+        "soc": "Snapdragon 820",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Settings + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ],
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "zte-redmagic-5g",
+    "brand": "ZTE",
+    "name": "ZTE RedMagic 5G",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "RedMagic Studio PC & Direct DP 4K Console Mode",
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "NX659J"
+        ],
+        "codename": "NX659J",
+        "region": "Global / Official",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Settings + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "custom_roms": [
           "LineageOS Unofficial"
         ],
         "links": {

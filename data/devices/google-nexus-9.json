@@ -1,0 +1,41 @@
+{
+  "slug": "google-nexus-9",
+  "brand": "Google",
+  "name": "Nexus 9",
+  "release_year": 2014,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Nexus 9"
+      ],
+      "codename": "flounder",
+      "region": "Global / Factory Unlocked",
+      "soc": "Nvidia Tegra K1-Denver",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot oem unlock (or fastboot flashing unlock) in Fastboot mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "SuperSU",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "Paranoid Android",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

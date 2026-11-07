@@ -1,0 +1,39 @@
+{
+  "slug": "motorola-moto-g200-5g",
+  "brand": "Motorola",
+  "name": "Motorola Moto G200 5G",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Motorola Ready For (Wired Desktop DisplayPort)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "moto g200 5G",
+        "motorola edge 20 pro"
+      ],
+      "codename": "xpeng",
+      "region": "Global / Retail Unlocked",
+      "soc": "Snapdragon 888+",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

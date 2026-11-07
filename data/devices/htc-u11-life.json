@@ -1,0 +1,39 @@
+{
+  "slug": "htc-u11-life",
+  "brand": "HTC",
+  "name": "HTC U11 Life",
+  "release_year": 2017,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "HTC U11 Life",
+        "HTC U11 life"
+      ],
+      "codename": "htc_ocla1_sprout",
+      "region": "Global / Unlocked",
+      "soc": "Snapdragon 630",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "ViperOne"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

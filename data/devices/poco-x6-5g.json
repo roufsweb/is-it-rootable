@@ -1,0 +1,67 @@
+{
+  "slug": "poco-x6-5g",
+  "brand": "POCO",
+  "name": "POCO X6 5G",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "23122PCD1G",
+        "23122PCD1I"
+      ],
+      "codename": "garnet",
+      "region": "Global / Europe / India",
+      "soc": "Snapdragon 7s Gen 2",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "GARNET-CN"
+      ],
+      "codename": "garnet_cn",
+      "region": "China Domestic",
+      "soc": "Snapdragon 7s Gen 2",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

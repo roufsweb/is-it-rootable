@@ -1,0 +1,45 @@
+{
+  "slug": "sony-xperia-1",
+  "brand": "Sony",
+  "name": "Sony Xperia 1",
+  "release_year": 2019,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort 4K HDR Out",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "802SO",
+        "J8110",
+        "J8170",
+        "J9110",
+        "J9180",
+        "SO-03L",
+        "SOV40"
+      ],
+      "codename": "802SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 855",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

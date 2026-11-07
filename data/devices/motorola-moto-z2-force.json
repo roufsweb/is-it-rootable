@@ -1,0 +1,38 @@
+{
+  "slug": "motorola-moto-z2-force",
+  "brand": "Motorola",
+  "name": "Motorola Moto Z2 Force",
+  "release_year": 2017,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": "Moto Mods Display Support",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "XT-MotorolaMotoZ2Force"
+      ],
+      "codename": "device",
+      "region": "Global / Retail Unlocked",
+      "soc": "Snapdragon 835",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

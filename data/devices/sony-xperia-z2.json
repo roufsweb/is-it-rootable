@@ -1,0 +1,42 @@
+{
+  "slug": "sony-xperia-z2",
+  "brand": "Sony",
+  "name": "Sony Xperia Z2",
+  "release_year": 2014,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "MHL 3.0 Video Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "D6502",
+        "D6503",
+        "D6543",
+        "SO-03F"
+      ],
+      "codename": "D6502",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 801",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

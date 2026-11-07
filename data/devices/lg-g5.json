@@ -1,0 +1,54 @@
+{
+  "slug": "lg-g5",
+  "brand": "LG",
+  "name": "LG G5",
+  "release_year": 2016,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort over Type-C & B&O Hi-Fi Plus Module",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "LG-F700K",
+        "LG-F700L",
+        "LG-F700S",
+        "LG-H820",
+        "LG-H820PR",
+        "LG-H830",
+        "LG-H831",
+        "LG-H850",
+        "LG-H858",
+        "LG-H860",
+        "LG-H868",
+        "LGAS992",
+        "LGLS992",
+        "LGUS992",
+        "RS988",
+        "VS987"
+      ],
+      "codename": "h1",
+      "region": "Global / Europe / Unlocked",
+      "soc": "Snapdragon 820",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Havoc-OS",
+        "DotOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

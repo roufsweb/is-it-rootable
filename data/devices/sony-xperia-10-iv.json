@@ -1,0 +1,44 @@
+{
+  "slug": "sony-xperia-10-iv",
+  "brand": "Sony",
+  "name": "Sony Xperia 10 IV",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "A202SO",
+        "SO-52C",
+        "SOG07",
+        "XQ-CC44",
+        "XQ-CC54",
+        "XQ-CC72"
+      ],
+      "codename": "A202SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 695 5G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}
