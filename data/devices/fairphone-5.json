@@ -12,13 +12,13 @@
   "variants": [
     {
       "models": [
-        "Fairphone 5"
+        "FP5"
       ],
-      "codename": "default",
+      "codename": "device",
       "region": "Global / Official",
       "soc": "Qualcomm QCM6490",
       "bootloader_unlockable": "YES",
-      "unlock_method": "Official manufacturer bootloader unlock procedure",
+      "unlock_method": "Fairphone official bootloader unlock code website + fastboot flashing unlock",
       "root_status": "FULL",
       "root_methods": [
         "KernelSU",
@@ -27,6 +27,12 @@
       ],
       "custom_recovery": "Fastbootd / TWRP",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "e/OS/ Official",
+        "PostmarketOS",
+        "Ubuntu Touch"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

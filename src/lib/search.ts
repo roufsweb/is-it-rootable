@@ -5,7 +5,7 @@ let miniSearchInstance: MiniSearch<SearchItem> | null = null;
 
 export function createMiniSearch(items: SearchItem[]): MiniSearch<SearchItem> {
   const miniSearch = new MiniSearch<SearchItem>({
-    fields: ['models', 'name', 'codenames', 'brand', 'soc'],
+    fields: ['models', 'name', 'codenames', 'brand', 'soc', 'custom_roms'],
     storeFields: [
       'id',
       'slug',
@@ -17,6 +17,7 @@ export function createMiniSearch(items: SearchItem[]): MiniSearch<SearchItem> {
       'rawModels',
       'codenames',
       'soc',
+      'custom_roms',
       'overallRoot',
       'overallBootloader',
       'usb_video_out',
@@ -31,6 +32,7 @@ export function createMiniSearch(items: SearchItem[]): MiniSearch<SearchItem> {
         models: 10.0,
         name: 6.0,
         codenames: 4.0,
+        custom_roms: 3.0,
         brand: 2.0,
         soc: 1.5,
       },

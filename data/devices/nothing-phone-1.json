@@ -1,0 +1,39 @@
+{
+  "slug": "nothing-phone-1",
+  "brand": "Nothing",
+  "name": "Phone (1)",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "Nothing-nothing-phone-1"
+      ],
+      "codename": "device",
+      "region": "Global / Unlocked",
+      "soc": "Snapdragon 778G+",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

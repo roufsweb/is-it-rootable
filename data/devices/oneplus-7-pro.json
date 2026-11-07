@@ -1,0 +1,46 @@
+{
+  "slug": "oneplus-7-pro",
+  "brand": "OnePlus",
+  "name": "OnePlus 7 Pro",
+  "release_year": 2019,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "GM1910",
+        "GM1911",
+        "GM1913",
+        "GM1915",
+        "GM1917",
+        "GM1925"
+      ],
+      "codename": "OP7ProNRSpr",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 855",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -12,7 +12,8 @@
   "variants": [
     {
       "models": [
-        "24030PN60G"
+        "24030PN60G",
+        "Xiaomi for arm64"
       ],
       "codename": "aurora",
       "region": "Global / Europe / India",
@@ -27,6 +28,13 @@
       ],
       "custom_recovery": "TWRP Official / OrangeFox",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }
@@ -47,6 +55,10 @@
       ],
       "custom_recovery": "TWRP Unofficial",
       "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

@@ -14,11 +14,11 @@
       "models": [
         "ROG Phone 7"
       ],
-      "codename": "default",
+      "codename": "device",
       "region": "Global / Official",
       "soc": "Snapdragon 8 Gen 2",
-      "bootloader_unlockable": "YES",
-      "unlock_method": "Official manufacturer bootloader unlock procedure",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
       "root_status": "FULL",
       "root_methods": [
         "KernelSU",
@@ -27,6 +27,10 @@
       ],
       "custom_recovery": "Fastbootd / TWRP",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "OmniROM"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

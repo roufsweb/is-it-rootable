@@ -27,6 +27,13 @@
       ],
       "custom_recovery": "TWRP Official / OrangeFox",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }
@@ -47,6 +54,10 @@
       ],
       "custom_recovery": "TWRP Unofficial",
       "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

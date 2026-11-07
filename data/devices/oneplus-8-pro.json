@@ -30,6 +30,12 @@
       ],
       "custom_recovery": "Fastbootd / Kernel Boot Patch",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

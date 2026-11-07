@@ -27,6 +27,10 @@
       ],
       "custom_recovery": "Fastbootd / Boot Image Patch",
       "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "crDroid"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

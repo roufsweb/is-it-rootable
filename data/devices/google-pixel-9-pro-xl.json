@@ -27,6 +27,13 @@
       ],
       "custom_recovery": "Fastbootd / Kernel Boot Patch",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "GrapheneOS Official",
+        "LineageOS Official",
+        "CalyxOS",
+        "EvolutionX",
+        "PixelOS"
+      ],
       "links": {
         "xda": "https://xdaforums.com/",
         "github": "https://github.com/tiann/KernelSU"
@@ -45,6 +52,7 @@
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
       }

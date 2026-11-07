@@ -78,6 +78,7 @@ function main() {
     const tokenizedModels = tokenizeModels(allModels);
     const allCodenames = Array.from(new Set(device.variants.map(v => v.codename).filter(Boolean)));
     const allSoc = Array.from(new Set(device.variants.map(v => v.soc).filter(Boolean)));
+    const allRoms = Array.from(new Set(device.variants.flatMap(v => v.custom_roms || [])));
 
     const overallRoot = getOverallRootStatus(device.variants);
     const overallBootloader = getOverallBootloader(device.variants);
@@ -93,6 +94,7 @@ function main() {
       models: tokenizedModels.join(' '),
       rawModels: allModels,
       soc: allSoc.join(', '),
+      custom_roms: allRoms,
       overallRoot,
       overallBootloader,
       usb_video_out: device.hardware_features?.usb_video_out ?? false,
@@ -105,7 +107,8 @@ function main() {
         models: v.models,
         soc: v.soc,
         root_status: v.root_status,
-        bootloader_unlockable: v.bootloader_unlockable
+        bootloader_unlockable: v.bootloader_unlockable,
+        custom_roms: v.custom_roms || []
       }))
     };
 

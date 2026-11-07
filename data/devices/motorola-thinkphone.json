@@ -14,7 +14,7 @@
       "models": [
         "XT-ThinkPhone by Motorola"
       ],
-      "codename": "default",
+      "codename": "device",
       "region": "Global / Retail Unlocked",
       "soc": "Snapdragon 8+ Gen 1",
       "bootloader_unlockable": "YES",
@@ -26,6 +26,10 @@
       ],
       "custom_recovery": "Fastbootd / Boot Image Patch",
       "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "crDroid"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

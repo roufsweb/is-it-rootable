@@ -1,0 +1,39 @@
+{
+  "slug": "nothing-phone-2a",
+  "brand": "Nothing",
+  "name": "Phone (2a)",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "Nothing-nothing-phone-2a"
+      ],
+      "codename": "device",
+      "region": "Global / Unlocked",
+      "soc": "MediaTek Dimensity 7200 Pro",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -92,6 +92,10 @@ function validateDevice(filePath, data) {
       errors.push(`${vPrefix} "root_methods" must be an array`);
     }
 
+    if (v.custom_roms && !Array.isArray(v.custom_roms)) {
+      errors.push(`${vPrefix} "custom_roms" must be an array of strings`);
+    }
+
     // Strict Samsung Model Grouping Rule
     if (data.brand.toLowerCase() === 'samsung' && Array.isArray(v.models)) {
       const hasNorthAmerica = v.models.some(m => /(U|U1|W)$/i.test(m));

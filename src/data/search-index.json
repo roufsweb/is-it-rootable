@@ -6,14 +6,18 @@
     "name": "ROG Phone 7",
     "fullName": "Asus ROG Phone 7",
     "release_year": 2023,
-    "codenames": "default",
+    "codenames": "device",
     "models": "ROG Phone 7 ROG PHONE 7 ROGPhone7",
     "rawModels": [
       "ROG Phone 7"
     ],
     "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Unofficial",
+      "OmniROM"
+    ],
     "overallRoot": "FULL",
-    "overallBootloader": "YES",
+    "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
     "desktop_mode": "DisplayPort Video Out USB 3.1",
     "sdcard_slot": false,
@@ -27,7 +31,51 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asus-zenfone-10",
+    "slug": "asus-zenfone-10",
+    "brand": "Asus",
+    "name": "Zenfone 10",
+    "fullName": "Asus Zenfone 10",
+    "release_year": 2023,
+    "codenames": "ASUS_AI2302",
+    "models": "ASUS_AI2302 ASUSAI2302 ASUS AI2302",
+    "rawModels": [
+      "ASUS_AI2302"
+    ],
+    "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Unofficial",
+      "OmniROM"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Official",
+        "models": [
+          "ASUS_AI2302"
+        ],
+        "soc": "Snapdragon 8 Gen 2",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "OmniROM"
+        ]
       }
     ]
   },
@@ -38,12 +86,18 @@
     "name": "Fairphone 5",
     "fullName": "Fairphone Fairphone 5",
     "release_year": 2023,
-    "codenames": "default",
-    "models": "Fairphone 5 FAIRPHONE 5 Fairphone5",
+    "codenames": "device",
+    "models": "FP5",
     "rawModels": [
-      "Fairphone 5"
+      "FP5"
     ],
     "soc": "Qualcomm QCM6490",
+    "custom_roms": [
+      "LineageOS Official",
+      "e/OS/ Official",
+      "PostmarketOS",
+      "Ubuntu Touch"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -55,11 +109,131 @@
       {
         "region": "Global / Official",
         "models": [
-          "Fairphone 5"
+          "FP5"
         ],
         "soc": "Qualcomm QCM6490",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "e/OS/ Official",
+          "PostmarketOS",
+          "Ubuntu Touch"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-3a",
+    "slug": "google-pixel-3a",
+    "brand": "Google",
+    "name": "Pixel 3a",
+    "fullName": "Google Pixel 3a",
+    "release_year": 2019,
+    "codenames": "sargo sargo_vzw",
+    "models": "Pixel 3a PIXEL 3A Pixel3a SARGO-VZW SARGOVZW SARGO VZW",
+    "rawModels": [
+      "Pixel 3a",
+      "SARGO-VZW"
+    ],
+    "soc": "Snapdragon 670",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Factory Unlocked",
+        "models": [
+          "Pixel 3a"
+        ],
+        "soc": "Snapdragon 670",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
+      },
+      {
+        "region": "Verizon / Carrier Locked",
+        "models": [
+          "SARGO-VZW"
+        ],
+        "soc": "Snapdragon 670",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-4-xl",
+    "slug": "google-pixel-4-xl",
+    "brand": "Google",
+    "name": "Pixel 4 XL",
+    "fullName": "Google Pixel 4 XL",
+    "release_year": 2019,
+    "codenames": "coral coral_vzw",
+    "models": "Pixel 4 XL PIXEL 4 XL Pixel4XL CORAL-VZW CORALVZW CORAL VZW",
+    "rawModels": [
+      "Pixel 4 XL",
+      "CORAL-VZW"
+    ],
+    "soc": "Snapdragon 855",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Factory Unlocked",
+        "models": [
+          "Pixel 4 XL"
+        ],
+        "soc": "Snapdragon 855",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
+      },
+      {
+        "region": "Verizon / Carrier Locked",
+        "models": [
+          "CORAL-VZW"
+        ],
+        "soc": "Snapdragon 855",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -77,6 +251,13 @@
       "SUNFISH-VZW"
     ],
     "soc": "Snapdragon 730G",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -92,7 +273,14 @@
         ],
         "soc": "Snapdragon 730G",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -101,7 +289,8 @@
         ],
         "soc": "Snapdragon 730G",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -119,6 +308,13 @@
       "REDFIN-VZW"
     ],
     "soc": "Snapdragon 765G",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -134,7 +330,14 @@
         ],
         "soc": "Snapdragon 765G",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -143,7 +346,8 @@
         ],
         "soc": "Snapdragon 765G",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -161,6 +365,13 @@
       "RAVEN-VZW"
     ],
     "soc": "Google Tensor G1",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -176,7 +387,14 @@
         ],
         "soc": "Google Tensor G1",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -185,7 +403,8 @@
         ],
         "soc": "Google Tensor G1",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -204,6 +423,7 @@
       "G9S9B"
     ],
     "soc": "Google Tensor G1",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -220,7 +440,8 @@
         ],
         "soc": "Google Tensor G1",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -229,7 +450,65 @@
         ],
         "soc": "Google Tensor G1",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-6a",
+    "slug": "google-pixel-6a",
+    "brand": "Google",
+    "name": "Pixel 6a",
+    "fullName": "Google Pixel 6a",
+    "release_year": 2022,
+    "codenames": "bluejay bluejay_vzw",
+    "models": "Pixel 6a PIXEL 6A Pixel6a BLUEJAY-VZW BLUEJAYVZW BLUEJAY VZW",
+    "rawModels": [
+      "Pixel 6a",
+      "BLUEJAY-VZW"
+    ],
+    "soc": "Google Tensor G1",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Factory Unlocked",
+        "models": [
+          "Pixel 6a"
+        ],
+        "soc": "Google Tensor G1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
+      },
+      {
+        "region": "Verizon / Carrier Locked",
+        "models": [
+          "BLUEJAY-VZW"
+        ],
+        "soc": "Google Tensor G1",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -247,6 +526,13 @@
       "CHEETAH-VZW"
     ],
     "soc": "Google Tensor G2",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -262,7 +548,14 @@
         ],
         "soc": "Google Tensor G2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -271,7 +564,8 @@
         ],
         "soc": "Google Tensor G2",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -290,6 +584,7 @@
       "GO3Z5"
     ],
     "soc": "Google Tensor G2",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -306,7 +601,8 @@
         ],
         "soc": "Google Tensor G2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -315,7 +611,8 @@
         ],
         "soc": "Google Tensor G2",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -334,6 +631,7 @@
       "G03Z5"
     ],
     "soc": "Google Tensor G2",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -350,7 +648,8 @@
         ],
         "soc": "Google Tensor G2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -359,7 +658,8 @@
         ],
         "soc": "Google Tensor G2",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -377,6 +677,13 @@
       "HUSKY-VZW"
     ],
     "soc": "Google Tensor G3",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -392,7 +699,14 @@
         ],
         "soc": "Google Tensor G3",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -401,7 +715,8 @@
         ],
         "soc": "Google Tensor G3",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -421,6 +736,7 @@
       "GZPF0"
     ],
     "soc": "Google Tensor G3",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -438,7 +754,8 @@
         ],
         "soc": "Google Tensor G3",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -447,7 +764,8 @@
         ],
         "soc": "Google Tensor G3",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -466,6 +784,7 @@
       "G576D"
     ],
     "soc": "Google Tensor G3",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -482,7 +801,8 @@
         ],
         "soc": "Google Tensor G3",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -491,7 +811,65 @@
         ],
         "soc": "Google Tensor G3",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-9-pro-fold",
+    "slug": "google-pixel-9-pro-fold",
+    "brand": "Google",
+    "name": "Pixel 9 Pro Fold",
+    "fullName": "Google Pixel 9 Pro Fold",
+    "release_year": 2024,
+    "codenames": "comet comet_vzw",
+    "models": "Pixel 9 Pro Fold PIXEL 9 PRO FOLD Pixel9ProFold COMET-VZW COMETVZW COMET VZW",
+    "rawModels": [
+      "Pixel 9 Pro Fold",
+      "COMET-VZW"
+    ],
+    "soc": "Google Tensor G4",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Factory Unlocked",
+        "models": [
+          "Pixel 9 Pro Fold"
+        ],
+        "soc": "Google Tensor G4",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
+      },
+      {
+        "region": "Verizon / Carrier Locked",
+        "models": [
+          "COMET-VZW"
+        ],
+        "soc": "Google Tensor G4",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -509,6 +887,13 @@
       "KOMODO-VZW"
     ],
     "soc": "Google Tensor G4",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -524,7 +909,14 @@
         ],
         "soc": "Google Tensor G4",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -533,7 +925,8 @@
         ],
         "soc": "Google Tensor G4",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -551,6 +944,13 @@
       "CAIMAN-VZW"
     ],
     "soc": "Google Tensor G4",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -566,7 +966,14 @@
         ],
         "soc": "Google Tensor G4",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -575,7 +982,8 @@
         ],
         "soc": "Google Tensor G4",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -594,6 +1002,7 @@
       "GGX8Q"
     ],
     "soc": "Google Tensor G4",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -610,7 +1019,8 @@
         ],
         "soc": "Google Tensor G4",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "Verizon / Carrier Locked",
@@ -619,7 +1029,65 @@
         ],
         "soc": "Google Tensor G4",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "google-pixel-fold",
+    "slug": "google-pixel-fold",
+    "brand": "Google",
+    "name": "Pixel Fold",
+    "fullName": "Google Pixel Fold",
+    "release_year": 2023,
+    "codenames": "felix felix_vzw",
+    "models": "Pixel Fold PIXEL FOLD PixelFold FELIX-VZW FELIXVZW FELIX VZW",
+    "rawModels": [
+      "Pixel Fold",
+      "FELIX-VZW"
+    ],
+    "soc": "Google Tensor G2",
+    "custom_roms": [
+      "GrapheneOS Official",
+      "LineageOS Official",
+      "CalyxOS",
+      "EvolutionX",
+      "PixelOS"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Factory Unlocked",
+        "models": [
+          "Pixel Fold"
+        ],
+        "soc": "Google Tensor G2",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "GrapheneOS Official",
+          "LineageOS Official",
+          "CalyxOS",
+          "EvolutionX",
+          "PixelOS"
+        ]
+      },
+      {
+        "region": "Verizon / Carrier Locked",
+        "models": [
+          "FELIX-VZW"
+        ],
+        "soc": "Google Tensor G2",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -637,6 +1105,7 @@
       "XT2303-2"
     ],
     "soc": "MediaTek Dimensity 8020",
+    "custom_roms": [],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": false,
@@ -653,7 +1122,8 @@
         ],
         "soc": "MediaTek Dimensity 8020",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       }
     ]
   },
@@ -671,6 +1141,10 @@
       "motorola edge 50 pro"
     ],
     "soc": "Snapdragon 7 Gen 3",
+    "custom_roms": [
+      "LineageOS Unofficial",
+      "crDroid"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -687,7 +1161,53 @@
         ],
         "soc": "Snapdragon 7 Gen 3",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motorola-razr-40-ultra",
+    "slug": "motorola-razr-40-ultra",
+    "brand": "Motorola",
+    "name": "Motorola Razr 40 Ultra / Razr+",
+    "fullName": "Motorola Motorola Razr 40 Ultra / Razr+",
+    "release_year": 2023,
+    "codenames": "zeekr",
+    "models": "motorola razr 2022 MOTOROLA RAZR 2022 motorolarazr2022 motorola razr 40 ultra MOTOROLA RAZR 40 ULTRA motorolarazr40ultra",
+    "rawModels": [
+      "motorola razr 2022",
+      "motorola razr 40 ultra"
+    ],
+    "soc": "Snapdragon 8+ Gen 1",
+    "custom_roms": [
+      "LineageOS Unofficial",
+      "crDroid"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "Motorola Ready For",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Retail Unlocked",
+        "models": [
+          "motorola razr 2022",
+          "motorola razr 40 ultra"
+        ],
+        "soc": "Snapdragon 8+ Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "crDroid"
+        ]
       }
     ]
   },
@@ -698,12 +1218,16 @@
     "name": "ThinkPhone by Motorola",
     "fullName": "Motorola ThinkPhone by Motorola",
     "release_year": 2023,
-    "codenames": "default",
+    "codenames": "device",
     "models": "XT-ThinkPhone by Motorola XT-THINKPHONE BY MOTOROLA XTThinkPhonebyMotorola ThinkPhone by Motorola",
     "rawModels": [
       "XT-ThinkPhone by Motorola"
     ],
     "soc": "Snapdragon 8+ Gen 1",
+    "custom_roms": [
+      "LineageOS Unofficial",
+      "crDroid"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -719,7 +1243,51 @@
         ],
         "soc": "Snapdragon 8+ Gen 1",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nothing-phone-1",
+    "slug": "nothing-phone-1",
+    "brand": "Nothing",
+    "name": "Phone (1)",
+    "fullName": "Nothing Phone (1)",
+    "release_year": 2022,
+    "codenames": "device",
+    "models": "Nothing-nothing-phone-1 NOTHING-NOTHING-PHONE-1 Nothingnothingphone1 Nothing nothing phone nothing-phone-1",
+    "rawModels": [
+      "Nothing-nothing-phone-1"
+    ],
+    "soc": "Snapdragon 778G+",
+    "custom_roms": [
+      "LineageOS Official",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Unlocked",
+        "models": [
+          "Nothing-nothing-phone-1"
+        ],
+        "soc": "Snapdragon 778G+",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Paranoid Android"
+        ]
       }
     ]
   },
@@ -736,6 +1304,7 @@
       "A065"
     ],
     "soc": "Snapdragon 8+ Gen 1",
+    "custom_roms": [],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": false,
@@ -751,7 +1320,48 @@
         ],
         "soc": "Snapdragon 8+ Gen 1",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "nothing-phone-2a",
+    "slug": "nothing-phone-2a",
+    "brand": "Nothing",
+    "name": "Phone (2a)",
+    "fullName": "Nothing Phone (2a)",
+    "release_year": 2024,
+    "codenames": "device",
+    "models": "Nothing-nothing-phone-2a NOTHING-NOTHING-PHONE-2A Nothingnothingphone2a Nothing nothing phone nothing-phone-2a",
+    "rawModels": [
+      "Nothing-nothing-phone-2a"
+    ],
+    "soc": "MediaTek Dimensity 7200 Pro",
+    "custom_roms": [
+      "LineageOS Official",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Unlocked",
+        "models": [
+          "Nothing-nothing-phone-2a"
+        ],
+        "soc": "MediaTek Dimensity 7200 Pro",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Paranoid Android"
+        ]
       }
     ]
   },
@@ -771,6 +1381,12 @@
       "NE2217"
     ],
     "soc": "Snapdragon 8 Gen 1",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -789,7 +1405,13 @@
         ],
         "soc": "Snapdragon 8 Gen 1",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
       }
     ]
   },
@@ -808,6 +1430,12 @@
       "CPH2451"
     ],
     "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": false,
@@ -825,7 +1453,13 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
       }
     ]
   },
@@ -845,6 +1479,7 @@
       "PJD110"
     ],
     "soc": "Snapdragon 8 Gen 3",
+    "custom_roms": [],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -862,7 +1497,8 @@
         ],
         "soc": "Snapdragon 8 Gen 3",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "China Domestic (ColorOS)",
@@ -871,7 +1507,154 @@
         ],
         "soc": "Snapdragon 8 Gen 3",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "oneplus-12r",
+    "slug": "oneplus-12r",
+    "brand": "OnePlus",
+    "name": "OnePlus 12R",
+    "fullName": "OnePlus OnePlus 12R",
+    "release_year": 2024,
+    "codenames": "OP5D35L1",
+    "models": "CPH2585 CPH2609 CPH2611",
+    "rawModels": [
+      "CPH2585",
+      "CPH2609",
+      "CPH2611"
+    ],
+    "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / North America / India",
+        "models": [
+          "CPH2585",
+          "CPH2609",
+          "CPH2611"
+        ],
+        "soc": "Snapdragon 8 Gen 2",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oneplus-6t",
+    "slug": "oneplus-6t",
+    "brand": "OnePlus",
+    "name": "OnePlus 6T",
+    "fullName": "OnePlus OnePlus 6T",
+    "release_year": 2018,
+    "codenames": "device",
+    "models": "OnePlus-oneplus-6t ONEPLUS-ONEPLUS-6T OnePlusoneplus6t OnePlus oneplus oneplus-6t",
+    "rawModels": [
+      "OnePlus-oneplus-6t"
+    ],
+    "soc": "Snapdragon 845",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / North America / India",
+        "models": [
+          "OnePlus-oneplus-6t"
+        ],
+        "soc": "Snapdragon 845",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oneplus-7-pro",
+    "slug": "oneplus-7-pro",
+    "brand": "OnePlus",
+    "name": "OnePlus 7 Pro",
+    "fullName": "OnePlus OnePlus 7 Pro",
+    "release_year": 2019,
+    "codenames": "OP7ProNRSpr",
+    "models": "GM1910 GM1911 GM1913 GM1915 GM1917 GM1925",
+    "rawModels": [
+      "GM1910",
+      "GM1911",
+      "GM1913",
+      "GM1915",
+      "GM1917",
+      "GM1925"
+    ],
+    "soc": "Snapdragon 855",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / North America / India",
+        "models": [
+          "GM1910",
+          "GM1911",
+          "GM1913",
+          "GM1915",
+          "GM1917",
+          "GM1925"
+        ],
+        "soc": "Snapdragon 855",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
       }
     ]
   },
@@ -892,6 +1675,7 @@
       "HD1907"
     ],
     "soc": "Snapdragon 855+",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -910,7 +1694,8 @@
         ],
         "soc": "Snapdragon 855+",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "T-Mobile USA Carrier",
@@ -919,7 +1704,8 @@
         ],
         "soc": "Snapdragon 855+",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       }
     ]
   },
@@ -939,6 +1725,12 @@
       "IN2025"
     ],
     "soc": "Snapdragon 865",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -957,7 +1749,65 @@
         ],
         "soc": "Snapdragon 865",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oneplus-9-pro-5g",
+    "slug": "oneplus-9-pro-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus 9 Pro 5G",
+    "fullName": "OnePlus OnePlus 9 Pro 5G",
+    "release_year": 2021,
+    "codenames": "OnePlus9Pro",
+    "models": "LE2120 LE2121 LE2123 LE2125 LE2127",
+    "rawModels": [
+      "LE2120",
+      "LE2121",
+      "LE2123",
+      "LE2125",
+      "LE2127"
+    ],
+    "soc": "Snapdragon 888",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / North America / India",
+        "models": [
+          "LE2120",
+          "LE2121",
+          "LE2123",
+          "LE2125",
+          "LE2127"
+        ],
+        "soc": "Snapdragon 888",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
       }
     ]
   },
@@ -968,12 +1818,18 @@
     "name": "OnePlus Open",
     "fullName": "OnePlus OnePlus Open",
     "release_year": 2023,
-    "codenames": "default",
+    "codenames": "device",
     "models": "OnePlus-oneplus-open ONEPLUS-ONEPLUS-OPEN OnePlusoneplusopen OnePlus oneplus open oneplus-open",
     "rawModels": [
       "OnePlus-oneplus-open"
     ],
     "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -989,7 +1845,75 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poco-f3",
+    "slug": "poco-f3",
+    "brand": "POCO",
+    "name": "Poco F3 / Redmi K40",
+    "fullName": "POCO Poco F3 / Redmi K40",
+    "release_year": 2021,
+    "codenames": "alioth alioth_cn",
+    "models": "M2012K11AG ALIOTH-CN ALIOTHCN ALIOTH CN",
+    "rawModels": [
+      "M2012K11AG",
+      "ALIOTH-CN"
+    ],
+    "soc": "Snapdragon 870",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "M2012K11AG"
+        ],
+        "soc": "Snapdragon 870",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "ALIOTH-CN"
+        ],
+        "soc": "Snapdragon 870",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1008,6 +1932,15 @@
       "MUNCH-CN"
     ],
     "soc": "Snapdragon 870",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1024,7 +1957,14 @@
         ],
         "soc": "Snapdragon 870",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
       },
       {
         "region": "China Domestic",
@@ -1033,7 +1973,11 @@
         ],
         "soc": "Snapdragon 870",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1052,6 +1996,7 @@
       "23049RAD8C"
     ],
     "soc": "Snapdragon 7+ Gen 2",
+    "custom_roms": [],
     "overallRoot": "FULL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1068,7 +2013,8 @@
         ],
         "soc": "Snapdragon 7+ Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       },
       {
         "region": "China (Redmi Note 12 Turbo)",
@@ -1077,7 +2023,8 @@
         ],
         "soc": "Snapdragon 7+ Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       }
     ]
   },
@@ -1095,6 +2042,15 @@
       "VERMEER-CN"
     ],
     "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1110,7 +2066,14 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
       },
       {
         "region": "China Domestic",
@@ -1119,7 +2082,11 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1138,6 +2105,15 @@
       "PERIDOT-CN"
     ],
     "soc": "Snapdragon 8s Gen 3",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1154,7 +2130,14 @@
         ],
         "soc": "Snapdragon 8s Gen 3",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
       },
       {
         "region": "China Domestic",
@@ -1163,7 +2146,75 @@
         ],
         "soc": "Snapdragon 8s Gen 3",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "poco-x3-pro",
+    "slug": "poco-x3-pro",
+    "brand": "POCO",
+    "name": "Poco X3 Pro",
+    "fullName": "POCO Poco X3 Pro",
+    "release_year": 2021,
+    "codenames": "bhima bhima_cn",
+    "models": "M2102J20SG M2102J20SI BHIMA-CN BHIMACN BHIMA CN",
+    "rawModels": [
+      "M2102J20SG",
+      "M2102J20SI",
+      "BHIMA-CN"
+    ],
+    "soc": "Snapdragon 860",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "M2102J20SG",
+          "M2102J20SI"
+        ],
+        "soc": "Snapdragon 860",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "BHIMA-CN"
+        ],
+        "soc": "Snapdragon 860",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1182,6 +2233,15 @@
       "DUCHAMP-CN"
     ],
     "soc": "MediaTek Dimensity 8300-Ultra",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1198,7 +2258,14 @@
         ],
         "soc": "MediaTek Dimensity 8300-Ultra",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
       },
       {
         "region": "China Domestic",
@@ -1207,7 +2274,197 @@
         ],
         "soc": "MediaTek Dimensity 8300-Ultra",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pocophone-f1",
+    "slug": "pocophone-f1",
+    "brand": "Xiaomi",
+    "name": "Pocophone F1",
+    "fullName": "Xiaomi Pocophone F1",
+    "release_year": 2018,
+    "codenames": "device device_cn",
+    "models": "DEVICE-Global DEVICE-GLOBAL DEVICEGlobal DEVICE Global DEVICE-CN DEVICECN CN",
+    "rawModels": [
+      "DEVICE-Global",
+      "DEVICE-CN"
+    ],
+    "soc": "Snapdragon 845",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "DEVICE-Global"
+        ],
+        "soc": "Snapdragon 845",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "DEVICE-CN"
+        ],
+        "soc": "Snapdragon 845",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redmi-note-10-pro",
+    "slug": "redmi-note-10-pro",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 10 Pro",
+    "fullName": "Xiaomi Redmi Note 10 Pro",
+    "release_year": 2021,
+    "codenames": "device device_cn",
+    "models": "DEVICE-Global DEVICE-GLOBAL DEVICEGlobal DEVICE Global DEVICE-CN DEVICECN CN",
+    "rawModels": [
+      "DEVICE-Global",
+      "DEVICE-CN"
+    ],
+    "soc": "Snapdragon 732G",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "DEVICE-Global"
+        ],
+        "soc": "Snapdragon 732G",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "DEVICE-CN"
+        ],
+        "soc": "Snapdragon 732G",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redmi-note-13-pro-plus-5g",
+    "slug": "redmi-note-13-pro-plus-5g",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 13 Pro+ 5G",
+    "fullName": "Xiaomi Redmi Note 13 Pro+ 5G",
+    "release_year": 2023,
+    "codenames": "device device_cn",
+    "models": "DEVICE-Global DEVICE-GLOBAL DEVICEGlobal DEVICE Global DEVICE-CN DEVICECN CN",
+    "rawModels": [
+      "DEVICE-Global",
+      "DEVICE-CN"
+    ],
+    "soc": "MediaTek Dimensity 7200-Ultra",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "DEVICE-Global"
+        ],
+        "soc": "MediaTek Dimensity 7200-Ultra",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "DEVICE-CN"
+        ],
+        "soc": "MediaTek Dimensity 7200-Ultra",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1230,6 +2487,12 @@
       "SM-A3560"
     ],
     "soc": "Exynos 1380",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1246,7 +2509,12 @@
         ],
         "soc": "Exynos 1380",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1258,7 +2526,8 @@
         ],
         "soc": "Exynos 1380",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1267,7 +2536,129 @@
         ],
         "soc": "Exynos 1380",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a52s-5g",
+    "slug": "samsung-galaxy-a52s-5g",
+    "brand": "Samsung",
+    "name": "Galaxy A52s 5G",
+    "fullName": "Samsung Galaxy A52s 5G",
+    "release_year": 2021,
+    "codenames": "a52sxq",
+    "models": "SM-A528B SMA528B A528B SM-A528N SMA528N A528N",
+    "rawModels": [
+      "SM-A528B",
+      "SM-A528N"
+    ],
+    "soc": "Snapdragon 778G",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-A528B",
+          "SM-A528N"
+        ],
+        "soc": "Snapdragon 778G",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-a53-5g",
+    "slug": "samsung-galaxy-a53-5g",
+    "brand": "Samsung",
+    "name": "Galaxy A53 5G",
+    "fullName": "Samsung Galaxy A53 5G",
+    "release_year": 2022,
+    "codenames": "SC-53C SC-53C_na SC-53C_chn",
+    "models": "SM-A536B SMA536B A536B SM-A536N SMA536N A536N SM-A536U SMA536U A536U SM-A536U1 SMA536U1 A536U1 SM-A536W SMA536W A536W SM-S536DL SMS536DL S536DL SM-A5360 SMA5360 A5360",
+    "rawModels": [
+      "SM-A536B",
+      "SM-A536N",
+      "SM-A536U",
+      "SM-A536U1",
+      "SM-A536W",
+      "SM-S536DL",
+      "SM-A5360"
+    ],
+    "soc": "Exynos 1280",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-A536B",
+          "SM-A536N"
+        ],
+        "soc": "Exynos 1280",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-A536U",
+          "SM-A536U1",
+          "SM-A536W",
+          "SM-S536DL"
+        ],
+        "soc": "Exynos 1280",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-A5360"
+        ],
+        "soc": "Exynos 1280",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1289,6 +2680,7 @@
       "SM-A546W"
     ],
     "soc": "Exynos 1380",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1306,7 +2698,8 @@
         ],
         "soc": "Exynos 1380",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1317,7 +2710,8 @@
         ],
         "soc": "Exynos 1380",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -1335,6 +2729,12 @@
       "SM-A5560"
     ],
     "soc": "Exynos 1480",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -1350,7 +2750,12 @@
         ],
         "soc": "Exynos 1480",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1359,7 +2764,10 @@
         ],
         "soc": "Exynos 1480",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1380,6 +2788,12 @@
       "SM-N9750"
     ],
     "soc": "Exynos 9825, Snapdragon 855",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1395,7 +2809,12 @@
         ],
         "soc": "Exynos 9825",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1406,7 +2825,8 @@
         ],
         "soc": "Snapdragon 855",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1415,7 +2835,81 @@
         ],
         "soc": "Snapdragon 855",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-note-10",
+    "slug": "samsung-galaxy-note-10",
+    "brand": "Samsung",
+    "name": "Galaxy Note 10",
+    "fullName": "Samsung Galaxy Note 10",
+    "release_year": 2019,
+    "codenames": "d1 d1q d1_chn",
+    "models": "SM-N970F SMN970F N970F SM-N970U SMN970U N970U SM-N970U1 SMN970U1 N970U1 SM-N970W SMN970W N970W SM-N9700 SMN9700 N9700",
+    "rawModels": [
+      "SM-N970F",
+      "SM-N970U",
+      "SM-N970U1",
+      "SM-N970W",
+      "SM-N9700"
+    ],
+    "soc": "Exynos 9825, Snapdragon 855",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-N970F"
+        ],
+        "soc": "Exynos 9825",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-N970U",
+          "SM-N970U1",
+          "SM-N970W"
+        ],
+        "soc": "Snapdragon 855",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-N9700"
+        ],
+        "soc": "Snapdragon 855",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1438,6 +2932,7 @@
       "SM-N9860"
     ],
     "soc": "Exynos 990, Snapdragon 865+",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1455,7 +2950,8 @@
         ],
         "soc": "Exynos 990",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada",
@@ -1466,7 +2962,8 @@
         ],
         "soc": "Snapdragon 865+",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1475,7 +2972,83 @@
         ],
         "soc": "Snapdragon 865+",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-note-8",
+    "slug": "samsung-galaxy-note-8",
+    "brand": "Samsung",
+    "name": "Galaxy Note 8",
+    "fullName": "Samsung Galaxy Note 8",
+    "release_year": 2017,
+    "codenames": "greatlte greatqlte greatqltechn",
+    "models": "SM-N950F SMN950F N950F SM-N950N SMN950N N950N SM-N950XN SMN950XN N950XN SM-N950U SMN950U N950U SM-N950U1 SMN950U1 N950U1 SM-N950W SMN950W N950W SM-N9500 SMN9500 N9500",
+    "rawModels": [
+      "SM-N950F",
+      "SM-N950N",
+      "SM-N950XN",
+      "SM-N950U",
+      "SM-N950U1",
+      "SM-N950W",
+      "SM-N9500"
+    ],
+    "soc": "Exynos 8895, Snapdragon 835",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired)",
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-N950F",
+          "SM-N950N",
+          "SM-N950XN"
+        ],
+        "soc": "Exynos 8895",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-N950U",
+          "SM-N950U1",
+          "SM-N950W"
+        ],
+        "soc": "Snapdragon 835",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-N9500"
+        ],
+        "soc": "Snapdragon 835",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1498,6 +3071,12 @@
       "SM-N9600"
     ],
     "soc": "Exynos 9810, Snapdragon 845",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1514,7 +3093,12 @@
         ],
         "soc": "Exynos 9810",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1525,7 +3109,8 @@
         ],
         "soc": "Snapdragon 845",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1535,7 +3120,10 @@
         ],
         "soc": "Snapdragon 845",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1558,6 +3146,7 @@
       "SM-G9730"
     ],
     "soc": "Exynos 9820, Snapdragon 855",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1575,7 +3164,8 @@
         ],
         "soc": "Exynos 9820",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1586,7 +3176,8 @@
         ],
         "soc": "Snapdragon 855",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1595,7 +3186,8 @@
         ],
         "soc": "Snapdragon 855",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       }
     ]
   },
@@ -1620,6 +3212,12 @@
       "SM-G9810"
     ],
     "soc": "Exynos 990, Snapdragon 865",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1636,7 +3234,12 @@
         ],
         "soc": "Exynos 990",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1650,7 +3253,8 @@
         ],
         "soc": "Snapdragon 865",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1659,7 +3263,85 @@
         ],
         "soc": "Snapdragon 865",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s20-fe-5g",
+    "slug": "samsung-galaxy-s20-fe-5g",
+    "brand": "Samsung",
+    "name": "Galaxy S20 FE 5G",
+    "fullName": "Samsung Galaxy S20 FE 5G",
+    "release_year": 2020,
+    "codenames": "r8q r8q_chn",
+    "models": "SM-G781B SMG781B G781B SM-G781N SMG781N G781N SM-G781U SMG781U G781U SM-G781U1 SMG781U1 G781U1 SM-G781V SMG781V G781V SM-G781W SMG781W G781W SM-G7810 SMG7810 G7810",
+    "rawModels": [
+      "SM-G781B",
+      "SM-G781N",
+      "SM-G781U",
+      "SM-G781U1",
+      "SM-G781V",
+      "SM-G781W",
+      "SM-G7810"
+    ],
+    "soc": "Snapdragon 865",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": true,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-G781B",
+          "SM-G781N"
+        ],
+        "soc": "Snapdragon 865",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-G781U",
+          "SM-G781U1",
+          "SM-G781V",
+          "SM-G781W"
+        ],
+        "soc": "Snapdragon 865",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-G7810"
+        ],
+        "soc": "Snapdragon 865",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1681,6 +3363,12 @@
       "SM-G9880"
     ],
     "soc": "Exynos 990, Snapdragon 865",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1697,7 +3385,12 @@
         ],
         "soc": "Exynos 990",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1708,7 +3401,8 @@
         ],
         "soc": "Snapdragon 865",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1717,7 +3411,81 @@
         ],
         "soc": "Snapdragon 865",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s21-fe-5g",
+    "slug": "samsung-galaxy-s21-fe-5g",
+    "brand": "Samsung",
+    "name": "Galaxy S21 FE 5G",
+    "fullName": "Samsung Galaxy S21 FE 5G",
+    "release_year": 2022,
+    "codenames": "r9s r9q r9q_chn",
+    "models": "SM-G990B SMG990B G990B SM-G990U SMG990U G990U SM-G990U1 SMG990U1 G990U1 SM-G990W SMG990W G990W SM-G9900 SMG9900 G9900",
+    "rawModels": [
+      "SM-G990B",
+      "SM-G990U",
+      "SM-G990U1",
+      "SM-G990W",
+      "SM-G9900"
+    ],
+    "soc": "Exynos 2100, Snapdragon 888",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-G990B"
+        ],
+        "soc": "Exynos 2100",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-G990U",
+          "SM-G990U1",
+          "SM-G990W"
+        ],
+        "soc": "Snapdragon 888",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-G9900"
+        ],
+        "soc": "Snapdragon 888",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1740,6 +3508,12 @@
       "SM-G9980"
     ],
     "soc": "Exynos 2100, Snapdragon 888",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1757,7 +3531,12 @@
         ],
         "soc": "Exynos 2100",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1768,7 +3547,8 @@
         ],
         "soc": "Snapdragon 888",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1777,7 +3557,10 @@
         ],
         "soc": "Snapdragon 888",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1800,6 +3583,7 @@
       "SM-G9910"
     ],
     "soc": "Exynos 2100, Snapdragon 888",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1817,7 +3601,8 @@
         ],
         "soc": "Exynos 2100",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1828,7 +3613,8 @@
         ],
         "soc": "Snapdragon 888",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong / Taiwan",
@@ -1837,7 +3623,8 @@
         ],
         "soc": "Snapdragon 888",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       }
     ]
   },
@@ -1859,6 +3646,12 @@
       "SM-S9080"
     ],
     "soc": "Exynos 2200, Snapdragon 8 Gen 1",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1875,7 +3668,12 @@
         ],
         "soc": "Exynos 2200",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -1886,7 +3684,8 @@
         ],
         "soc": "Snapdragon 8 Gen 1",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -1895,7 +3694,10 @@
         ],
         "soc": "Snapdragon 8 Gen 1",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1917,6 +3719,7 @@
       "SM-S9010"
     ],
     "soc": "Exynos 2200, Snapdragon 8 Gen 1",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1933,7 +3736,8 @@
         ],
         "soc": "Exynos 2200",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada",
@@ -1944,7 +3748,8 @@
         ],
         "soc": "Snapdragon 8 Gen 1",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong",
@@ -1953,7 +3758,81 @@
         ],
         "soc": "Snapdragon 8 Gen 1",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s23-fe",
+    "slug": "samsung-galaxy-s23-fe",
+    "brand": "Samsung",
+    "name": "Galaxy S23 FE",
+    "fullName": "Samsung Galaxy S23 FE",
+    "release_year": 2023,
+    "codenames": "r11s r11q SCG24_chn",
+    "models": "SM-S711B SMS711B S711B SM-S711N SMS711N S711N SM-S711U SMS711U S711U SM-S711U1 SMS711U1 S711U1 SM-S711W SMS711W S711W SM-S7110 SMS7110 S7110",
+    "rawModels": [
+      "SM-S711B",
+      "SM-S711N",
+      "SM-S711U",
+      "SM-S711U1",
+      "SM-S711W",
+      "SM-S7110"
+    ],
+    "soc": "Exynos 2200, Snapdragon 8 Gen 1",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-S711B",
+          "SM-S711N"
+        ],
+        "soc": "Exynos 2200",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-S711U",
+          "SM-S711U1",
+          "SM-S711W"
+        ],
+        "soc": "Snapdragon 8 Gen 1",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-S7110"
+        ],
+        "soc": "Snapdragon 8 Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -1975,6 +3854,12 @@
       "SM-S9160"
     ],
     "soc": "Snapdragon 8 Gen 2 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -1991,7 +3876,12 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2002,7 +3892,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2011,7 +3902,10 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2034,6 +3928,12 @@
       "SM-S9180"
     ],
     "soc": "Snapdragon 8 Gen 2 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2050,7 +3950,12 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2061,7 +3966,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2071,7 +3977,10 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2092,6 +4001,7 @@
       "SM-S911W"
     ],
     "soc": "Snapdragon 8 Gen 2 for Galaxy",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2108,7 +4018,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada",
@@ -2119,7 +4030,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -2141,6 +4053,12 @@
       "SM-S9260"
     ],
     "soc": "Exynos 2400, Snapdragon 8 Gen 3 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2157,7 +4075,12 @@
         ],
         "soc": "Exynos 2400",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2168,7 +4091,8 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2177,7 +4101,10 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2199,6 +4126,12 @@
       "SM-S9280"
     ],
     "soc": "Snapdragon 8 Gen 3 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2215,7 +4148,12 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2226,7 +4164,8 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2235,7 +4174,10 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2257,6 +4199,7 @@
       "SM-S9210"
     ],
     "soc": "Exynos 2400, Snapdragon 8 Gen 3 for Galaxy",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2273,7 +4216,8 @@
         ],
         "soc": "Exynos 2400",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2284,7 +4228,8 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong / Taiwan",
@@ -2293,7 +4238,8 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       }
     ]
   },
@@ -2315,6 +4261,7 @@
       "SM-S9310"
     ],
     "soc": "Snapdragon 8 Elite for Galaxy",
+    "custom_roms": [],
     "overallRoot": "LOCKED",
     "overallBootloader": "NO",
     "usb_video_out": true,
@@ -2331,7 +4278,8 @@
         ],
         "soc": "Snapdragon 8 Elite for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada",
@@ -2342,7 +4290,8 @@
         ],
         "soc": "Snapdragon 8 Elite for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong",
@@ -2351,7 +4300,81 @@
         ],
         "soc": "Snapdragon 8 Elite for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s8-plus",
+    "slug": "samsung-galaxy-s8-plus",
+    "brand": "Samsung",
+    "name": "Galaxy S8+",
+    "fullName": "Samsung Galaxy S8+",
+    "release_year": 2017,
+    "codenames": "dream2lte dream2qltecan dream2qltechn",
+    "models": "SM-G955F SMG955F G955F SM-G955N SMG955N G955N SM-G955U SMG955U G955U SM-G955U1 SMG955U1 G955U1 SM-G955W SMG955W G955W SM-G9550 SMG9550 G9550",
+    "rawModels": [
+      "SM-G955F",
+      "SM-G955N",
+      "SM-G955U",
+      "SM-G955U1",
+      "SM-G955W",
+      "SM-G9550"
+    ],
+    "soc": "Exynos 8895, Snapdragon 835",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired)",
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-G955F",
+          "SM-G955N"
+        ],
+        "soc": "Exynos 8895",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-G955U",
+          "SM-G955U1",
+          "SM-G955W"
+        ],
+        "soc": "Snapdragon 835",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-G9550"
+        ],
+        "soc": "Snapdragon 835",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2375,6 +4398,7 @@
       "SM-G9508"
     ],
     "soc": "Exynos 8895, Snapdragon 835",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2392,7 +4416,8 @@
         ],
         "soc": "Exynos 8895",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "USA / Canada Carrier",
@@ -2403,7 +4428,8 @@
         ],
         "soc": "Snapdragon 835",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2413,7 +4439,81 @@
         ],
         "soc": "Snapdragon 835",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s9-plus",
+    "slug": "samsung-galaxy-s9-plus",
+    "brand": "Samsung",
+    "name": "Galaxy S9+",
+    "fullName": "Samsung Galaxy S9+",
+    "release_year": 2018,
+    "codenames": "star2lte star2qltechn",
+    "models": "SM-G965F SMG965F G965F SM-G965N SMG965N G965N SM-G965U SMG965U G965U SM-G965U1 SMG965U1 G965U1 SM-G965W SMG965W G965W SM-G9650 SMG9650 G9650",
+    "rawModels": [
+      "SM-G965F",
+      "SM-G965N",
+      "SM-G965U",
+      "SM-G965U1",
+      "SM-G965W",
+      "SM-G9650"
+    ],
+    "soc": "Exynos 9810, Snapdragon 845",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired)",
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-G965F",
+          "SM-G965N"
+        ],
+        "soc": "Exynos 9810",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-G965U",
+          "SM-G965U1",
+          "SM-G965W"
+        ],
+        "soc": "Snapdragon 845",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-G9650"
+        ],
+        "soc": "Snapdragon 845",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2435,6 +4535,12 @@
       "SM-G9600"
     ],
     "soc": "Exynos 9810, Snapdragon 845",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2451,7 +4557,12 @@
         ],
         "soc": "Exynos 9810",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2462,7 +4573,8 @@
         ],
         "soc": "Snapdragon 845",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2471,7 +4583,10 @@
         ],
         "soc": "Snapdragon 845",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2493,6 +4608,12 @@
       "SM-F7310"
     ],
     "soc": "Snapdragon 8 Gen 2 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -2509,7 +4630,12 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2520,7 +4646,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2529,7 +4656,156 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-flip-6",
+    "slug": "samsung-galaxy-z-flip-6",
+    "brand": "Samsung",
+    "name": "Galaxy Z Flip 6",
+    "fullName": "Samsung Galaxy Z Flip 6",
+    "release_year": 2024,
+    "codenames": "SC-54E b6q SC-54E_chn",
+    "models": "SM-F741B SMF741B F741B SM-F741N SMF741N F741N SM-F741U SMF741U F741U SM-F741U1 SMF741U1 F741U1 SM-F741W SMF741W F741W SM-F7410 SMF7410 F7410",
+    "rawModels": [
+      "SM-F741B",
+      "SM-F741N",
+      "SM-F741U",
+      "SM-F741U1",
+      "SM-F741W",
+      "SM-F7410"
+    ],
+    "soc": "Snapdragon 8 Gen 3 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-F741B",
+          "SM-F741N"
+        ],
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-F741U",
+          "SM-F741U1",
+          "SM-F741W"
+        ],
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-F7410"
+        ],
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-z-fold-4",
+    "slug": "samsung-galaxy-z-fold-4",
+    "brand": "Samsung",
+    "name": "Galaxy Z Fold 4",
+    "fullName": "Samsung Galaxy Z Fold 4",
+    "release_year": 2022,
+    "codenames": "SC-55C q4q SC-55C_chn",
+    "models": "SM-F936B SMF936B F936B SM-F936N SMF936N F936N SM-F936U SMF936U F936U SM-F936U1 SMF936U1 F936U1 SM-F936W SMF936W F936W SM-F9360 SMF9360 F9360",
+    "rawModels": [
+      "SM-F936B",
+      "SM-F936N",
+      "SM-F936U",
+      "SM-F936U1",
+      "SM-F936W",
+      "SM-F9360"
+    ],
+    "soc": "Snapdragon 8+ Gen 1",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-F936B",
+          "SM-F936N"
+        ],
+        "soc": "Snapdragon 8+ Gen 1",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-F936U",
+          "SM-F936U1",
+          "SM-F936W"
+        ],
+        "soc": "Snapdragon 8+ Gen 1",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-F9360"
+        ],
+        "soc": "Snapdragon 8+ Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2551,6 +4827,12 @@
       "SM-F9460"
     ],
     "soc": "Snapdragon 8 Gen 2 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2567,7 +4849,12 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2578,7 +4865,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2587,7 +4875,10 @@
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2609,6 +4900,12 @@
       "SM-F9560"
     ],
     "soc": "Snapdragon 8 Gen 3 for Galaxy",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2625,7 +4922,12 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
       },
       {
         "region": "USA / Canada Carrier & Unlocked",
@@ -2636,7 +4938,8 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       },
       {
         "region": "China / Hong Kong Open Market",
@@ -2645,7 +4948,62 @@
         ],
         "soc": "Snapdragon 8 Gen 3 for Galaxy",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sony-xperia-1-iv",
+    "slug": "sony-xperia-1-iv",
+    "brand": "Sony",
+    "name": "Xperia 1 IV",
+    "fullName": "Sony Xperia 1 IV",
+    "release_year": 2022,
+    "codenames": "A201SO",
+    "models": "A201SO SO-51C SO51C 51C SOG06 XQ-CT44 XQCT44 CT44 XQ-CT54 XQCT54 CT54 XQ-CT62 XQCT62 CT62 XQ-CT72 XQCT72 CT72",
+    "rawModels": [
+      "A201SO",
+      "SO-51C",
+      "SOG06",
+      "XQ-CT44",
+      "XQ-CT54",
+      "XQ-CT62",
+      "XQ-CT72"
+    ],
+    "soc": "Snapdragon 8 Gen 1",
+    "custom_roms": [
+      "LineageOS Official",
+      "SailfishOS Official"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / Asia Unlocked",
+        "models": [
+          "A201SO",
+          "SO-51C",
+          "SOG06",
+          "XQ-CT44",
+          "XQ-CT54",
+          "XQ-CT62",
+          "XQ-CT72"
+        ],
+        "soc": "Snapdragon 8 Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ]
       }
     ]
   },
@@ -2665,6 +5023,7 @@
       "SOG10"
     ],
     "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2681,7 +5040,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": []
       },
       {
         "region": "Japan Docomo / au Carrier",
@@ -2691,7 +5051,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "LOCKED",
-        "bootloader_unlockable": "NO"
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
       }
     ]
   },
@@ -2713,6 +5074,10 @@
       "XQ-EC72"
     ],
     "soc": "Snapdragon 8 Gen 3",
+    "custom_roms": [
+      "LineageOS Official",
+      "SailfishOS Official"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -2733,7 +5098,11 @@
         ],
         "soc": "Snapdragon 8 Gen 3",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ]
       }
     ]
   },
@@ -2754,6 +5123,10 @@
       "XQ-DE72"
     ],
     "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Official",
+      "SailfishOS Official"
+    ],
     "overallRoot": "FULL",
     "overallBootloader": "YES",
     "usb_video_out": true,
@@ -2773,7 +5146,73 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "YES"
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "SailfishOS Official"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xiaomi-13-pro",
+    "slug": "xiaomi-13-pro",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 13 Pro",
+    "fullName": "Xiaomi Xiaomi 13 Pro",
+    "release_year": 2022,
+    "codenames": "nuwa nuwa_cn",
+    "models": "2210132G 2210132C",
+    "rawModels": [
+      "2210132G",
+      "2210132C"
+    ],
+    "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort Video Out USB 3.2",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "2210132G"
+        ],
+        "soc": "Snapdragon 8 Gen 2",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "2210132C"
+        ],
+        "soc": "Snapdragon 8 Gen 2",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2791,6 +5230,7 @@
       "2211133C"
     ],
     "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": false,
@@ -2806,7 +5246,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       },
       {
         "region": "China Domestic",
@@ -2815,7 +5256,8 @@
         ],
         "soc": "Snapdragon 8 Gen 2",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": []
       }
     ]
   },
@@ -2827,12 +5269,22 @@
     "fullName": "Xiaomi Xiaomi 14 Ultra",
     "release_year": 2024,
     "codenames": "aurora aurora_cn",
-    "models": "24030PN60G 24031PN0DC",
+    "models": "24030PN60G Xiaomi for arm64 XIAOMI FOR ARM64 Xiaomiforarm64 24031PN0DC",
     "rawModels": [
       "24030PN60G",
+      "Xiaomi for arm64",
       "24031PN0DC"
     ],
     "soc": "Snapdragon 8 Gen 3",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2844,11 +5296,19 @@
       {
         "region": "Global / Europe / India",
         "models": [
-          "24030PN60G"
+          "24030PN60G",
+          "Xiaomi for arm64"
         ],
         "soc": "Snapdragon 8 Gen 3",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
       },
       {
         "region": "China Domestic",
@@ -2857,7 +5317,11 @@
         ],
         "soc": "Snapdragon 8 Gen 3",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   },
@@ -2875,6 +5339,15 @@
       "23127PN0CC"
     ],
     "soc": "Snapdragon 8 Gen 3",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
     "overallRoot": "CONDITIONAL",
     "overallBootloader": "CONDITIONAL",
     "usb_video_out": true,
@@ -2890,7 +5363,14 @@
         ],
         "soc": "Snapdragon 8 Gen 3",
         "root_status": "FULL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
       },
       {
         "region": "China Domestic",
@@ -2899,7 +5379,11 @@
         ],
         "soc": "Snapdragon 8 Gen 3",
         "root_status": "CONDITIONAL",
-        "bootloader_unlockable": "CONDITIONAL"
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
       }
     ]
   }

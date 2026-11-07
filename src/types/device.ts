@@ -20,10 +20,12 @@ export interface Variant {
   root_methods: string[];
   custom_recovery: string;
   custom_kernel_support: KernelSupport;
+  custom_roms?: string[];
   links?: {
     xda?: string;
     twrp?: string;
     github?: string;
+    lineageos?: string;
     [key: string]: string | undefined;
   };
 }
@@ -54,6 +56,7 @@ export interface SearchItem {
   desktop_mode: string | null;
   sdcard_slot: boolean;
   headphone_jack: boolean;
+  custom_roms: string[];
   variantsCount: number;
   sampleVariants: Array<{
     region: string;
@@ -61,6 +64,6 @@ export interface SearchItem {
     soc: string;
     root_status: RootStatus;
     bootloader_unlockable: BootloaderStatus;
+    custom_roms?: string[];
   }>;
 }
-

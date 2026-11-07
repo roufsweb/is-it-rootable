@@ -14,7 +14,7 @@
       "models": [
         "OnePlus-oneplus-open"
       ],
-      "codename": "default",
+      "codename": "device",
       "region": "Global / Europe / North America / India",
       "soc": "Snapdragon 8 Gen 2",
       "bootloader_unlockable": "YES",
@@ -27,6 +27,12 @@
       ],
       "custom_recovery": "Fastbootd / Kernel Boot Patch",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }

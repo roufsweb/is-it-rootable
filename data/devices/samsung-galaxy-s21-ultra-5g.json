@@ -29,6 +29,11 @@
       ],
       "custom_recovery": "TWRP Official / Unofficial",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }
@@ -48,6 +53,7 @@
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
       }
@@ -68,6 +74,9 @@
       ],
       "custom_recovery": "TWRP Unofficial",
       "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
       "links": {
         "xda": "https://xdaforums.com/"
       }
