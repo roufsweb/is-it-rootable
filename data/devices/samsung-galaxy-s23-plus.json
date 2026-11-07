@@ -19,7 +19,7 @@
       "region": "Global / Europe / International",
       "soc": "Snapdragon 8 Gen 2 for Galaxy",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
       "root_status": "CONDITIONAL",
       "root_methods": [
         "Magisk",

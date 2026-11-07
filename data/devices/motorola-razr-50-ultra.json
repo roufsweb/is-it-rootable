@@ -1,0 +1,39 @@
+{
+  "slug": "motorola-razr-50-ultra",
+  "brand": "Motorola",
+  "name": "Motorola Razr 50 Ultra / Razr+ (2024)",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "motorola razr 40 ultra",
+        "motorola razr 50 ultra"
+      ],
+      "codename": "arcfox",
+      "region": "Global / Retail Unlocked",
+      "soc": "Snapdragon 8s Gen 3",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

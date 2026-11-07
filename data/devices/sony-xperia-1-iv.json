@@ -5,7 +5,7 @@
   "release_year": 2022,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+    "desktop_mode": "DisplayPort 4K 60Hz Out",
     "sdcard_slot": true,
     "headphone_jack": true
   },

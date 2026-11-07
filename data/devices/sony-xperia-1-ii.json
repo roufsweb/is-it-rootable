@@ -1,0 +1,44 @@
+{
+  "slug": "sony-xperia-1-ii",
+  "brand": "Sony",
+  "name": "Xperia 1 II",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort 4K 60Hz Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SO-51A",
+        "SOG01",
+        "XQ-AT42",
+        "XQ-AT51",
+        "XQ-AT52",
+        "XQ-AT72"
+      ],
+      "codename": "SO-51A",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 865",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "oneplus-5t",
+  "brand": "OnePlus",
+  "name": "OnePlus 5T",
+  "release_year": 2017,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "ONEPLUS A5010"
+      ],
+      "codename": "OnePlus5T",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 835",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Developer Options toggle + fastboot oem unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -5,16 +5,16 @@
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Motorola Ready For (Wired & Wireless)",
+    "desktop_mode": "ThinkPhone Ready For & PC Integration",
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
       "models": [
-        "XT-ThinkPhone by Motorola"
+        "ThinkPhone 25 by motorola"
       ],
-      "codename": "device",
+      "codename": "vienna",
       "region": "Global / Retail Unlocked",
       "soc": "Snapdragon 8+ Gen 1",
       "bootloader_unlockable": "YES",
@@ -27,7 +27,7 @@
       "custom_recovery": "Fastbootd / Boot Image Patch",
       "custom_kernel_support": "MODERATE",
       "custom_roms": [
-        "LineageOS Unofficial",
+        "LineageOS Official",
         "crDroid"
       ],
       "links": {

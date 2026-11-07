@@ -5,7 +5,7 @@
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode)",
+    "desktop_mode": "DisplayPort Alt Mode (USB 3.0)",
     "sdcard_slot": true,
     "headphone_jack": false
   },
@@ -14,7 +14,7 @@
       "models": [
         "FP5"
       ],
-      "codename": "device",
+      "codename": "FP5",
       "region": "Global / Official",
       "soc": "Qualcomm QCM6490",
       "bootloader_unlockable": "YES",

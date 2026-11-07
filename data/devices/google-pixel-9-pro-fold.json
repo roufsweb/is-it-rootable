@@ -5,7 +5,7 @@
   "release_year": 2024,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+    "desktop_mode": "Android Desktop Mode (DisplayPort Alt Mode)",
     "sdcard_slot": false,
     "headphone_jack": false
   },

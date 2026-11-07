@@ -12,9 +12,9 @@
   "variants": [
     {
       "models": [
-        "DEVICE-Global"
+        "23090RA98C"
       ],
-      "codename": "device",
+      "codename": "zircon",
       "region": "Global / Europe / India",
       "soc": "MediaTek Dimensity 7200-Ultra",
       "bootloader_unlockable": "CONDITIONAL",
@@ -40,9 +40,9 @@
     },
     {
       "models": [
-        "DEVICE-CN"
+        "23090RA98C"
       ],
-      "codename": "device_cn",
+      "codename": "zircon_cn",
       "region": "China Domestic",
       "soc": "MediaTek Dimensity 7200-Ultra",
       "bootloader_unlockable": "CONDITIONAL",

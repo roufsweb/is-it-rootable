@@ -4,16 +4,15 @@
   "name": "Motorola Razr 40 Ultra / Razr+",
   "release_year": 2023,
   "hardware_features": {
-    "usb_video_out": true,
-    "desktop_mode": "Motorola Ready For",
+    "usb_video_out": false,
+    "desktop_mode": null,
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
       "models": [
-        "motorola razr 2022",
-        "motorola razr 40 ultra"
+        "XT2321-2"
       ],
       "codename": "zeekr",
       "region": "Global / Retail Unlocked",
@@ -28,7 +27,7 @@
       "custom_recovery": "Fastbootd / Boot Image Patch",
       "custom_kernel_support": "MODERATE",
       "custom_roms": [
-        "LineageOS Unofficial",
+        "LineageOS Official",
         "crDroid"
       ],
       "links": {

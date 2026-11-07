@@ -11,25 +11,42 @@
   },
   "variants": [
     {
-      "models": ["SM-N986B", "SM-N986B/DS", "SM-N986N"],
+      "models": [
+        "SC-53A",
+        "SM-N986B",
+        "SM-N986N"
+      ],
       "codename": "c2s",
-      "region": "Global / Europe / Korea",
+      "region": "Global / Europe / International",
       "soc": "Exynos 990",
       "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlock toggle in Developer Options + Volume Up unlock mode in bootloader",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
       "root_status": "FULL",
-      "root_methods": ["Magisk", "KernelSU", "APatch"],
-      "custom_recovery": "TWRP Official",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/",
-        "twrp": "https://twrp.me/samsung/samsunggalaxynote20ultra5g.html"
+        "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["SM-N986U", "SM-N986U1", "SM-N986W"],
+      "models": [
+        "SC-53A",
+        "SM-N986U",
+        "SM-N986U1",
+        "SM-N986W"
+      ],
       "codename": "c2q",
-      "region": "USA / Canada",
+      "region": "USA / Canada Carrier & Unlocked",
       "soc": "Snapdragon 865+",
       "bootloader_unlockable": "NO",
       "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
@@ -37,25 +54,33 @@
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/"
+        "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["SM-N9860"],
-      "codename": "c2qchn",
+      "models": [
+        "SM-N9860"
+      ],
+      "codename": "SC-53A_chn",
       "region": "China / Hong Kong Open Market",
       "soc": "Snapdragon 865+",
       "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlock in Developer Options + Odin Flash",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
       "root_status": "FULL",
-      "root_methods": ["Magisk", "APatch"],
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
       "custom_recovery": "TWRP Unofficial",
       "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

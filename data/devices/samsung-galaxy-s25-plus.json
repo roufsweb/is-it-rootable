@@ -1,0 +1,71 @@
+{
+  "slug": "samsung-galaxy-s25-plus",
+  "brand": "Samsung",
+  "name": "Galaxy S25+",
+  "release_year": 2025,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-S936B",
+        "SM-S936N"
+      ],
+      "codename": "pa2q",
+      "region": "Global / Europe / International",
+      "soc": "Snapdragon 8 Elite for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked worldwide. Samsung Knox rollback bit & One UI 7/8 bootloader lockdown prevent OEM bootloader unlocking.",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-S936U",
+        "SM-S936U1",
+        "SM-S936W"
+      ],
+      "codename": "pa2q",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 8 Elite for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-S9360"
+      ],
+      "codename": "pa2q_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 8 Elite for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Locked on One UI 8 bootloader",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

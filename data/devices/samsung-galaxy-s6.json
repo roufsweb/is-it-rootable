@@ -1,0 +1,90 @@
+{
+  "slug": "samsung-galaxy-s6",
+  "brand": "Samsung",
+  "name": "Galaxy S6",
+  "release_year": 2015,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SC-05G",
+        "SM-G920F",
+        "SM-G920K",
+        "SM-G920L",
+        "SM-G920S",
+        "SM-S906L",
+        "SM-S907VL"
+      ],
+      "codename": "zeroflte",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 7420",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SAMSUNG-SM-G920A",
+        "SM-G920P",
+        "SM-G920T",
+        "SM-G920V"
+      ],
+      "codename": "SC-05G_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Exynos 7420",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-G9200"
+      ],
+      "codename": "zerofltechn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Exynos 7420",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

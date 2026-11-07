@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllModels, getModelDetail } from '@/lib/devices';
 import { StatusBadge } from '@/components/StatusBadge';
+import { CommandSnippets } from '@/components/CommandSnippets';
 import {
   ChevronLeft,
   Terminal,
@@ -319,6 +320,20 @@ export default async function ModelPage({ params }: ModelPageProps) {
           </div>
         </div>
       </div>
+
+      {/* Interactive Terminal Unlock Cheat-sheet for this exact model */}
+      <section className="space-y-3 pt-6 border-t border-border">
+        <h3 className="text-base sm:text-lg font-bold text-foreground flex items-center gap-2">
+          <Terminal className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
+          <span>Fastboot Commands for {exactModel}</span>
+        </h3>
+        <CommandSnippets
+          brand={device.brand}
+          codename={variant.codename}
+          bootloaderUnlockable={variant.bootloader_unlockable}
+          unlockMethod={variant.unlock_method}
+        />
+      </section>
 
       {/* Sibling Model Comparison */}
       {otherVariants.length > 0 && (

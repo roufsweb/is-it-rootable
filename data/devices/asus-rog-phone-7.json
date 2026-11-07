@@ -1,20 +1,21 @@
 {
   "slug": "asus-rog-phone-7",
   "brand": "Asus",
-  "name": "ROG Phone 7",
+  "name": "Asus ROG Phone 7",
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "DisplayPort Video Out USB 3.1",
+    "desktop_mode": "ROG DisplayPort Gaming & Desktop Mode",
     "sdcard_slot": false,
     "headphone_jack": true
   },
   "variants": [
     {
       "models": [
-        "ROG Phone 7"
+        "ASUS_AI2205_A",
+        "ASUS_AI2205_C"
       ],
-      "codename": "device",
+      "codename": "ASUS_AI2205",
       "region": "Global / Official",
       "soc": "Snapdragon 8 Gen 2",
       "bootloader_unlockable": "CONDITIONAL",

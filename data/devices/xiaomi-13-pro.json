@@ -4,8 +4,8 @@
   "name": "Xiaomi 13 Pro",
   "release_year": 2022,
   "hardware_features": {
-    "usb_video_out": true,
-    "desktop_mode": "DisplayPort Video Out USB 3.2",
+    "usb_video_out": false,
+    "desktop_mode": null,
     "sdcard_slot": false,
     "headphone_jack": false
   },
@@ -18,7 +18,7 @@
       "region": "Global / Europe / India",
       "soc": "Snapdragon 8 Gen 2",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+      "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
       "root_status": "FULL",
       "root_methods": [
         "KernelSU",

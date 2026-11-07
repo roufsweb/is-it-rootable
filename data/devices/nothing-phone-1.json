@@ -1,7 +1,7 @@
 {
   "slug": "nothing-phone-1",
   "brand": "Nothing",
-  "name": "Phone (1)",
+  "name": "Nothing Phone (1)",
   "release_year": 2022,
   "hardware_features": {
     "usb_video_out": false,
@@ -12,9 +12,9 @@
   "variants": [
     {
       "models": [
-        "Nothing-nothing-phone-1"
+        "A063"
       ],
-      "codename": "device",
+      "codename": "Spacewar",
       "region": "Global / Unlocked",
       "soc": "Snapdragon 778G+",
       "bootloader_unlockable": "YES",

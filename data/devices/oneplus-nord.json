@@ -1,0 +1,42 @@
+{
+  "slug": "oneplus-nord",
+  "brand": "OnePlus",
+  "name": "OnePlus Nord",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "AC2001",
+        "AC2003"
+      ],
+      "codename": "Nord",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 765G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

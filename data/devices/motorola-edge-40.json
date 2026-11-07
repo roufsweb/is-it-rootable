@@ -1,30 +1,39 @@
 {
   "slug": "motorola-edge-40",
   "brand": "Motorola",
-  "name": "Edge 40",
+  "name": "Motorola Edge 40",
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": false,
-    "desktop_mode": "Motorola Ready For (Wireless / PC Companion)",
+    "desktop_mode": null,
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
-      "models": ["XT2303-1", "XT2303-2"],
-      "codename": "corfu",
-      "region": "Global / Europe / Latin America",
+      "models": [
+        "moto g 5G (2022)",
+        "motorola edge 40"
+      ],
+      "codename": "lyriq",
+      "region": "Global / Retail Unlocked",
       "soc": "MediaTek Dimensity 8020",
       "bootloader_unlockable": "YES",
       "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
       "root_status": "FULL",
-      "root_methods": ["Magisk", "APatch"],
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
       "custom_recovery": "Fastbootd / Boot Image Patch",
-      "custom_kernel_support": "LOW",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/motorola-edge-40.12763/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

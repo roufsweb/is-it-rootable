@@ -11,24 +11,33 @@
   },
   "variants": [
     {
-      "models": ["SM-S931B", "SM-S931B/DS"],
-      "codename": "q5q",
-      "region": "Global / Europe",
+      "models": [
+        "SC-51F",
+        "SM-S931B",
+        "SM-S931N"
+      ],
+      "codename": "SC-51F",
+      "region": "Global / Europe / International",
       "soc": "Snapdragon 8 Elite for Galaxy",
       "bootloader_unlockable": "NO",
-      "unlock_method": "Factory One UI 8.0+ lockdown. OEM Unlock disabled by Knox Vault hardware e-fuse enforcement.",
+      "unlock_method": "Permanently locked worldwide. Samsung Knox rollback bit & One UI 7/8 bootloader lockdown prevent OEM bootloader unlocking.",
       "root_status": "LOCKED",
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["SM-S931U", "SM-S931U1", "SM-S931W"],
-      "codename": "q5qu",
-      "region": "USA / Canada",
+      "models": [
+        "SM-S931U",
+        "SM-S931U1",
+        "SM-S931W"
+      ],
+      "codename": "pa1q",
+      "region": "USA / Canada Carrier & Unlocked",
       "soc": "Snapdragon 8 Elite for Galaxy",
       "bootloader_unlockable": "NO",
       "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
@@ -36,21 +45,25 @@
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["SM-S9310"],
-      "codename": "q5qchn",
-      "region": "China / Hong Kong",
+      "models": [
+        "SM-S9310"
+      ],
+      "codename": "SC-51F_chn",
+      "region": "China / Hong Kong Open Market",
       "soc": "Snapdragon 8 Elite for Galaxy",
       "bootloader_unlockable": "NO",
-      "unlock_method": "Factory One UI 8.0+ locked bootloader",
+      "unlock_method": "Locked on One UI 8 bootloader",
       "root_status": "LOCKED",
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
       }

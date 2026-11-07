@@ -5,7 +5,7 @@
   "release_year": 2019,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Samsung DeX (Wired)",
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
     "sdcard_slot": false,
     "headphone_jack": false
   },

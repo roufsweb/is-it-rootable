@@ -12,13 +12,14 @@
   "variants": [
     {
       "models": [
+        "SC-53E",
         "SM-A556B"
       ],
       "codename": "SC-53E",
       "region": "Global / Europe / International",
       "soc": "Exynos 1480",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
       "root_status": "CONDITIONAL",
       "root_methods": [
         "Magisk",
@@ -32,6 +33,24 @@
         "crDroid",
         "HadesROM / HadesKernel"
       ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-GalaxyA555GU"
+      ],
+      "codename": "SC-53E_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Exynos 1480",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
       }

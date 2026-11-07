@@ -1,0 +1,72 @@
+{
+  "slug": "samsung-galaxy-s5",
+  "brand": "Samsung",
+  "name": "Galaxy S5",
+  "release_year": 2014,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SC-04F",
+        "SM-G900F",
+        "SM-G900K",
+        "SM-G900L",
+        "SM-G900S",
+        "SM-G906K",
+        "SM-G906L",
+        "SM-G906S",
+        "SM-S903VL"
+      ],
+      "codename": "klte",
+      "region": "Global / Europe / International",
+      "soc": "Snapdragon 801 / Exynos 5422",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SAMSUNG-SM-G900A",
+        "SM-G9006W",
+        "SM-G9008W",
+        "SM-G9009W",
+        "SM-G900P",
+        "SM-G900T",
+        "SM-G900V"
+      ],
+      "codename": "SC-04F_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 801",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

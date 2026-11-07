@@ -1,0 +1,85 @@
+{
+  "slug": "samsung-galaxy-z-flip-4",
+  "brand": "Samsung",
+  "name": "Galaxy Z Flip 4",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "SC-54C",
+        "SM-F721B",
+        "SM-F721N"
+      ],
+      "codename": "SC-54C",
+      "region": "Global / Europe / International",
+      "soc": "Snapdragon 8+ Gen 1",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-F721U",
+        "SM-F721U1",
+        "SM-F721W"
+      ],
+      "codename": "b4q",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 8+ Gen 1",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-F7210"
+      ],
+      "codename": "SC-54C_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 8+ Gen 1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

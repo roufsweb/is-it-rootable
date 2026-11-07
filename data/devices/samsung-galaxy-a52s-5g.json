@@ -36,6 +36,24 @@
       "links": {
         "xda": "https://xdaforums.com/"
       }
+    },
+    {
+      "models": [
+        "SM-GalaxyA52s5GU"
+      ],
+      "codename": "a52sxq",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 778G",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
     }
   ]
 }

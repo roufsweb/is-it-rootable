@@ -1,0 +1,68 @@
+{
+  "slug": "samsung-galaxy-a50",
+  "brand": "Samsung",
+  "name": "Galaxy A50",
+  "release_year": 2019,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-A505F",
+        "SM-A505FN",
+        "SM-A505G",
+        "SM-A505GN",
+        "SM-A505N",
+        "SM-A505YN",
+        "SM-S506DL"
+      ],
+      "codename": "a50",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 9610",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-A505GT",
+        "SM-A505U",
+        "SM-A505U1",
+        "SM-A505W",
+        "SM-S506DL"
+      ],
+      "codename": "a50_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Exynos 9610",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

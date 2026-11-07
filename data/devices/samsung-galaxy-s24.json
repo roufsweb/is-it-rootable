@@ -11,22 +11,39 @@
   },
   "variants": [
     {
-      "models": ["SM-S921B", "SM-S921B/DS"],
+      "models": [
+        "SC-51E",
+        "SM-S921B",
+        "SM-S921N"
+      ],
       "codename": "e1s",
-      "region": "Global / Europe",
+      "region": "Global / Europe / International",
       "soc": "Exynos 2400",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "OEM Unlock toggle available. Note: Knox Guard bootloader bit enforcement on One UI 8 prevents downgrading to unlockable binary versions if updated.",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
       "root_status": "CONDITIONAL",
-      "root_methods": ["Magisk", "KernelSU", "APatch"],
-      "custom_recovery": "TWRP Unofficial",
-      "custom_kernel_support": "MODERATE",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+        "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["SM-S921U", "SM-S921U1", "SM-S921W"],
+      "models": [
+        "SM-S921U",
+        "SM-S921U1",
+        "SM-S921W"
+      ],
       "codename": "e1q",
       "region": "USA / Canada Carrier & Unlocked",
       "soc": "Snapdragon 8 Gen 3 for Galaxy",
@@ -36,25 +53,33 @@
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+        "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["SM-S9210"],
-      "codename": "e1qchn",
-      "region": "China / Hong Kong / Taiwan",
+      "models": [
+        "SM-S9210"
+      ],
+      "codename": "SC-51E_chn",
+      "region": "China / Hong Kong Open Market",
       "soc": "Snapdragon 8 Gen 3 for Galaxy",
-      "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "OEM Unlock in Developer Options + Odin Flash (Subject to region firmware checks)",
-      "root_status": "CONDITIONAL",
-      "root_methods": ["Magisk", "APatch"],
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
       "custom_recovery": "TWRP Unofficial",
-      "custom_kernel_support": "LOW",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

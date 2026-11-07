@@ -4,14 +4,15 @@
   "name": "Galaxy Z Flip 6",
   "release_year": 2024,
   "hardware_features": {
-    "usb_video_out": false,
-    "desktop_mode": null,
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (External Display)",
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
       "models": [
+        "SC-54E",
         "SM-F741B",
         "SM-F741N"
       ],
@@ -19,7 +20,7 @@
       "region": "Global / Europe / International",
       "soc": "Snapdragon 8 Gen 3 for Galaxy",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
       "root_status": "CONDITIONAL",
       "root_methods": [
         "Magisk",

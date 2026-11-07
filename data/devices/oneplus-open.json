@@ -5,16 +5,16 @@
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+    "desktop_mode": "Canvas Desktop Display",
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
       "models": [
-        "OnePlus-oneplus-open"
+        "CPH2551"
       ],
-      "codename": "device",
+      "codename": "OP5973L1",
       "region": "Global / Europe / North America / India",
       "soc": "Snapdragon 8 Gen 2",
       "bootloader_unlockable": "YES",

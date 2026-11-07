@@ -11,35 +11,51 @@
   },
   "variants": [
     {
-      "models": ["GVU6C", "GQML3"],
+      "models": [
+        "Pixel 7"
+      ],
       "codename": "panther",
       "region": "Global / Factory Unlocked",
       "soc": "Google Tensor G2",
       "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlocking toggle + fastboot flashing unlock",
+      "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
       "root_status": "FULL",
-      "root_methods": ["KernelSU", "APatch", "Magisk"],
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
       "custom_recovery": "Fastbootd / Kernel Boot Patch",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "GrapheneOS Official",
+        "LineageOS Official",
+        "CalyxOS",
+        "EvolutionX",
+        "PixelOS"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/google-pixel-7.12657/"
+        "xda": "https://xdaforums.com/",
+        "github": "https://github.com/tiann/KernelSU"
       }
     },
     {
-      "models": ["GO3Z5"],
+      "models": [
+        "PANTHER-VZW"
+      ],
       "codename": "panther_vzw",
       "region": "Verizon / Carrier Locked",
       "soc": "Google Tensor G2",
       "bootloader_unlockable": "NO",
-      "unlock_method": "Permanently locked by Verizon carrier policy",
+      "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
       "root_status": "LOCKED",
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
-        "xda": "https://xdaforums.com/c/google-pixel-7.12657/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

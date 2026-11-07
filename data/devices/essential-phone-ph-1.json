@@ -1,0 +1,40 @@
+{
+  "slug": "essential-phone-ph-1",
+  "brand": "Essential",
+  "name": "Essential Phone PH-1",
+  "release_year": 2017,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "PH-1"
+      ],
+      "codename": "mata",
+      "region": "Global / Factory Unlocked",
+      "soc": "Snapdragon 835",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking in Developer Settings + fastboot flashing unlock && fastboot flashing unlock_critical",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "Fastbootd / Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "EvolutionX",
+        "ProtonAOSP"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

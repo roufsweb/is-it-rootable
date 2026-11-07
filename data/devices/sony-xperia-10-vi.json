@@ -1,0 +1,44 @@
+{
+  "slug": "sony-xperia-10-vi",
+  "brand": "Sony",
+  "name": "Xperia 10 VI",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "A402SO",
+        "SO-52E",
+        "SOG14",
+        "XQ-ES44",
+        "XQ-ES54",
+        "XQ-ES72"
+      ],
+      "codename": "A402SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 6 Gen 1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

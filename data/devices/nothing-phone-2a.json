@@ -1,7 +1,7 @@
 {
   "slug": "nothing-phone-2a",
   "brand": "Nothing",
-  "name": "Phone (2a)",
+  "name": "Nothing Phone (2a)",
   "release_year": 2024,
   "hardware_features": {
     "usb_video_out": false,
@@ -12,9 +12,9 @@
   "variants": [
     {
       "models": [
-        "Nothing-nothing-phone-2a"
+        "A142"
       ],
-      "codename": "device",
+      "codename": "Pacman",
       "region": "Global / Unlocked",
       "soc": "MediaTek Dimensity 7200 Pro",
       "bootloader_unlockable": "YES",

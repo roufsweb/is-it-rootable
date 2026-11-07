@@ -11,36 +11,56 @@
   },
   "variants": [
     {
-      "models": ["2211133G"],
+      "models": [
+        "2211133G"
+      ],
       "codename": "fuxi",
-      "region": "Global / Europe / International",
+      "region": "Global / Europe / India",
       "soc": "Snapdragon 8 Gen 2",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "Mi Account pairing + Mi Unlock Tool (requires waiting period and community permissions on HyperOS)",
+      "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
       "root_status": "FULL",
-      "root_methods": ["KernelSU", "Magisk", "APatch"],
-      "custom_recovery": "TWRP Official",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/xiaomi-13.12705/",
-        "twrp": "https://twrp.me/xiaomi/xiaomi13.html"
+        "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["2211133C"],
+      "models": [
+        "2211133C"
+      ],
       "codename": "fuxi_cn",
       "region": "China Domestic",
       "soc": "Snapdragon 8 Gen 2",
       "bootloader_unlockable": "CONDITIONAL",
       "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
       "root_status": "CONDITIONAL",
-      "root_methods": ["KernelSU", "Magisk"],
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
       "custom_recovery": "TWRP Unofficial",
       "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/xiaomi-13.12705/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

@@ -1,0 +1,42 @@
+{
+  "slug": "sony-xperia-xz-premium",
+  "brand": "Sony",
+  "name": "Xperia XZ Premium",
+  "release_year": 2017,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "USB 3.1 DisplayPort Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "G8141",
+        "G8142",
+        "G8188",
+        "SO-04J"
+      ],
+      "codename": "G8141",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 835",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "asus-rog-phone-6",
+  "brand": "Asus",
+  "name": "Asus ROG Phone 6",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "ROG DisplayPort Gaming & Desktop Mode",
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "ASUS_AI2201_A",
+        "ASUS_AI2201_B",
+        "ASUS_AI2201_C",
+        "ASUS_AI2201_D"
+      ],
+      "codename": "ASUS_AI2201",
+      "region": "Global / Official",
+      "soc": "Snapdragon 8+ Gen 1",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / TWRP",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

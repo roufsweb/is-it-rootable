@@ -5,13 +5,14 @@
   "release_year": 2018,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Samsung DeX (Wired)",
+    "desktop_mode": "Samsung DeX (Direct HDMI cable)",
     "sdcard_slot": true,
     "headphone_jack": true
   },
   "variants": [
     {
       "models": [
+        "SC-01L",
         "SM-N960F",
         "SM-N960N"
       ],

@@ -1,0 +1,45 @@
+{
+  "slug": "sony-xperia-5-iv",
+  "brand": "Sony",
+  "name": "Xperia 5 IV",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort 4K 60Hz Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "A204SO",
+        "SO-54C",
+        "SOG09",
+        "XQ-CQ44",
+        "XQ-CQ54",
+        "XQ-CQ62",
+        "XQ-CQ72"
+      ],
+      "codename": "A204SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 8 Gen 1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "SailfishOS Official"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

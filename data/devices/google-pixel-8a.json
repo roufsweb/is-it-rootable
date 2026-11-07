@@ -5,42 +5,57 @@
   "release_year": 2024,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+    "desktop_mode": "Android Desktop Mode (DisplayPort Alt Mode)",
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
-      "models": ["G8HHN", "G6GPR"],
+      "models": [
+        "Pixel 8a"
+      ],
       "codename": "akita",
       "region": "Global / Factory Unlocked",
       "soc": "Google Tensor G3",
       "bootloader_unlockable": "YES",
       "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
       "root_status": "FULL",
-      "root_methods": ["KernelSU", "APatch", "Magisk"],
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
       "custom_recovery": "Fastbootd / Kernel Boot Patch",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "GrapheneOS Official",
+        "LineageOS Official",
+        "CalyxOS",
+        "EvolutionX",
+        "PixelOS"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/google-pixel-8a.12861/",
-        "lineageos": "https://wiki.lineageos.org/devices/akita/"
+        "xda": "https://xdaforums.com/",
+        "github": "https://github.com/tiann/KernelSU"
       }
     },
     {
-      "models": ["G576D"],
+      "models": [
+        "AKITA-VZW"
+      ],
       "codename": "akita_vzw",
       "region": "Verizon / Carrier Locked",
       "soc": "Google Tensor G3",
       "bootloader_unlockable": "NO",
-      "unlock_method": "Carrier locked bootloader; OEM Unlocking greyed out",
+      "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
       "root_status": "LOCKED",
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
-        "xda": "https://xdaforums.com/c/google-pixel-8a.12861/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

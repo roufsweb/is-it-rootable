@@ -1,0 +1,88 @@
+{
+  "slug": "samsung-galaxy-note-5",
+  "brand": "Samsung",
+  "name": "Galaxy Note 5",
+  "release_year": 2015,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-N920F",
+        "SM-N920G",
+        "SM-N920K",
+        "SM-N920L",
+        "SM-N920S"
+      ],
+      "codename": "noblelte",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 7420",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SAMSUNG-SM-N920A",
+        "SM-N920P",
+        "SM-N920T",
+        "SM-N920V"
+      ],
+      "codename": "noblelte_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Exynos 7420",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-N9200"
+      ],
+      "codename": "nobleltechn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Exynos 7420",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

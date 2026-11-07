@@ -19,9 +19,9 @@
       "codename": "SC-52B",
       "region": "Global / Europe / International",
       "soc": "Exynos 2100",
-      "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
-      "root_status": "FULL",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
+      "root_status": "CONDITIONAL",
       "root_methods": [
         "Magisk",
         "KernelSU",

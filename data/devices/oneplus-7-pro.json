@@ -5,7 +5,7 @@
   "release_year": 2019,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+    "desktop_mode": "USB 3.1 DP Video Out",
     "sdcard_slot": false,
     "headphone_jack": false
   },

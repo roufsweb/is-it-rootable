@@ -1,0 +1,61 @@
+{
+  "slug": "google-pixel-xl",
+  "brand": "Google",
+  "name": "Pixel XL",
+  "release_year": 2016,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Pixel XL"
+      ],
+      "codename": "marlin",
+      "region": "Global / Factory Unlocked",
+      "soc": "Snapdragon 821",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "GrapheneOS Official",
+        "LineageOS Official",
+        "CalyxOS",
+        "EvolutionX",
+        "PixelOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/",
+        "github": "https://github.com/tiann/KernelSU"
+      }
+    },
+    {
+      "models": [
+        "MARLIN-VZW"
+      ],
+      "codename": "marlin_vzw",
+      "region": "Verizon / Carrier Locked",
+      "soc": "Snapdragon 821",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

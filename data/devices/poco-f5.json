@@ -1,7 +1,7 @@
 {
   "slug": "poco-f5",
-  "brand": "Poco",
-  "name": "Poco F5 / Redmi Note 12 Turbo",
+  "brand": "POCO",
+  "name": "POCO F5",
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": false,
@@ -11,36 +11,57 @@
   },
   "variants": [
     {
-      "models": ["23049PCD8G", "23049PCD8I"],
+      "models": [
+        "23049PCD8G",
+        "23049PCD8I"
+      ],
       "codename": "marble",
-      "region": "Global / India",
+      "region": "Global / Europe / India",
       "soc": "Snapdragon 7+ Gen 2",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (7-day timer)",
+      "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
       "root_status": "FULL",
-      "root_methods": ["KernelSU", "APatch", "Magisk"],
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
       "custom_recovery": "TWRP Official / OrangeFox",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/xiaomi-poco-f5-redmi-note-12-turbo.12753/",
-        "twrp": "https://twrp.me/xiaomi/xiaomipocof5.html"
+        "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["23049RAD8C"],
-      "codename": "marble_in",
-      "region": "China (Redmi Note 12 Turbo)",
+      "models": [
+        "MARBLE-CN"
+      ],
+      "codename": "marble_cn",
+      "region": "China Domestic",
       "soc": "Snapdragon 7+ Gen 2",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "Mi Unlock tool; HyperOS updates require Community verification",
-      "root_status": "FULL",
-      "root_methods": ["KernelSU", "APatch", "Magisk"],
-      "custom_recovery": "TWRP / OrangeFox",
-      "custom_kernel_support": "HIGH",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/xiaomi-poco-f5-redmi-note-12-turbo.12753/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

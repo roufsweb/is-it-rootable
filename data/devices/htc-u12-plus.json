@@ -1,0 +1,38 @@
+{
+  "slug": "htc-u12-plus",
+  "brand": "HTC",
+  "name": "HTC U12+",
+  "release_year": 2018,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort over USB Type-C 3.1",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "HTC 2Q55300"
+      ],
+      "codename": "htc_imedtwl",
+      "region": "Global / Unlocked",
+      "soc": "Snapdragon 845",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "ViperOne"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

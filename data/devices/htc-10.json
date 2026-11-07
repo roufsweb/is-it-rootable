@@ -1,0 +1,48 @@
+{
+  "slug": "htc-10",
+  "brand": "HTC",
+  "name": "HTC 10",
+  "release_year": 2016,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort over USB Type-C 3.1",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "2PS64",
+        "HTC 10",
+        "HTC 10 Lifestyle",
+        "HTC 2PS6200",
+        "HTC 2PS63",
+        "HTC M10h",
+        "HTC M10u",
+        "HTC6545LVW",
+        "HTC_M10h",
+        "HTV32",
+        "MSM8996 for arm64"
+      ],
+      "codename": "htc_pmec2tuhl",
+      "region": "Global / Unlocked",
+      "soc": "Snapdragon 820",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "ViperOne"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

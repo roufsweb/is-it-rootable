@@ -1,0 +1,41 @@
+{
+  "slug": "fairphone-4",
+  "brand": "Fairphone",
+  "name": "Fairphone 4",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "FP5"
+      ],
+      "codename": "device",
+      "region": "Global / Official",
+      "soc": "Snapdragon 750G 5G",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Fairphone official bootloader unlock code website + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / TWRP",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "e/OS/ Official",
+        "PostmarketOS",
+        "Ubuntu Touch"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

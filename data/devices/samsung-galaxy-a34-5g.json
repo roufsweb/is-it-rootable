@@ -1,0 +1,82 @@
+{
+  "slug": "samsung-galaxy-a34-5g",
+  "brand": "Samsung",
+  "name": "Galaxy A34 5G",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-A346B",
+        "SM-A346N"
+      ],
+      "codename": "a34x",
+      "region": "Global / Europe / International",
+      "soc": "MediaTek Dimensity 1080",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-GalaxyA345GU"
+      ],
+      "codename": "a34x_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "MediaTek Dimensity 1080",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-A3460"
+      ],
+      "codename": "a34x_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "MediaTek Dimensity 1080",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

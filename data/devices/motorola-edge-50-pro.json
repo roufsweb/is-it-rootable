@@ -5,7 +5,7 @@
   "release_year": 2024,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Motorola Smart Connect / Ready For",
+    "desktop_mode": "Motorola Smart Connect / Ready For (DP Alt Mode)",
     "sdcard_slot": false,
     "headphone_jack": false
   },
@@ -28,7 +28,7 @@
       "custom_recovery": "Fastbootd / Boot Image Patch",
       "custom_kernel_support": "MODERATE",
       "custom_roms": [
-        "LineageOS Unofficial",
+        "LineageOS Official",
         "crDroid"
       ],
       "links": {

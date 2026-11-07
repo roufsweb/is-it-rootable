@@ -12,14 +12,16 @@
   "variants": [
     {
       "models": [
+        "SC-53C",
         "SM-A536B",
-        "SM-A536N"
+        "SM-A536N",
+        "SM-S536DL"
       ],
       "codename": "SC-53C",
       "region": "Global / Europe / International",
       "soc": "Exynos 1280",
       "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
       "root_status": "CONDITIONAL",
       "root_methods": [
         "Magisk",

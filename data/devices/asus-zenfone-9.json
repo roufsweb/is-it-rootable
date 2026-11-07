@@ -1,0 +1,39 @@
+{
+  "slug": "asus-zenfone-9",
+  "brand": "Asus",
+  "name": "Asus Zenfone 9",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "ASUS_AI2202"
+      ],
+      "codename": "ASUS_AI2202",
+      "region": "Global / Official",
+      "soc": "Snapdragon 8+ Gen 1",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Official Asus Unlock Device App (Subject to Asus unlock server availability)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / TWRP",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial",
+        "OmniROM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

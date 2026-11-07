@@ -1,0 +1,90 @@
+{
+  "slug": "samsung-galaxy-note-3",
+  "brand": "Samsung",
+  "name": "Galaxy Note 3",
+  "release_year": 2013,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SC-01F",
+        "SC-02F",
+        "SM-N900K",
+        "SM-N900L",
+        "SM-N900S"
+      ],
+      "codename": "hlte",
+      "region": "Global / Europe / International",
+      "soc": "Snapdragon 800 / Exynos 5420",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SAMSUNG-SM-N900A",
+        "SM-N9008V",
+        "SM-N900P",
+        "SM-N900T",
+        "SM-N900U",
+        "SM-N900V"
+      ],
+      "codename": "SC-01F_na",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 800",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-N900"
+      ],
+      "codename": "SC-01F_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 800",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

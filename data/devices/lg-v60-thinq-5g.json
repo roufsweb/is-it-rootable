@@ -1,0 +1,40 @@
+{
+  "slug": "lg-v60-thinq-5g",
+  "brand": "LG",
+  "name": "LG V60 ThinQ 5G",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "LG Screen+ Desktop Mode (USB 3.1 DP)",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "LM-V600",
+        "LM-V600N"
+      ],
+      "codename": "timelm",
+      "region": "Global / Europe / Unlocked",
+      "soc": "Snapdragon 865",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Havoc-OS",
+        "DotOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

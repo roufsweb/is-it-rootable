@@ -1,0 +1,50 @@
+{
+  "slug": "lg-v20",
+  "brand": "LG",
+  "name": "LG V20",
+  "release_year": 2016,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "LG-F800K",
+        "LG-F800L",
+        "LG-F800S",
+        "LG-H910",
+        "LG-H910PR",
+        "LG-H915",
+        "LG-H918",
+        "LG-H990",
+        "LG-LS997",
+        "LG-US996",
+        "LGV34",
+        "VS995"
+      ],
+      "codename": "elsa",
+      "region": "Global / Europe / Unlocked",
+      "soc": "Snapdragon 820",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Havoc-OS",
+        "DotOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

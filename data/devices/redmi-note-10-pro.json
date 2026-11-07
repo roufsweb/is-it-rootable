@@ -12,9 +12,11 @@
   "variants": [
     {
       "models": [
-        "DEVICE-Global"
+        "21061110AG",
+        "M2101K6G",
+        "M2101K6P"
       ],
-      "codename": "device",
+      "codename": "chopin",
       "region": "Global / Europe / India",
       "soc": "Snapdragon 732G",
       "bootloader_unlockable": "CONDITIONAL",
@@ -40,9 +42,9 @@
     },
     {
       "models": [
-        "DEVICE-CN"
+        "M2104K10AC"
       ],
-      "codename": "device_cn",
+      "codename": "chopin_cn",
       "region": "China Domestic",
       "soc": "Snapdragon 732G",
       "bootloader_unlockable": "CONDITIONAL",

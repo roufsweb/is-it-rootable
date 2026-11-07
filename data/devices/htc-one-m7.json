@@ -1,0 +1,49 @@
+{
+  "slug": "htc-one-m7",
+  "brand": "HTC",
+  "name": "HTC One (M7)",
+  "release_year": 2013,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "HTC 801e",
+        "HTC 802d",
+        "HTC 802t",
+        "HTC 802t 16GB",
+        "HTC 802w",
+        "HTC One",
+        "HTC One 801e",
+        "HTC One dual 802d",
+        "HTC One dual sim",
+        "HTC6500LVW",
+        "HTCONE",
+        "HTC_PN071"
+      ],
+      "codename": "m7",
+      "region": "Global / Unlocked",
+      "soc": "Snapdragon 600",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "HTCDev official token unlock (fastboot oem get_identifier_token) or Sunshine S-OFF",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Resurrection Remix",
+        "ViperOne"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

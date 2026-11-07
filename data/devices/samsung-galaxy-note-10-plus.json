@@ -5,13 +5,14 @@
   "release_year": 2019,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Samsung DeX (Wired)",
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
     "sdcard_slot": true,
     "headphone_jack": false
   },
   "variants": [
     {
       "models": [
+        "SC-01M",
         "SM-N975F"
       ],
       "codename": "d2s",

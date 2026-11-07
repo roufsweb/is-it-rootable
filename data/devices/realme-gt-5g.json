@@ -1,0 +1,40 @@
+{
+  "slug": "realme-gt-5g",
+  "brand": "Realme",
+  "name": "Realme GT 5G",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "RMX2202"
+      ],
+      "codename": "RMX2202L1",
+      "region": "Global / Europe / India",
+      "soc": "Snapdragon 888",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Realme Official In-Depth Test (DeepTesting APK) server approval + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "PixelOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

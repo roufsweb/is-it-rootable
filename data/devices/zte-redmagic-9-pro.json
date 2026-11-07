@@ -1,0 +1,38 @@
+{
+  "slug": "zte-redmagic-9-pro",
+  "brand": "ZTE",
+  "name": "ZTE RedMagic 9 Pro",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "RedMagic Studio PC & Direct DP 4K Console Mode",
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "NX769J"
+      ],
+      "codename": "NX769J",
+      "region": "Global / Official",
+      "soc": "Snapdragon 8 Gen 3",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking toggle in Developer Settings + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

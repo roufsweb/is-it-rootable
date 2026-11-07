@@ -5,42 +5,41 @@
   "release_year": 2019,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode)",
+    "desktop_mode": "USB 3.1 DP Video Out",
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
-      "models": ["HD1900", "HD1901", "HD1903", "HD1905"],
-      "codename": "hotdogb",
-      "region": "Global / Europe / North America Unlocked / India",
+      "models": [
+        "HD1900",
+        "HD1901",
+        "HD1903",
+        "HD1905",
+        "HD1907"
+      ],
+      "codename": "OnePlus7T",
+      "region": "Global / Europe / North America / India",
       "soc": "Snapdragon 855+",
       "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlock toggle in Developer Options + fastboot oem unlock",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
       "root_status": "FULL",
-      "root_methods": ["KernelSU", "APatch", "Magisk"],
-      "custom_recovery": "TWRP Official / OrangeFox",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Nameless AOSP",
+        "crDroid",
+        "Paranoid Android"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/oneplus-7t.9259/",
-        "twrp": "https://twrp.me/oneplus/oneplus7t.html"
-      }
-    },
-    {
-      "models": ["HD1907"],
-      "codename": "hotdogb_tmo",
-      "region": "T-Mobile USA Carrier",
-      "soc": "Snapdragon 855+",
-      "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "Requires SIM permanent unlock + unlock token bin file from OnePlus Unlock portal, OR MSM Download Tool EDL crossflash to Global ROM.",
-      "root_status": "CONDITIONAL",
-      "root_methods": ["Magisk", "APatch"],
-      "custom_recovery": "TWRP Official",
-      "custom_kernel_support": "HIGH",
-      "links": {
-        "xda": "https://xdaforums.com/c/oneplus-7t.9259/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

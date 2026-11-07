@@ -11,35 +11,76 @@
   },
   "variants": [
     {
-      "models": ["SM-A546B", "SM-A546B/DS", "SM-A546E"],
-      "codename": "a54x",
-      "region": "Global / Europe / Latin America / Asia",
+      "models": [
+        "SC-53D",
+        "SM-A546B",
+        "SM-S546VL"
+      ],
+      "codename": "SC-53D",
+      "region": "Global / Europe / International",
       "soc": "Exynos 1380",
-      "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlock in Developer Options + Odin Download Mode Unlock",
-      "root_status": "FULL",
-      "root_methods": ["Magisk", "APatch"],
-      "custom_recovery": "TWRP Unofficial",
-      "custom_kernel_support": "MODERATE",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "HadesROM / HadesKernel"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-a54-5g.12739/"
+        "xda": "https://xdaforums.com/"
       }
     },
     {
-      "models": ["SM-A546U", "SM-A546U1", "SM-A546W"],
-      "codename": "a54xu",
+      "models": [
+        "SM-A546U",
+        "SM-A546U1",
+        "SM-A546V",
+        "SM-A546W"
+      ],
+      "codename": "SC-53D_na",
       "region": "USA / Canada Carrier & Unlocked",
       "soc": "Exynos 1380",
       "bootloader_unlockable": "NO",
-      "unlock_method": "Permanently locked by North American carrier firmware and Knox security",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
       "root_status": "LOCKED",
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
+      "custom_roms": [],
       "links": {
-        "xda": "https://xdaforums.com/c/samsung-galaxy-a54-5g.12739/"
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-A5460"
+      ],
+      "codename": "SC-53D_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Exynos 1380",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

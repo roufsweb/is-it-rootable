@@ -1,0 +1,50 @@
+{
+  "slug": "lg-v30",
+  "brand": "LG",
+  "name": "LG V30",
+  "release_year": 2017,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "USB 3.1 DisplayPort Out",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "LG-AS998",
+        "LG-H930",
+        "LG-H931",
+        "LG-H932",
+        "LG-H932PR",
+        "LG-H933",
+        "LG-LS998",
+        "LG-US998",
+        "LGM-V300K",
+        "LGM-V300L",
+        "LGM-V300S",
+        "VS996"
+      ],
+      "codename": "joan",
+      "region": "Global / Europe / Unlocked",
+      "soc": "Snapdragon 835",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Qualcomm EDL 9008 firehose / QFIL extraction or legacy LG Dev token unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Havoc-OS",
+        "DotOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

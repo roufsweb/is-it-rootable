@@ -1,7 +1,7 @@
 {
   "slug": "nothing-phone-2",
   "brand": "Nothing",
-  "name": "Phone (2)",
+  "name": "Nothing Phone (2)",
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": false,
@@ -11,20 +11,30 @@
   },
   "variants": [
     {
-      "models": ["A065"],
-      "codename": "pong",
-      "region": "Global / Europe / North America / India",
+      "models": [
+        "A065",
+        "AIN065"
+      ],
+      "codename": "Pong",
+      "region": "Global / Unlocked",
       "soc": "Snapdragon 8+ Gen 1",
       "bootloader_unlockable": "YES",
       "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
       "root_status": "FULL",
-      "root_methods": ["KernelSU", "APatch", "Magisk"],
-      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
       "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "Paranoid Android"
+      ],
       "links": {
-        "xda": "https://xdaforums.com/c/nothing-phone-2.12781/"
+        "xda": "https://xdaforums.com/"
       }
     }
   ]
 }
-

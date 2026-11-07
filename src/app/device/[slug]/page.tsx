@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { getAllDevices, getDeviceBySlug, getOverallRootStatus, getOverallBootloader } from '@/lib/devices';
 import { VariantTable } from '@/components/VariantTable';
 import { StatusBadge } from '@/components/StatusBadge';
+import { CommandSnippets } from '@/components/CommandSnippets';
 import {
   ChevronLeft,
   Monitor,
@@ -273,6 +274,23 @@ export default async function DevicePage({ params }: DevicePageProps) {
         </div>
 
         <VariantTable variants={device.variants} brand={device.brand} name={device.name} />
+      </section>
+
+      {/* Interactive Terminal Unlock Cheat-sheet */}
+      <section className="space-y-4 pt-4 border-t border-border">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg sm:text-xl font-bold text-foreground flex items-center gap-2">
+            <Terminal className="w-5 h-5 text-cyan-600 dark:text-cyan-400" />
+            <span>Fastboot & Terminal Unlock Commands</span>
+          </h2>
+          <span className="text-xs font-mono text-muted font-bold">1-Click Copy</span>
+        </div>
+        <CommandSnippets
+          brand={device.brand}
+          codename={device.variants[0]?.codename || device.slug}
+          bootloaderUnlockable={device.variants[0]?.bootloader_unlockable || 'YES'}
+          unlockMethod={device.variants[0]?.unlock_method || ''}
+        />
       </section>
     </div>
   );
