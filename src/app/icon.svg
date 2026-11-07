@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </linearGradient>
+    <linearGradient id="favNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#favBg)" stroke="url(#favNeon)" stroke-width="4"/>
+  <!-- Antennas -->
+  <line x1="48" y1="38" x2="38" y2="22" stroke="#00f0ff" stroke-width="6" stroke-linecap="round"/>
+  <line x1="80" y1="38" x2="90" y2="22" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+  <!-- Android Head -->
+  <path d="M 32 68 C 32 46 46 32 64 32 C 82 32 96 46 96 68 Z" fill="url(#favNeon)"/>
+  <!-- Superuser '#' in body -->
+  <rect x="32" y="74" width="64" height="34" rx="8" fill="#080e1a" stroke="url(#favNeon)" stroke-width="3"/>
+  <g stroke="url(#favNeon)" stroke-width="4" stroke-linecap="round">
+    <line x1="58" y1="80" x2="56" y2="102" />
+    <line x1="72" y1="80" x2="70" y2="102" />
+    <line x1="50" y1="87" x2="78" y2="87" />
+    <line x1="48" y1="95" x2="76" y2="95" />
+  </g>
+</svg>

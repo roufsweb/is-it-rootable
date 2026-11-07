@@ -2,7 +2,8 @@ import React from 'react';
 import searchData from '@/data/search-index.json';
 import { SearchItem } from '@/types/device';
 import { SearchBar } from '@/components/SearchBar';
-import { Terminal, ShieldCheck, Cpu, Monitor, AlertTriangle, Disc } from 'lucide-react';
+import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
+import { Terminal, ShieldCheck, Monitor, AlertTriangle, Disc, Cpu, HelpCircle } from 'lucide-react';
 
 export default function HomePage() {
   const devices = searchData as SearchItem[];
@@ -16,8 +17,55 @@ export default function HomePage() {
   const videoOutCount = devices.filter((d) => d.usb_video_out).length;
   const romCount = devices.filter((d) => d.custom_roms && d.custom_roms.length > 0).length;
 
+  const homeFaqItems: FAQItem[] = [
+    {
+      question: 'How do I check if my Android phone can be rooted?',
+      answer:
+        'To check if your phone can be rooted, find your exact model number in Settings > About Phone (e.g. SM-S928B or Pixel 8 Pro cheetah) and search it on IsItRootable. Rootability depends on whether your exact model has an unlockable bootloader, which varies significantly between regional carrier models and factory unlocked international editions.',
+    },
+    {
+      question: 'Why does the model suffix matter so much for rooting (e.g. SM-G950F vs SM-G950U)?',
+      answer:
+        'OEMs manufacture physically distinct hardware and firmware variants for different markets. In North America, carrier contracts (AT&T, Verizon, T-Mobile) mandate permanently locked bootloaders (e.g. model numbers ending in U, U1, or W). In contrast, international global models (ending in F, B, or N) feature unlockable bootloaders that support custom ROMs, custom recoveries (TWRP), and root solutions (KernelSU / Magisk).',
+    },
+    {
+      question: 'What is the difference between KernelSU, APatch, and Magisk in 2026?',
+      answer:
+        'KernelSU operates directly in kernel space on modern Generic Kernel Image (GKI) Linux 5.10+ devices, making it virtually undetectable by userspace banking apps. APatch dynamically patches the kernel image without needing source compilation. Magisk modifies the userspace init binary in boot.img or init_boot.img, which works on older and newer devices but requires modules like Shamiko and PlayIntegrityFix to hide root status.',
+    },
+    {
+      question: 'Will rooting trip Samsung Knox or disable Samsung Pay?',
+      answer:
+        'Yes. Unlocking the bootloader on any modern Samsung device blows a physical microscopic hardware e-fuse, permanently flipping the Knox warranty bit from 0x0 to 0x1. This cannot be reversed by software or flashing stock firmware. It permanently disables Samsung Pay and Secure Folder, though banking apps can still be used via Play Integrity spoofing modules.',
+    },
+    {
+      question: 'What is USB-C DisplayPort Alt Mode and Samsung DeX?',
+      answer:
+        'DisplayPort Alt Mode allows a phone\'s USB-C port to transmit native high-resolution video directly to external monitors and TVs. On supported devices (such as Samsung Galaxy S-series with Samsung DeX, Motorola Edge with Ready For, and Google Pixel 8+), plugging into an external screen launches a full desktop computing environment with multi-window multitasking.',
+    },
+  ];
+
+  const homeFaqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: homeFaqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="space-y-8 sm:space-y-10">
+      {/* Schema.org FAQPage structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="relative pt-2 sm:pt-6 pb-2 text-left border-b border-border">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
@@ -113,6 +161,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Global FAQ Accordion for High SEO Authority */}
+      <FAQAccordion items={homeFaqItems} title="Android Rooting & Bootloader Unlocking Knowledge Base" />
     </div>
   );
 }

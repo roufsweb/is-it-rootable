@@ -1,0 +1,27 @@
+{
+  "name": "IsItRootable - Android Root & Bootloader Database",
+  "short_name": "IsItRootable",
+  "description": "Instant model-suffix sensitive Android bootloader unlock and root compatibility database.",
+  "start_url": "/is-it-rootable/",
+  "display": "standalone",
+  "background_color": "#040711",
+  "theme_color": "#00f0ff",
+  "icons": [
+    {
+      "src": "/is-it-rootable/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/is-it-rootable/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/is-it-rootable/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

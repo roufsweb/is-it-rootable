@@ -1,0 +1,67 @@
+{
+  "slug": "redmi-note-13-5g",
+  "brand": "Xiaomi",
+  "name": "Redmi Note 13 5G",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "2312DRAABG",
+        "2312DRAABI"
+      ],
+      "codename": "gold",
+      "region": "Global / Europe / India",
+      "soc": "MediaTek Dimensity 6080",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "EvolutionX",
+        "PixelOS",
+        "Paranoid Android"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "2312DRAABC"
+      ],
+      "codename": "gold_cn",
+      "region": "China Domestic",
+      "soc": "MediaTek Dimensity 6080",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "Xiaomi.eu Community ROM",
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

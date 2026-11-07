@@ -5,10 +5,12 @@ import { notFound } from 'next/navigation';
 import { getAllModels, getModelDetail } from '@/lib/devices';
 import { StatusBadge } from '@/components/StatusBadge';
 import { CommandSnippets } from '@/components/CommandSnippets';
+import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
+import { RootGuideSection } from '@/components/RootGuideSection';
 import {
   ChevronLeft,
+  ChevronRight,
   Terminal,
-  ExternalLink,
   Layers,
   CheckCircle2,
   XCircle,
@@ -51,9 +53,15 @@ export async function generateMetadata({ params }: ModelPageProps): Promise<Meta
   const { device, variant, model: exactModel } = detail;
   const methods = variant.root_methods.length > 0 ? variant.root_methods.join('/') : 'None';
   const deXStatus = device.hardware_features.usb_video_out ? 'YES' : 'NO';
+  const rootStatusText =
+    variant.root_status === 'FULL'
+      ? 'YES'
+      : variant.root_status === 'CONDITIONAL'
+      ? 'CONDITIONAL'
+      : 'NO';
 
-  const title = `Can You Root ${device.name} (${exactModel})? Bootloader & Kernel Status - IsItRootable`;
-  const description = `Check if the ${device.name} ${exactModel} can be rooted. Bootloader unlock status: ${variant.bootloader_unlockable}. Supported methods: ${methods}. DeX/DisplayPort support: ${deXStatus}.`;
+  const title = `Can You Root ${device.name} (${exactModel})? Unlock & Kernel Guide - IsItRootable`;
+  const description = `Is ${device.name} ${exactModel} (${variant.region}) rootable? Verdict: ${rootStatusText}. Bootloader status: ${variant.bootloader_unlockable}. Methods: ${methods}. DisplayPort/DeX: ${deXStatus}.`;
   const canonical = `https://roufsweb.github.io/is-it-rootable/model/${detail.normalizedModel}/`;
 
   return {
@@ -67,6 +75,12 @@ export async function generateMetadata({ params }: ModelPageProps): Promise<Meta
       description,
       url: canonical,
       type: 'article',
+      siteName: 'IsItRootable',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
     },
   };
 }
@@ -92,66 +106,160 @@ export default async function ModelPage({ params }: ModelPageProps) {
     ? 'verdict-container-full'
     : 'verdict-container-conditional';
 
-  // Schema.org FAQPage structured data
-  const faqSchema = {
+  const canonicalUrl = `https://roufsweb.github.io/is-it-rootable/model/${detail.normalizedModel}/`;
+
+  // 1. BreadcrumbList Structured Data
+  const breadcrumbSchema = {
     '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
+    '@type': 'BreadcrumbList',
+    itemListElement: [
       {
-        '@type': 'Question',
-        name: `Can you root the ${device.name} (${exactModel})?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: isLocked
-            ? `No. The ${exactModel} (${variant.region}) has a permanently locked bootloader or carrier restrictions preventing root access.`
-            : isConditional
-            ? `Conditionally. The ${exactModel} can be rooted subject to specific firmware/bit versions or unlock tokens (${variant.unlock_method}).`
-            : `Yes. The ${exactModel} (${variant.region}) has an unlockable bootloader and can be rooted using ${variant.root_methods.join(', ')}.`,
-        },
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://roufsweb.github.io/is-it-rootable/',
       },
       {
-        '@type': 'Question',
-        name: `Does the ${exactModel} have an unlockable bootloader?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: `Bootloader unlock status: ${variant.bootloader_unlockable}. Method: ${variant.unlock_method}.`,
-        },
+        '@type': 'ListItem',
+        position: 2,
+        name: `${device.brand} ${device.name}`,
+        item: `https://roufsweb.github.io/is-it-rootable/device/${device.slug}/`,
       },
       {
-        '@type': 'Question',
-        name: `Does the ${device.name} (${exactModel}) support DisplayPort or DeX?`,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: device.hardware_features.usb_video_out
-            ? `Yes. It supports wired USB-C video output${device.hardware_features.desktop_mode ? ` with ${device.hardware_features.desktop_mode}` : ''}.`
-            : `No. Wired USB-C DisplayPort output is not supported on this device.`,
-        },
+        '@type': 'ListItem',
+        position: 3,
+        name: exactModel,
+        item: canonicalUrl,
       },
     ],
   };
 
+  // 2. FAQ Items & Schema for this exact model
+  const faqItems: FAQItem[] = [
+    {
+      question: `Can you root the ${device.name} (${exactModel})?`,
+      answer: isLocked
+        ? `No. The ${exactModel} is a ${variant.region} variant with a permanently locked bootloader. Carrier restrictions or hardware fuses prevent flashing custom recovery or root binaries.`
+        : isConditional
+        ? `Conditionally. The ${exactModel} can be rooted depending on your specific bootloader bit/firmware version. Unlock method: ${variant.unlock_method}.`
+        : `Yes. The ${exactModel} (${variant.region}) features an unlockable bootloader and can be rooted using ${
+            variant.root_methods.length > 0 ? variant.root_methods.join(', ') : 'KernelSU or Magisk'
+          }.`,
+    },
+    {
+      question: `How do you unlock the bootloader on ${exactModel}?`,
+      answer: isLocked
+        ? `Bootloader unlocking is locked on the ${exactModel} due to carrier or OEM restrictions.`
+        : `To unlock the ${exactModel}: Enable OEM Unlocking in Developer Options, then execute: ${variant.unlock_method}. This procedure will wipe internal device storage.`,
+    },
+    {
+      question: `What processor (SoC) powers the ${exactModel}?`,
+      answer: `The ${exactModel} is powered by the ${variant.soc} (${variant.codename}). Custom kernel status: ${variant.custom_kernel_support}.`,
+    },
+    {
+      question: `Does the ${device.name} (${exactModel}) support DisplayPort or DeX?`,
+      answer: device.hardware_features.usb_video_out
+        ? `Yes. It supports wired USB-C video output${
+            device.hardware_features.desktop_mode ? ` with ${device.hardware_features.desktop_mode}` : ''
+          }.`
+        : `No. Wired USB-C DisplayPort output is not supported on the ${exactModel}.`,
+    },
+    {
+      question: `Does rooting the ${exactModel} trip warranty or Knox?`,
+      answer: device.brand.toLowerCase().includes('samsung')
+        ? `Yes. Unlocking the ${exactModel} trips the Samsung Knox hardware e-fuse to 0x1, which cannot be undone. To retain banking applications and Google Wallet, you must configure PlayIntegrityFix and Shamiko.`
+        : `Unlocking the bootloader flags the device status and drops Play Integrity from MEETS_STRONG_INTEGRITY. A Play Integrity bypass module is required for banking apps.`,
+    },
+  ];
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+
+  // 3. HowTo Structured Data (if unlockable)
+  const howToSchema = !isLocked
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: `How to Root ${device.name} (${exactModel})`,
+        description: `Instructions for unlocking the bootloader and installing root on the ${device.name} ${exactModel}.`,
+        totalTime: 'PT30M',
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'Backup Data and Remove Accounts',
+            text: `Backup your ${exactModel} and remove Google accounts from Settings. Bootloader unlocking performs a factory reset.`,
+            url: `${canonicalUrl}#step-1-backup`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Enable Developer Options and OEM Unlocking',
+            text: 'Go to Settings > About Phone, tap Build Number 7 times. Go to Developer Options and toggle OEM Unlocking.',
+            url: `${canonicalUrl}#step-2-oem-unlock`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Execute Bootloader Unlock',
+            text: variant.unlock_method,
+            url: `${canonicalUrl}#step-3-bootloader-unlock`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 4,
+            name: 'Patch and Flash Boot Image',
+            text: `Patch the stock boot.img or init_boot.img using ${
+              variant.root_methods.join(' or ') || 'Magisk / KernelSU'
+            } and flash to device.`,
+            url: `${canonicalUrl}#step-4-patch-boot`,
+          },
+        ],
+      }
+    : null;
+
   return (
     <div className="space-y-6 sm:space-y-8">
-      {/* Google FAQPage JSON-LD Structured Data */}
+      {/* Google JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
 
-      {/* Breadcrumb Navigation */}
-      <div className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
+      {/* Semantic Breadcrumb Navigation */}
+      <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
         <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
           Home
         </Link>
-        <span>/</span>
+        <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
         <Link href={`/device/${device.slug}/`} className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
           {device.brand} {device.name}
         </Link>
-        <span>/</span>
+        <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
         <span className="text-cyan-600 dark:text-cyan-300 font-bold px-1.5 py-0.5 rounded bg-surface-elevated border border-border">
           {exactModel}
         </span>
-      </div>
+      </nav>
 
       {/* High-Impact SEO Answer Hero Banner */}
       <div className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
@@ -175,7 +283,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
           </div>
         </div>
 
-        {/* Direct Answer Summary Box */}
+        {/* Direct Answer Summary Box (Google Featured Snippet optimized) */}
         <div className="p-4 sm:p-5 rounded-xl bg-surface border border-border font-mono text-sm leading-relaxed space-y-2 shadow-contrast-sm">
           <div className="flex items-center gap-2 text-foreground font-black text-base">
             {isLocked ? (
@@ -335,13 +443,25 @@ export default async function ModelPage({ params }: ModelPageProps) {
         />
       </section>
 
+      {/* Authoritative Root & Bootloader Guide for this model */}
+      <RootGuideSection
+        brand={device.brand}
+        name={device.name}
+        codename={variant.codename}
+        exactModel={exactModel}
+        rootStatus={variant.root_status}
+        bootloaderStatus={variant.bootloader_unlockable}
+        unlockMethod={variant.unlock_method}
+        rootMethods={variant.root_methods}
+      />
+
       {/* Sibling Model Comparison */}
       {otherVariants.length > 0 && (
         <section className="space-y-4 pt-6 border-t border-border">
           <div className="flex items-center gap-2">
             <Layers className="w-4 h-4 text-cyan-500" />
             <h3 className="text-lg font-bold text-foreground">
-              Compare with Other {device.name} Variants
+              Compare with Other {device.name} Regional Variants
             </h3>
           </div>
           <p className="font-mono text-xs text-muted font-medium">
@@ -384,6 +504,9 @@ export default async function ModelPage({ params }: ModelPageProps) {
           </div>
         </section>
       )}
+
+      {/* Google Model FAQ Accordion */}
+      <FAQAccordion items={faqItems} title={`Frequently Asked Questions about ${device.name} (${exactModel})`} />
 
       {/* Device Overview Banner Link */}
       <div className="p-4 sm:p-5 rounded-xl border border-border bg-surface-elevated flex flex-col sm:flex-row items-center justify-between gap-4 shadow-contrast-sm">

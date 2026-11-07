@@ -3239,6 +3239,44 @@
     ]
   },
   {
+    "id": "lenovo-legion-phone-duel",
+    "slug": "lenovo-legion-phone-duel",
+    "brand": "Lenovo",
+    "name": "Lenovo Legion Phone Duel",
+    "fullName": "Lenovo Lenovo Legion Phone Duel",
+    "release_year": 2020,
+    "codenames": "avr",
+    "models": "XT2611-1 XT26111 XT2611 1",
+    "rawModels": [
+      "XT2611-1"
+    ],
+    "soc": "Snapdragon 865+",
+    "custom_roms": [
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "Lenovo Legion Realm PC Mode (Dual Type-C DP)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Official",
+        "models": [
+          "XT2611-1"
+        ],
+        "soc": "Snapdragon 865+",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
     "id": "lg-g2",
     "slug": "lg-g2",
     "brand": "LG",
@@ -3923,6 +3961,90 @@
     ]
   },
   {
+    "id": "motorola-edge-20-pro",
+    "slug": "motorola-edge-20-pro",
+    "brand": "Motorola",
+    "name": "Motorola Edge 20 Pro",
+    "fullName": "Motorola Motorola Edge 20 Pro",
+    "release_year": 2021,
+    "codenames": "pstar",
+    "models": "moto g(100) MOTO G(100) motog(100) motorola edge 20 pro MOTOROLA EDGE 20 PRO motorolaedge20pro",
+    "rawModels": [
+      "moto g(100)",
+      "motorola edge 20 pro"
+    ],
+    "soc": "Snapdragon 870",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "Motorola Ready For (Wired DP Alt Mode & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Retail Unlocked",
+        "models": [
+          "moto g(100)",
+          "motorola edge 20 pro"
+        ],
+        "soc": "Snapdragon 870",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motorola-edge-30-pro",
+    "slug": "motorola-edge-30-pro",
+    "brand": "Motorola",
+    "name": "Motorola Edge 30 Pro",
+    "fullName": "Motorola Motorola Edge 30 Pro",
+    "release_year": 2022,
+    "codenames": "hiphi",
+    "models": "motorola edge 30 pro MOTOROLA EDGE 30 PRO motorolaedge30pro motorola edge plus MOTOROLA EDGE PLUS motorolaedgeplus",
+    "rawModels": [
+      "motorola edge 30 pro",
+      "motorola edge plus"
+    ],
+    "soc": "Snapdragon 8 Gen 1",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "Motorola Ready For (Wired DP Alt Mode & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Retail Unlocked",
+        "models": [
+          "motorola edge 30 pro",
+          "motorola edge plus"
+        ],
+        "soc": "Snapdragon 8 Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
     "id": "motorola-edge-30-ultra",
     "slug": "motorola-edge-30-ultra",
     "brand": "Motorola",
@@ -4409,6 +4531,180 @@
           "Moto G (5) Plus"
         ],
         "soc": "Snapdragon 625",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g52",
+    "slug": "motorola-moto-g52",
+    "brand": "Motorola",
+    "name": "Motorola Moto G52",
+    "fullName": "Motorola Motorola Moto G52",
+    "release_year": 2022,
+    "codenames": "rhode",
+    "models": "moto g(50) MOTO G(50) motog(50) moto g52 MOTO G52 motog52",
+    "rawModels": [
+      "moto g(50)",
+      "moto g52"
+    ],
+    "soc": "Snapdragon 680 4G",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Retail Unlocked",
+        "models": [
+          "moto g(50)",
+          "moto g52"
+        ],
+        "soc": "Snapdragon 680 4G",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g54-5g",
+    "slug": "motorola-moto-g54-5g",
+    "brand": "Motorola",
+    "name": "Motorola Moto G54 5G",
+    "fullName": "Motorola Motorola Moto G54 5G",
+    "release_year": 2023,
+    "codenames": "cancunf",
+    "models": "XT2343-3 XT23433 XT2343 3 moto g54 5G MOTO G54 5G motog545G moto g73 5G MOTO G73 5G motog735G",
+    "rawModels": [
+      "XT2343-3",
+      "moto g54 5G",
+      "moto g73 5G"
+    ],
+    "soc": "MediaTek Dimensity 7020",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Retail Unlocked",
+        "models": [
+          "XT2343-3",
+          "moto g54 5G",
+          "moto g73 5G"
+        ],
+        "soc": "MediaTek Dimensity 7020",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g73-5g",
+    "slug": "motorola-moto-g73-5g",
+    "brand": "Motorola",
+    "name": "Motorola Moto G73 5G",
+    "fullName": "Motorola Motorola Moto G73 5G",
+    "release_year": 2023,
+    "codenames": "devonf",
+    "models": "moto g(50) 5G MOTO G(50) 5G motog(50)5G moto g73 5G MOTO G73 5G motog735G",
+    "rawModels": [
+      "moto g(50) 5G",
+      "moto g73 5G"
+    ],
+    "soc": "MediaTek Dimensity 930",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Retail Unlocked",
+        "models": [
+          "moto g(50) 5G",
+          "moto g73 5G"
+        ],
+        "soc": "MediaTek Dimensity 930",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motorola-moto-g82-5g",
+    "slug": "motorola-moto-g82-5g",
+    "brand": "Motorola",
+    "name": "Motorola Moto G82 5G",
+    "fullName": "Motorola Motorola Moto G82 5G",
+    "release_year": 2022,
+    "codenames": "rhodep",
+    "models": "XT2169-2 XT21692 XT2169 2 XT2225-2 XT22252 XT2225 moto g71 5G MOTO G71 5G motog715G moto g82 5G MOTO G82 5G motog825G",
+    "rawModels": [
+      "XT2169-2",
+      "XT2225-2",
+      "moto g71 5G",
+      "moto g82 5G"
+    ],
+    "soc": "Snapdragon 695 5G",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Retail Unlocked",
+        "models": [
+          "XT2169-2",
+          "XT2225-2",
+          "moto g71 5G",
+          "moto g82 5G"
+        ],
+        "soc": "Snapdragon 695 5G",
         "root_status": "FULL",
         "bootloader_unlockable": "YES",
         "custom_roms": [
@@ -5241,6 +5537,54 @@
           "PJZ110"
         ],
         "soc": "Snapdragon 8 Elite",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oneplus-13r",
+    "slug": "oneplus-13r",
+    "brand": "OnePlus",
+    "name": "OnePlus 13R",
+    "fullName": "OnePlus OnePlus 13R",
+    "release_year": 2025,
+    "codenames": "OP5D3BL1",
+    "models": "CPH2645 CPH2647 CPH2691",
+    "rawModels": [
+      "CPH2645",
+      "CPH2647",
+      "CPH2691"
+    ],
+    "soc": "Snapdragon 8 Gen 3",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / North America / India",
+        "models": [
+          "CPH2645",
+          "CPH2647",
+          "CPH2691"
+        ],
+        "soc": "Snapdragon 8 Gen 3",
         "root_status": "FULL",
         "bootloader_unlockable": "YES",
         "custom_roms": [
@@ -6327,6 +6671,52 @@
         "models": [
           "CPH2465",
           "CPH2467"
+        ],
+        "soc": "Snapdragon 695 5G",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "Nameless AOSP",
+          "crDroid",
+          "Paranoid Android"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "oneplus-nord-ce-4-lite-5g",
+    "slug": "oneplus-nord-ce-4-lite-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus Nord CE 4 Lite 5G",
+    "fullName": "OnePlus OnePlus Nord CE 4 Lite 5G",
+    "release_year": 2024,
+    "codenames": "OP5D49L1",
+    "models": "CPH2619 CPH2621",
+    "rawModels": [
+      "CPH2619",
+      "CPH2621"
+    ],
+    "soc": "Snapdragon 695 5G",
+    "custom_roms": [
+      "LineageOS Official",
+      "Nameless AOSP",
+      "crDroid",
+      "Paranoid Android"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / North America / India",
+        "models": [
+          "CPH2619",
+          "CPH2621"
         ],
         "soc": "Snapdragon 695 5G",
         "root_status": "FULL",
@@ -7753,6 +8143,94 @@
     ]
   },
   {
+    "id": "realme-gt-master-edition",
+    "slug": "realme-gt-master-edition",
+    "brand": "Realme",
+    "name": "Realme GT Master Edition",
+    "fullName": "Realme Realme GT Master Edition",
+    "release_year": 2021,
+    "codenames": "RE507C",
+    "models": "RMX3360 RMX3361 RMX3363",
+    "rawModels": [
+      "RMX3360",
+      "RMX3361",
+      "RMX3363"
+    ],
+    "soc": "Snapdragon 778G 5G",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "PixelOS"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "RMX3360",
+          "RMX3361",
+          "RMX3363"
+        ],
+        "soc": "Snapdragon 778G 5G",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "PixelOS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "realme-gt-neo-3",
+    "slug": "realme-gt-neo-3",
+    "brand": "Realme",
+    "name": "Realme GT Neo 3",
+    "fullName": "Realme Realme GT Neo 3",
+    "release_year": 2022,
+    "codenames": "RE5473",
+    "models": "RMX3370",
+    "rawModels": [
+      "RMX3370"
+    ],
+    "soc": "MediaTek Dimensity 8100",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "PixelOS"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "RMX3370"
+        ],
+        "soc": "MediaTek Dimensity 8100",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "PixelOS"
+        ]
+      }
+    ]
+  },
+  {
     "id": "realme-x2-pro",
     "slug": "realme-x2-pro",
     "brand": "Realme",
@@ -7993,6 +8471,68 @@
     ]
   },
   {
+    "id": "redmi-note-12-5g",
+    "slug": "redmi-note-12-5g",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 12 5G",
+    "fullName": "Xiaomi Redmi Note 12 5G",
+    "release_year": 2023,
+    "codenames": "sunstone sunstone_cn",
+    "models": "22101317C",
+    "rawModels": [
+      "22101317C",
+      "22101317C"
+    ],
+    "soc": "Snapdragon 4 Gen 1",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "22101317C"
+        ],
+        "soc": "Snapdragon 4 Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "22101317C"
+        ],
+        "soc": "Snapdragon 4 Gen 1",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
     "id": "redmi-note-12-pro-5g",
     "slug": "redmi-note-12-pro-5g",
     "brand": "Xiaomi",
@@ -8109,6 +8649,70 @@
           "23049RAD8C"
         ],
         "soc": "Snapdragon 7+ Gen 2",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "Xiaomi.eu Community ROM",
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redmi-note-13-5g",
+    "slug": "redmi-note-13-5g",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 13 5G",
+    "fullName": "Xiaomi Redmi Note 13 5G",
+    "release_year": 2024,
+    "codenames": "gold gold_cn",
+    "models": "2312DRAABG 2312DRAABI 2312DRAABC",
+    "rawModels": [
+      "2312DRAABG",
+      "2312DRAABI",
+      "2312DRAABC"
+    ],
+    "soc": "MediaTek Dimensity 6080",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "EvolutionX",
+      "PixelOS",
+      "Paranoid Android",
+      "Xiaomi.eu Community ROM",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / India",
+        "models": [
+          "2312DRAABG",
+          "2312DRAABI"
+        ],
+        "soc": "MediaTek Dimensity 6080",
+        "root_status": "FULL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "EvolutionX",
+          "PixelOS",
+          "Paranoid Android"
+        ]
+      },
+      {
+        "region": "China Domestic",
+        "models": [
+          "2312DRAABC"
+        ],
+        "soc": "MediaTek Dimensity 6080",
         "root_status": "CONDITIONAL",
         "bootloader_unlockable": "CONDITIONAL",
         "custom_roms": [
@@ -11856,6 +12460,59 @@
     ]
   },
   {
+    "id": "samsung-galaxy-s20",
+    "slug": "samsung-galaxy-s20",
+    "brand": "Samsung",
+    "name": "Galaxy S20",
+    "fullName": "Samsung Galaxy S20",
+    "release_year": 2020,
+    "codenames": "x1s x1s_na",
+    "models": "SM-G980F SMG980F G980F SM-GalaxyS20U SM-GALAXYS20U SMGalaxyS20U GalaxyS20U",
+    "rawModels": [
+      "SM-G980F",
+      "SM-GalaxyS20U"
+    ],
+    "soc": "Exynos 990, Snapdragon 865",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": true,
+    "headphone_jack": false,
+    "variantsCount": 2,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-G980F"
+        ],
+        "soc": "Exynos 990",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-GalaxyS20U"
+        ],
+        "soc": "Snapdragon 865",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      }
+    ]
+  },
+  {
     "id": "samsung-galaxy-s21-fe-5g",
     "slug": "samsung-galaxy-s21-fe-5g",
     "brand": "Samsung",
@@ -12662,6 +13319,81 @@
           "SM-S9110"
         ],
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s24-fe",
+    "slug": "samsung-galaxy-s24-fe",
+    "brand": "Samsung",
+    "name": "Galaxy S24 FE",
+    "fullName": "Samsung Galaxy S24 FE",
+    "release_year": 2024,
+    "codenames": "r12s SCG30_na SCG30",
+    "models": "SM-S721B SMS721B S721B SM-S721N SMS721N S721N SM-S721U SMS721U S721U SM-S721U1 SMS721U1 S721U1 SM-S721W SMS721W S721W SCG30 SM-S7210 SMS7210 S7210",
+    "rawModels": [
+      "SM-S721B",
+      "SM-S721N",
+      "SM-S721U",
+      "SM-S721U1",
+      "SM-S721W",
+      "SCG30",
+      "SM-S7210"
+    ],
+    "soc": "Exynos 2400e",
+    "custom_roms": [
+      "LineageOS Official",
+      "crDroid",
+      "HadesROM / HadesKernel",
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / International",
+        "models": [
+          "SM-S721B",
+          "SM-S721N"
+        ],
+        "soc": "Exynos 2400e",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL",
+        "custom_roms": [
+          "LineageOS Official",
+          "crDroid",
+          "HadesROM / HadesKernel"
+        ]
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-S721U",
+          "SM-S721U1",
+          "SM-S721W"
+        ],
+        "soc": "Exynos 2400e",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO",
+        "custom_roms": []
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SCG30",
+          "SM-S7210"
+        ],
+        "soc": "Exynos 2400e",
         "root_status": "FULL",
         "bootloader_unlockable": "YES",
         "custom_roms": [
@@ -18133,6 +18865,44 @@
     ]
   },
   {
+    "id": "zte-redmagic-10-pro",
+    "slug": "zte-redmagic-10-pro",
+    "brand": "ZTE",
+    "name": "ZTE RedMagic 10 Pro",
+    "fullName": "ZTE ZTE RedMagic 10 Pro",
+    "release_year": 2024,
+    "codenames": "NX789J",
+    "models": "NX789J",
+    "rawModels": [
+      "NX789J"
+    ],
+    "soc": "Snapdragon 8 Elite",
+    "custom_roms": [
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "RedMagic Studio PC & Direct DP 4K 144Hz Gaming Mode",
+    "sdcard_slot": false,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Official",
+        "models": [
+          "NX789J"
+        ],
+        "soc": "Snapdragon 8 Elite",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
     "id": "zte-redmagic-5g",
     "slug": "zte-redmagic-5g",
     "brand": "ZTE",
@@ -18171,6 +18941,44 @@
     ]
   },
   {
+    "id": "zte-redmagic-6",
+    "slug": "zte-redmagic-6",
+    "brand": "ZTE",
+    "name": "ZTE RedMagic 6",
+    "fullName": "ZTE ZTE RedMagic 6",
+    "release_year": 2021,
+    "codenames": "NX669J",
+    "models": "NX669J",
+    "rawModels": [
+      "NX669J"
+    ],
+    "soc": "Snapdragon 888",
+    "custom_roms": [
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "RedMagic Studio PC & Direct DP Console Mode",
+    "sdcard_slot": false,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Official",
+        "models": [
+          "NX669J"
+        ],
+        "soc": "Snapdragon 888",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
     "id": "zte-redmagic-7",
     "slug": "zte-redmagic-7",
     "brand": "ZTE",
@@ -18200,6 +19008,44 @@
           "NX709J"
         ],
         "soc": "Snapdragon 8 Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES",
+        "custom_roms": [
+          "LineageOS Unofficial"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zte-redmagic-8-pro",
+    "slug": "zte-redmagic-8-pro",
+    "brand": "ZTE",
+    "name": "ZTE RedMagic 8 Pro",
+    "fullName": "ZTE ZTE RedMagic 8 Pro",
+    "release_year": 2023,
+    "codenames": "NX729J",
+    "models": "NX729J",
+    "rawModels": [
+      "NX729J"
+    ],
+    "soc": "Snapdragon 8 Gen 2",
+    "custom_roms": [
+      "LineageOS Unofficial"
+    ],
+    "overallRoot": "FULL",
+    "overallBootloader": "YES",
+    "usb_video_out": true,
+    "desktop_mode": "RedMagic Studio PC & Direct DP 4K Console Mode",
+    "sdcard_slot": false,
+    "headphone_jack": true,
+    "variantsCount": 1,
+    "sampleVariants": [
+      {
+        "region": "Global / Official",
+        "models": [
+          "NX729J"
+        ],
+        "soc": "Snapdragon 8 Gen 2",
         "root_status": "FULL",
         "bootloader_unlockable": "YES",
         "custom_roms": [

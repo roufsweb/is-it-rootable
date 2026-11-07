@@ -21,6 +21,20 @@ interface SearchBarProps {
   initialDevices: SearchItem[];
 }
 
+const POPULAR_BRANDS = [
+  'Samsung',
+  'Google',
+  'OnePlus',
+  'Xiaomi',
+  'Motorola',
+  'Sony',
+  'LG',
+  'Asus',
+  'POCO',
+  'Nothing',
+  'Realme',
+];
+
 export function SearchBar({ initialDevices }: SearchBarProps) {
   const [query, setQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<'ALL' | RootStatus>('ALL');
@@ -31,6 +45,30 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
   const [brandFilter, setBrandFilter] = useState<string>('ALL');
 
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Read URL query params on mount
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    const brand = params.get('brand');
+    if (q) setQuery(q);
+    if (brand) setBrandFilter(brand);
+  }, []);
+
+  // Sync state to URL params non-disruptively
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams();
+    if (query.trim()) params.set('q', query.trim());
+    if (brandFilter !== 'ALL') params.set('brand', brandFilter);
+
+    const newUrl = params.toString()
+      ? `${window.location.pathname}?${params.toString()}`
+      : window.location.pathname;
+
+    window.history.replaceState({}, '', newUrl);
+  }, [query, brandFilter]);
 
   // Initialize MiniSearch once
   const miniSearch = useMemo(() => {
@@ -137,6 +175,39 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
 
   return (
     <div className="space-y-5 sm:space-y-6">
+      {/* Brand Quick-Filter Pills Strip */}
+      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none font-mono text-xs">
+        <span className="text-muted font-bold mr-1 shrink-0">Brand:</span>
+        <button
+          type="button"
+          onClick={() => setBrandFilter('ALL')}
+          className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 cursor-pointer ${
+            brandFilter === 'ALL'
+              ? 'bg-cyan-500 text-background shadow-xs'
+              : 'bg-surface border border-border text-muted hover:text-foreground hover:border-border-hover'
+          }`}
+        >
+          All
+        </button>
+        {POPULAR_BRANDS.map((b) => {
+          const isActive = brandFilter.toLowerCase() === b.toLowerCase();
+          return (
+            <button
+              key={b}
+              type="button"
+              onClick={() => setBrandFilter(isActive ? 'ALL' : b)}
+              className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 cursor-pointer ${
+                isActive
+                  ? 'bg-cyan-500 text-background shadow-xs'
+                  : 'bg-surface border border-border text-muted hover:text-foreground hover:border-border-hover'
+              }`}
+            >
+              {b}
+            </button>
+          );
+        })}
+      </div>
+
       {/* High-Contrast Search Input Box */}
       <div className="relative">
         <div className="relative flex items-center">
@@ -152,7 +223,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
           {query ? (
             <button
               onClick={() => setQuery('')}
-              className="absolute right-10 sm:right-12 p-1.5 rounded-lg text-muted hover:text-foreground hover:bg-surface-elevated transition-colors"
+              className="absolute right-10 sm:right-12 p-1.5 rounded-lg text-muted hover:text-foreground hover:bg-surface-elevated transition-colors cursor-pointer"
               title="Clear search"
             >
               <X className="w-4 h-4" />
@@ -175,7 +246,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </span>
             <button
               onClick={() => setStatusFilter('ALL')}
-              className={`font-mono text-xs px-2.5 py-1 rounded transition-colors shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded transition-colors shrink-0 cursor-pointer ${
                 statusFilter === 'ALL'
                   ? 'bg-foreground text-background font-bold'
                   : 'bg-surface-elevated text-muted hover:text-foreground border border-border'
@@ -185,7 +256,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
             <button
               onClick={() => setStatusFilter(statusFilter === 'FULL' ? 'ALL' : 'FULL')}
-              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1 shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1 shrink-0 cursor-pointer ${
                 statusFilter === 'FULL'
                   ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border-emerald-500 font-bold'
                   : 'bg-surface-elevated text-emerald-700 dark:text-emerald-400 border-border hover:border-emerald-500/50'
@@ -196,7 +267,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
             <button
               onClick={() => setStatusFilter(statusFilter === 'CONDITIONAL' ? 'ALL' : 'CONDITIONAL')}
-              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1 shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1 shrink-0 cursor-pointer ${
                 statusFilter === 'CONDITIONAL'
                   ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500 font-bold'
                   : 'bg-surface-elevated text-amber-700 dark:text-amber-400 border-border hover:border-amber-500/50'
@@ -207,7 +278,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
             <button
               onClick={() => setStatusFilter(statusFilter === 'LOCKED' ? 'ALL' : 'LOCKED')}
-              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1 shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1 shrink-0 cursor-pointer ${
                 statusFilter === 'LOCKED'
                   ? 'bg-rose-500/20 text-rose-800 dark:text-rose-300 border-rose-500 font-bold'
                   : 'bg-surface-elevated text-rose-700 dark:text-rose-400 border-border hover:border-rose-500/50'
@@ -222,7 +293,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
           {hasActiveFilters && (
             <button
               onClick={resetFilters}
-              className="text-xs font-mono text-cyan-600 dark:text-cyan-400 hover:underline font-bold self-end sm:self-center"
+              className="text-xs font-mono text-cyan-600 dark:text-cyan-400 hover:underline font-bold self-end sm:self-center cursor-pointer"
             >
               Reset Filters
             </button>
@@ -236,7 +307,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             <span className="text-xs font-mono text-muted mr-1 font-bold shrink-0">Features:</span>
             <button
               onClick={() => setFilterRoms(!filterRoms)}
-              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterRoms
                   ? 'bg-purple-500/20 text-purple-800 dark:text-purple-300 border-purple-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
@@ -247,7 +318,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
             <button
               onClick={() => setFilterVideoOut(!filterVideoOut)}
-              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterVideoOut
                   ? 'bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border-cyan-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
@@ -258,7 +329,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
             <button
               onClick={() => setFilterSdCard(!filterSdCard)}
-              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterSdCard
                   ? 'bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border-emerald-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
@@ -269,7 +340,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
             <button
               onClick={() => setFilterHeadphone(!filterHeadphone)}
-              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 ${
+              className={`font-mono text-xs px-2.5 py-1 rounded border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterHeadphone
                   ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
@@ -280,15 +351,15 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
           </div>
 
-          {/* Brand select */}
+          {/* Full Brand select dropdown */}
           <div className="flex items-center gap-2 text-xs font-mono shrink-0 self-end sm:self-center">
-            <span className="text-muted font-bold">Brand:</span>
+            <span className="text-muted font-bold">More Brands:</span>
             <select
               value={brandFilter}
               onChange={(e) => setBrandFilter(e.target.value)}
-              className="bg-surface-elevated border border-border rounded-md px-2 py-1 text-foreground font-semibold focus:outline-none focus:border-cyan-500"
+              className="bg-surface-elevated border border-border rounded-md px-2 py-1 text-foreground font-semibold focus:outline-none focus:border-cyan-500 cursor-pointer"
             >
-              <option value="ALL">All Brands</option>
+              <option value="ALL">All Brands ({availableBrands.length})</option>
               {availableBrands.map((b) => (
                 <option key={b} value={b}>
                   {b}
@@ -303,6 +374,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
       <div className="flex items-center justify-between text-xs font-mono text-muted px-1">
         <div>
           Showing <span className="text-cyan-600 dark:text-cyan-400 font-bold">{results.length}</span> device {results.length === 1 ? 'family' : 'families'}
+          {brandFilter !== 'ALL' ? <span> from <span className="text-foreground font-bold">{brandFilter}</span></span> : null}
           {query ? <span> matching &ldquo;<span className="text-foreground font-bold">{query}</span>&rdquo;</span> : null}
         </div>
         <div className="text-muted text-[11px] hidden sm:block">
@@ -330,7 +402,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
           </div>
           <button
             onClick={resetFilters}
-            className="font-mono text-xs px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors"
+            className="font-mono text-xs px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors cursor-pointer"
           >
             Clear all filters & search
           </button>

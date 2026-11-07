@@ -1,0 +1,38 @@
+{
+  "slug": "lenovo-legion-phone-duel",
+  "brand": "Lenovo",
+  "name": "Lenovo Legion Phone Duel",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Lenovo Legion Realm PC Mode (Dual Type-C DP)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "XT2611-1"
+      ],
+      "codename": "avr",
+      "region": "Global / Official",
+      "soc": "Snapdragon 865+",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking toggle in Developer Settings + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Unofficial"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

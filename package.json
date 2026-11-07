@@ -11,7 +11,9 @@
     "lint": "next lint",
     "generate": "node scripts/generate_device_database.mjs",
     "validate": "node scripts/validate_schema.mjs",
-    "index": "node scripts/build_search_index.mjs"
+    "index": "node scripts/build_search_index.mjs",
+    "build:search": "node scripts/build_search_index.mjs",
+    "build:assets": "node scripts/generate_branding_assets.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

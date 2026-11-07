@@ -1,0 +1,40 @@
+{
+  "slug": "realme-gt-neo-3",
+  "brand": "Realme",
+  "name": "Realme GT Neo 3",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "RMX3370"
+      ],
+      "codename": "RE5473",
+      "region": "Global / Europe / India",
+      "soc": "MediaTek Dimensity 8100",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Realme Official In-Depth Test (DeepTesting APK) server approval + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid",
+        "PixelOS"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

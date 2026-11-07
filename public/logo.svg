@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="50%" stop-color="#040711"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </linearGradient>
+
+    <!-- Neon Cyan to Emerald Gradient -->
+    <linearGradient id="cyanGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="60%" stop-color="#00e5a3"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#0088ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Shackle Gradient (Unlocked Gold/Emerald) -->
+    <linearGradient id="shackleGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Cyber Shield Background -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="4"/>
+  
+  <!-- Subtle Grid Pattern Lines -->
+  <g opacity="0.12" stroke="#00f0ff" stroke-width="1.5">
+    <line x1="16" y1="136" x2="496" y2="136" />
+    <line x1="16" y1="256" x2="496" y2="256" />
+    <line x1="16" y1="376" x2="496" y2="376" />
+    <line x1="136" y1="16" x2="136" y2="496" />
+    <line x1="256" y1="16" x2="256" y2="496" />
+    <line x1="376" y1="16" x2="376" y2="496" />
+  </g>
+
+  <!-- Unlocked Padlock Shackle Arc (Symbolizing Bootloader Unlock) -->
+  <path d="M 216 170 L 216 116 C 216 76 296 76 296 116 L 296 130" 
+        fill="none" 
+        stroke="url(#shackleGrad)" 
+        stroke-width="22" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#subtleGlow)"/>
+
+  <!-- Android Head Silhouette (Upper Dome) -->
+  <path d="M 136 264 C 136 198 190 144 256 144 C 322 144 376 198 376 264 Z" 
+        fill="url(#cyanGreenGrad)" 
+        opacity="0.95"
+        filter="url(#neonGlow)"/>
+
+  <!-- Left Antenna -->
+  <line x1="190" y1="164" x2="162" y2="114" 
+        stroke="#00f0ff" 
+        stroke-width="16" 
+        stroke-linecap="round"
+        filter="url(#subtleGlow)"/>
+
+  <!-- Right Antenna -->
+  <line x1="322" y1="164" x2="350" y2="114" 
+        stroke="#10b981" 
+        stroke-width="16" 
+        stroke-linecap="round"
+        filter="url(#subtleGlow)"/>
+
+  <!-- Eyes: Terminal Prompts (Left: '>', Right: '#') -->
+  <!-- Left Eye: Terminal Prompt Arrow '>' -->
+  <path d="M 194 212 L 214 224 L 194 236" 
+        fill="none" 
+        stroke="#040711" 
+        stroke-width="7" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- Right Eye: Superuser Hash '#' -->
+  <g stroke="#040711" stroke-width="5" stroke-linecap="round">
+    <line x1="298" y1="212" x2="298" y2="236" />
+    <line x1="312" y1="212" x2="312" y2="236" />
+    <line x1="292" y1="219" x2="318" y2="219" />
+    <line x1="292" y1="229" x2="318" y2="229" />
+  </g>
+
+  <!-- Lower Terminal Container / Fastboot Box -->
+  <rect x="136" y="284" width="240" height="120" rx="20" fill="#0c1424" stroke="url(#cyanGreenGrad)" stroke-width="4"/>
+
+  <!-- Prominent Glowing '#' Root Hash Inside Fastboot Box -->
+  <g stroke="url(#cyanGreenGrad)" stroke-width="12" stroke-linecap="round" filter="url(#neonGlow)">
+    <line x1="236" y1="308" x2="230" y2="380" />
+    <line x1="282" y1="308" x2="276" y2="380" />
+    <line x1="208" y1="330" x2="304" y2="330" />
+    <line x1="202" y1="358" x2="298" y2="358" />
+  </g>
+
+  <!-- Corner Tech Accent Decals -->
+  <path d="M 50 110 L 50 50 L 110 50" fill="none" stroke="#00f0ff" stroke-width="4" opacity="0.6"/>
+  <path d="M 462 110 L 462 50 L 402 50" fill="none" stroke="#10b981" stroke-width="4" opacity="0.6"/>
+  <path d="M 50 402 L 50 462 L 110 462" fill="none" stroke="#00f0ff" stroke-width="4" opacity="0.6"/>
+  <path d="M 462 402 L 462 462 L 402 462" fill="none" stroke="#10b981" stroke-width="4" opacity="0.6"/>
+</svg>

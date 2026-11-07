@@ -1,0 +1,39 @@
+{
+  "slug": "motorola-edge-30-pro",
+  "brand": "Motorola",
+  "name": "Motorola Edge 30 Pro",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Motorola Ready For (Wired DP Alt Mode & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "motorola edge 30 pro",
+        "motorola edge plus"
+      ],
+      "codename": "hiphi",
+      "region": "Global / Retail Unlocked",
+      "soc": "Snapdragon 8 Gen 1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patch",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "LineageOS Official",
+        "crDroid"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}
