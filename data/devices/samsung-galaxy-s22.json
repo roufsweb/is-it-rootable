@@ -1,0 +1,60 @@
+{
+  "slug": "samsung-galaxy-s22",
+  "brand": "Samsung",
+  "name": "Galaxy S22",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["SM-S901B", "SM-S901B/DS"],
+      "codename": "r0s",
+      "region": "Global / Europe",
+      "soc": "Exynos 2200",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock in Developer Options. Bootloader roll-back prevention applies if updated to One UI 8 binary bits.",
+      "root_status": "CONDITIONAL",
+      "root_methods": ["Magisk", "KernelSU", "APatch"],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s22.12519/",
+        "twrp": "https://twrp.me/samsung/samsunggalaxys22.html"
+      }
+    },
+    {
+      "models": ["SM-S901U", "SM-S901U1", "SM-S901W"],
+      "codename": "r0q",
+      "region": "USA / Canada",
+      "soc": "Snapdragon 8 Gen 1",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s22.12519/"
+      }
+    },
+    {
+      "models": ["SM-S9010"],
+      "codename": "r0qchn",
+      "region": "China / Hong Kong",
+      "soc": "Snapdragon 8 Gen 1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": ["Magisk", "APatch"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "LOW",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s22.12519/"
+      }
+    }
+  ]
+}

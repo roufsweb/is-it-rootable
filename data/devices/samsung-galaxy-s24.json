@@ -1,0 +1,59 @@
+{
+  "slug": "samsung-galaxy-s24",
+  "brand": "Samsung",
+  "name": "Galaxy S24",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["SM-S921B", "SM-S921B/DS"],
+      "codename": "e1s",
+      "region": "Global / Europe",
+      "soc": "Exynos 2400",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock toggle available. Note: Knox Guard bootloader bit enforcement on One UI 8 prevents downgrading to unlockable binary versions if updated.",
+      "root_status": "CONDITIONAL",
+      "root_methods": ["Magisk", "KernelSU", "APatch"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+      }
+    },
+    {
+      "models": ["SM-S921U", "SM-S921U1", "SM-S921W"],
+      "codename": "e1q",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 8 Gen 3 for Galaxy",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+      }
+    },
+    {
+      "models": ["SM-S9210"],
+      "codename": "e1qchn",
+      "region": "China / Hong Kong / Taiwan",
+      "soc": "Snapdragon 8 Gen 3 for Galaxy",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "OEM Unlock in Developer Options + Odin Flash (Subject to region firmware checks)",
+      "root_status": "CONDITIONAL",
+      "root_methods": ["Magisk", "APatch"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "LOW",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+      }
+    }
+  ]
+}

@@ -461,6 +461,160 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-note-20-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy Note 20 Ultra 5G",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-N986B",
+          "SM-N986B/DS",
+          "SM-N986N"
+        ],
+        "codename": "c2s",
+        "region": "Global / Europe / Korea",
+        "soc": "Exynos 990",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Volume Up unlock mode in bootloader",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/",
+          "twrp": "https://twrp.me/samsung/samsunggalaxynote20ultra5g.html"
+        }
+      },
+      {
+        "models": [
+          "SM-N986U",
+          "SM-N986U1",
+          "SM-N986W"
+        ],
+        "codename": "c2q",
+        "region": "USA / Canada",
+        "soc": "Snapdragon 865+",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/"
+        }
+      },
+      {
+        "models": [
+          "SM-N9860"
+        ],
+        "codename": "c2qchn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 865+",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + Odin Flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s10",
+    "brand": "Samsung",
+    "name": "Galaxy S10",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired)",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-G973F",
+          "SM-G973F/DS",
+          "SM-G973N"
+        ],
+        "codename": "beyond1lte",
+        "region": "Global / Europe / Korea",
+        "soc": "Exynos 9820",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s10.8659/",
+          "twrp": "https://twrp.me/samsung/samsunggalaxys10.html"
+        }
+      },
+      {
+        "models": [
+          "SM-G973U",
+          "SM-G973U1",
+          "SM-G973W"
+        ],
+        "codename": "beyond1qlte",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s10.8659/"
+        }
+      },
+      {
+        "models": [
+          "SM-G9730"
+        ],
+        "codename": "beyond1qltechn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM unlock app + Odin",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s10.8659/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-s21",
     "brand": "Samsung",
     "name": "Galaxy S21 5G",
@@ -537,6 +691,82 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-s22",
+    "brand": "Samsung",
+    "name": "Galaxy S22",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-S901B",
+          "SM-S901B/DS"
+        ],
+        "codename": "r0s",
+        "region": "Global / Europe",
+        "soc": "Exynos 2200",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock in Developer Options. Bootloader roll-back prevention applies if updated to One UI 8 binary bits.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s22.12519/",
+          "twrp": "https://twrp.me/samsung/samsunggalaxys22.html"
+        }
+      },
+      {
+        "models": [
+          "SM-S901U",
+          "SM-S901U1",
+          "SM-S901W"
+        ],
+        "codename": "r0q",
+        "region": "USA / Canada",
+        "soc": "Snapdragon 8 Gen 1",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s22.12519/"
+        }
+      },
+      {
+        "models": [
+          "SM-S9010"
+        ],
+        "codename": "r0qchn",
+        "region": "China / Hong Kong",
+        "soc": "Snapdragon 8 Gen 1",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + Odin Flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "LOW",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s22.12519/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-s23",
     "brand": "Samsung",
     "name": "Galaxy S23",
@@ -587,6 +817,81 @@
         "custom_kernel_support": "NONE",
         "links": {
           "xda": "https://xdaforums.com/c/samsung-galaxy-s23.12711/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s24",
+    "brand": "Samsung",
+    "name": "Galaxy S24",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-S921B",
+          "SM-S921B/DS"
+        ],
+        "codename": "e1s",
+        "region": "Global / Europe",
+        "soc": "Exynos 2400",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: Knox Guard bootloader bit enforcement on One UI 8 prevents downgrading to unlockable binary versions if updated.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+        }
+      },
+      {
+        "models": [
+          "SM-S921U",
+          "SM-S921U1",
+          "SM-S921W"
+        ],
+        "codename": "e1q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
+        }
+      },
+      {
+        "models": [
+          "SM-S9210"
+        ],
+        "codename": "e1qchn",
+        "region": "China / Hong Kong / Taiwan",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock in Developer Options + Odin Flash (Subject to region firmware checks)",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "LOW",
+        "links": {
+          "xda": "https://xdaforums.com/c/samsung-galaxy-s24.12841/"
         }
       }
     ]

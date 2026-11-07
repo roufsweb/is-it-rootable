@@ -85,3 +85,4 @@ node scripts/scrape_device_sources.mjs --codename dreamlte
 ## 📄 License
 
 MIT License. Open-source and free for the Android community.
+

@@ -36,3 +36,4 @@ IsItRootable is an open-source, lightning-fast database and search platform answ
   - `app/`: Next.js 15 App Router static export
   - `components/`: Cyberpunk / terminal themed UI components
   - `lib/`: Device loader and search utilities
+

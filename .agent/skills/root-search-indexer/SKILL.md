@@ -26,3 +26,4 @@ Instructions for building instant, zero-latency client search for IsItRootable.
    - Prefix search enabled: `prefix: true`
    - Fuzzy search with threshold `0.2` for minor typos
    - Combine results across brand, name, models, and codenames.
+

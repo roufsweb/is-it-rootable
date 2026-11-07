@@ -39,3 +39,4 @@ Use this skill to research and populate device data locally so no scraping ever 
 3. **Write & Validate**:
    - Save the structured output to `data/devices/[brand]-[device-slug].json`.
    - Run `node scripts/validate_schema.mjs` to ensure 100% schema compliance before staging with Git.
+

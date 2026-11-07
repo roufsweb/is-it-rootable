@@ -184,3 +184,4 @@ export function VariantTable({ variants, brand, name }: VariantTableProps) {
     </div>
   );
 }
+

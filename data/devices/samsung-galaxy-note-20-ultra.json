@@ -1,0 +1,60 @@
+{
+  "slug": "samsung-galaxy-note-20-ultra",
+  "brand": "Samsung",
+  "name": "Galaxy Note 20 Ultra 5G",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["SM-N986B", "SM-N986B/DS", "SM-N986N"],
+      "codename": "c2s",
+      "region": "Global / Europe / Korea",
+      "soc": "Exynos 990",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Volume Up unlock mode in bootloader",
+      "root_status": "FULL",
+      "root_methods": ["Magisk", "KernelSU", "APatch"],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/",
+        "twrp": "https://twrp.me/samsung/samsunggalaxynote20ultra5g.html"
+      }
+    },
+    {
+      "models": ["SM-N986U", "SM-N986U1", "SM-N986W"],
+      "codename": "c2q",
+      "region": "USA / Canada",
+      "soc": "Snapdragon 865+",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/"
+      }
+    },
+    {
+      "models": ["SM-N9860"],
+      "codename": "c2qchn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 865+",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + Odin Flash",
+      "root_status": "FULL",
+      "root_methods": ["Magisk", "APatch"],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-note-20-ultra.11187/"
+      }
+    }
+  ]
+}

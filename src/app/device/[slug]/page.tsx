@@ -243,3 +243,4 @@ export default async function DevicePage({ params }: DevicePageProps) {
     </div>
   );
 }
+

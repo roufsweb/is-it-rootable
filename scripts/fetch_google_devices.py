@@ -52,3 +52,4 @@ with open("data/raw/google_play_devices.json", "w", encoding="utf-8") as out:
     json.dump(clean_devices, out, indent=2)
 
 print(f"Done! Parsed {len(clean_devices)} unique device families into data/raw/google_play_devices.json.")
+

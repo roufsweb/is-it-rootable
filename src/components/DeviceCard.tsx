@@ -86,3 +86,4 @@ export function DeviceCard({ device }: DeviceCardProps) {
     </Link>
   );
 }
+

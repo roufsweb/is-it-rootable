@@ -82,3 +82,4 @@ export function getOverallBootloader(variants: Variant[]): BootloaderStatus {
   if (bls.every(b => b === 'NO')) return 'NO';
   return 'CONDITIONAL';
 }
+

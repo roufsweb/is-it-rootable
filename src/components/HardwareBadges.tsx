@@ -45,3 +45,4 @@ export function HardwareBadges({ features, compact = false }: HardwareBadgesProp
     </div>
   );
 }
+

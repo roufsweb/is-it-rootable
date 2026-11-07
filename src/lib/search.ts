@@ -56,3 +56,4 @@ export function getSearchIndex(items: SearchItem[]): MiniSearch<SearchItem> {
   }
   return miniSearchInstance;
 }
+

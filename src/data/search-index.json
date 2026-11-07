@@ -388,6 +388,126 @@
     ]
   },
   {
+    "id": "samsung-galaxy-note-20-ultra",
+    "slug": "samsung-galaxy-note-20-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy Note 20 Ultra 5G",
+    "fullName": "Samsung Galaxy Note 20 Ultra 5G",
+    "release_year": 2020,
+    "codenames": "c2s c2q c2qchn",
+    "models": "SM-N986B SMN986B N986B SM-N986B/DS SMN986B/DS N986B/DS SM-N986N SMN986N N986N SM-N986U SMN986U N986U SM-N986U1 SMN986U1 N986U1 SM-N986W SMN986W N986W SM-N9860 SMN9860 N9860",
+    "rawModels": [
+      "SM-N986B",
+      "SM-N986B/DS",
+      "SM-N986N",
+      "SM-N986U",
+      "SM-N986U1",
+      "SM-N986W",
+      "SM-N9860"
+    ],
+    "soc": "Exynos 990, Snapdragon 865+",
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": true,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / Korea",
+        "models": [
+          "SM-N986B",
+          "SM-N986B/DS",
+          "SM-N986N"
+        ],
+        "soc": "Exynos 990",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES"
+      },
+      {
+        "region": "USA / Canada",
+        "models": [
+          "SM-N986U",
+          "SM-N986U1",
+          "SM-N986W"
+        ],
+        "soc": "Snapdragon 865+",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO"
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-N9860"
+        ],
+        "soc": "Snapdragon 865+",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s10",
+    "slug": "samsung-galaxy-s10",
+    "brand": "Samsung",
+    "name": "Galaxy S10",
+    "fullName": "Samsung Galaxy S10",
+    "release_year": 2019,
+    "codenames": "beyond1lte beyond1qlte beyond1qltechn",
+    "models": "SM-G973F SMG973F G973F SM-G973F/DS SMG973F/DS G973F/DS SM-G973N SMG973N G973N SM-G973U SMG973U G973U SM-G973U1 SMG973U1 G973U1 SM-G973W SMG973W G973W SM-G9730 SMG9730 G9730",
+    "rawModels": [
+      "SM-G973F",
+      "SM-G973F/DS",
+      "SM-G973N",
+      "SM-G973U",
+      "SM-G973U1",
+      "SM-G973W",
+      "SM-G9730"
+    ],
+    "soc": "Exynos 9820, Snapdragon 855",
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired)",
+    "sdcard_slot": true,
+    "headphone_jack": true,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe / Korea",
+        "models": [
+          "SM-G973F",
+          "SM-G973F/DS",
+          "SM-G973N"
+        ],
+        "soc": "Exynos 9820",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES"
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-G973U",
+          "SM-G973U1",
+          "SM-G973W"
+        ],
+        "soc": "Snapdragon 855",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO"
+      },
+      {
+        "region": "China / Hong Kong Open Market",
+        "models": [
+          "SM-G9730"
+        ],
+        "soc": "Snapdragon 855",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES"
+      }
+    ]
+  },
+  {
     "id": "samsung-galaxy-s21",
     "slug": "samsung-galaxy-s21",
     "brand": "Samsung",
@@ -448,6 +568,64 @@
     ]
   },
   {
+    "id": "samsung-galaxy-s22",
+    "slug": "samsung-galaxy-s22",
+    "brand": "Samsung",
+    "name": "Galaxy S22",
+    "fullName": "Samsung Galaxy S22",
+    "release_year": 2022,
+    "codenames": "r0s r0q r0qchn",
+    "models": "SM-S901B SMS901B S901B SM-S901B/DS SMS901B/DS S901B/DS SM-S901U SMS901U S901U SM-S901U1 SMS901U1 S901U1 SM-S901W SMS901W S901W SM-S9010 SMS9010 S9010",
+    "rawModels": [
+      "SM-S901B",
+      "SM-S901B/DS",
+      "SM-S901U",
+      "SM-S901U1",
+      "SM-S901W",
+      "SM-S9010"
+    ],
+    "soc": "Exynos 2200, Snapdragon 8 Gen 1",
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe",
+        "models": [
+          "SM-S901B",
+          "SM-S901B/DS"
+        ],
+        "soc": "Exynos 2200",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL"
+      },
+      {
+        "region": "USA / Canada",
+        "models": [
+          "SM-S901U",
+          "SM-S901U1",
+          "SM-S901W"
+        ],
+        "soc": "Snapdragon 8 Gen 1",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO"
+      },
+      {
+        "region": "China / Hong Kong",
+        "models": [
+          "SM-S9010"
+        ],
+        "soc": "Snapdragon 8 Gen 1",
+        "root_status": "FULL",
+        "bootloader_unlockable": "YES"
+      }
+    ]
+  },
+  {
     "id": "samsung-galaxy-s23",
     "slug": "samsung-galaxy-s23",
     "brand": "Samsung",
@@ -492,6 +670,64 @@
         "soc": "Snapdragon 8 Gen 2 for Galaxy",
         "root_status": "LOCKED",
         "bootloader_unlockable": "NO"
+      }
+    ]
+  },
+  {
+    "id": "samsung-galaxy-s24",
+    "slug": "samsung-galaxy-s24",
+    "brand": "Samsung",
+    "name": "Galaxy S24",
+    "fullName": "Samsung Galaxy S24",
+    "release_year": 2024,
+    "codenames": "e1s e1q e1qchn",
+    "models": "SM-S921B SMS921B S921B SM-S921B/DS SMS921B/DS S921B/DS SM-S921U SMS921U S921U SM-S921U1 SMS921U1 S921U1 SM-S921W SMS921W S921W SM-S9210 SMS9210 S9210",
+    "rawModels": [
+      "SM-S921B",
+      "SM-S921B/DS",
+      "SM-S921U",
+      "SM-S921U1",
+      "SM-S921W",
+      "SM-S9210"
+    ],
+    "soc": "Exynos 2400, Snapdragon 8 Gen 3 for Galaxy",
+    "overallRoot": "CONDITIONAL",
+    "overallBootloader": "CONDITIONAL",
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": false,
+    "headphone_jack": false,
+    "variantsCount": 3,
+    "sampleVariants": [
+      {
+        "region": "Global / Europe",
+        "models": [
+          "SM-S921B",
+          "SM-S921B/DS"
+        ],
+        "soc": "Exynos 2400",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL"
+      },
+      {
+        "region": "USA / Canada Carrier & Unlocked",
+        "models": [
+          "SM-S921U",
+          "SM-S921U1",
+          "SM-S921W"
+        ],
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "root_status": "LOCKED",
+        "bootloader_unlockable": "NO"
+      },
+      {
+        "region": "China / Hong Kong / Taiwan",
+        "models": [
+          "SM-S9210"
+        ],
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "root_status": "CONDITIONAL",
+        "bootloader_unlockable": "CONDITIONAL"
       }
     ]
   },

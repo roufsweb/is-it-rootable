@@ -63,3 +63,4 @@ export interface SearchItem {
     bootloader_unlockable: BootloaderStatus;
   }>;
 }
+

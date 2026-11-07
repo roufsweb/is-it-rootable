@@ -53,3 +53,4 @@ Use this skill whenever drafting, reviewing, or modifying device JSON records in
    - `bootloader_unlockable`: `"YES"` | `"CONDITIONAL"` | `"NO"`
    - `root_status`: `"FULL"` | `"CONDITIONAL"` | `"LOCKED"`
    - `custom_kernel_support`: `"HIGH"` | `"MODERATE"` | `"LOW"` | `"NONE"`
+

@@ -310,3 +310,4 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     </div>
   );
 }
+
