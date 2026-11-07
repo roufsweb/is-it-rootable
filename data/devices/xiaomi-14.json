@@ -1,0 +1,55 @@
+{
+  "slug": "xiaomi-14",
+  "brand": "Xiaomi",
+  "name": "Xiaomi 14",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "23127PN0CG"
+      ],
+      "codename": "houji",
+      "region": "Global / Europe / India",
+      "soc": "Snapdragon 8 Gen 3",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "23127PN0CC"
+      ],
+      "codename": "houji_cn",
+      "region": "China Domestic",
+      "soc": "Snapdragon 8 Gen 3",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

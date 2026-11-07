@@ -1,0 +1,56 @@
+{
+  "slug": "poco-f6",
+  "brand": "POCO",
+  "name": "Poco F6 / Redmi Turbo 3",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "24069PC21G",
+        "24069PC21I"
+      ],
+      "codename": "peridot",
+      "region": "Global / Europe / India",
+      "soc": "Snapdragon 8s Gen 3",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "PERIDOT-CN"
+      ],
+      "codename": "peridot_cn",
+      "region": "China Domestic",
+      "soc": "Snapdragon 8s Gen 3",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

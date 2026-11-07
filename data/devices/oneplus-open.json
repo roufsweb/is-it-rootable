@@ -1,0 +1,35 @@
+{
+  "slug": "oneplus-open",
+  "brand": "OnePlus",
+  "name": "OnePlus Open",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "OnePlus-oneplus-open"
+      ],
+      "codename": "default",
+      "region": "Global / Europe / North America / India",
+      "soc": "Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

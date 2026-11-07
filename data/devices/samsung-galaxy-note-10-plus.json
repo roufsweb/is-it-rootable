@@ -1,0 +1,74 @@
+{
+  "slug": "samsung-galaxy-note-10-plus",
+  "brand": "Samsung",
+  "name": "Galaxy Note 10+",
+  "release_year": 2019,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired)",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-N975F"
+      ],
+      "codename": "d2s",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 9825",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-N975U",
+        "SM-N975U1",
+        "SM-N975W"
+      ],
+      "codename": "d2q",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 855",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-N9750"
+      ],
+      "codename": "SC-01M_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 855",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

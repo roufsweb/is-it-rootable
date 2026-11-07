@@ -1,5 +1,234 @@
 [
   {
+    "slug": "asus-rog-phone-7",
+    "brand": "Asus",
+    "name": "ROG Phone 7",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort Video Out USB 3.1",
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "ROG Phone 7"
+        ],
+        "codename": "default",
+        "region": "Global / Official",
+        "soc": "Snapdragon 8 Gen 2",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Official manufacturer bootloader unlock procedure",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "fairphone-5",
+    "brand": "Fairphone",
+    "name": "Fairphone 5",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode)",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Fairphone 5"
+        ],
+        "codename": "default",
+        "region": "Global / Official",
+        "soc": "Qualcomm QCM6490",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Official manufacturer bootloader unlock procedure",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / TWRP",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-4a",
+    "brand": "Google",
+    "name": "Pixel 4a",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 4a"
+        ],
+        "codename": "sunfish",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 730G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "SUNFISH-VZW"
+        ],
+        "codename": "sunfish_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Snapdragon 730G",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-5",
+    "brand": "Google",
+    "name": "Pixel 5",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 5"
+        ],
+        "codename": "redfin",
+        "region": "Global / Factory Unlocked",
+        "soc": "Snapdragon 765G",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "REDFIN-VZW"
+        ],
+        "codename": "redfin_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Snapdragon 765G",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-6-pro",
+    "brand": "Google",
+    "name": "Pixel 6 Pro",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 6 Pro"
+        ],
+        "codename": "raven",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G1",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "RAVEN-VZW"
+        ],
+        "codename": "raven_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G1",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "google-pixel-6",
     "brand": "Google",
     "name": "Pixel 6",
@@ -53,6 +282,59 @@
     ]
   },
   {
+    "slug": "google-pixel-7-pro",
+    "brand": "Google",
+    "name": "Pixel 7 Pro",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 7 Pro"
+        ],
+        "codename": "cheetah",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G2",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "CHEETAH-VZW"
+        ],
+        "codename": "cheetah_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G2",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "google-pixel-7",
     "brand": "Google",
     "name": "Pixel 7",
@@ -101,6 +383,113 @@
         "custom_kernel_support": "NONE",
         "links": {
           "xda": "https://xdaforums.com/c/google-pixel-7.12657/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-7a",
+    "brand": "Google",
+    "name": "Pixel 7a",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "GHL1X",
+          "GWKK3"
+        ],
+        "codename": "lynx",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G2",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/c/google-pixel-7a.12743/",
+          "lineageos": "https://wiki.lineageos.org/devices/lynx/"
+        }
+      },
+      {
+        "models": [
+          "G03Z5"
+        ],
+        "codename": "lynx_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G2",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/c/google-pixel-7a.12743/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-8-pro",
+    "brand": "Google",
+    "name": "Pixel 8 Pro",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 8 Pro"
+        ],
+        "codename": "husky",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G3",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "HUSKY-VZW"
+        ],
+        "codename": "husky_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G3",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
         }
       }
     ]
@@ -161,6 +550,220 @@
     ]
   },
   {
+    "slug": "google-pixel-8a",
+    "brand": "Google",
+    "name": "Pixel 8a",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "G8HHN",
+          "G6GPR"
+        ],
+        "codename": "akita",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G3",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/c/google-pixel-8a.12861/",
+          "lineageos": "https://wiki.lineageos.org/devices/akita/"
+        }
+      },
+      {
+        "models": [
+          "G576D"
+        ],
+        "codename": "akita_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G3",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Carrier locked bootloader; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/c/google-pixel-8a.12861/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-9-pro-xl",
+    "brand": "Google",
+    "name": "Pixel 9 Pro XL",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 9 Pro XL"
+        ],
+        "codename": "komodo",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G4",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "KOMODO-VZW"
+        ],
+        "codename": "komodo_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G4",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-9-pro",
+    "brand": "Google",
+    "name": "Pixel 9 Pro",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "Pixel 9 Pro"
+        ],
+        "codename": "caiman",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G4",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "CAIMAN-VZW"
+        ],
+        "codename": "caiman_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G4",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "google-pixel-9",
+    "brand": "Google",
+    "name": "Pixel 9",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "GUR25",
+          "G18IQ"
+        ],
+        "codename": "tokay",
+        "region": "Global / Factory Unlocked",
+        "soc": "Google Tensor G4",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/c/google-pixel-9.12877/",
+          "github": "https://github.com/tiann/KernelSU"
+        }
+      },
+      {
+        "models": [
+          "GGX8Q"
+        ],
+        "codename": "tokay_vzw",
+        "region": "Verizon / Carrier Locked",
+        "soc": "Google Tensor G4",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Verizon policy permanently disables OEM Unlocking in bootloader firmware",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/c/google-pixel-9.12877/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "motorola-edge-40",
     "brand": "Motorola",
     "name": "Edge 40",
@@ -196,6 +799,75 @@
     ]
   },
   {
+    "slug": "motorola-edge-50-pro",
+    "brand": "Motorola",
+    "name": "Motorola Edge 50 Pro",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Motorola Smart Connect / Ready For",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "motorola edge 40 pro",
+          "motorola edge 50 pro"
+        ],
+        "codename": "eqe",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 7 Gen 3",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "motorola-thinkphone",
+    "brand": "Motorola",
+    "name": "ThinkPhone by Motorola",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Motorola Ready For (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "XT-ThinkPhone by Motorola"
+        ],
+        "codename": "default",
+        "region": "Global / Retail Unlocked",
+        "soc": "Snapdragon 8+ Gen 1",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Motorola Bootloader Unlock Website (Unlock Key generation via fastboot oem get_unlock_data)",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "Fastbootd / Boot Image Patch",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "nothing-phone-2",
     "brand": "Nothing",
     "name": "Phone (2)",
@@ -226,6 +898,81 @@
         "custom_kernel_support": "HIGH",
         "links": {
           "xda": "https://xdaforums.com/c/nothing-phone-2.12781/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-10-pro-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus 10 Pro 5G",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "NE2211",
+          "NE2213",
+          "NE2215",
+          "NE2217"
+        ],
+        "codename": "OP516FL1",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 8 Gen 1",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-11-5g",
+    "brand": "OnePlus",
+    "name": "OnePlus 11 5G",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "CPH2447",
+          "CPH2449",
+          "CPH2451"
+        ],
+        "codename": "OP594DL1",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 8 Gen 2",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
         }
       }
     ]
@@ -348,6 +1095,135 @@
     ]
   },
   {
+    "slug": "oneplus-8-pro",
+    "brand": "OnePlus",
+    "name": "OnePlus 8 Pro",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "IN2020",
+          "IN2021",
+          "IN2023",
+          "IN2025"
+        ],
+        "codename": "OnePlus8Pro",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "oneplus-open",
+    "brand": "OnePlus",
+    "name": "OnePlus Open",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.1)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "OnePlus-oneplus-open"
+        ],
+        "codename": "default",
+        "region": "Global / Europe / North America / India",
+        "soc": "Snapdragon 8 Gen 2",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "poco-f4",
+    "brand": "POCO",
+    "name": "Poco F4",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "22021211RG",
+          "22021211RI"
+        ],
+        "codename": "munch",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 870",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "MUNCH-CN"
+        ],
+        "codename": "munch_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 870",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "poco-f5",
     "brand": "Poco",
     "name": "Poco F5 / Redmi Note 12 Turbo",
@@ -406,6 +1282,249 @@
     ]
   },
   {
+    "slug": "poco-f6-pro",
+    "brand": "POCO",
+    "name": "Poco F6 Pro / Redmi K70",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "23113RKC6G"
+        ],
+        "codename": "vermeer",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 8 Gen 2",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "VERMEER-CN"
+        ],
+        "codename": "vermeer_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 8 Gen 2",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "poco-f6",
+    "brand": "POCO",
+    "name": "Poco F6 / Redmi Turbo 3",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "24069PC21G",
+          "24069PC21I"
+        ],
+        "codename": "peridot",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 8s Gen 3",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "PERIDOT-CN"
+        ],
+        "codename": "peridot_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 8s Gen 3",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "poco-x6-pro-5g",
+    "brand": "POCO",
+    "name": "Poco X6 Pro 5G",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "2311DRK48G",
+          "2311DRK48I"
+        ],
+        "codename": "duchamp",
+        "region": "Global / Europe / India",
+        "soc": "MediaTek Dimensity 8300-Ultra",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "DUCHAMP-CN"
+        ],
+        "codename": "duchamp_cn",
+        "region": "China Domestic",
+        "soc": "MediaTek Dimensity 8300-Ultra",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-a35-5g",
+    "brand": "Samsung",
+    "name": "Galaxy A35 5G",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-A356B",
+          "SM-A356N"
+        ],
+        "codename": "a35x",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 1380",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-A356U",
+          "SM-A356U1",
+          "SM-A356W",
+          "SM-S356V"
+        ],
+        "codename": "a35x_na",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Exynos 1380",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-A3560"
+        ],
+        "codename": "a35x_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Exynos 1380",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-a54-5g",
     "brand": "Samsung",
     "name": "Galaxy A54 5G",
@@ -456,6 +1575,135 @@
         "custom_kernel_support": "NONE",
         "links": {
           "xda": "https://xdaforums.com/c/samsung-galaxy-a54-5g.12739/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-a55-5g",
+    "brand": "Samsung",
+    "name": "Galaxy A55 5G",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-A556B"
+        ],
+        "codename": "SC-53E",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 1480",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-A5560"
+        ],
+        "codename": "SC-53E_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Exynos 1480",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-note-10-plus",
+    "brand": "Samsung",
+    "name": "Galaxy Note 10+",
+    "release_year": 2019,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired)",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-N975F"
+        ],
+        "codename": "d2s",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 9825",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-N975U",
+          "SM-N975U1",
+          "SM-N975W"
+        ],
+        "codename": "d2q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-N9750"
+        ],
+        "codename": "SC-01M_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 855",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
         }
       }
     ]
@@ -538,6 +1786,82 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-note-9",
+    "brand": "Samsung",
+    "name": "Galaxy Note 9",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired)",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-N960F",
+          "SM-N960N"
+        ],
+        "codename": "crownlte",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 9810",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-N960U",
+          "SM-N960U1",
+          "SM-N960W"
+        ],
+        "codename": "crownqltechn",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 845",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SCV40",
+          "SM-N9600"
+        ],
+        "codename": "SCV40",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 845",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-s10",
     "brand": "Samsung",
     "name": "Galaxy S10",
@@ -610,6 +1934,235 @@
         "custom_kernel_support": "HIGH",
         "links": {
           "xda": "https://xdaforums.com/c/samsung-galaxy-s10.8659/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s20-5g",
+    "brand": "Samsung",
+    "name": "Galaxy S20 5G",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-G981B",
+          "SM-G981N"
+        ],
+        "codename": "x1s",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 990",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SC-51A",
+          "SC51Aa",
+          "SM-G981U",
+          "SM-G981U1",
+          "SM-G981V",
+          "SM-G981W"
+        ],
+        "codename": "x1q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-G9810"
+        ],
+        "codename": "SC-51A_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s20-ultra-5g",
+    "brand": "Samsung",
+    "name": "Galaxy S20 Ultra 5G",
+    "release_year": 2020,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": true,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-G988B",
+          "SM-G988N"
+        ],
+        "codename": "z3s",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 990",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-G988U",
+          "SM-G988U1",
+          "SM-G988W"
+        ],
+        "codename": "z3q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-G9880"
+        ],
+        "codename": "SCG03_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 865",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s21-ultra-5g",
+    "brand": "Samsung",
+    "name": "Galaxy S21 Ultra 5G",
+    "release_year": 2021,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SC-52B",
+          "SM-G998B",
+          "SM-G998N"
+        ],
+        "codename": "SC-52B",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 2100",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-G998U",
+          "SM-G998U1",
+          "SM-G998W"
+        ],
+        "codename": "p3q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 888",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-G9980"
+        ],
+        "codename": "SC-52B_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 888",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
         }
       }
     ]
@@ -691,6 +2244,81 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-s22-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy S22 Ultra",
+    "release_year": 2022,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-S908B",
+          "SM-S908N"
+        ],
+        "codename": "b0s",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 2200",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S908U",
+          "SM-S908U1",
+          "SM-S908W"
+        ],
+        "codename": "b0q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 1",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S9080"
+        ],
+        "codename": "SC-52C_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 1",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-s22",
     "brand": "Samsung",
     "name": "Galaxy S22",
@@ -767,6 +2395,157 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-s23-plus",
+    "brand": "Samsung",
+    "name": "Galaxy S23+",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-S916B",
+          "SM-S916N"
+        ],
+        "codename": "dm2q",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S916U",
+          "SM-S916U1",
+          "SM-S916W"
+        ],
+        "codename": "dm2q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S9160"
+        ],
+        "codename": "dm2q_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s23-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy S23 Ultra",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-S918B",
+          "SM-S918N"
+        ],
+        "codename": "SC-52D",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S918U",
+          "SM-S918U1",
+          "SM-S918W"
+        ],
+        "codename": "dm3q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SCG20",
+          "SM-S9180"
+        ],
+        "codename": "SCG20",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "samsung-galaxy-s23",
     "brand": "Samsung",
     "name": "Galaxy S23",
@@ -817,6 +2596,156 @@
         "custom_kernel_support": "NONE",
         "links": {
           "xda": "https://xdaforums.com/c/samsung-galaxy-s23.12711/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s24-plus",
+    "brand": "Samsung",
+    "name": "Galaxy S24+",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-S926B",
+          "SM-S926N"
+        ],
+        "codename": "e2s",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 2400",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S926U",
+          "SM-S926U1",
+          "SM-S926W"
+        ],
+        "codename": "e2q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S9260"
+        ],
+        "codename": "e2q_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-s24-ultra",
+    "brand": "Samsung",
+    "name": "Galaxy S24 Ultra",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-S928B",
+          "SM-S928N"
+        ],
+        "codename": "SC-52E",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S928U",
+          "SM-S928U1",
+          "SM-S928W"
+        ],
+        "codename": "e3q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-S9280"
+        ],
+        "codename": "SC-52E_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
         }
       }
     ]
@@ -1043,6 +2972,306 @@
     ]
   },
   {
+    "slug": "samsung-galaxy-s9",
+    "brand": "Samsung",
+    "name": "Galaxy S9",
+    "release_year": 2018,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired)",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-G960F",
+          "SM-G960N"
+        ],
+        "codename": "starlte",
+        "region": "Global / Europe / International",
+        "soc": "Exynos 9810",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-G960U",
+          "SM-G960U1",
+          "SM-G960W"
+        ],
+        "codename": "starqltechn",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 845",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-G9600"
+        ],
+        "codename": "starqltechn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 845",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-z-flip-5",
+    "brand": "Samsung",
+    "name": "Galaxy Z Flip 5",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": false,
+      "desktop_mode": null,
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-F731B",
+          "SM-F731N"
+        ],
+        "codename": "SC-54D",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-F731U",
+          "SM-F731U1",
+          "SM-F731W"
+        ],
+        "codename": "b5q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-F7310"
+        ],
+        "codename": "SC-54D_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-z-fold-5",
+    "brand": "Samsung",
+    "name": "Galaxy Z Fold 5",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-F946B",
+          "SM-F946N"
+        ],
+        "codename": "SC-55D",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-F946U",
+          "SM-F946U1",
+          "SM-F946W"
+        ],
+        "codename": "q5q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-F9460"
+        ],
+        "codename": "SC-55D_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 2 for Galaxy",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "samsung-galaxy-z-fold-6",
+    "brand": "Samsung",
+    "name": "Galaxy Z Fold 6",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Samsung DeX (Wired & Wireless)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "SM-F956B",
+          "SM-F956N"
+        ],
+        "codename": "SC-55E",
+        "region": "Global / Europe / International",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox roll-back prevention.",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "Magisk",
+          "KernelSU",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Official / Unofficial",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-F956U",
+          "SM-F956U1",
+          "SM-F956W"
+        ],
+        "codename": "q6q",
+        "region": "USA / Canada Carrier & Unlocked",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "NO",
+        "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+        "root_status": "LOCKED",
+        "root_methods": [],
+        "custom_recovery": "None",
+        "custom_kernel_support": "NONE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "SM-F9560"
+        ],
+        "codename": "SC-55E_chn",
+        "region": "China / Hong Kong Open Market",
+        "soc": "Snapdragon 8 Gen 3 for Galaxy",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+        "root_status": "FULL",
+        "root_methods": [
+          "Magisk",
+          "APatch"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
     "slug": "sony-xperia-1-v",
     "brand": "Sony",
     "name": "Xperia 1 V",
@@ -1092,6 +3321,85 @@
         "custom_kernel_support": "NONE",
         "links": {
           "xda": "https://xdaforums.com/c/sony-xperia-1-v.12759/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-1-vi",
+    "brand": "Sony",
+    "name": "Xperia 1 VI",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "A401SO",
+          "SO-51E",
+          "SOG13",
+          "XQ-EC44",
+          "XQ-EC54",
+          "XQ-EC72"
+        ],
+        "codename": "A401SO",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 8 Gen 3",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "sony-xperia-5-v",
+    "brand": "Sony",
+    "name": "Xperia 5 V",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+      "sdcard_slot": true,
+      "headphone_jack": true
+    },
+    "variants": [
+      {
+        "models": [
+          "SO-53D",
+          "SOG12",
+          "XQ-DE44",
+          "XQ-DE54",
+          "XQ-DE72"
+        ],
+        "codename": "SO-53D",
+        "region": "Global / Europe / Asia Unlocked",
+        "soc": "Snapdragon 8 Gen 2",
+        "bootloader_unlockable": "YES",
+        "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "Fastbootd / Kernel Boot Patch",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
         }
       }
     ]
@@ -1148,6 +3456,116 @@
         "custom_kernel_support": "MODERATE",
         "links": {
           "xda": "https://xdaforums.com/c/xiaomi-13.12705/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-14-ultra",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 14 Ultra",
+    "release_year": 2024,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "24030PN60G"
+        ],
+        "codename": "aurora",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 8 Gen 3",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "24031PN0DC"
+        ],
+        "codename": "aurora_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 8 Gen 3",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xiaomi-14",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 14",
+    "release_year": 2023,
+    "hardware_features": {
+      "usb_video_out": true,
+      "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+      "sdcard_slot": false,
+      "headphone_jack": false
+    },
+    "variants": [
+      {
+        "models": [
+          "23127PN0CG"
+        ],
+        "codename": "houji",
+        "region": "Global / Europe / India",
+        "soc": "Snapdragon 8 Gen 3",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Mi Account pairing in Developer Settings + Mi Unlock tool (Requires Mi Community account verification and 7-day wait)",
+        "root_status": "FULL",
+        "root_methods": [
+          "KernelSU",
+          "APatch",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Official / OrangeFox",
+        "custom_kernel_support": "HIGH",
+        "links": {
+          "xda": "https://xdaforums.com/"
+        }
+      },
+      {
+        "models": [
+          "23127PN0CC"
+        ],
+        "codename": "houji_cn",
+        "region": "China Domestic",
+        "soc": "Snapdragon 8 Gen 3",
+        "bootloader_unlockable": "CONDITIONAL",
+        "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+        "root_status": "CONDITIONAL",
+        "root_methods": [
+          "KernelSU",
+          "Magisk"
+        ],
+        "custom_recovery": "TWRP Unofficial",
+        "custom_kernel_support": "MODERATE",
+        "links": {
+          "xda": "https://xdaforums.com/"
         }
       }
     ]

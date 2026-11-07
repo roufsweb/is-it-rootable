@@ -1,0 +1,53 @@
+{
+  "slug": "google-pixel-8-pro",
+  "brand": "Google",
+  "name": "Pixel 8 Pro",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode USB 3.2)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "Pixel 8 Pro"
+      ],
+      "codename": "husky",
+      "region": "Global / Factory Unlocked",
+      "soc": "Google Tensor G3",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking toggle in Developer Options + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/",
+        "github": "https://github.com/tiann/KernelSU"
+      }
+    },
+    {
+      "models": [
+        "HUSKY-VZW"
+      ],
+      "codename": "husky_vzw",
+      "region": "Verizon / Carrier Locked",
+      "soc": "Google Tensor G3",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked by Verizon carrier policy; OEM Unlocking greyed out",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

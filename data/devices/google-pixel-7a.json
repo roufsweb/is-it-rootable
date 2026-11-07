@@ -1,0 +1,45 @@
+{
+  "slug": "google-pixel-7a",
+  "brand": "Google",
+  "name": "Pixel 7a",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": ["GHL1X", "GWKK3"],
+      "codename": "lynx",
+      "region": "Global / Factory Unlocked",
+      "soc": "Google Tensor G2",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking toggle + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": ["KernelSU", "APatch", "Magisk"],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/c/google-pixel-7a.12743/",
+        "lineageos": "https://wiki.lineageos.org/devices/lynx/"
+      }
+    },
+    {
+      "models": ["G03Z5"],
+      "codename": "lynx_vzw",
+      "region": "Verizon / Carrier Locked",
+      "soc": "Google Tensor G2",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked by Verizon carrier policy",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/c/google-pixel-7a.12743/"
+      }
+    }
+  ]
+}

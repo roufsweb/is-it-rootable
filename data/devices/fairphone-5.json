@@ -1,0 +1,35 @@
+{
+  "slug": "fairphone-5",
+  "brand": "Fairphone",
+  "name": "Fairphone 5",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort Alt Mode)",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "Fairphone 5"
+      ],
+      "codename": "default",
+      "region": "Global / Official",
+      "soc": "Qualcomm QCM6490",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Official manufacturer bootloader unlock procedure",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / TWRP",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

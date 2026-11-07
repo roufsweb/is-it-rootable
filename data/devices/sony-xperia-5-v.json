@@ -1,0 +1,39 @@
+{
+  "slug": "sony-xperia-5-v",
+  "brand": "Sony",
+  "name": "Xperia 5 V",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SO-53D",
+        "SOG12",
+        "XQ-DE44",
+        "XQ-DE54",
+        "XQ-DE72"
+      ],
+      "codename": "SO-53D",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

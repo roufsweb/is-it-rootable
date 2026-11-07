@@ -1,0 +1,78 @@
+{
+  "slug": "samsung-galaxy-s20-5g",
+  "brand": "Samsung",
+  "name": "Galaxy S20 5G",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-G981B",
+        "SM-G981N"
+      ],
+      "codename": "x1s",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 990",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SC-51A",
+        "SC51Aa",
+        "SM-G981U",
+        "SM-G981U1",
+        "SM-G981V",
+        "SM-G981W"
+      ],
+      "codename": "x1q",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 865",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-G9810"
+      ],
+      "codename": "SC-51A_chn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 865",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

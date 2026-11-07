@@ -1,0 +1,40 @@
+{
+  "slug": "sony-xperia-1-vi",
+  "brand": "Sony",
+  "name": "Xperia 1 VI",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Android Desktop Mode (Wired DisplayPort USB 3.2)",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "A401SO",
+        "SO-51E",
+        "SOG13",
+        "XQ-EC44",
+        "XQ-EC54",
+        "XQ-EC72"
+      ],
+      "codename": "A401SO",
+      "region": "Global / Europe / Asia Unlocked",
+      "soc": "Snapdragon 8 Gen 3",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Sony Open Devices Program (Unlock code via service menu *#*#7378423#*#* + fastboot oem unlock)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

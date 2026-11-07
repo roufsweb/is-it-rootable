@@ -1,0 +1,75 @@
+{
+  "slug": "samsung-galaxy-s9",
+  "brand": "Samsung",
+  "name": "Galaxy S9",
+  "release_year": 2018,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired)",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-G960F",
+        "SM-G960N"
+      ],
+      "codename": "starlte",
+      "region": "Global / Europe / International",
+      "soc": "Exynos 9810",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle in Developer Options + Long-press Volume Up in Download Mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Official / Unofficial",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-G960U",
+        "SM-G960U1",
+        "SM-G960W"
+      ],
+      "codename": "starqltechn",
+      "region": "USA / Canada Carrier & Unlocked",
+      "soc": "Snapdragon 845",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "SM-G9600"
+      ],
+      "codename": "starqltechn",
+      "region": "China / Hong Kong Open Market",
+      "soc": "Snapdragon 845",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "poco-f4",
+  "brand": "POCO",
+  "name": "Poco F4",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": false,
+    "desktop_mode": null,
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "22021211RG",
+        "22021211RI"
+      ],
+      "codename": "munch",
+      "region": "Global / Europe / India",
+      "soc": "Snapdragon 870",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account pairing + Mi Unlock tool (7-day wait timer)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "MUNCH-CN"
+      ],
+      "codename": "munch_cn",
+      "region": "China Domestic",
+      "soc": "Snapdragon 870",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Requires Mainland China Xiaomi Community Level 5 account and real-name authentication under HyperOS",
+      "root_status": "CONDITIONAL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "MODERATE",
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}
