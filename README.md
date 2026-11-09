@@ -8,11 +8,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-00f0ff.svg?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![GitHub Actions](https://img.shields.io/github/actions/workflow/status/roufsweb/is-it-rootable/deploy.yml?branch=main&label=Build%20%26%20Deploy&style=flat-square&logo=githubactions&logoColor=white)](https://github.com/roufsweb/is-it-rootable/actions)
-[![Live Site](https://img.shields.io/badge/Live-GitHub%20Pages-10b981.svg?style=flat-square&logo=github&logoColor=white)](https://roufsweb.github.io/is-it-rootable/)
+[![Live Site](https://img.shields.io/badge/Live-GitHub%20Pages-10b981.svg?style=flat-square&logo=github&logoColor=white)](https://is-it-rootable.roufsweb.com/)
 [![Next.js 15](https://img.shields.io/badge/Next.js-15-000000.svg?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178c6.svg?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8.svg?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Android Database](https://img.shields.io/badge/Android-336%2B%20Devices%20%7C%201%2C600%2B%20Models-34a853.svg?style=flat-square&logo=android&logoColor=white)](https://roufsweb.github.io/is-it-rootable/)
+[![Android Database](https://img.shields.io/badge/Android-336%2B%20Devices%20%7C%201%2C600%2B%20Models-34a853.svg?style=flat-square&logo=android&logoColor=white)](https://is-it-rootable.roufsweb.com/)
 
 </div>
 
@@ -202,7 +202,7 @@ IsItRootable was designed, architected, and maintained by:
 
 - **Lead Maintainer**: [Rouf](https://github.com/roufsweb) (`@roufsweb`)
 - **Project URL**: [https://github.com/roufsweb/is-it-rootable](https://github.com/roufsweb/is-it-rootable)
-- **Live Platform**: [https://roufsweb.github.io/is-it-rootable/](https://roufsweb.github.io/is-it-rootable/)
+- **Live Platform**: [https://is-it-rootable.roufsweb.com/](https://is-it-rootable.roufsweb.com/)
 
 ---
 
