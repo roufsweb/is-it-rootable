@@ -5,6 +5,7 @@ import { SearchItem } from '@/types/device';
 import { SearchBar } from '@/components/SearchBar';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
 import { Terminal, ShieldCheck, Monitor, AlertTriangle, Disc, Cpu, HelpCircle, ExternalLink } from 'lucide-react';
+import { SITE_CONFIG } from '@/lib/site';
 
 export default function HomePage() {
   const devices = searchData as SearchItem[];
@@ -178,12 +179,12 @@ export default function HomePage() {
         </div>
         <div className="flex items-center gap-2 shrink-0">
           <a
-            href="https://roufsweb.github.io/is-it-rootable/"
+            href={SITE_CONFIG.url}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors"
           >
-            <span>GitHub Page</span>
+            <span>Platform Home</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
           <Link

@@ -15,12 +15,14 @@ import {
   ChevronLeft,
 } from 'lucide-react';
 
+import { SITE_CONFIG, getCanonicalUrl } from '@/lib/site';
+
 export const metadata: Metadata = {
   title: 'About IsItRootable - Android Bootloader & Root Intelligence Database',
   description:
-    'Learn about IsItRootable, the open-source model-suffix sensitive Android bootloader unlock and root database hosted on GitHub Pages.',
+    'Learn about IsItRootable, the open-source model-suffix sensitive Android bootloader unlock and root database.',
   alternates: {
-    canonical: 'https://roufsweb.github.io/is-it-rootable/about/',
+    canonical: getCanonicalUrl('about'),
   },
 };
 
@@ -76,12 +78,12 @@ export default function AboutPage() {
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
             <a
-              href="https://roufsweb.github.io/is-it-rootable/"
+              href={SITE_CONFIG.url}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-background font-bold transition-colors shadow-xs"
             >
-              <span>GitHub Page: roufsweb.github.io/is-it-rootable</span>
+              <span>Live Platform: {SITE_CONFIG.url.replace(/^https?:\/\//, '')}</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
 
@@ -176,6 +178,35 @@ export default function AboutPage() {
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border bg-surface-elevated text-foreground hover:text-cyan-400 font-bold transition-colors"
           >
             <span>Submit Device Request or Correction</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </section>
+
+      {/* Support & Donations Section */}
+      <section className="p-6 rounded-2xl border border-amber-500/30 bg-amber-500/5 space-y-4 shadow-contrast-sm font-mono text-xs">
+        <h2 className="text-base font-bold text-foreground flex items-center gap-2">
+          <span>Support the Project (Buy a Coffee)</span>
+        </h2>
+
+        <p className="text-muted leading-relaxed font-medium">
+          IsItRootable is free, open-source, and operated without advertisements or tracking. If this database saved you from purchasing a carrier-locked device or helped your root journey, voluntary tips are warmly appreciated! There are no promises or perks — just pure community appreciation.
+        </p>
+
+        <div className="p-3.5 rounded-xl border border-border bg-surface flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="space-y-1">
+            <div className="text-[10px] text-muted uppercase font-bold">Ethereum (ERC-20) / MetaMask Wallet Address</div>
+            <div className="text-foreground font-bold break-all select-all text-xs">
+              0x609e0AB78d5174F72fF8709564f8337DebEa5BD7
+            </div>
+          </div>
+          <a
+            href="https://etherscan.io/address/0x609e0AB78d5174F72fF8709564f8337DebEa5BD7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors shrink-0"
+          >
+            <span>Etherscan</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

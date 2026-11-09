@@ -7,7 +7,10 @@ import { StatusBadge } from '@/components/StatusBadge';
 import { CommandSnippets } from '@/components/CommandSnippets';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
 import { RootGuideSection } from '@/components/RootGuideSection';
+import { UnrootGuideSection } from '@/components/UnrootGuideSection';
 import { ShareButton } from '@/components/ShareButton';
+import { TableOfContents } from '@/components/TableOfContents';
+import { getCanonicalUrl, SITE_CONFIG } from '@/lib/site';
 import {
   ChevronLeft,
   ChevronRight,
@@ -61,9 +64,9 @@ export async function generateMetadata({ params }: ModelPageProps): Promise<Meta
       ? 'CONDITIONAL'
       : 'NO';
 
-  const title = `Can You Root ${device.name} (${exactModel})? Unlock & Kernel Guide - IsItRootable`;
-  const description = `Is ${device.name} ${exactModel} (${variant.region}) rootable? Verdict: ${rootStatusText}. Bootloader status: ${variant.bootloader_unlockable}. Methods: ${methods}. DisplayPort/DeX: ${deXStatus}.`;
-  const canonical = `https://roufsweb.github.io/is-it-rootable/model/${detail.normalizedModel}/`;
+  const title = `Can You Root ${device.name} (${exactModel})? Unlock, Root & Unroot Guide - IsItRootable`;
+  const description = `Is ${device.name} ${exactModel} (${variant.region}) rootable? Verdict: ${rootStatusText}. Bootloader status: ${variant.bootloader_unlockable}. Methods: ${methods}. DisplayPort/DeX: ${deXStatus}. Complete root and unroot instructions.`;
+  const canonical = getCanonicalUrl(`model/${detail.normalizedModel}`);
 
   return {
     title,
@@ -76,12 +79,21 @@ export async function generateMetadata({ params }: ModelPageProps): Promise<Meta
       description,
       url: canonical,
       type: 'article',
-      siteName: 'IsItRootable',
+      siteName: SITE_CONFIG.name,
+      images: [
+        {
+          url: getCanonicalUrl('og-image.png'),
+          width: 1200,
+          height: 630,
+          alt: `${device.name} ${exactModel} Root Status`,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: [getCanonicalUrl('og-image.png')],
     },
   };
 }
@@ -107,7 +119,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
     ? 'verdict-container-full'
     : 'verdict-container-conditional';
 
-  const canonicalUrl = `https://roufsweb.github.io/is-it-rootable/model/${detail.normalizedModel}/`;
+  const canonicalUrl = getCanonicalUrl(`model/${detail.normalizedModel}`);
 
   // 1. BreadcrumbList Structured Data
   const breadcrumbSchema = {
@@ -118,13 +130,13 @@ export default async function ModelPage({ params }: ModelPageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://roufsweb.github.io/is-it-rootable/',
+        item: getCanonicalUrl(''),
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: `${device.brand} ${device.name}`,
-        item: `https://roufsweb.github.io/is-it-rootable/device/${device.slug}/`,
+        item: getCanonicalUrl(`device/${device.slug}`),
       },
       {
         '@type': 'ListItem',
@@ -135,7 +147,32 @@ export default async function ModelPage({ params }: ModelPageProps) {
     ],
   };
 
-  // 2. FAQ Items & Schema for this exact model
+  // 2. TechArticle Structured Data (E-E-A-T Signal for GSC)
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: `Can You Root the ${device.name} (${exactModel})? Complete Technical Verification`,
+    description: `Exact technical rootability breakdown for ${device.name} model ${exactModel} (${variant.region}). Bootloader lock status: ${variant.bootloader_unlockable}, chipset: ${variant.soc}, kernel support: ${variant.custom_kernel_support}.`,
+    url: canonicalUrl,
+    author: {
+      '@type': 'Person',
+      name: SITE_CONFIG.maintainer,
+      url: SITE_CONFIG.githubRepo,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_CONFIG.name,
+      url: getCanonicalUrl(''),
+      logo: {
+        '@type': 'ImageObject',
+        url: getCanonicalUrl('logo.svg'),
+      },
+    },
+    datePublished: `${device.release_year}-01-01T00:00:00Z`,
+    dateModified: new Date().toISOString(),
+  };
+
+  // 3. FAQ Items & Schema for this exact model (Expanded)
   const faqItems: FAQItem[] = [
     {
       question: `Can you root the ${device.name} (${exactModel})?`,
@@ -152,6 +189,12 @@ export default async function ModelPage({ params }: ModelPageProps) {
       answer: isLocked
         ? `Bootloader unlocking is locked on the ${exactModel} due to carrier or OEM restrictions.`
         : `To unlock the ${exactModel}: Enable OEM Unlocking in Developer Options, then execute: ${variant.unlock_method}. This procedure will wipe internal device storage.`,
+    },
+    {
+      question: `How do you unroot the ${exactModel} and return to stock?`,
+      answer: isLocked
+        ? `The ${exactModel} is not rootable, so unrooting is not required.`
+        : `To unroot ${exactModel}: Open Magisk or KernelSU and choose Complete Uninstall, or flash your official unpatched stock boot.img / init_boot.img using fastboot flash init_boot stock.img.`,
     },
     {
       question: `What processor (SoC) powers the ${exactModel}?`,
@@ -186,7 +229,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
     })),
   };
 
-  // 3. HowTo Structured Data (if unlockable)
+  // 4. HowTo Structured Data (if unlockable)
   const howToSchema = !isLocked
     ? {
         '@context': 'https://schema.org',
@@ -229,12 +272,25 @@ export default async function ModelPage({ params }: ModelPageProps) {
       }
     : null;
 
+  const tocItems = [
+    { id: 'verdict', label: 'Verdict' },
+    { id: 'tech-specs', label: 'Tech Specs' },
+    { id: 'fastboot-commands', label: 'Fastboot Commands' },
+    { id: 'root-guide', label: 'Root Guide' },
+    ...(!isLocked ? [{ id: 'unroot-guide', label: 'Unroot Guide' }] : []),
+    { id: 'faq', label: 'FAQ' },
+  ];
+
   return (
     <div className="space-y-6 sm:space-y-8">
       {/* Google JSON-LD Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <script
         type="application/ld+json"
@@ -254,7 +310,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
             Home
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
-          <Link href={`/device/${device.slug}/`} className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
+          <Link href={getCanonicalUrl(`device/${device.slug}`)} className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
             {device.brand} {device.name}
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
@@ -265,8 +321,11 @@ export default async function ModelPage({ params }: ModelPageProps) {
         <ShareButton title={`${device.name} (${exactModel}) Root Status`} />
       </div>
 
+      {/* Table of Contents for Jump Links */}
+      <TableOfContents items={tocItems} />
+
       {/* High-Impact SEO Answer Hero Banner */}
-      <div className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
+      <div id="verdict" className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-2">
             <div className="flex items-center gap-2 font-mono text-xs text-cyan-600 dark:text-cyan-400 font-bold">
@@ -318,12 +377,12 @@ export default async function ModelPage({ params }: ModelPageProps) {
       </div>
 
       {/* Model Technical Specification Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+      <div id="tech-specs" className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {/* Left: Bootloader & Root Deep Dive */}
         <div className="rounded-xl border border-border bg-surface p-5 sm:p-6 space-y-5 shadow-contrast-sm">
           <h3 className="text-base font-bold text-foreground font-mono flex items-center gap-2">
             <Terminal className="w-4 h-4 text-cyan-500" />
-            Bootloader & Unlock Guide
+            Bootloader &amp; Unlock Guide
           </h3>
 
           <div className="space-y-3.5 font-mono text-xs">
@@ -392,7 +451,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
         <div className="rounded-xl border border-border bg-surface p-5 sm:p-6 space-y-5 shadow-contrast-sm">
           <h3 className="text-base font-bold text-foreground font-mono flex items-center gap-2">
             <Cpu className="w-4 h-4 text-cyan-500" />
-            Chipset & Hardware Features
+            Chipset &amp; Hardware Features
           </h3>
 
           <div className="space-y-3.5 font-mono text-xs">
@@ -403,7 +462,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
             </div>
 
             <div className="p-3 rounded-lg bg-surface-elevated border border-border space-y-1">
-              <div className="text-[10px] text-muted uppercase font-bold">USB-C Video Out & Desktop Mode</div>
+              <div className="text-[10px] text-muted uppercase font-bold">USB-C Video Out &amp; Desktop Mode</div>
               <div className="text-foreground font-bold flex items-center gap-2">
                 <Monitor className="w-3.5 h-3.5 text-cyan-500" />
                 <span>
@@ -434,7 +493,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
       </div>
 
       {/* Interactive Terminal Unlock Cheat-sheet for this exact model */}
-      <section className="space-y-3 pt-6 border-t border-border">
+      <section id="fastboot-commands" className="space-y-3 pt-6 border-t border-border">
         <h3 className="text-base sm:text-lg font-bold text-foreground flex items-center gap-2">
           <Terminal className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
           <span>Fastboot Commands for {exactModel}</span>
@@ -448,15 +507,27 @@ export default async function ModelPage({ params }: ModelPageProps) {
       </section>
 
       {/* Authoritative Root & Bootloader Guide for this model */}
-      <RootGuideSection
+      <div id="root-guide">
+        <RootGuideSection
+          brand={device.brand}
+          name={device.name}
+          codename={variant.codename}
+          exactModel={exactModel}
+          rootStatus={variant.root_status}
+          bootloaderStatus={variant.bootloader_unlockable}
+          unlockMethod={variant.unlock_method}
+          rootMethods={variant.root_methods}
+        />
+      </div>
+
+      {/* Authoritative Unroot Guide for this model */}
+      <UnrootGuideSection
         brand={device.brand}
         name={device.name}
         codename={variant.codename}
         exactModel={exactModel}
         rootStatus={variant.root_status}
         bootloaderStatus={variant.bootloader_unlockable}
-        unlockMethod={variant.unlock_method}
-        rootMethods={variant.root_methods}
       />
 
       {/* Sibling Model Comparison */}
@@ -496,7 +567,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
                   {ov.models.map((m) => (
                     <Link
                       key={m}
-                      href={`/model/${encodeURIComponent(m.toLowerCase().replace(/[^a-z0-9]/g, '-'))}/`}
+                      href={getCanonicalUrl(`model/${encodeURIComponent(m.toLowerCase().replace(/[^a-z0-9]/g, '-'))}`)}
                       className="font-mono text-xs px-2 py-0.5 rounded bg-surface-elevated text-foreground font-bold border border-border hover:border-cyan-500 hover:text-cyan-500 transition-colors"
                     >
                       {m}
@@ -510,7 +581,9 @@ export default async function ModelPage({ params }: ModelPageProps) {
       )}
 
       {/* Google Model FAQ Accordion */}
-      <FAQAccordion items={faqItems} title={`Frequently Asked Questions about ${device.name} (${exactModel})`} />
+      <div id="faq">
+        <FAQAccordion items={faqItems} title={`Frequently Asked Questions about ${device.name} (${exactModel})`} />
+      </div>
 
       {/* Device Overview Banner Link */}
       <div className="p-4 sm:p-5 rounded-xl border border-border bg-surface-elevated flex flex-col sm:flex-row items-center justify-between gap-4 shadow-contrast-sm">
@@ -521,7 +594,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
           </div>
         </div>
         <Link
-          href={`/device/${device.slug}/`}
+          href={getCanonicalUrl(`device/${device.slug}`)}
           className="font-mono text-xs px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors whitespace-nowrap"
         >
           View Full {device.name} Guide →

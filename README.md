@@ -13,8 +13,13 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178c6.svg?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8.svg?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Android Database](https://img.shields.io/badge/Android-336%2B%20Devices%20%7C%201%2C600%2B%20Models-34a853.svg?style=flat-square&logo=android&logoColor=white)](https://is-it-rootable.roufsweb.com/)
+[![Support Ethereum](https://img.shields.io/badge/Donate-Ethereum%20(ETH)-627eea.svg?style=flat-square&logo=ethereum&logoColor=white)](https://etherscan.io/address/0x609e0AB78d5174F72fF8709564f8337DebEa5BD7)
 
 </div>
+
+> **Support the Project:** If IsItRootable helped you avoid a carrier lockout or save hours of research, feel free to buy a coffee via Ethereum / MetaMask:  
+> `0x609e0AB78d5174F72fF8709564f8337DebEa5BD7` ([View on Etherscan](https://etherscan.io/address/0x609e0AB78d5174F72fF8709564f8337DebEa5BD7))  
+> *(Voluntary community donation with no promises or perks.)*
 
 ---
 
@@ -203,6 +208,21 @@ IsItRootable was designed, architected, and maintained by:
 - **Lead Maintainer**: [Rouf](https://github.com/roufsweb) (`@roufsweb`)
 - **Project URL**: [https://github.com/roufsweb/is-it-rootable](https://github.com/roufsweb/is-it-rootable)
 - **Live Platform**: [https://is-it-rootable.roufsweb.com/](https://is-it-rootable.roufsweb.com/)
+
+---
+
+## Support &amp; Donations
+
+IsItRootable is free, open-source, and operated without advertisements or tracking scripts. If this project helped you avoid purchasing a carrier-locked device or supported your custom ROM development, voluntary tips via Ethereum / MetaMask are warmly appreciated:
+
+- **Network**: Ethereum (ERC-20 / ETH)
+- **MetaMask / EVM Wallet Address**:
+  ```
+  0x609e0AB78d5174F72fF8709564f8337DebEa5BD7
+  ```
+- **Blockchain Verification**: [View on Etherscan](https://etherscan.io/address/0x609e0AB78d5174F72fF8709564f8337DebEa5BD7)
+
+*(Donations are purely voluntary with no expectations or promises; contributions support server uptime and ongoing device heuristic research.)*
 
 ---
 

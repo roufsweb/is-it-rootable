@@ -2,20 +2,22 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { SITE_CONFIG, getCanonicalUrl } from '@/lib/site';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://roufsweb.github.io/is-it-rootable'),
+  metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: 'IsItRootable - Instant Android Bootloader, Root & DeX Compatibility Database',
-    template: '%s - IsItRootable',
+    default: SITE_CONFIG.title,
+    template: `%s - ${SITE_CONFIG.name}`,
   },
-  description:
-    'Instant, model-suffix-sensitive Android bootloader unlock and root database. Check whether your exact model (SM-G950F vs SM-G950U), custom ROMs, KernelSU, and USB-C DisplayPort/DeX are supported.',
+  description: SITE_CONFIG.description,
   keywords: [
     'android root',
     'bootloader unlock',
     'can i root my phone',
     'how to root android',
+    'how to unroot android',
+    'restore stock boot image',
     'custom rom',
     'lineageos',
     'grapheneos',
@@ -28,15 +30,21 @@ export const metadata: Metadata = {
     'custom kernel',
     'fastboot flashing unlock',
     'play integrity fix',
+    'knox 0x1',
   ],
-  authors: [{ name: 'IsItRootable Contributors' }],
-  creator: 'IsItRootable',
-  publisher: 'IsItRootable',
+  authors: [{ name: SITE_CONFIG.author }],
+  creator: SITE_CONFIG.name,
+  publisher: SITE_CONFIG.name,
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
+  verification: SITE_CONFIG.googleVerification
+    ? {
+        google: SITE_CONFIG.googleVerification,
+      }
+    : undefined,
   robots: {
     index: true,
     follow: true,
@@ -64,13 +72,13 @@ export const metadata: Metadata = {
     title: 'IsItRootable - Instant Android Bootloader & Root Database',
     description:
       'Zero-latency model-suffix-sensitive Android rootability, ROM compatibility, and bootloader unlock verification.',
-    url: 'https://roufsweb.github.io/is-it-rootable/',
-    siteName: 'IsItRootable',
+    url: getCanonicalUrl(''),
+    siteName: SITE_CONFIG.name,
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://roufsweb.github.io/is-it-rootable/og-image.png',
+        url: getCanonicalUrl('og-image.png'),
         width: 1200,
         height: 630,
         alt: 'IsItRootable - Instant Android Bootloader & Root Database',
@@ -82,7 +90,7 @@ export const metadata: Metadata = {
     title: 'IsItRootable - Instant Android Bootloader & Root Database',
     description:
       'Check bootloader unlockability, root status, and hardware features for any Android model suffix.',
-    images: ['https://roufsweb.github.io/is-it-rootable/og-image.png'],
+    images: [getCanonicalUrl('og-image.png')],
   },
 };
 
@@ -95,16 +103,15 @@ export default function RootLayout({
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'IsItRootable',
+    name: SITE_CONFIG.name,
     alternateName: ['Is It Rootable', 'IsItRootable Database'],
-    url: 'https://roufsweb.github.io/is-it-rootable/',
-    description:
-      'The authoritative model-suffix-sensitive database for Android bootloader unlockability, root guides, custom ROMs, and hardware capabilities.',
+    url: getCanonicalUrl(''),
+    description: SITE_CONFIG.description,
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://roufsweb.github.io/is-it-rootable/?q={search_term_string}',
+        urlTemplate: `${getCanonicalUrl('')}?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },

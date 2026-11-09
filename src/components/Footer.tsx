@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { Terminal, Shield, ExternalLink, Heart, Github, Globe } from 'lucide-react';
+import { Terminal, Shield, ExternalLink, Heart, Github, Globe, Coffee } from 'lucide-react';
+import { SITE_CONFIG } from '@/lib/site';
 
 export function Footer() {
   return (
@@ -18,17 +19,17 @@ export function Footer() {
               Distinguishing regional carrier lockdowns from unlockable international bootloaders with instant client-side search.
             </p>
 
-            {/* Official GitHub Page & Source Links */}
+            {/* Official Production URL & Source Links */}
             <div className="flex flex-wrap items-center gap-2 pt-1 font-mono text-[11px]">
               <a
-                href="https://roufsweb.github.io/is-it-rootable/"
+                href={SITE_CONFIG.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 font-bold hover:bg-cyan-500/20 transition-colors"
-                title="Official Live GitHub Page"
+                title="Live Platform"
               >
                 <Globe className="w-3 h-3 text-cyan-500" />
-                <span>GitHub Page: roufsweb.github.io/is-it-rootable</span>
+                <span>Live Site: {SITE_CONFIG.url.replace(/^https?:\/\//, '')}</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
 
@@ -95,13 +96,13 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://roufsweb.github.io/is-it-rootable/"
+                  href={SITE_CONFIG.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
                 >
                   <Globe className="w-3 h-3" />
-                  <span>GitHub Pages Site</span>
+                  <span>Live Site</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
@@ -117,20 +118,32 @@ export function Footer() {
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://etherscan.io/address/0x609e0AB78d5174F72fF8709564f8337DebEa5BD7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 hover:text-amber-500 transition-colors"
+                >
+                  <Coffee className="w-3 h-3 text-amber-500" />
+                  <span>Tip (Ethereum): 0x609e...5BD7</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-muted text-[11px]">
           <div>
-            Hosted on GitHub Pages at{' '}
+            Hosted with high-performance static architecture at{' '}
             <a
-              href="https://roufsweb.github.io/is-it-rootable/"
+              href={SITE_CONFIG.url}
               target="_blank"
               rel="noopener noreferrer"
               className="text-cyan-600 dark:text-cyan-400 font-bold hover:underline"
             >
-              https://roufsweb.github.io/is-it-rootable/
+              {SITE_CONFIG.url}
             </a>
           </div>
           <div>

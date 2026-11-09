@@ -8,7 +8,10 @@ import { StatusBadge } from '@/components/StatusBadge';
 import { CommandSnippets } from '@/components/CommandSnippets';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
 import { RootGuideSection } from '@/components/RootGuideSection';
+import { UnrootGuideSection } from '@/components/UnrootGuideSection';
 import { ShareButton } from '@/components/ShareButton';
+import { TableOfContents } from '@/components/TableOfContents';
+import { getCanonicalUrl, SITE_CONFIG } from '@/lib/site';
 import {
   ChevronLeft,
   ChevronRight,
@@ -53,9 +56,9 @@ export async function generateMetadata({ params }: DevicePageProps): Promise<Met
       ? 'Conditionally (Regional Differences)'
       : 'No (Locked)';
 
-  const title = `Can You Root ${device.brand} ${device.name}? Complete Unlock & Root Guide - IsItRootable`;
-  const description = `Is the ${device.brand} ${device.name} rootable? Verdict: ${rootStatusText}. Compare regional variants (${allModels}), fastboot unlock steps, custom ROMs, KernelSU/Magisk, and DisplayPort support.`;
-  const canonical = `https://roufsweb.github.io/is-it-rootable/device/${device.slug}/`;
+  const title = `Can You Root ${device.brand} ${device.name}? Complete Unlock, Root & Unroot Guide - IsItRootable`;
+  const description = `Is the ${device.brand} ${device.name} rootable? Verdict: ${rootStatusText}. Compare regional variants (${allModels}), fastboot unlock steps, stock unroot restoration, custom ROMs, KernelSU/Magisk, and DisplayPort support.`;
+  const canonical = getCanonicalUrl(`device/${device.slug}`);
 
   return {
     title,
@@ -68,12 +71,21 @@ export async function generateMetadata({ params }: DevicePageProps): Promise<Met
       description,
       url: canonical,
       type: 'article',
-      siteName: 'IsItRootable',
+      siteName: SITE_CONFIG.name,
+      images: [
+        {
+          url: getCanonicalUrl('og-image.png'),
+          width: 1200,
+          height: 630,
+          alt: `${device.brand} ${device.name} Root Guide`,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      images: [getCanonicalUrl('og-image.png')],
     },
   };
 }
@@ -93,7 +105,7 @@ export default async function DevicePage({ params }: DevicePageProps) {
   const allRootMethods = Array.from(new Set(device.variants.flatMap((v) => v.root_methods || [])));
   const primaryVariant = device.variants[0];
 
-  const canonicalUrl = `https://roufsweb.github.io/is-it-rootable/device/${device.slug}/`;
+  const canonicalUrl = getCanonicalUrl(`device/${device.slug}`);
 
   // 1. BreadcrumbList Structured Data
   const breadcrumbSchema = {
@@ -104,13 +116,13 @@ export default async function DevicePage({ params }: DevicePageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://roufsweb.github.io/is-it-rootable/',
+        item: getCanonicalUrl(''),
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: device.brand,
-        item: `https://roufsweb.github.io/is-it-rootable/?brand=${encodeURIComponent(device.brand)}`,
+        item: `${getCanonicalUrl('')}?brand=${encodeURIComponent(device.brand)}`,
       },
       {
         '@type': 'ListItem',
@@ -121,7 +133,32 @@ export default async function DevicePage({ params }: DevicePageProps) {
     ],
   };
 
-  // 2. FAQ Items & Schema
+  // 2. TechArticle Structured Data (E-E-A-T Signal for Google Search Console)
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: `Can You Root ${device.brand} ${device.name}? Complete Bootloader, Kernel & Unroot Guide`,
+    description: `Complete technical rootability and bootloader guide for ${device.brand} ${device.name}. Regional model differences (${allModels.join(', ')}), custom kernel compatibility, and stock firmware restoration.`,
+    url: canonicalUrl,
+    author: {
+      '@type': 'Person',
+      name: SITE_CONFIG.maintainer,
+      url: SITE_CONFIG.githubRepo,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_CONFIG.name,
+      url: getCanonicalUrl(''),
+      logo: {
+        '@type': 'ImageObject',
+        url: getCanonicalUrl('logo.svg'),
+      },
+    },
+    datePublished: `${device.release_year}-01-01T00:00:00Z`,
+    dateModified: new Date().toISOString(),
+  };
+
+  // 3. FAQ Items & Schema (Expanded to 8 targeted queries)
   const faqItems: FAQItem[] = [
     {
       question: `Can you root the ${device.brand} ${device.name}?`,
@@ -144,6 +181,14 @@ export default async function DevicePage({ params }: DevicePageProps) {
           : `To unlock the bootloader on the ${device.name}: 1) Enable Developer Options by tapping Build Number 7 times. 2) Turn on OEM Unlocking and USB Debugging in Settings. 3) ${
               primaryVariant?.unlock_method || 'Boot into Fastboot mode and run `fastboot flashing unlock`.'
             }. Note that unlocking wipes all user data.`,
+    },
+    {
+      question: `How do you unroot the ${device.brand} ${device.name} and restore stock firmware?`,
+      answer: `To unroot the ${device.name}: 1) Open Magisk or KernelSU and select Complete Uninstall, or flash your unpatched stock factory boot.img / init_boot.img via fastboot (fastboot flash init_boot stock.img). 2) If returning for warranty or trade-in, relock the bootloader with fastboot flashing lock (only after verifying the stock OS boots).`,
+    },
+    {
+      question: `What is the difference between KernelSU and Magisk on the ${device.brand} ${device.name}?`,
+      answer: `KernelSU operates directly in kernel space on Linux 5.10+ Generic Kernel Image (GKI) devices, making root undetectable by user-space banking applications. Magisk operates in userspace by modifying the init binary, which works universally but requires modules like Shamiko and PlayIntegrityFix to conceal root status.`,
     },
     {
       question: `Which specific model numbers of ${device.name} are supported?`,
@@ -189,7 +234,7 @@ export default async function DevicePage({ params }: DevicePageProps) {
     })),
   };
 
-  // 3. HowTo Structured Data (for unlockable devices)
+  // 4. HowTo Structured Data (for unlockable devices)
   const howToSchema =
     overallRoot !== 'LOCKED'
       ? {
@@ -247,12 +292,25 @@ export default async function DevicePage({ params }: DevicePageProps) {
       ? 'verdict-container-locked'
       : 'verdict-container-conditional';
 
+  const tocItems = [
+    { id: 'verdict', label: 'Verdict' },
+    { id: 'variants', label: 'Regional Variants' },
+    { id: 'fastboot-commands', label: 'Fastboot Commands' },
+    { id: 'root-guide', label: 'Root Guide' },
+    ...(overallRoot !== 'LOCKED' ? [{ id: 'unroot-guide', label: 'Unroot Guide' }] : []),
+    { id: 'faq', label: 'FAQ' },
+  ];
+
   return (
     <div className="space-y-6 sm:space-y-8">
       {/* Schema.org Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <script
         type="application/ld+json"
@@ -284,8 +342,11 @@ export default async function DevicePage({ params }: DevicePageProps) {
         <ShareButton title={`${device.brand} ${device.name} Root Guide`} />
       </div>
 
+      {/* Jump-to-Section Navigation for Google Jump Sitelinks */}
+      <TableOfContents items={tocItems} />
+
       {/* Hero Header with Contrast Container */}
-      <div className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
+      <div id="verdict" className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-2">
             <div className="flex items-center gap-2 font-mono text-xs text-cyan-600 dark:text-cyan-400 font-bold">
@@ -297,7 +358,7 @@ export default async function DevicePage({ params }: DevicePageProps) {
               {device.brand} {device.name}
             </h1>
             <p className="font-mono text-xs sm:text-sm text-muted font-medium">
-              Bootloader Unlockability, Regional Model Suffixes, Custom ROMs & Hardware Capabilities
+              Bootloader Unlockability, Regional Model Suffixes, Custom ROMs &amp; Hardware Capabilities
             </p>
           </div>
 
@@ -437,10 +498,10 @@ export default async function DevicePage({ params }: DevicePageProps) {
       )}
 
       {/* Detailed Variant Comparison Section */}
-      <section className="space-y-4">
+      <section id="variants" className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-lg sm:text-xl font-bold text-foreground">
-            Regional Variant Breakdown & Root Methods
+            Regional Variant Breakdown &amp; Root Methods
           </h2>
           <span className="text-xs font-mono text-muted font-bold">
             {device.variants.length} {device.variants.length === 1 ? 'Variant' : 'Variants'}
@@ -451,11 +512,11 @@ export default async function DevicePage({ params }: DevicePageProps) {
       </section>
 
       {/* Interactive Terminal Unlock Cheat-sheet */}
-      <section className="space-y-4 pt-4 border-t border-border">
+      <section id="fastboot-commands" className="space-y-4 pt-4 border-t border-border">
         <div className="flex items-center justify-between">
           <h2 className="text-lg sm:text-xl font-bold text-foreground flex items-center gap-2">
             <Terminal className="w-5 h-5 text-cyan-600 dark:text-cyan-400" />
-            <span>Fastboot & Terminal Unlock Commands</span>
+            <span>Fastboot &amp; Terminal Unlock Commands</span>
           </h2>
           <span className="text-xs font-mono text-muted font-bold">1-Click Copy</span>
         </div>
@@ -468,18 +529,31 @@ export default async function DevicePage({ params }: DevicePageProps) {
       </section>
 
       {/* Authoritative Root & Bootloader Guide */}
-      <RootGuideSection
+      <div id="root-guide">
+        <RootGuideSection
+          brand={device.brand}
+          name={device.name}
+          codename={primaryVariant?.codename}
+          rootStatus={overallRoot}
+          bootloaderStatus={overallBootloader}
+          unlockMethod={primaryVariant?.unlock_method}
+          rootMethods={allRootMethods}
+        />
+      </div>
+
+      {/* Authoritative Unroot & Stock Firmware Restoration Guide */}
+      <UnrootGuideSection
         brand={device.brand}
         name={device.name}
         codename={primaryVariant?.codename}
         rootStatus={overallRoot}
         bootloaderStatus={overallBootloader}
-        unlockMethod={primaryVariant?.unlock_method}
-        rootMethods={allRootMethods}
       />
 
       {/* Google FAQ Accordion */}
-      <FAQAccordion items={faqItems} title={`Frequently Asked Questions about ${device.brand} ${device.name}`} />
+      <div id="faq">
+        <FAQAccordion items={faqItems} title={`Frequently Asked Questions about ${device.brand} ${device.name}`} />
+      </div>
     </div>
   );
 }

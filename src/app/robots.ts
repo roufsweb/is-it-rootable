@@ -1,8 +1,7 @@
 import { MetadataRoute } from 'next';
+import { getCanonicalUrl } from '@/lib/site';
 
 export const dynamic = 'force-static';
-
-const BASE_URL = 'https://roufsweb.github.io/is-it-rootable';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -10,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: getCanonicalUrl('sitemap.xml'),
   };
 }
