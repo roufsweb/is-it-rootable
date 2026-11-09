@@ -25,11 +25,19 @@ export const SITE_CONFIG = {
 
 /**
  * Returns an absolute canonical URL for a given route path
- * e.g. getCanonicalUrl('/device/samsung-galaxy-s24/') -> 'https://roufsweb.github.io/is-it-rootable/device/samsung-galaxy-s24/'
+ * e.g. getCanonicalUrl('/device/samsung-galaxy-s24/') -> 'https://is-it-rootable.roufsweb.com/device/samsung-galaxy-s24/'
+ * e.g. getCanonicalUrl('sitemap.xml') -> 'https://is-it-rootable.roufsweb.com/sitemap.xml'
  */
 export function getCanonicalUrl(pathname: string = ''): string {
   const cleanPath = pathname.replace(/^\/+/, '');
   if (!cleanPath) return `${SITE_URL}/`;
+  
+  // Do not append trailing slash to file assets (.xml, .txt, .json, .svg, etc.)
+  const hasFileExtension = /\.[a-z0-9]{2,5}$/i.test(cleanPath);
+  if (hasFileExtension) {
+    return `${SITE_URL}/${cleanPath.replace(/\/+$/, '')}`;
+  }
+
   return `${SITE_URL}/${cleanPath}${cleanPath.endsWith('/') ? '' : '/'}`;
 }
 
