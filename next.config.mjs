@@ -7,8 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? '/is-it-rootable' : '',
-  assetPrefix: isProd ? '/is-it-rootable' : '',
+  basePath: '',
+  assetPrefix: '',
 };
 
 export default nextConfig;
