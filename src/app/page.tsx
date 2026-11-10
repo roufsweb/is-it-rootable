@@ -72,7 +72,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="relative pt-2 sm:pt-6 pb-2 text-left border-b border-border">
+      <section className="relative z-0 pt-2 sm:pt-6 pb-2 text-left border-b border-border">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-3 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-600 dark:text-cyan-400 font-mono text-xs font-bold shadow-2xs">

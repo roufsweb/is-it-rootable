@@ -48,15 +48,17 @@ export function DonateButton() {
       aria-modal="true"
       aria-labelledby="donate-modal-title"
       onClick={() => setIsOpen(false)}
-      className="fixed inset-0 z-[9999] flex items-center justify-center p-3 sm:p-4 bg-background/85 backdrop-blur-md overflow-y-auto animate-in fade-in duration-150"
+      style={{ zIndex: 100000 }}
+      className="fixed inset-0 z-[100000] flex flex-col items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md overflow-y-auto animate-in fade-in duration-150"
     >
-      {/* Modal Container: Max-height constrained, never gets cut off by browser */}
+      {/* Modal Container: Max-height constrained, fully opaque, never gets cut off or go under banners */}
       <div
-        className="relative w-full max-w-[calc(100vw-1.5rem)] sm:max-w-md max-h-[min(90vh,600px)] my-auto flex flex-col rounded-2xl border border-border bg-surface shadow-2xl overflow-hidden font-mono text-xs text-foreground"
+        style={{ zIndex: 100001 }}
+        className="relative w-full max-w-[calc(100vw-1.5rem)] sm:max-w-md max-h-[min(90vh,600px)] my-auto flex flex-col rounded-2xl border border-border bg-surface shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9)] overflow-hidden font-mono text-xs text-foreground shrink-0"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Sticky Modal Header with Pinned Close Button */}
-        <div className="sticky top-0 z-10 bg-surface/95 backdrop-blur-sm border-b border-border p-3.5 sm:p-5 flex items-center justify-between gap-2 shrink-0">
+        <div className="sticky top-0 z-10 bg-surface border-b border-border p-3.5 sm:p-5 flex items-center justify-between gap-2 shrink-0">
           <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-500 shrink-0">
               <Coffee className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -144,7 +146,7 @@ export function DonateButton() {
         </div>
 
         {/* Sticky Modal Footer Dismiss Action */}
-        <div className="sticky bottom-0 bg-surface/95 backdrop-blur-sm border-t border-border p-3 sm:p-4 flex items-center justify-between shrink-0">
+        <div className="sticky bottom-0 bg-surface border-t border-border p-3 sm:p-4 flex items-center justify-between shrink-0">
           <span className="text-[11px] text-muted hidden sm:inline">
             Press <kbd className="px-1.5 py-0.5 rounded bg-surface-elevated border border-border font-bold">Esc</kbd> to close
           </span>
@@ -175,7 +177,7 @@ export function DonateButton() {
       </button>
 
       {/* Cyber Modal mounted outside header via React Portal */}
-      {modalContent && createPortal(modalContent, document.body)}
+      {modalContent && createPortal(modalContent, document.getElementById('portal-root') || document.body)}
     </>
   );
 }

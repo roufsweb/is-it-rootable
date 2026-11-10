@@ -154,6 +154,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <div id="portal-root" className="relative z-[100000]" />
       </body>
     </html>
   );
