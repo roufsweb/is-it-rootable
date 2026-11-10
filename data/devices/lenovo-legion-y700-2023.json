@@ -1,0 +1,41 @@
+{
+  "slug": "lenovo-legion-y700-2023",
+  "brand": "Lenovo",
+  "name": "Legion Y700 (2023)",
+  "form_factor": "tablet",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Lenovo PC Mode / DP Alt Mode",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "TB-320FC"
+      ],
+      "codename": "TB320FC",
+      "region": "Global / China / Asia",
+      "soc": "Qualcomm Snapdragon 8+ Gen 1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "ZUI Developer Options OEM Unlock + fastboot flashing unlock or sn.img token",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "NEC / Global ROM Crossflash",
+        "LineageOS GSI",
+        "EvolutionX GSI"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/lenovo-legion-y700-2023.12803/"
+      }
+    }
+  ]
+}

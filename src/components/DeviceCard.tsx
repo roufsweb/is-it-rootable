@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { SearchItem } from '@/types/device';
 import { StatusBadge } from './StatusBadge';
 import { HardwareBadges } from './HardwareBadges';
-import { ChevronRight, Cpu, Layers, Disc } from 'lucide-react';
+import { ChevronRight, Cpu, Layers, Disc, Tablet, Smartphone, Gamepad2, FoldVertical } from 'lucide-react';
 
 interface DeviceCardProps {
   device: SearchItem;
@@ -19,6 +19,34 @@ export function DeviceCard({ device }: DeviceCardProps) {
 
   const isFull = device.overallRoot === 'FULL';
   const isLocked = device.overallRoot === 'LOCKED';
+
+  const formFactorBadge = () => {
+    if (device.form_factor === 'tablet') {
+      return (
+        <span className="inline-flex items-center gap-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30 font-bold">
+          <Tablet className="w-2.5 h-2.5" />
+          <span>Tablet</span>
+        </span>
+      );
+    }
+    if (device.form_factor === 'foldable') {
+      return (
+        <span className="inline-flex items-center gap-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-fuchsia-500/10 text-fuchsia-600 dark:text-fuchsia-400 border border-fuchsia-500/30 font-bold">
+          <FoldVertical className="w-2.5 h-2.5" />
+          <span>Foldable</span>
+        </span>
+      );
+    }
+    if (device.form_factor === 'handheld') {
+      return (
+        <span className="inline-flex items-center gap-1 text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30 font-bold">
+          <Gamepad2 className="w-2.5 h-2.5" />
+          <span>Handheld</span>
+        </span>
+      );
+    }
+    return null;
+  };
 
   return (
     <Link
@@ -36,10 +64,11 @@ export function DeviceCard({ device }: DeviceCardProps) {
         <div>
           <div className="flex items-start justify-between gap-2.5 mb-2">
             <div className="min-w-0 pr-1">
-              <div className="flex items-center gap-1.5 text-xs font-mono text-cyan-600 dark:text-cyan-400 font-bold tracking-wider">
+              <div className="flex items-center gap-1.5 text-xs font-mono text-cyan-600 dark:text-cyan-400 font-bold tracking-wider mb-0.5">
                 <span>{device.brand.toUpperCase()}</span>
                 <span className="opacity-60">•</span>
                 <span className="text-muted">{device.release_year}</span>
+                {formFactorBadge()}
               </div>
               <h3 className="text-base sm:text-lg font-extrabold text-foreground group-hover:text-cyan-600 dark:group-hover:text-cyan-300 transition-colors truncate">
                 {device.name}

@@ -1,0 +1,40 @@
+{
+  "slug": "lenovo-legion-y700-2022",
+  "brand": "Lenovo",
+  "name": "Legion Y700 (2022)",
+  "form_factor": "tablet",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Lenovo PC Mode",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "TB-9707F"
+      ],
+      "codename": "TB9707F",
+      "region": "Global / China",
+      "soc": "Qualcomm Snapdragon 870",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot flashing unlock via OEM Unlock toggle",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "Global Firmware Crossflash",
+        "LineageOS",
+        "Havoc-OS GSI"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/lenovo-legion-y700-2022.12705/"
+      }
+    }
+  ]
+}

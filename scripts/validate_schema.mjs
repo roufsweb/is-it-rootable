@@ -18,6 +18,7 @@ const DEVICES_DIR = path.join(ROOT_DIR, 'data', 'devices');
 const VALID_BOOTLOADER = ['YES', 'CONDITIONAL', 'NO'];
 const VALID_ROOT_STATUS = ['FULL', 'CONDITIONAL', 'LOCKED'];
 const VALID_KERNEL_SUPPORT = ['HIGH', 'MODERATE', 'LOW', 'NONE'];
+const VALID_FORM_FACTORS = ['phone', 'tablet', 'foldable', 'handheld'];
 
 let errors = [];
 
@@ -37,6 +38,9 @@ function validateDevice(filePath, data) {
   }
   if (typeof data.release_year !== 'number' || data.release_year < 2008 || data.release_year > 2030) {
     errors.push(`${prefix} invalid "release_year": ${data.release_year}`);
+  }
+  if (data.form_factor && !VALID_FORM_FACTORS.includes(data.form_factor)) {
+    errors.push(`${prefix} invalid "form_factor": "${data.form_factor}". Must be one of ${VALID_FORM_FACTORS.join(', ')}`);
   }
 
   // Hardware features

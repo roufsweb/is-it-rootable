@@ -1,0 +1,39 @@
+{
+  "slug": "retroid-pocket-4-pro",
+  "brand": "Retroid",
+  "name": "Pocket 4 Pro",
+  "form_factor": "handheld",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "1080p DP Alt Mode over USB-C + Micro-HDMI",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "RP4 Pro",
+        "Retroid Pocket 4 Pro"
+      ],
+      "codename": "rp4pro",
+      "region": "Global Open Market",
+      "soc": "MediaTek Dimensity 1100",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot flashing unlock via MTK OEM Unlocking",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Boot Patching",
+      "custom_kernel_support": "MODERATE",
+      "custom_roms": [
+        "RetroidOS Stock Rooted",
+        "GSI Android 13/14"
+      ],
+      "links": {
+        "github": "https://github.com/bkerler/mtkclient"
+      }
+    }
+  ]
+}

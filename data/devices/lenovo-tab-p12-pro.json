@@ -1,0 +1,40 @@
+{
+  "slug": "lenovo-tab-p12-pro",
+  "brand": "Lenovo",
+  "name": "Tab P12 Pro",
+  "form_factor": "tablet",
+  "release_year": 2021,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Lenovo Productivity Mode",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "TB-Q706F",
+        "TB-Q706Z"
+      ],
+      "codename": "q706f",
+      "region": "Global / Europe / USA",
+      "soc": "Qualcomm Snapdragon 870",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Lenovo bootloader unlock portal sn.img flash + fastboot",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS 20 Official",
+        "AOSP Developer Preview"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/lenovo-tab-p12-pro.12457/"
+      }
+    }
+  ]
+}

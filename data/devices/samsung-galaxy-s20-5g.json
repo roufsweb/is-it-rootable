@@ -84,5 +84,6 @@
         "xda": "https://xdaforums.com/"
       }
     }
-  ]
+  ],
+  "form_factor": "phone"
 }

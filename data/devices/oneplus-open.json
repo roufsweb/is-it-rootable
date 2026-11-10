@@ -1,11 +1,12 @@
 {
   "slug": "oneplus-open",
   "brand": "OnePlus",
-  "name": "OnePlus Open",
+  "name": "Open",
+  "form_factor": "foldable",
   "release_year": 2023,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Canvas Desktop Display",
+    "desktop_mode": "Open Canvas (Multi-app split desktop)",
     "sdcard_slot": false,
     "headphone_jack": false
   },
@@ -14,27 +15,25 @@
       "models": [
         "CPH2551"
       ],
-      "codename": "OP5973L1",
-      "region": "Global / Europe / North America / India",
-      "soc": "Snapdragon 8 Gen 2",
+      "codename": "tetris",
+      "region": "Global / North America / Europe / India",
+      "soc": "Qualcomm Snapdragon 8 Gen 2",
       "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlock in Developer Options + fastboot flashing unlock",
+      "unlock_method": "Developer Options OEM Unlock + fastboot flashing unlock",
       "root_status": "FULL",
       "root_methods": [
         "KernelSU",
         "APatch",
         "Magisk"
       ],
-      "custom_recovery": "Fastbootd / Kernel Boot Patch",
+      "custom_recovery": "Fastbootd / KernelSU init_boot patch",
       "custom_kernel_support": "HIGH",
       "custom_roms": [
-        "LineageOS Official",
-        "Nameless AOSP",
-        "crDroid",
-        "Paranoid Android"
+        "Stock Rooted OxygenOS 14",
+        "ColorOS Conversion"
       ],
       "links": {
-        "xda": "https://xdaforums.com/"
+        "xda": "https://xdaforums.com/c/oneplus-open.12811/"
       }
     }
   ]

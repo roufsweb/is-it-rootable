@@ -1,0 +1,42 @@
+{
+  "slug": "retroid-pocket-5",
+  "brand": "Retroid",
+  "name": "Pocket 5",
+  "form_factor": "handheld",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "1080p 60Hz DP Alt Mode",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "RP5",
+        "Retroid Pocket 5"
+      ],
+      "codename": "rp5",
+      "region": "Global Open Market",
+      "soc": "Qualcomm Snapdragon 865",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot flashing unlock with Developer Options OEM Unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "Magisk",
+        "APatch"
+      ],
+      "custom_recovery": "TWRP Unofficial",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "Batocera Linux Dual-Boot",
+        "LineageOS 21",
+        "Rocknix"
+      ],
+      "links": {
+        "github": "https://github.com/Retroid-Pocket"
+      }
+    }
+  ]
+}

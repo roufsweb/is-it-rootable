@@ -2,40 +2,38 @@
   "slug": "samsung-galaxy-z-flip-6",
   "brand": "Samsung",
   "name": "Galaxy Z Flip 6",
+  "form_factor": "foldable",
   "release_year": 2024,
   "hardware_features": {
     "usb_video_out": true,
-    "desktop_mode": "Samsung DeX (External Display)",
+    "desktop_mode": "Samsung DeX (Wired & External Mirroring)",
     "sdcard_slot": false,
     "headphone_jack": false
   },
   "variants": [
     {
       "models": [
-        "SC-54E",
         "SM-F741B",
         "SM-F741N"
       ],
-      "codename": "SC-54E",
-      "region": "Global / Europe / International",
-      "soc": "Snapdragon 8 Gen 3 for Galaxy",
-      "bootloader_unlockable": "CONDITIONAL",
-      "unlock_method": "OEM Unlock toggle available. Note: If updated to One UI 8.0 bootloader binary bit, downgrade is blocked by Knox rollback prevention.",
-      "root_status": "CONDITIONAL",
+      "codename": "b6q",
+      "region": "Global / Europe / Korea",
+      "soc": "Qualcomm Snapdragon 8 Gen 3 for Galaxy",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking toggle in Developer Options + Odin download mode unlock",
+      "root_status": "FULL",
       "root_methods": [
         "Magisk",
         "KernelSU",
         "APatch"
       ],
-      "custom_recovery": "TWRP Official / Unofficial",
-      "custom_kernel_support": "HIGH",
+      "custom_recovery": "KernelSU Boot Patching",
+      "custom_kernel_support": "MODERATE",
       "custom_roms": [
-        "LineageOS Official",
-        "crDroid",
-        "HadesROM / HadesKernel"
+        "Stock Rooted One UI 6.1.1"
       ],
       "links": {
-        "xda": "https://xdaforums.com/"
+        "xda": "https://xdaforums.com/c/samsung-galaxy-z-flip-6.12871/"
       }
     },
     {
@@ -44,41 +42,18 @@
         "SM-F741U1",
         "SM-F741W"
       ],
-      "codename": "b6q",
-      "region": "USA / Canada Carrier & Unlocked",
-      "soc": "Snapdragon 8 Gen 3 for Galaxy",
+      "codename": "b6q_na",
+      "region": "North America / USA / Canada",
+      "soc": "Qualcomm Snapdragon 8 Gen 3 for Galaxy",
       "bootloader_unlockable": "NO",
-      "unlock_method": "Permanently locked North American carrier bootloader and Knox security",
+      "unlock_method": "Permanently locked bootloader due to North American Knox policy",
       "root_status": "LOCKED",
       "root_methods": [],
       "custom_recovery": "None",
       "custom_kernel_support": "NONE",
       "custom_roms": [],
       "links": {
-        "xda": "https://xdaforums.com/"
-      }
-    },
-    {
-      "models": [
-        "SM-F7410"
-      ],
-      "codename": "SC-54E_chn",
-      "region": "China / Hong Kong Open Market",
-      "soc": "Snapdragon 8 Gen 3 for Galaxy",
-      "bootloader_unlockable": "YES",
-      "unlock_method": "OEM Unlock toggle + CROM service / Odin flash",
-      "root_status": "FULL",
-      "root_methods": [
-        "Magisk",
-        "APatch"
-      ],
-      "custom_recovery": "TWRP Unofficial",
-      "custom_kernel_support": "MODERATE",
-      "custom_roms": [
-        "LineageOS Unofficial"
-      ],
-      "links": {
-        "xda": "https://xdaforums.com/"
+        "xda": "https://xdaforums.com/c/samsung-galaxy-z-flip-6.12871/"
       }
     }
   ]

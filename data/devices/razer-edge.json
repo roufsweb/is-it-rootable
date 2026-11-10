@@ -1,0 +1,57 @@
+{
+  "slug": "razer-edge",
+  "brand": "Razer",
+  "name": "Edge Gaming Handheld",
+  "form_factor": "handheld",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Nexus Desktop Mode / DP Alt Mode",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "RZ45-0460 (Wi-Fi)"
+      ],
+      "codename": "kailua",
+      "region": "Global Wi-Fi Edition",
+      "soc": "Qualcomm Snapdragon G3x Gen 1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Developer Options OEM Unlock toggle + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "Fastbootd / Boot Patching",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "Stock Rooted RazerOS",
+        "Treble GSI"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    },
+    {
+      "models": [
+        "RZ45-0460 (Verizon 5G)"
+      ],
+      "codename": "kailua_vzw",
+      "region": "USA Verizon 5G Carrier Edition",
+      "soc": "Qualcomm Snapdragon G3x Gen 1",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Verizon carrier locked bootloader policy",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/"
+      }
+    }
+  ]
+}

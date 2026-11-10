@@ -1,0 +1,40 @@
+{
+  "slug": "ayn-odin-pro",
+  "brand": "Ayn",
+  "name": "Odin Pro",
+  "form_factor": "handheld",
+  "release_year": 2022,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort over USB-C + Micro-HDMI",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Odin Base",
+        "Odin Pro"
+      ],
+      "codename": "odin",
+      "region": "Global Open Market",
+      "soc": "Qualcomm Snapdragon 845",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot oem unlock directly in bootloader",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS 19.1",
+        "Windows 11 on ARM Dual-Boot",
+        "Batocera Linux"
+      ],
+      "links": {
+        "github": "https://github.com/project-celadon"
+      }
+    }
+  ]
+}

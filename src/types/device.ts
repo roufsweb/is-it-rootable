@@ -1,12 +1,14 @@
 export type RootStatus = 'FULL' | 'CONDITIONAL' | 'LOCKED';
 export type BootloaderStatus = 'YES' | 'CONDITIONAL' | 'NO';
 export type KernelSupport = 'HIGH' | 'MODERATE' | 'LOW' | 'NONE';
+export type FormFactor = 'phone' | 'tablet' | 'foldable' | 'handheld';
 
 export interface HardwareFeatures {
   usb_video_out: boolean;
   desktop_mode: string | null;
   sdcard_slot: boolean;
   headphone_jack: boolean;
+  hardware_mod_required?: boolean;
 }
 
 export interface Variant {
@@ -35,6 +37,7 @@ export interface Device {
   brand: string;
   name: string;
   release_year: number;
+  form_factor?: FormFactor;
   hardware_features: HardwareFeatures;
   variants: Variant[];
 }
@@ -46,10 +49,12 @@ export interface SearchItem {
   name: string;
   fullName: string;
   release_year: number;
+  form_factor: FormFactor;
   codenames: string;
   models: string;
   rawModels: string[];
   soc: string;
+  soc_family: string;
   overallRoot: RootStatus;
   overallBootloader: BootloaderStatus;
   usb_video_out: boolean;

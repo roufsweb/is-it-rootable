@@ -1,0 +1,59 @@
+{
+  "slug": "samsung-galaxy-tab-s7-plus",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S7+",
+  "form_factor": "tablet",
+  "release_year": 2020,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX (Wired & Wireless)",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-T970",
+        "SM-T976B",
+        "SM-T976N"
+      ],
+      "codename": "gts7xl",
+      "region": "Global / Europe / Korea (Wi-Fi & 5G)",
+      "soc": "Qualcomm Snapdragon 865+",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Odin download mode long-press Volume Up to unlock bootloader",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS 21 Official",
+        "One UI 6.1 Port"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-tab-s7.11413/"
+      }
+    },
+    {
+      "models": [
+        "SM-T976U"
+      ],
+      "codename": "gts7xl_na",
+      "region": "North America / USA Carriers (Verizon, AT&T, T-Mobile)",
+      "soc": "Qualcomm Snapdragon 865+",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Bootloader locked by North American carrier contract",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-tab-s7.11413/"
+      }
+    }
+  ]
+}

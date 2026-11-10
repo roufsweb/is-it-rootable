@@ -1,0 +1,59 @@
+{
+  "slug": "samsung-galaxy-tab-s6",
+  "brand": "Samsung",
+  "name": "Galaxy Tab S6",
+  "form_factor": "tablet",
+  "release_year": 2019,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Samsung DeX",
+    "sdcard_slot": true,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "SM-T860",
+        "SM-T865",
+        "SM-T865N"
+      ],
+      "codename": "gts6lwifi",
+      "region": "Global / Europe / Korea",
+      "soc": "Qualcomm Snapdragon 855",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Odin download mode device unlock mode",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS 20 Official",
+        "PixelExperience"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-tab-s6.9247/"
+      }
+    },
+    {
+      "models": [
+        "SM-T867U"
+      ],
+      "codename": "gts6llte_na",
+      "region": "North America / USA Carriers",
+      "soc": "Qualcomm Snapdragon 855",
+      "bootloader_unlockable": "NO",
+      "unlock_method": "Carrier locked fastboot / download mode",
+      "root_status": "LOCKED",
+      "root_methods": [],
+      "custom_recovery": "None",
+      "custom_kernel_support": "NONE",
+      "custom_roms": [],
+      "links": {
+        "xda": "https://xdaforums.com/c/samsung-galaxy-tab-s6.9247/"
+      }
+    }
+  ]
+}

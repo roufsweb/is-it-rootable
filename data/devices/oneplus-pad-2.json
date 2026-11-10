@@ -1,0 +1,41 @@
+{
+  "slug": "oneplus-pad-2",
+  "brand": "OnePlus",
+  "name": "Pad 2",
+  "form_factor": "tablet",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Open Canvas (Multi-window)",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "OPD2404",
+        "OPD2405"
+      ],
+      "codename": "aries",
+      "region": "Global / North America / Europe / India",
+      "soc": "Qualcomm Snapdragon 8 Gen 3",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "OEM Unlocking in Developer Settings + fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / Boot Patching",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "OxygenOS Stock Rooted",
+        "GSI Phh"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/oneplus-pad-2.12879/"
+      }
+    }
+  ]
+}

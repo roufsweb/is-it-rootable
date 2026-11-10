@@ -1,0 +1,41 @@
+{
+  "slug": "xiaomi-pad-6s-pro",
+  "brand": "Xiaomi",
+  "name": "Pad 6S Pro 12.4",
+  "form_factor": "tablet",
+  "release_year": 2024,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "HyperOS Workstation Mode",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "24018RPACC",
+        "24018RPACG"
+      ],
+      "codename": "sheng",
+      "region": "Global / China",
+      "soc": "Qualcomm Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "HyperOS Mi Unlock request + Mi Community level check",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "Fastbootd / KernelSU boot.img patch",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "Xiaomi.eu Multilingual",
+        "AOSP GSI"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/xiaomi-pad-6s-pro.12885/"
+      }
+    }
+  ]
+}

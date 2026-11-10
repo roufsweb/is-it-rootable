@@ -58,6 +58,32 @@ function getOverallBootloader(variants) {
   return 'CONDITIONAL';
 }
 
+function detectSocFamily(socString) {
+  const s = (socString || '').toLowerCase();
+  if (s.includes('snapdragon') || s.includes('qualcomm') || s.includes('sm8') || s.includes('sm7') || s.includes('sm6') || s.includes('sd8') || s.includes('sd7')) {
+    return 'Snapdragon';
+  }
+  if (s.includes('dimensity') || s.includes('helio') || s.includes('mediatek') || s.includes('mt6')) {
+    return 'MediaTek';
+  }
+  if (s.includes('exynos')) {
+    return 'Exynos';
+  }
+  if (s.includes('tensor')) {
+    return 'Tensor';
+  }
+  if (s.includes('tegra')) {
+    return 'Tegra';
+  }
+  if (s.includes('unisoc') || s.includes('spreadtrum') || s.includes('tiger')) {
+    return 'Unisoc';
+  }
+  if (s.includes('kirin')) {
+    return 'Kirin';
+  }
+  return 'Other';
+}
+
 function main() {
   if (!fs.existsSync(DEVICES_DIR)) {
     console.error(`Devices directory not found at ${DEVICES_DIR}`);
@@ -82,6 +108,8 @@ function main() {
 
     const overallRoot = getOverallRootStatus(device.variants);
     const overallBootloader = getOverallBootloader(device.variants);
+    const formFactor = device.form_factor || 'phone';
+    const socFamily = detectSocFamily(allSoc.join(', '));
 
     const entry = {
       id: device.slug,
@@ -90,10 +118,12 @@ function main() {
       name: device.name,
       fullName: `${device.brand} ${device.name}`,
       release_year: device.release_year,
+      form_factor: formFactor,
       codenames: allCodenames.join(' '),
       models: tokenizedModels.join(' '),
       rawModels: allModels,
       soc: allSoc.join(', '),
+      soc_family: socFamily,
       custom_roms: allRoms,
       overallRoot,
       overallBootloader,

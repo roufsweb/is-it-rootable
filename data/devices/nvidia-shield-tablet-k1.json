@@ -1,0 +1,40 @@
+{
+  "slug": "nvidia-shield-tablet-k1",
+  "brand": "Nvidia",
+  "name": "SHIELD Tablet K1",
+  "form_factor": "handheld",
+  "release_year": 2015,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Console Mode (Mini-HDMI 4K)",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "SHIELD Tablet K1",
+        "P1761W"
+      ],
+      "codename": "shieldtablet",
+      "region": "Global Factory Unlocked",
+      "soc": "Nvidia Tegra K1-32",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Official Nvidia developer OS images + fastboot oem unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS 17.1 Official",
+        "Resurrection Remix",
+        "ShieldOS Factory Stock"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/nvidia-shield-tablet.3448/"
+      }
+    }
+  ]
+}

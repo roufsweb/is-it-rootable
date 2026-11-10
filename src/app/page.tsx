@@ -18,6 +18,9 @@ export default function HomePage() {
   const lockedCount = devices.filter((d) => d.overallRoot === 'LOCKED').length;
   const videoOutCount = devices.filter((d) => d.usb_video_out).length;
   const romCount = devices.filter((d) => d.custom_roms && d.custom_roms.length > 0).length;
+  const tabletCount = devices.filter((d) => d.form_factor === 'tablet').length;
+  const foldableCount = devices.filter((d) => d.form_factor === 'foldable').length;
+  const handheldCount = devices.filter((d) => d.form_factor === 'handheld').length;
 
   const homeFaqItems: FAQItem[] = [
     {
@@ -74,13 +77,13 @@ export default function HomePage() {
           <div className="space-y-3 max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-600 dark:text-cyan-400 font-mono text-xs font-bold shadow-2xs">
               <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
-              <span>Model-Suffix Sensitive Android Intelligence</span>
+              <span>Model-Suffix Sensitive Android Intelligence • Phones, Tablets &amp; Handhelds</span>
             </div>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
               Can You <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-emerald-500 to-amber-500">Root</span> Your Android?
             </h1>
             <p className="text-xs sm:text-sm md:text-base text-muted font-mono leading-relaxed max-w-2xl font-medium">
-              Never get trapped by carrier lockdowns. Check exact regional model suffixes (e.g., Samsung{' '}
+              Instant bootloader, root, and DeX intelligence across Smartphones, Tablets &amp; Pads, Foldables, and Gaming Handhelds. Check exact regional model suffixes (e.g., Samsung{' '}
               <span className="text-emerald-700 dark:text-emerald-400 font-bold">SM-G950F</span> vs locked{' '}
               <span className="text-rose-700 dark:text-rose-400 font-bold">SM-G950U</span>), custom ROM availability, and USB-C DisplayPort/DeX capability.
             </p>
@@ -91,7 +94,7 @@ export default function HomePage() {
             <div className="p-3 rounded-xl border border-border bg-surface shadow-contrast-sm">
               <div className="text-muted text-[10px] uppercase font-bold">Device Families</div>
               <div className="text-xl sm:text-2xl font-black text-foreground mt-0.5">{totalFamilies}</div>
-              <div className="text-[10px] text-muted">{totalVariants} sub-variants</div>
+              <div className="text-[10px] text-muted">{tabletCount} tabs • {foldableCount} fold • {handheldCount} handhelds</div>
             </div>
 
             <div className="p-3 rounded-xl border border-emerald-400/50 bg-emerald-50/60 dark:bg-emerald-950/20 shadow-contrast-sm">

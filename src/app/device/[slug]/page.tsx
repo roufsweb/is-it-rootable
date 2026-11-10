@@ -349,10 +349,18 @@ export default async function DevicePage({ params }: DevicePageProps) {
       <div id="verdict" className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-2">
-            <div className="flex items-center gap-2 font-mono text-xs text-cyan-600 dark:text-cyan-400 font-bold">
+            <div className="flex items-center gap-2 font-mono text-xs text-cyan-600 dark:text-cyan-400 font-bold flex-wrap">
               <span className="uppercase">{device.brand}</span>
               <span>•</span>
               <span className="text-muted">Released {device.release_year}</span>
+              {device.form_factor && device.form_factor !== 'phone' && (
+                <>
+                  <span>•</span>
+                  <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-600 dark:text-cyan-400 uppercase text-[10px]">
+                    {device.form_factor === 'tablet' ? 'Tablet / Pad' : device.form_factor === 'handheld' ? 'Gaming Handheld' : 'Foldable'}
+                  </span>
+                </>
+              )}
             </div>
             <h1 className="text-2xl sm:text-4xl font-black text-foreground">
               {device.brand} {device.name}

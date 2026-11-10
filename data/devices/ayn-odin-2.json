@@ -1,0 +1,46 @@
+{
+  "slug": "ayn-odin-2",
+  "brand": "Ayn",
+  "name": "Odin 2",
+  "form_factor": "handheld",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "4K 60Hz DP Alt Mode + Micro-HDMI",
+    "sdcard_slot": true,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Odin 2",
+        "Odin 2 Pro",
+        "Odin 2 MAX",
+        "Odin 2 Mini",
+        "Odin 2 Portal"
+      ],
+      "codename": "odin2",
+      "region": "Global Open Market",
+      "soc": "Qualcomm Snapdragon 8 Gen 2",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "Factory unlocked; fastboot flashing unlock supported out of the box",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk",
+        "KernelSU",
+        "APatch"
+      ],
+      "custom_recovery": "Fastbootd / Boot Image Patching",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "Valhalla OS",
+        "Stock Rooted AynOS",
+        "Ubuntu Touch / Linux on ARM"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/",
+        "github": "https://github.com/Open-Odin"
+      }
+    }
+  ]
+}

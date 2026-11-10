@@ -1,0 +1,41 @@
+{
+  "slug": "xiaomi-pad-6-pro",
+  "brand": "Xiaomi",
+  "name": "Pad 6 Pro",
+  "form_factor": "tablet",
+  "release_year": 2023,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "Workstation Mode",
+    "sdcard_slot": false,
+    "headphone_jack": false
+  },
+  "variants": [
+    {
+      "models": [
+        "23046PNC9C"
+      ],
+      "codename": "liuqin",
+      "region": "China / Global Unlocked",
+      "soc": "Qualcomm Snapdragon 8+ Gen 1",
+      "bootloader_unlockable": "CONDITIONAL",
+      "unlock_method": "Mi Account bind (HyperOS community level 5 bypass or Mi Unlock Tool with 168h wait)",
+      "root_status": "FULL",
+      "root_methods": [
+        "KernelSU",
+        "APatch",
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official / OrangeFox",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS 21",
+        "Xiaomi.eu",
+        "PixelExperience"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/xiaomi-pad-6-pro.12781/"
+      }
+    }
+  ]
+}

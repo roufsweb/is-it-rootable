@@ -1,0 +1,39 @@
+{
+  "slug": "google-pixel-c",
+  "brand": "Google",
+  "name": "Pixel C",
+  "form_factor": "tablet",
+  "release_year": 2015,
+  "hardware_features": {
+    "usb_video_out": true,
+    "desktop_mode": "AOSP Multi-window",
+    "sdcard_slot": false,
+    "headphone_jack": true
+  },
+  "variants": [
+    {
+      "models": [
+        "Pixel C"
+      ],
+      "codename": "dragon",
+      "region": "Global Factory Unlocked",
+      "soc": "Nvidia Tegra X1",
+      "bootloader_unlockable": "YES",
+      "unlock_method": "fastboot oem unlock / fastboot flashing unlock",
+      "root_status": "FULL",
+      "root_methods": [
+        "Magisk"
+      ],
+      "custom_recovery": "TWRP Official",
+      "custom_kernel_support": "HIGH",
+      "custom_roms": [
+        "LineageOS 18.1 / 19.1",
+        "Ubuntu Touch",
+        "PostmarketOS Linux"
+      ],
+      "links": {
+        "xda": "https://xdaforums.com/c/google-pixel-c.4947/"
+      }
+    }
+  ]
+}
