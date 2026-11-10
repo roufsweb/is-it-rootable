@@ -42,7 +42,7 @@ export function Header() {
 
           <Link
             href="/about/"
-            className="font-mono text-xs px-2.5 py-1.5 rounded-lg border border-border bg-surface hover:bg-surface-elevated text-foreground hover:text-cyan-600 dark:hover:text-cyan-400 transition-all font-semibold"
+            className="font-mono text-xs px-3 py-1.5 min-h-[36px] flex items-center rounded-lg border border-border bg-surface hover:bg-surface-elevated text-foreground hover:text-cyan-600 dark:hover:text-cyan-400 transition-all font-semibold"
           >
             About
           </Link>
@@ -53,7 +53,7 @@ export function Header() {
             href="https://github.com/roufsweb/is-it-rootable"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 font-mono text-xs px-3 py-1.5 rounded-lg border border-border bg-surface hover:bg-surface-elevated text-foreground hover:text-cyan-400 transition-all shadow-xs font-semibold cursor-pointer"
+            className="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1.5 min-h-[36px] rounded-lg border border-border bg-surface hover:bg-surface-elevated text-foreground hover:text-cyan-400 transition-all shadow-xs font-semibold cursor-pointer"
           >
             <Github className="w-4 h-4" />
             <span className="hidden sm:inline">GitHub</span>

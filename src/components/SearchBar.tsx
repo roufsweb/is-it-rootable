@@ -24,7 +24,11 @@ import {
   RotateCcw,
   ArrowUpDown,
   Filter,
-  Check
+  Check,
+  Zap,
+  Flame,
+  Gem,
+  Brain,
 } from 'lucide-react';
 
 interface SearchBarProps {
@@ -49,11 +53,11 @@ const POPULAR_BRANDS = [
 ];
 
 const SOC_FAMILIES = [
-  { id: 'Snapdragon', label: 'Snapdragon', icon: '⚡' },
-  { id: 'MediaTek', label: 'MediaTek', icon: '🔥' },
-  { id: 'Exynos', label: 'Exynos', icon: '💎' },
-  { id: 'Tensor', label: 'Tensor', icon: '🧠' },
-  { id: 'Tegra', label: 'Tegra', icon: '🎮' },
+  { id: 'Snapdragon', label: 'Snapdragon', icon: Zap },
+  { id: 'MediaTek', label: 'MediaTek', icon: Flame },
+  { id: 'Exynos', label: 'Exynos', icon: Gem },
+  { id: 'Tensor', label: 'Tensor', icon: Brain },
+  { id: 'Tegra', label: 'Tegra', icon: Gamepad2 },
 ];
 
 export function SearchBar({ initialDevices }: SearchBarProps) {
@@ -299,9 +303,9 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     (filterRoms ? 1 : 0);
 
   return (
-    <div className="space-y-4 sm:space-y-5">
+    <div className="space-y-4 sm:space-y-5 w-full min-w-0 max-w-full">
       {/* 1. Form Factor Segmented Control Tabs */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none font-mono text-xs">
+      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none font-mono text-xs w-full max-w-full">
         <button
           type="button"
           onClick={() => setFormFactor('ALL')}
@@ -412,16 +416,16 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
 
       {/* 3. Primary Filter Control Strip: Verdicts, Features, Advanced Toggle */}
       <div className="p-3.5 sm:p-4 rounded-xl border border-border bg-surface shadow-contrast-sm space-y-3 font-mono text-xs">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 w-full min-w-0 max-w-full">
           {/* Verdict Segmented Filter */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none w-full max-w-full">
             <span className="text-muted font-bold mr-1 flex items-center gap-1 shrink-0">
               <SlidersHorizontal className="w-3.5 h-3.5 text-cyan-500" />
               Verdict:
             </span>
             <button
               onClick={() => setStatusFilter('ALL')}
-              className={`px-2.5 py-1 rounded-lg transition-colors shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg transition-colors shrink-0 cursor-pointer flex items-center justify-center ${
                 statusFilter === 'ALL'
                   ? 'bg-foreground text-background font-bold'
                   : 'bg-surface-elevated text-muted hover:text-foreground border border-border'
@@ -431,85 +435,85 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             </button>
             <button
               onClick={() => setStatusFilter(statusFilter === 'FULL' ? 'ALL' : 'FULL')}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1 shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 statusFilter === 'FULL'
                   ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border-emerald-500 font-bold'
                   : 'bg-surface-elevated text-emerald-700 dark:text-emerald-400 border-border hover:border-emerald-500/50'
               }`}
             >
-              <ShieldCheck className="w-3 h-3" />
+              <ShieldCheck className="w-3.5 h-3.5" />
               Full Root
             </button>
             <button
               onClick={() => setStatusFilter(statusFilter === 'CONDITIONAL' ? 'ALL' : 'CONDITIONAL')}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1 shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 statusFilter === 'CONDITIONAL'
                   ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500 font-bold'
                   : 'bg-surface-elevated text-amber-700 dark:text-amber-400 border-border hover:border-amber-500/50'
               }`}
             >
-              <AlertTriangle className="w-3 h-3" />
+              <AlertTriangle className="w-3.5 h-3.5" />
               Conditional
             </button>
             <button
               onClick={() => setStatusFilter(statusFilter === 'LOCKED' ? 'ALL' : 'LOCKED')}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1 shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 statusFilter === 'LOCKED'
                   ? 'bg-rose-500/20 text-rose-800 dark:text-rose-300 border-rose-500 font-bold'
                   : 'bg-surface-elevated text-rose-700 dark:text-rose-400 border-border hover:border-rose-500/50'
               }`}
             >
-              <ShieldAlert className="w-3 h-3" />
+              <ShieldAlert className="w-3.5 h-3.5" />
               Locked
             </button>
           </div>
 
           {/* Quick Hardware Feature Chips */}
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none w-full max-w-full">
             <button
               onClick={() => setFilterVideoOut(!filterVideoOut)}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterVideoOut
                   ? 'bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border-cyan-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
               }`}
               title="Native Type-C Screen Mirroring (DisplayPort Alt Mode) to TVs/monitors and Desktop Modes (Samsung DeX, Motorola Ready For)"
             >
-              <Monitor className="w-3 h-3 text-cyan-500" />
+              <Monitor className="w-3.5 h-3.5 text-cyan-500" />
               <span>Screen Mirroring / DeX</span>
             </button>
             <button
               onClick={() => setFilterRoms(!filterRoms)}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterRoms
                   ? 'bg-purple-500/20 text-purple-800 dark:text-purple-300 border-purple-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
               }`}
               title="Official LineageOS, TWRP, or active custom ROM support"
             >
-              <Disc className="w-3 h-3 text-purple-500" />
+              <Disc className="w-3.5 h-3.5 text-purple-500" />
               Custom ROMs
             </button>
             <button
               onClick={() => setFilterSdCard(!filterSdCard)}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterSdCard
                   ? 'bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border-emerald-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
               }`}
             >
-              <HardDrive className="w-3 h-3 text-emerald-500" />
+              <HardDrive className="w-3.5 h-3.5 text-emerald-500" />
               microSD
             </button>
             <button
               onClick={() => setFilterHeadphone(!filterHeadphone)}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ${
                 filterHeadphone
                   ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
               }`}
             >
-              <Headphones className="w-3 h-3 text-amber-500" />
+              <Headphones className="w-3.5 h-3.5 text-amber-500" />
               3.5mm
             </button>
 
@@ -517,7 +521,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             <button
               type="button"
               onClick={() => setShowAdvanced(!showAdvanced)}
-              className={`px-2.5 py-1 rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ml-auto ${
+              className={`px-3 py-1.5 min-h-[34px] rounded-lg border transition-all flex items-center gap-1.5 shrink-0 cursor-pointer ml-auto ${
                 showAdvanced || activeFilterCount > 0
                   ? 'bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-500/40 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
@@ -555,21 +559,24 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
                 >
                   All SoCs
                 </button>
-                {SOC_FAMILIES.map((soc) => (
-                  <button
-                    key={soc.id}
-                    type="button"
-                    onClick={() => setSocFilter(socFilter === soc.id ? 'ALL' : soc.id)}
-                    className={`px-2 py-0.5 rounded text-[11px] font-semibold cursor-pointer flex items-center gap-1 ${
-                      socFilter === soc.id
-                        ? 'bg-cyan-500 text-background font-bold'
-                        : 'bg-surface-elevated text-muted border border-border hover:text-foreground'
-                    }`}
-                  >
-                    <span>{soc.icon}</span>
-                    <span>{soc.label}</span>
-                  </button>
-                ))}
+                {SOC_FAMILIES.map((soc) => {
+                  const Icon = soc.icon;
+                  return (
+                    <button
+                      key={soc.id}
+                      type="button"
+                      onClick={() => setSocFilter(socFilter === soc.id ? 'ALL' : soc.id)}
+                      className={`px-2 py-0.5 rounded text-[11px] font-semibold cursor-pointer flex items-center gap-1 ${
+                        socFilter === soc.id
+                          ? 'bg-cyan-500 text-background font-bold'
+                          : 'bg-surface-elevated text-muted border border-border hover:text-foreground'
+                      }`}
+                    >
+                      <Icon className="w-3 h-3" />
+                      <span>{soc.label}</span>
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
