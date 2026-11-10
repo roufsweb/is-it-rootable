@@ -424,7 +424,7 @@ export default async function DevicePage({ params }: DevicePageProps) {
 
         {/* Hardware Features Row */}
         <div className="pt-4 sm:pt-6 border-t border-border grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 font-mono text-xs">
-          {/* DisplayPort / Video Out */}
+          {/* Type-C Screen Mirroring & DisplayPort Out */}
           <div
             className={`p-3 rounded-xl border ${
               device.hardware_features.usb_video_out
@@ -434,16 +434,16 @@ export default async function DevicePage({ params }: DevicePageProps) {
           >
             <div className="flex items-center gap-1.5 mb-1 text-[11px] uppercase tracking-wider text-muted font-bold">
               <Monitor className="w-3.5 h-3.5 text-cyan-500" />
-              <span>Video Out</span>
+              <span>Type-C Mirroring</span>
             </div>
             <div className="font-bold text-foreground">
-              {device.hardware_features.usb_video_out ? 'Supported' : 'Not Supported'}
+              {device.hardware_features.usb_video_out ? 'Supported (DP Out)' : 'Not Supported'}
             </div>
-            {device.hardware_features.desktop_mode && (
-              <div className="text-[10px] text-cyan-600 dark:text-cyan-400 truncate mt-0.5 font-medium">
-                {device.hardware_features.desktop_mode}
-              </div>
-            )}
+            <div className="text-[10px] text-cyan-600 dark:text-cyan-400 truncate mt-0.5 font-medium">
+              {device.hardware_features.usb_video_out
+                ? (device.hardware_features.desktop_mode || 'Direct TV / Monitor Mirroring')
+                : 'USB 2.0 (Cast / Wi-Fi only)'}
+            </div>
           </div>
 
           {/* MicroSD Slot */}

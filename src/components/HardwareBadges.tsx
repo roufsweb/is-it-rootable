@@ -1,6 +1,6 @@
 import React from 'react';
 import { HardwareFeatures } from '@/types/device';
-import { Monitor, Headphones, HardDrive, Cpu } from 'lucide-react';
+import { Monitor, Headphones, HardDrive } from 'lucide-react';
 
 interface HardwareBadgesProps {
   features: HardwareFeatures;
@@ -8,16 +8,29 @@ interface HardwareBadgesProps {
 }
 
 export function HardwareBadges({ features, compact = false }: HardwareBadgesProps) {
+  const getDisplayModeLabel = () => {
+    if (!features.desktop_mode) return 'Type-C Mirror';
+    const mode = features.desktop_mode.toLowerCase();
+    if (mode.includes('dex')) return 'Samsung DeX';
+    if (mode.includes('ready for') || mode.includes('smart connect')) return 'Ready For';
+    if (mode.includes('workstation') || mode.includes('hyperos')) return 'HyperOS PC';
+    if (mode.includes('studio') || mode.includes('redmagic')) return 'Studio 4K DP';
+    if (mode.includes('rog') || mode.includes('realm')) return 'ROG DP 4K';
+    if (mode.includes('canvas')) return 'Open Canvas';
+    if (mode.includes('hub mode')) return 'Hub Mode DP';
+    return 'Type-C Mirror';
+  };
+
   return (
     <div className="flex flex-wrap items-center gap-1.5 text-xs font-mono">
-      {/* Video Out / DisplayPort */}
+      {/* Video Out / Type-C Screen Mirroring / DisplayPort */}
       {features.usb_video_out ? (
         <span
           className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-800/50"
-          title={features.desktop_mode ? `DisplayPort Alt Mode: ${features.desktop_mode}` : 'USB-C DisplayPort Output Supported'}
+          title={`Type-C Screen Mirroring & DisplayPort Alt Mode: ${features.desktop_mode || 'Direct Screen Mirroring to TV/Monitor'}`}
         >
           <Monitor className="w-3 h-3 text-cyan-400" />
-          <span>{features.desktop_mode ? features.desktop_mode.split(' ')[0] : 'DisplayPort'}</span>
+          <span>{getDisplayModeLabel()}</span>
         </span>
       ) : null}
 
@@ -45,4 +58,3 @@ export function HardwareBadges({ features, compact = false }: HardwareBadgesProp
     </div>
   );
 }
-

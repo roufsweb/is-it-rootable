@@ -4,8 +4,8 @@
   "name": "Fairphone 4",
   "release_year": 2021,
   "hardware_features": {
-    "usb_video_out": false,
-    "desktop_mode": null,
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort Alt Mode (Screen Mirroring)",
     "sdcard_slot": true,
     "headphone_jack": false
   },

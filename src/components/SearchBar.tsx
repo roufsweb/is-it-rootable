@@ -473,10 +473,10 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
                   ? 'bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 border-cyan-500 font-bold'
                   : 'bg-surface-elevated text-muted border-border hover:text-foreground'
               }`}
-              title="USB-C DisplayPort Alt Mode & Desktop Modes (DeX / Ready For)"
+              title="Native Type-C Screen Mirroring (DisplayPort Alt Mode) to TVs/monitors and Desktop Modes (Samsung DeX, Motorola Ready For)"
             >
               <Monitor className="w-3 h-3 text-cyan-500" />
-              DeX / Video Out
+              <span>Screen Mirroring / DeX</span>
             </button>
             <button
               onClick={() => setFilterRoms(!filterRoms)}
@@ -658,7 +658,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
 
               {filterVideoOut && (
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-cyan-500/15 text-cyan-600 dark:text-cyan-300 border border-cyan-500/30 text-[11px] font-bold">
-                  <span>Video Out / DeX</span>
+                  <span>Screen Mirroring / DeX</span>
                   <button onClick={() => setFilterVideoOut(false)} className="hover:text-foreground cursor-pointer">
                     <X className="w-3 h-3" />
                   </button>

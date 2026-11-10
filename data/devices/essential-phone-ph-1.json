@@ -4,8 +4,8 @@
   "name": "Essential Phone PH-1",
   "release_year": 2017,
   "hardware_features": {
-    "usb_video_out": false,
-    "desktop_mode": null,
+    "usb_video_out": true,
+    "desktop_mode": "USB-C DisplayPort Screen Mirroring",
     "sdcard_slot": false,
     "headphone_jack": false
   },

@@ -462,13 +462,13 @@ export default async function ModelPage({ params }: ModelPageProps) {
             </div>
 
             <div className="p-3 rounded-lg bg-surface-elevated border border-border space-y-1">
-              <div className="text-[10px] text-muted uppercase font-bold">USB-C Video Out &amp; Desktop Mode</div>
+              <div className="text-[10px] text-muted uppercase font-bold">USB-C Screen Mirroring &amp; Video Out</div>
               <div className="text-foreground font-bold flex items-center gap-2">
                 <Monitor className="w-3.5 h-3.5 text-cyan-500" />
                 <span>
                   {device.hardware_features.usb_video_out
-                    ? `Supported (${device.hardware_features.desktop_mode || 'DisplayPort Alt Mode'})`
-                    : 'Not supported (No wired DisplayPort)'}
+                    ? `Supported: ${device.hardware_features.desktop_mode || 'DisplayPort Screen Mirroring'}`
+                    : 'Not supported (USB 2.0 / No wired DisplayPort)'}
                 </span>
               </div>
             </div>

@@ -4,8 +4,8 @@
   "name": "Pixel Tablet",
   "release_year": 2023,
   "hardware_features": {
-    "usb_video_out": false,
-    "desktop_mode": "Hub Mode",
+    "usb_video_out": true,
+    "desktop_mode": "DisplayPort Alt Mode (Screen Mirroring & Hub Mode)",
     "sdcard_slot": false,
     "headphone_jack": false
   },

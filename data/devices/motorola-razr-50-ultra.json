@@ -4,8 +4,8 @@
   "name": "Motorola Razr 50 Ultra / Razr+ (2024)",
   "release_year": 2024,
   "hardware_features": {
-    "usb_video_out": false,
-    "desktop_mode": null,
+    "usb_video_out": true,
+    "desktop_mode": "Motorola Ready For / Smart Connect (DP Alt Mode Screen Mirroring)",
     "sdcard_slot": false,
     "headphone_jack": false
   },

@@ -672,8 +672,8 @@
     "name": "Essential Phone PH-1",
     "release_year": 2017,
     "hardware_features": {
-      "usb_video_out": false,
-      "desktop_mode": null,
+      "usb_video_out": true,
+      "desktop_mode": "USB-C DisplayPort Screen Mirroring",
       "sdcard_slot": false,
       "headphone_jack": false
     },
@@ -713,8 +713,8 @@
     "name": "Fairphone 4",
     "release_year": 2021,
     "hardware_features": {
-      "usb_video_out": false,
-      "desktop_mode": null,
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort Alt Mode (Screen Mirroring)",
       "sdcard_slot": true,
       "headphone_jack": false
     },
@@ -2869,8 +2869,8 @@
     "name": "Pixel Tablet",
     "release_year": 2023,
     "hardware_features": {
-      "usb_video_out": false,
-      "desktop_mode": "Hub Mode",
+      "usb_video_out": true,
+      "desktop_mode": "DisplayPort Alt Mode (Screen Mirroring & Hub Mode)",
       "sdcard_slot": false,
       "headphone_jack": false
     },
@@ -5051,8 +5051,8 @@
     "name": "Motorola Razr 40 Ultra / Razr+",
     "release_year": 2023,
     "hardware_features": {
-      "usb_video_out": false,
-      "desktop_mode": null,
+      "usb_video_out": true,
+      "desktop_mode": "Motorola Ready For / Smart Connect (DP Alt Mode Screen Mirroring)",
       "sdcard_slot": false,
       "headphone_jack": false
     },
@@ -5090,8 +5090,8 @@
     "name": "Motorola Razr 50 Ultra / Razr+ (2024)",
     "release_year": 2024,
     "hardware_features": {
-      "usb_video_out": false,
-      "desktop_mode": null,
+      "usb_video_out": true,
+      "desktop_mode": "Motorola Ready For / Smart Connect (DP Alt Mode Screen Mirroring)",
       "sdcard_slot": false,
       "headphone_jack": false
     },
