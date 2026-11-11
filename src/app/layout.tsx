@@ -150,7 +150,7 @@ export default function RootLayout({
       </head>
       <body className="cyber-grid min-h-screen flex flex-col justify-between bg-background text-foreground antialiased selection:bg-cyan-500/30 selection:text-cyan-400 overflow-x-hidden">
         <Header />
-        <main className="flex-1 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8 w-full min-w-0 max-w-full">
+        <main className="flex-1 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-3 sm:pt-4 pb-8 sm:pb-12 w-full min-w-0 max-w-full">
           {children}
         </main>
         <Footer />

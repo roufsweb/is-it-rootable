@@ -3,6 +3,7 @@ import Link from 'next/link';
 import searchData from '@/data/search-index.json';
 import { SearchItem } from '@/types/device';
 import { SearchBar } from '@/components/SearchBar';
+import { HeroDescription } from '@/components/HeroDescription';
 import { FAQAccordion, FAQItem } from '@/components/FAQAccordion';
 import { Terminal, ShieldCheck, Monitor, AlertTriangle, Disc, Cpu, HelpCircle, ExternalLink } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/site';
@@ -76,13 +77,9 @@ export default function HomePage() {
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-3 max-w-3xl min-w-0">
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight text-foreground">
-              Can You Root Your Android?
+              Is Your Phone Rootable?
             </h1>
-            <p className="text-sm sm:text-base text-muted font-mono leading-relaxed max-w-2xl font-medium">
-              Instant bootloader, root, and DeX intelligence across Smartphones, Tablets &amp; Pads, Foldables, and Gaming Handhelds. Check exact regional model suffixes (e.g., Samsung{' '}
-              <span className="text-foreground font-bold underline decoration-emerald-500/60 decoration-2">SM-G950F</span> vs locked{' '}
-              <span className="text-foreground font-bold underline decoration-rose-500/60 decoration-2">SM-G950U</span>), custom ROM availability, and USB-C DisplayPort/DeX capability.
-            </p>
+            <HeroDescription />
           </div>
 
           {/* Quick Stat Matrix: Monochromatic Glassmorphic Cards */}
