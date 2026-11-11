@@ -32,17 +32,19 @@ export function Header() {
         </Link>
 
         {/* Navigation / Actions: Ultra-Clean & Overflow-Free */}
-        <div className="flex items-center gap-2 shrink-0">
-          {/* Desktop-only secondary actions */}
-          <div className="hidden sm:flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          {/* Tip / Coffee (Tablet & Desktop) */}
+          <div className="hidden sm:inline-flex items-center">
             <DonateButton />
-            <Link
-              href="/about/"
-              className="font-mono text-xs sm:text-sm px-3.5 py-1.5 h-9 flex items-center rounded-lg border border-border bg-surface-elevated/80 hover:bg-surface-elevated text-muted hover:text-foreground transition-all font-semibold"
-            >
-              About
-            </Link>
           </div>
+
+          {/* About Link (All Viewports) */}
+          <Link
+            href="/about/"
+            className="font-mono text-xs sm:text-sm px-2.5 sm:px-3.5 py-1.5 h-9 inline-flex items-center rounded-lg border border-border bg-surface-elevated/80 hover:bg-surface-elevated text-muted hover:text-foreground transition-all font-semibold"
+          >
+            About
+          </Link>
 
           {/* Theme Toggle (Compact 36x36 Glass Button) */}
           <ThemeToggle />

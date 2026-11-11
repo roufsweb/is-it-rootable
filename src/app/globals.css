@@ -43,7 +43,6 @@ body {
   width: 100%;
   min-height: 100vh;
   transition: background-color 0.2s ease, color 0.2s ease;
-  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
 }
 
 /* Subtle architectural grid overlay */
@@ -93,28 +92,6 @@ body {
   background: rgba(244, 63, 94, 0.08);
   border: 1px solid rgba(244, 63, 94, 0.40);
   box-shadow: 0 2px 12px rgba(244, 63, 94, 0.12), inset 0 0 10px rgba(244, 63, 94, 0.03);
-}
-
-/* Glassmorphic floating dock animation */
-@keyframes dockFloatIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 14px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
-
-.floating-glass-dock {
-  position: fixed;
-  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 50;
-  animation: dockFloatIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
-  max-width: calc(100vw - 1.5rem);
 }
 
 /* Custom scrollbars */

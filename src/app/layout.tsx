@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { GlobalDockWrapper } from '@/components/GlobalDockWrapper';
 import { SITE_CONFIG, getCanonicalUrl } from '@/lib/site';
 
 export const viewport: Viewport = {
@@ -155,7 +154,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <GlobalDockWrapper />
         <div id="portal-root" className="relative z-[100000]" />
       </body>
     </html>
