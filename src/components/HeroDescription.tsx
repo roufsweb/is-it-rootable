@@ -7,13 +7,15 @@ export function HeroDescription() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="space-y-2 max-w-2xl font-mono text-xs sm:text-sm md:text-base text-muted font-medium leading-relaxed">
-      <p>
+    <div className="space-y-2 max-w-3xl font-mono text-xs sm:text-sm md:text-base text-muted font-medium leading-relaxed">
+      {/* Base paragraph: strictly clamped to 2 lines when collapsed across viewports */}
+      <p className={isExpanded ? 'line-clamp-none' : 'line-clamp-2'}>
         Instant bootloader, root, and DeX intelligence across Smartphones, Tablets &amp; Pads, Foldables, and Gaming Handhelds. Check exact regional model suffixes (e.g., Samsung{' '}
         <span className="text-foreground font-bold underline decoration-emerald-500/60 decoration-2">SM-G950F</span> vs locked{' '}
         <span className="text-foreground font-bold underline decoration-rose-500/60 decoration-2">SM-G950U</span>), custom ROM availability, and USB-C DisplayPort/DeX capability.
       </p>
 
+      {/* Expanded detailed breakdown */}
       {isExpanded && (
         <div className="space-y-2.5 pt-2 text-xs sm:text-sm text-muted border-t border-border/70 animate-in fade-in duration-200">
           <p>
@@ -36,6 +38,7 @@ export function HeroDescription() {
         </div>
       )}
 
+      {/* Expand/Collapse Toggle Button */}
       <div className="pt-0.5">
         <button
           type="button"
@@ -44,7 +47,7 @@ export function HeroDescription() {
           aria-expanded={isExpanded}
         >
           <span className="underline underline-offset-4 decoration-border group-hover:decoration-cyan-500">
-            {isExpanded ? 'Read less' : 'Read more...'}
+            {isExpanded ? 'See less' : 'See more...'}
           </span>
           {isExpanded ? (
             <ChevronUp className="w-3.5 h-3.5 text-muted group-hover:text-cyan-500 transition-colors" />
