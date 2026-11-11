@@ -14,7 +14,11 @@ const config: Config = {
         foreground: 'var(--foreground)',
         surface: 'var(--surface)',
         'surface-elevated': 'var(--surface-elevated)',
+        'surface-card': 'var(--surface-card)',
         border: 'var(--border)',
+        'border-subtle': 'var(--border-subtle)',
+        'border-card': 'var(--border-card)',
+        'border-hover': 'var(--border-hover)',
         muted: 'var(--muted)',
         primary: {
           DEFAULT: '#06b6d4',
@@ -33,6 +37,10 @@ const config: Config = {
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
       },
       boxShadow: {
+        'tactile-sm': '0 1px 2px 0 rgba(0, 0, 0, 0.4)',
+        'tactile-card': '0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 12px -2px rgba(0, 0, 0, 0.35)',
+        'tactile-hover': '0 4px 6px -1px rgba(0, 0, 0, 0.35), 0 12px 24px -4px rgba(0, 0, 0, 0.45)',
+        'dock': '0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08) inset',
         'contrast-sm': '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
         'contrast-md': '0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1)',
         'contrast-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -2px rgba(0, 0, 0, 0.15)',

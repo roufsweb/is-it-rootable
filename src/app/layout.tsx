@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { GlobalDockWrapper } from '@/components/GlobalDockWrapper';
 import { SITE_CONFIG, getCanonicalUrl } from '@/lib/site';
 
 export const viewport: Viewport = {
@@ -10,7 +11,7 @@ export const viewport: Viewport = {
   maximumScale: 5,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#090d16' },
+    { media: '(prefers-color-scheme: dark)', color: '#09090b' },
   ],
 };
 
@@ -154,6 +155,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <GlobalDockWrapper />
         <div id="portal-root" className="relative z-[100000]" />
       </body>
     </html>
