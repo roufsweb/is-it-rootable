@@ -305,7 +305,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
 
       {/* Semantic Breadcrumb Navigation & Share Button */}
       <div className="flex items-center justify-between gap-3 flex-wrap">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs sm:text-sm text-muted flex-wrap">
           <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
             Home
           </Link>
@@ -314,7 +314,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
             {device.brand} {device.name}
           </Link>
           <ChevronRight className="w-3.5 h-3.5 text-muted/60" />
-          <span className="text-cyan-600 dark:text-cyan-300 font-bold px-1.5 py-0.5 rounded bg-surface-elevated border border-border">
+          <span className="text-cyan-600 dark:text-cyan-300 font-bold px-2 py-0.5 rounded bg-surface-elevated border border-border">
             {exactModel}
           </span>
         </nav>
@@ -328,7 +328,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
       <div id="verdict" className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-2">
-            <div className="flex items-center gap-2 font-mono text-xs text-cyan-600 dark:text-cyan-400 font-bold">
+            <div className="flex items-center gap-2 font-mono text-xs sm:text-sm text-cyan-600 dark:text-cyan-400 font-bold">
               <span>{device.brand.toUpperCase()}</span>
               <span>•</span>
               <span className="text-muted">Model: {exactModel}</span>
@@ -341,14 +341,14 @@ export default async function ModelPage({ params }: ModelPageProps) {
           </div>
 
           <div className="flex flex-col items-start md:items-end gap-1">
-            <div className="text-[10px] font-mono text-muted uppercase tracking-wider font-bold">Root Verdict</div>
+            <div className="text-xs font-mono text-muted uppercase tracking-wider font-bold">Root Verdict</div>
             <StatusBadge status={variant.root_status} type="root" size="lg" />
           </div>
         </div>
 
         {/* Direct Answer Summary Box (Google Featured Snippet optimized) */}
-        <div className="p-4 sm:p-5 rounded-xl bg-surface border border-border font-mono text-sm leading-relaxed space-y-2 shadow-contrast-sm">
-          <div className="flex items-center gap-2 text-foreground font-black text-base">
+        <div className="p-4 sm:p-5 rounded-xl bg-surface border border-border font-mono text-sm sm:text-base leading-relaxed space-y-2 shadow-contrast-sm">
+          <div className="flex items-center gap-2 text-foreground font-black text-base sm:text-lg">
             {isLocked ? (
               <XCircle className="w-5 h-5 text-rose-600 dark:text-rose-400 shrink-0" />
             ) : isUnlockable ? (
@@ -364,7 +364,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
                 : `Direct Answer: CONDITIONAL. Root depends on firmware version.`}
             </span>
           </div>
-          <p className="text-muted text-xs sm:text-sm font-medium">
+          <p className="text-muted text-sm sm:text-base font-medium">
             {isLocked
               ? `The ${exactModel} is a ${variant.region} model with a permanently locked bootloader. Carrier e-fuse or Knox hardware policies block bootloader unlock toggling and flashing unsigned kernel images.`
               : isUnlockable
@@ -380,52 +380,52 @@ export default async function ModelPage({ params }: ModelPageProps) {
       <div id="tech-specs" className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
         {/* Left: Bootloader & Root Deep Dive */}
         <div className="rounded-xl border border-border bg-surface p-5 sm:p-6 space-y-5 shadow-contrast-sm">
-          <h3 className="text-base font-bold text-foreground font-mono flex items-center gap-2">
+          <h3 className="text-base sm:text-lg font-bold text-foreground font-mono flex items-center gap-2">
             <Terminal className="w-4 h-4 text-cyan-500" />
             Bootloader &amp; Unlock Guide
           </h3>
 
-          <div className="space-y-3.5 font-mono text-xs">
+          <div className="space-y-3.5 font-mono text-sm">
             <div className="flex justify-between items-center p-3 rounded-lg bg-surface-elevated border border-border">
               <span className="text-muted font-bold">Bootloader Status:</span>
               <StatusBadge status={variant.bootloader_unlockable} type="bootloader" size="sm" />
             </div>
 
-            <div className="p-3 rounded-lg bg-surface-elevated border border-border space-y-1">
-              <div className="text-muted uppercase text-[10px] font-bold">Unlock Procedure</div>
+            <div className="p-3.5 rounded-lg bg-surface-elevated border border-border space-y-1">
+              <div className="text-muted uppercase text-xs font-bold">Unlock Procedure</div>
               <div className="text-foreground font-semibold leading-relaxed">{variant.unlock_method}</div>
             </div>
 
-            <div className="p-3 rounded-lg bg-surface-elevated border border-border space-y-1">
-              <div className="text-muted uppercase text-[10px] font-bold">Supported Root Implementations</div>
+            <div className="p-3.5 rounded-lg bg-surface-elevated border border-border space-y-1">
+              <div className="text-muted uppercase text-xs font-bold">Supported Root Implementations</div>
               <div className="flex flex-wrap gap-1.5 mt-1">
                 {variant.root_methods && variant.root_methods.length > 0 ? (
                   variant.root_methods.map((m) => (
                     <span
                       key={m}
-                      className="px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800/60 font-bold"
+                      className="px-2.5 py-1 rounded bg-emerald-100 dark:bg-emerald-950/50 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800/60 font-bold text-xs sm:text-sm"
                     >
                       {m}
                     </span>
                   ))
                 ) : (
-                  <span className="text-rose-600 dark:text-rose-400 font-bold italic">None supported</span>
+                  <span className="text-rose-600 dark:text-rose-400 font-bold italic text-xs sm:text-sm">None supported</span>
                 )}
               </div>
             </div>
 
             {/* Custom ROMs if applicable */}
             {variant.custom_roms && variant.custom_roms.length > 0 && (
-              <div className="p-3 rounded-lg bg-surface-elevated border border-border space-y-1">
-                <div className="text-muted uppercase text-[10px] font-bold flex items-center gap-1">
-                  <Disc className="w-3 h-3 text-purple-500" />
+              <div className="p-3.5 rounded-lg bg-surface-elevated border border-border space-y-1">
+                <div className="text-muted uppercase text-xs font-bold flex items-center gap-1.5">
+                  <Disc className="w-3.5 h-3.5 text-purple-500" />
                   Custom ROM Support
                 </div>
                 <div className="flex flex-wrap gap-1.5 mt-1">
                   {variant.custom_roms.map((rom) => (
                     <span
                       key={rom}
-                      className="px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-950/50 text-purple-800 dark:text-purple-300 border border-purple-300 dark:border-purple-800/60 font-bold"
+                      className="px-2.5 py-1 rounded bg-purple-100 dark:bg-purple-950/50 text-purple-800 dark:text-purple-300 border border-purple-300 dark:border-purple-800/60 font-bold text-xs sm:text-sm"
                     >
                       {rom}
                     </span>
@@ -435,13 +435,13 @@ export default async function ModelPage({ params }: ModelPageProps) {
             )}
 
             <div className="grid grid-cols-2 gap-3">
-              <div className="p-3 rounded-lg bg-surface-elevated border border-border">
-                <div className="text-[10px] text-muted uppercase font-bold">Custom Recovery</div>
-                <div className="text-foreground font-bold mt-0.5">{variant.custom_recovery || 'None'}</div>
+              <div className="p-3.5 rounded-lg bg-surface-elevated border border-border">
+                <div className="text-xs text-muted uppercase font-bold">Custom Recovery</div>
+                <div className="text-foreground font-bold text-sm sm:text-base mt-1">{variant.custom_recovery || 'None'}</div>
               </div>
-              <div className="p-3 rounded-lg bg-surface-elevated border border-border">
-                <div className="text-[10px] text-muted uppercase font-bold">Kernel Support</div>
-                <div className="text-cyan-600 dark:text-cyan-300 font-bold mt-0.5">{variant.custom_kernel_support}</div>
+              <div className="p-3.5 rounded-lg bg-surface-elevated border border-border">
+                <div className="text-xs text-muted uppercase font-bold">Kernel Support</div>
+                <div className="text-cyan-600 dark:text-cyan-300 font-bold text-sm sm:text-base mt-1">{variant.custom_kernel_support}</div>
               </div>
             </div>
           </div>
@@ -449,22 +449,22 @@ export default async function ModelPage({ params }: ModelPageProps) {
 
         {/* Right: Hardware & Chipset Specs */}
         <div className="rounded-xl border border-border bg-surface p-5 sm:p-6 space-y-5 shadow-contrast-sm">
-          <h3 className="text-base font-bold text-foreground font-mono flex items-center gap-2">
+          <h3 className="text-base sm:text-lg font-bold text-foreground font-mono flex items-center gap-2">
             <Cpu className="w-4 h-4 text-cyan-500" />
             Chipset &amp; Hardware Features
           </h3>
 
-          <div className="space-y-3.5 font-mono text-xs">
-            <div className="p-3 rounded-lg bg-surface-elevated border border-border space-y-1">
-              <div className="text-[10px] text-muted uppercase font-bold">Processor / SoC</div>
-              <div className="text-cyan-600 dark:text-cyan-300 font-extrabold text-sm">{variant.soc}</div>
-              <div className="text-muted text-[11px] font-medium">Codename: {variant.codename}</div>
+          <div className="space-y-3.5 font-mono text-sm">
+            <div className="p-3.5 rounded-lg bg-surface-elevated border border-border space-y-1">
+              <div className="text-xs text-muted uppercase font-bold">Processor / SoC</div>
+              <div className="text-cyan-600 dark:text-cyan-300 font-extrabold text-base">{variant.soc}</div>
+              <div className="text-muted text-xs font-medium">Codename: {variant.codename}</div>
             </div>
 
-            <div className="p-3 rounded-lg bg-surface-elevated border border-border space-y-1">
-              <div className="text-[10px] text-muted uppercase font-bold">USB-C Screen Mirroring &amp; Video Out</div>
-              <div className="text-foreground font-bold flex items-center gap-2">
-                <Monitor className="w-3.5 h-3.5 text-cyan-500" />
+            <div className="p-3.5 rounded-lg bg-surface-elevated border border-border space-y-1">
+              <div className="text-xs text-muted uppercase font-bold">USB-C Screen Mirroring &amp; Video Out</div>
+              <div className="text-foreground font-bold flex items-center gap-2 text-sm sm:text-base">
+                <Monitor className="w-4 h-4 text-cyan-500" />
                 <span>
                   {device.hardware_features.usb_video_out
                     ? `Supported: ${device.hardware_features.desktop_mode || 'DisplayPort Screen Mirroring'}`
@@ -474,16 +474,16 @@ export default async function ModelPage({ params }: ModelPageProps) {
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              <div className="p-3 rounded-lg bg-surface-elevated border border-border">
-                <div className="text-[10px] text-muted uppercase font-bold">MicroSD Slot</div>
-                <div className="text-foreground font-bold mt-0.5">
+              <div className="p-3.5 rounded-lg bg-surface-elevated border border-border">
+                <div className="text-xs text-muted uppercase font-bold">MicroSD Slot</div>
+                <div className="text-foreground font-bold text-sm sm:text-base mt-1">
                   {device.hardware_features.sdcard_slot ? 'YES (Expandable)' : 'NO (Fixed Storage)'}
                 </div>
               </div>
 
-              <div className="p-3 rounded-lg bg-surface-elevated border border-border">
-                <div className="text-[10px] text-muted uppercase font-bold">3.5mm Headphone Jack</div>
-                <div className="text-foreground font-bold mt-0.5">
+              <div className="p-3.5 rounded-lg bg-surface-elevated border border-border">
+                <div className="text-xs text-muted uppercase font-bold">3.5mm Headphone Jack</div>
+                <div className="text-foreground font-bold text-sm sm:text-base mt-1">
                   {device.hardware_features.headphone_jack ? 'YES (Present)' : 'NO (USB-C / BT only)'}
                 </div>
               </div>
@@ -539,7 +539,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
               Compare with Other {device.name} Regional Variants
             </h3>
           </div>
-          <p className="font-mono text-xs text-muted font-medium">
+          <p className="font-mono text-sm text-muted font-medium">
             Verify your exact model suffix before attempting any modification:
           </p>
 
@@ -551,15 +551,15 @@ export default async function ModelPage({ params }: ModelPageProps) {
               >
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="font-mono text-xs px-2 py-0.5 rounded bg-surface-elevated text-cyan-600 dark:text-cyan-300 font-bold mr-2 border border-border">
+                    <span className="font-mono text-xs sm:text-sm px-2.5 py-1 rounded bg-surface-elevated text-cyan-600 dark:text-cyan-300 font-bold mr-2 border border-border">
                       {ov.codename}
                     </span>
-                    <span className="text-sm font-bold text-foreground">{ov.region}</span>
+                    <span className="text-base font-bold text-foreground">{ov.region}</span>
                   </div>
                   <StatusBadge status={ov.root_status} type="root" size="sm" />
                 </div>
 
-                <div className="font-mono text-xs text-muted font-medium">
+                <div className="font-mono text-xs sm:text-sm text-muted font-medium">
                   <span>SoC: <strong className="text-foreground">{ov.soc}</strong></span>
                 </div>
 
@@ -568,7 +568,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
                     <Link
                       key={m}
                       href={getCanonicalUrl(`model/${encodeURIComponent(m.toLowerCase().replace(/[^a-z0-9]/g, '-'))}`)}
-                      className="font-mono text-xs px-2 py-0.5 rounded bg-surface-elevated text-foreground font-bold border border-border hover:border-cyan-500 hover:text-cyan-500 transition-colors"
+                      className="font-mono text-xs sm:text-sm px-2.5 py-1 rounded bg-surface-elevated text-foreground font-bold border border-border hover:border-cyan-500 hover:text-cyan-500 transition-colors"
                     >
                       {m}
                     </Link>
@@ -588,14 +588,14 @@ export default async function ModelPage({ params }: ModelPageProps) {
       {/* Device Overview Banner Link */}
       <div className="p-4 sm:p-5 rounded-xl border border-border bg-surface-elevated flex flex-col sm:flex-row items-center justify-between gap-4 shadow-contrast-sm">
         <div>
-          <div className="text-sm font-bold text-foreground">Looking for the complete {device.brand} {device.name} overview?</div>
-          <div className="text-xs font-mono text-muted font-medium">
+          <div className="text-base font-bold text-foreground">Looking for the complete {device.brand} {device.name} overview?</div>
+          <div className="text-xs sm:text-sm font-mono text-muted font-medium mt-0.5">
             View side-by-side variant tables, custom ROM recovery links, and hardware documentation.
           </div>
         </div>
         <Link
           href={getCanonicalUrl(`device/${device.slug}`)}
-          className="font-mono text-xs px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors whitespace-nowrap"
+          className="font-mono text-xs sm:text-sm px-4 py-2 rounded-lg bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500/20 font-bold transition-colors whitespace-nowrap"
         >
           View Full {device.name} Guide →
         </Link>

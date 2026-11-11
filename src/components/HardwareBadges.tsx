@@ -22,14 +22,14 @@ export function HardwareBadges({ features, compact = false }: HardwareBadgesProp
   };
 
   return (
-    <div className="flex flex-wrap items-center gap-1.5 text-xs font-mono">
+    <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-mono">
       {/* Video Out / Type-C Screen Mirroring / DisplayPort */}
       {features.usb_video_out ? (
         <span
-          className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-elevated text-foreground border border-border font-medium"
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-elevated text-foreground border border-border font-medium"
           title={`Type-C Screen Mirroring & DisplayPort Alt Mode: ${features.desktop_mode || 'Direct Screen Mirroring to TV/Monitor'}`}
         >
-          <Monitor className="w-3 h-3 text-muted shrink-0" />
+          <Monitor className="w-3.5 h-3.5 text-muted shrink-0" />
           <span>{getDisplayModeLabel()}</span>
         </span>
       ) : null}
@@ -37,10 +37,10 @@ export function HardwareBadges({ features, compact = false }: HardwareBadgesProp
       {/* MicroSD Slot */}
       {features.sdcard_slot ? (
         <span
-          className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-elevated text-muted border border-border"
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-elevated text-muted border border-border font-medium"
           title="MicroSD Card Expansion Supported"
         >
-          <HardDrive className="w-3 h-3 text-muted shrink-0" />
+          <HardDrive className="w-3.5 h-3.5 text-muted shrink-0" />
           <span>microSD</span>
         </span>
       ) : null}
@@ -48,10 +48,10 @@ export function HardwareBadges({ features, compact = false }: HardwareBadgesProp
       {/* Headphone Jack */}
       {features.headphone_jack ? (
         <span
-          className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-elevated text-muted border border-border"
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-elevated text-muted border border-border font-medium"
           title="3.5mm Headphone Audio Jack Present"
         >
-          <Headphones className="w-3 h-3 text-muted shrink-0" />
+          <Headphones className="w-3.5 h-3.5 text-muted shrink-0" />
           <span>3.5mm</span>
         </span>
       ) : null}

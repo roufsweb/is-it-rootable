@@ -47,7 +47,7 @@ export function FAQAccordion({ items, title = 'Frequently Asked Questions' }: FA
                 aria-expanded={isOpen}
                 className="w-full text-left p-4 sm:p-4.5 flex items-center justify-between gap-3 font-semibold text-foreground hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors cursor-pointer"
               >
-                <span className="text-xs sm:text-sm font-mono tracking-tight font-bold">
+                <span className="text-sm sm:text-base font-mono tracking-tight font-bold">
                   {item.question}
                 </span>
                 <ChevronDown
@@ -58,8 +58,8 @@ export function FAQAccordion({ items, title = 'Frequently Asked Questions' }: FA
               </button>
 
               {isOpen && (
-                <div className="px-4 pb-4 sm:px-4.5 sm:pb-4.5 pt-0 font-mono text-xs sm:text-xs leading-relaxed text-muted font-medium border-t border-border/50">
-                  <div className="pt-3 prose-sm max-w-none">{item.answer}</div>
+                <div className="px-4 pb-4 sm:px-5 sm:pb-5 pt-0 font-mono text-sm leading-relaxed text-muted font-medium border-t border-border/50">
+                  <div className="pt-3 prose-sm max-w-none text-muted">{item.answer}</div>
                 </div>
               )}
             </div>

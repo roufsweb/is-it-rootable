@@ -281,7 +281,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder='Search 350+ devices by model ("SM-S928B", "cheetah"), name ("Tab S9", "Pixel 9"), or ROM...'
-            className="w-full pl-10 sm:pl-12 pr-16 sm:pr-24 py-3 sm:py-3.5 rounded-xl bg-surface/90 border border-border text-foreground placeholder-muted font-mono text-xs sm:text-sm focus:outline-none focus:border-border-hover focus:ring-1 focus:ring-white/10 transition-all shadow-tactile-sm"
+            className="w-full pl-10 sm:pl-12 pr-16 sm:pr-24 py-3.5 sm:py-4 rounded-xl bg-surface/90 border border-border text-foreground placeholder-muted font-mono text-sm sm:text-base focus:outline-none focus:border-border-hover focus:ring-1 focus:ring-white/15 transition-all shadow-tactile-sm"
           />
           {query ? (
             <button
@@ -292,14 +292,14 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
               <X className="w-4 h-4" />
             </button>
           ) : null}
-          <div className="absolute right-3 hidden sm:flex items-center gap-1 font-mono text-[10px] text-muted border border-border px-1.5 py-0.5 rounded bg-surface-elevated font-semibold">
+          <div className="absolute right-3.5 hidden sm:flex items-center gap-1 font-mono text-xs text-muted border border-border px-2 py-0.5 rounded bg-surface-elevated font-semibold">
             <span>/</span>
           </div>
         </div>
       </div>
 
       {/* 2. Quick Category Filter Pills Bar (Inspired by studyabroad.rouf.top) */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none font-mono text-xs w-full max-w-full">
+      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none font-mono text-xs sm:text-sm w-full max-w-full">
         {/* All Devices Pill */}
         <button
           type="button"
@@ -308,14 +308,14 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             setFilterVideoOut(false);
             setFilterRoms(false);
           }}
-          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
+          className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
             statusFilter === 'ALL' && !filterVideoOut && !filterRoms
               ? 'bg-foreground text-background shadow-tactile-sm'
               : 'bg-surface/80 border border-border text-muted hover:text-foreground hover:bg-surface-elevated'
           }`}
         >
           <span>All Devices</span>
-          <span className="text-[10px] px-1.5 py-0.2 rounded bg-black/15 dark:bg-white/20 font-extrabold">
+          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
             {stats.all}
           </span>
         </button>
@@ -324,15 +324,15 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         <button
           type="button"
           onClick={() => setStatusFilter(statusFilter === 'FULL' ? 'ALL' : 'FULL')}
-          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
+          className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
             statusFilter === 'FULL'
               ? 'bg-foreground text-background shadow-tactile-sm'
               : 'bg-surface/80 border border-border text-muted hover:text-foreground hover:bg-surface-elevated'
           }`}
         >
-          <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" />
           <span>Full Root</span>
-          <span className="text-[10px] px-1.5 py-0.2 rounded bg-black/15 dark:bg-white/20 font-extrabold">
+          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
             {stats.fullRoot}
           </span>
         </button>
@@ -341,15 +341,15 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         <button
           type="button"
           onClick={() => setStatusFilter(statusFilter === 'CONDITIONAL' ? 'ALL' : 'CONDITIONAL')}
-          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
+          className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
             statusFilter === 'CONDITIONAL'
               ? 'bg-foreground text-background shadow-tactile-sm'
               : 'bg-surface/80 border border-border text-muted hover:text-foreground hover:bg-surface-elevated'
           }`}
         >
-          <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0" />
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0" />
           <span>Conditional</span>
-          <span className="text-[10px] px-1.5 py-0.2 rounded bg-black/15 dark:bg-white/20 font-extrabold">
+          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
             {stats.conditional}
           </span>
         </button>
@@ -358,15 +358,15 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         <button
           type="button"
           onClick={() => setStatusFilter(statusFilter === 'LOCKED' ? 'ALL' : 'LOCKED')}
-          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
+          className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
             statusFilter === 'LOCKED'
               ? 'bg-foreground text-background shadow-tactile-sm'
               : 'bg-surface/80 border border-border text-muted hover:text-foreground hover:bg-surface-elevated'
           }`}
         >
-          <span className="w-2 h-2 rounded-full bg-rose-500 shrink-0" />
+          <span className="w-2.5 h-2.5 rounded-full bg-rose-500 shrink-0" />
           <span>Locked</span>
-          <span className="text-[10px] px-1.5 py-0.2 rounded bg-black/15 dark:bg-white/20 font-extrabold">
+          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
             {stats.locked}
           </span>
         </button>
@@ -375,15 +375,15 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         <button
           type="button"
           onClick={() => setFilterVideoOut(!filterVideoOut)}
-          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
+          className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
             filterVideoOut
               ? 'bg-foreground text-background shadow-tactile-sm'
               : 'bg-surface/80 border border-border text-muted hover:text-foreground hover:bg-surface-elevated'
           }`}
         >
-          <Monitor className="w-3.5 h-3.5 text-muted shrink-0" />
+          <Monitor className="w-4 h-4 text-muted shrink-0" />
           <span>DisplayPort / DeX</span>
-          <span className="text-[10px] px-1.5 py-0.2 rounded bg-black/15 dark:bg-white/20 font-extrabold">
+          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
             {stats.videoOut}
           </span>
         </button>
@@ -392,33 +392,33 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         <button
           type="button"
           onClick={() => setFilterRoms(!filterRoms)}
-          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
+          className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl font-bold transition-all shrink-0 cursor-pointer ${
             filterRoms
               ? 'bg-foreground text-background shadow-tactile-sm'
               : 'bg-surface/80 border border-border text-muted hover:text-foreground hover:bg-surface-elevated'
           }`}
         >
-          <Disc className="w-3.5 h-3.5 text-muted shrink-0" />
+          <Disc className="w-4 h-4 text-muted shrink-0" />
           <span>Custom ROMs</span>
-          <span className="text-[10px] px-1.5 py-0.2 rounded bg-black/15 dark:bg-white/20 font-extrabold">
+          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
             {stats.roms}
           </span>
         </button>
       </div>
 
       {/* 3. Secondary Bento Filter Toolbar (Grid on Tablet/Mobile) */}
-      <div className="p-3.5 sm:p-4 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-card space-y-3 font-mono text-xs w-full min-w-0">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3 items-end">
+      <div className="p-3.5 sm:p-4 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-card space-y-3 font-mono text-xs sm:text-sm w-full min-w-0">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 items-end">
           {/* Dropdown 1: SORT */}
-          <div className="space-y-1">
-            <label className="text-[10px] uppercase font-bold text-muted tracking-wider flex items-center gap-1">
-              <ArrowUpDown className="w-3 h-3 text-muted" />
+          <div className="space-y-1.5">
+            <label className="text-xs uppercase font-bold text-muted tracking-wider flex items-center gap-1.5">
+              <ArrowUpDown className="w-3.5 h-3.5 text-muted" />
               <span>Sort</span>
             </label>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-2.5 py-2 text-foreground font-semibold text-xs focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="NEWEST">Release (Newest)</option>
               <option value="OLDEST">Release (Oldest)</option>
@@ -430,14 +430,14 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
           </div>
 
           {/* Dropdown 2: BRAND */}
-          <div className="space-y-1">
-            <label className="text-[10px] uppercase font-bold text-muted tracking-wider flex items-center gap-1">
+          <div className="space-y-1.5">
+            <label className="text-xs uppercase font-bold text-muted tracking-wider flex items-center gap-1.5">
               <span>Brand</span>
             </label>
             <select
               value={brandFilter}
               onChange={(e) => setBrandFilter(e.target.value)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-2.5 py-2 text-foreground font-semibold text-xs focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="ALL">All Brands ({availableBrands.length})</option>
               {availableBrands.map((b) => (
@@ -449,15 +449,15 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
           </div>
 
           {/* Dropdown 3: FORM FACTOR */}
-          <div className="space-y-1">
-            <label className="text-[10px] uppercase font-bold text-muted tracking-wider flex items-center gap-1">
-              <Layers className="w-3 h-3 text-muted" />
+          <div className="space-y-1.5">
+            <label className="text-xs uppercase font-bold text-muted tracking-wider flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5 text-muted" />
               <span>Form Factor</span>
             </label>
             <select
               value={formFactor}
               onChange={(e) => setFormFactor(e.target.value as 'ALL' | FormFactor)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-2.5 py-2 text-foreground font-semibold text-xs focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="ALL">All Types ({stats.all})</option>
               <option value="phone">Phones ({stats.phone})</option>
@@ -468,15 +468,15 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
           </div>
 
           {/* Dropdown 4: CHIPSET / SOC */}
-          <div className="space-y-1">
-            <label className="text-[10px] uppercase font-bold text-muted tracking-wider flex items-center gap-1">
-              <Cpu className="w-3 h-3 text-muted" />
+          <div className="space-y-1.5">
+            <label className="text-xs uppercase font-bold text-muted tracking-wider flex items-center gap-1.5">
+              <Cpu className="w-3.5 h-3.5 text-muted" />
               <span>SoC Platform</span>
             </label>
             <select
               value={socFilter}
               onChange={(e) => setSocFilter(e.target.value)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-2.5 py-2 text-foreground font-semibold text-xs focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="ALL">All Chipsets</option>
               {SOC_FAMILIES.map((s) => (
@@ -489,38 +489,38 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         </div>
 
         {/* Hardware Feature Checkbox Row & Reset Toolbar */}
-        <div className="pt-2.5 border-t border-border flex flex-wrap items-center justify-between gap-2">
+        <div className="pt-3 border-t border-border flex flex-wrap items-center justify-between gap-2.5">
           <div className="flex flex-wrap items-center gap-2">
             <button
               type="button"
               onClick={() => setFilterSdCard(!filterSdCard)}
-              className={`px-2.5 py-1 rounded-lg border text-[11px] font-semibold transition-all flex items-center gap-1 cursor-pointer ${
+              className={`px-3 py-1.5 rounded-lg border text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                 filterSdCard
                   ? 'bg-foreground text-background border-foreground font-bold'
                   : 'bg-surface-elevated/70 text-muted border-border hover:text-foreground'
               }`}
             >
-              <HardDrive className="w-3 h-3 text-muted shrink-0" />
+              <HardDrive className="w-3.5 h-3.5 text-muted shrink-0" />
               <span>microSD Slot</span>
             </button>
 
             <button
               type="button"
               onClick={() => setFilterHeadphone(!filterHeadphone)}
-              className={`px-2.5 py-1 rounded-lg border text-[11px] font-semibold transition-all flex items-center gap-1 cursor-pointer ${
+              className={`px-3 py-1.5 rounded-lg border text-xs sm:text-sm font-semibold transition-all flex items-center gap-1.5 cursor-pointer ${
                 filterHeadphone
                   ? 'bg-foreground text-background border-foreground font-bold'
                   : 'bg-surface-elevated/70 text-muted border-border hover:text-foreground'
               }`}
             >
-              <Headphones className="w-3 h-3 text-muted shrink-0" />
+              <Headphones className="w-3.5 h-3.5 text-muted shrink-0" />
               <span>3.5mm Jack</span>
             </button>
           </div>
 
           {/* Results Badge & Reset Action */}
           <div className="flex items-center gap-2.5 ml-auto">
-            <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-surface-elevated border border-border text-foreground font-bold">
+            <span className="text-xs sm:text-sm font-mono px-3 py-1 rounded-lg bg-surface-elevated border border-border text-foreground font-bold">
               {results.length} of {initialDevices.length} Devices
             </span>
 
@@ -528,10 +528,10 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
               <button
                 type="button"
                 onClick={resetFilters}
-                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-elevated hover:bg-border text-muted hover:text-foreground font-bold text-[11px] border border-border transition-colors cursor-pointer"
+                className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-elevated hover:bg-border text-muted hover:text-foreground font-bold text-xs sm:text-sm border border-border transition-colors cursor-pointer"
                 title="Reset all filters"
               >
-                <RotateCcw className="w-3 h-3" />
+                <RotateCcw className="w-3.5 h-3.5" />
                 <span>Reset</span>
               </button>
             )}

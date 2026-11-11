@@ -22,23 +22,23 @@ export function Header() {
             />
           </div>
           <div className="flex items-center gap-1.5 sm:gap-2 truncate">
-            <span className="font-mono font-black text-sm sm:text-base text-foreground tracking-tight group-hover:text-cyan-400 transition-colors">
+            <span className="font-mono font-black text-base sm:text-lg text-foreground tracking-tight group-hover:text-cyan-400 transition-colors">
               IsIt<span className="text-muted group-hover:text-foreground">Rootable</span>
             </span>
-            <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-surface-elevated text-muted border border-border font-bold hidden xs:inline-block">
+            <span className="text-xs font-mono px-2 py-0.5 rounded bg-surface-elevated text-muted border border-border font-bold hidden xs:inline-block">
               v1.1
             </span>
           </div>
         </Link>
 
         {/* Navigation / Actions: Ultra-Clean & Overflow-Free */}
-        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <div className="flex items-center gap-2 shrink-0">
           {/* Desktop-only secondary actions */}
           <div className="hidden sm:flex items-center gap-2">
             <DonateButton />
             <Link
               href="/about/"
-              className="font-mono text-xs px-3 py-1.5 h-9 flex items-center rounded-lg border border-border bg-surface-elevated/80 hover:bg-surface-elevated text-muted hover:text-foreground transition-all font-semibold"
+              className="font-mono text-xs sm:text-sm px-3.5 py-1.5 h-9 flex items-center rounded-lg border border-border bg-surface-elevated/80 hover:bg-surface-elevated text-muted hover:text-foreground transition-all font-semibold"
             >
               About
             </Link>

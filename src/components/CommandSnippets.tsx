@@ -101,18 +101,18 @@ export function CommandSnippets({
   return (
     <div className="rounded-xl border border-border bg-surface p-4 sm:p-5 space-y-3.5 shadow-contrast-sm">
       <div className="flex items-center justify-between">
-        <h4 className="text-xs font-mono font-bold text-foreground flex items-center gap-2 uppercase tracking-wider">
+        <h4 className="text-sm font-mono font-bold text-foreground flex items-center gap-2 uppercase tracking-wider">
           <Terminal className="w-4 h-4 text-cyan-500" />
           <span>Fastboot & Bootloader Terminal Procedure</span>
         </h4>
-        <span className="text-[10px] font-mono text-muted">Click code to copy</span>
+        <span className="text-xs font-mono text-muted">Click code to copy</span>
       </div>
 
-      <div className="space-y-2 font-mono text-xs">
+      <div className="space-y-2.5 font-mono text-sm">
         {commands.map((step, idx) => (
           <div
             key={idx}
-            className="p-2.5 rounded-lg bg-surface-elevated border border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2"
+            className="p-3 rounded-lg bg-surface-elevated border border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2.5"
           >
             <div className="text-muted font-medium">
               <span>{step.label}</span>
@@ -124,7 +124,7 @@ export function CommandSnippets({
                   className="inline-flex items-center gap-1 text-cyan-600 dark:text-cyan-400 hover:underline ml-2 font-bold"
                 >
                   <span>Portal</span>
-                  <ExternalLink className="w-3 h-3" />
+                  <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               )}
             </div>
@@ -132,14 +132,14 @@ export function CommandSnippets({
             {step.cmd ? (
               <button
                 onClick={() => copyCommand(step.cmd!, idx)}
-                className="group flex items-center gap-2 px-2.5 py-1 rounded bg-background border border-border hover:border-cyan-500 text-foreground font-bold transition-all text-[11px] self-start sm:self-center shrink-0 cursor-pointer shadow-2xs"
+                className="group flex items-center gap-2 px-3 py-1.5 rounded-lg bg-background border border-border hover:border-cyan-500 text-foreground font-bold transition-all text-xs sm:text-sm self-start sm:self-center shrink-0 cursor-pointer shadow-2xs"
                 title="Click to copy command"
               >
                 <code>{step.cmd}</code>
                 {copiedIndex === idx ? (
-                  <Check className="w-3.5 h-3.5 text-emerald-500" />
+                  <Check className="w-4 h-4 text-emerald-500" />
                 ) : (
-                  <Copy className="w-3.5 h-3.5 text-muted group-hover:text-cyan-500" />
+                  <Copy className="w-4 h-4 text-muted group-hover:text-cyan-500" />
                 )}
               </button>
             ) : null}

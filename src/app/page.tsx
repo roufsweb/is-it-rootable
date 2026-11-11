@@ -72,17 +72,13 @@ export default function HomePage() {
       />
 
       {/* Hero Section: Monochromatic Architectural Craftsmanship */}
-      <section className="relative z-0 pt-2 sm:pt-4 pb-4 text-left border-b border-border w-full min-w-0 max-w-full overflow-hidden">
+      <section className="relative z-0 pt-0 pb-4 text-left border-b border-border w-full min-w-0 max-w-full overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
           <div className="space-y-3 max-w-3xl min-w-0">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-elevated/70 border border-border text-muted font-mono text-xs font-semibold shadow-xs">
-              <span className="w-1.5 h-1.5 rounded-full bg-foreground/60" />
-              <span className="truncate">Model-Suffix Sensitive Intelligence • Phones, Tablets &amp; Handhelds</span>
-            </div>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight text-foreground">
               Can You Root Your Android?
             </h1>
-            <p className="text-xs sm:text-sm md:text-base text-muted font-mono leading-relaxed max-w-2xl font-medium">
+            <p className="text-sm sm:text-base text-muted font-mono leading-relaxed max-w-2xl font-medium">
               Instant bootloader, root, and DeX intelligence across Smartphones, Tablets &amp; Pads, Foldables, and Gaming Handhelds. Check exact regional model suffixes (e.g., Samsung{' '}
               <span className="text-foreground font-bold underline decoration-emerald-500/60 decoration-2">SM-G950F</span> vs locked{' '}
               <span className="text-foreground font-bold underline decoration-rose-500/60 decoration-2">SM-G950U</span>), custom ROM availability, and USB-C DisplayPort/DeX capability.
@@ -90,38 +86,38 @@ export default function HomePage() {
           </div>
 
           {/* Quick Stat Matrix: Monochromatic Glassmorphic Cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-2 sm:gap-2.5 font-mono text-xs max-w-lg w-full shrink-0">
-            <div className="p-3 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
-              <div className="text-muted text-[10px] uppercase font-bold tracking-wider">Device Families</div>
-              <div className="text-xl sm:text-2xl font-black text-foreground mt-0.5">{totalFamilies}</div>
-              <div className="text-[10px] text-muted truncate">{tabletCount} tabs • {foldableCount} fold • {handheldCount} handhelds</div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-2.5 sm:gap-3 font-mono max-w-lg w-full shrink-0">
+            <div className="p-3.5 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
+              <div className="text-muted text-xs uppercase font-bold tracking-wider">Device Families</div>
+              <div className="text-2xl sm:text-3xl font-black text-foreground mt-1">{totalFamilies}</div>
+              <div className="text-xs text-muted truncate mt-0.5">{tabletCount} tabs • {foldableCount} fold • {handheldCount} handhelds</div>
             </div>
 
-            <div className="p-3 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
-              <div className="text-muted text-[10px] uppercase font-bold tracking-wider flex items-center gap-1.5">
+            <div className="p-3.5 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
+              <div className="text-muted text-xs uppercase font-bold tracking-wider flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
                 <span>Full Root</span>
               </div>
-              <div className="text-xl sm:text-2xl font-black text-foreground mt-0.5">{fullRootCount}</div>
-              <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">Unlocked Freedom</div>
+              <div className="text-2xl sm:text-3xl font-black text-foreground mt-1">{fullRootCount}</div>
+              <div className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-0.5">Unlocked Freedom</div>
             </div>
 
-            <div className="p-3 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
-              <div className="text-muted text-[10px] uppercase font-bold tracking-wider flex items-center gap-1.5">
+            <div className="p-3.5 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
+              <div className="text-muted text-xs uppercase font-bold tracking-wider flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-amber-500 shrink-0" />
                 <span>Conditional</span>
               </div>
-              <div className="text-xl sm:text-2xl font-black text-foreground mt-0.5">{conditionalCount}</div>
-              <div className="text-[10px] text-amber-600 dark:text-amber-400 font-semibold">Bit / Firmware Sensitive</div>
+              <div className="text-2xl sm:text-3xl font-black text-foreground mt-1">{conditionalCount}</div>
+              <div className="text-xs text-amber-600 dark:text-amber-400 font-semibold mt-0.5">Bit / Firmware Sensitive</div>
             </div>
 
-            <div className="p-3 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
-              <div className="text-muted text-[10px] uppercase font-bold tracking-wider flex items-center gap-1.5">
-                <Monitor className="w-3 h-3 text-muted shrink-0" />
+            <div className="p-3.5 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-sm">
+              <div className="text-muted text-xs uppercase font-bold tracking-wider flex items-center gap-1.5">
+                <Monitor className="w-3.5 h-3.5 text-muted shrink-0" />
                 <span>Video Out</span>
               </div>
-              <div className="text-xl sm:text-2xl font-black text-foreground mt-0.5">{videoOutCount}</div>
-              <div className="text-[10px] text-muted font-medium">DisplayPort / DeX</div>
+              <div className="text-2xl sm:text-3xl font-black text-foreground mt-1">{videoOutCount}</div>
+              <div className="text-xs text-muted font-medium mt-0.5">DisplayPort / DeX</div>
             </div>
           </div>
         </div>
@@ -171,11 +167,11 @@ export default function HomePage() {
       </section>
 
       {/* About Section Banner with Live GitHub Page Link */}
-      <section className="p-4 sm:p-5 rounded-xl border border-border bg-surface-elevated flex flex-col sm:flex-row items-center justify-between gap-4 shadow-contrast-sm font-mono text-xs">
+      <section className="p-4 sm:p-5 rounded-xl border border-border bg-surface-elevated flex flex-col sm:flex-row items-center justify-between gap-4 shadow-contrast-sm font-mono text-xs sm:text-sm">
         <div className="space-y-1">
-          <div className="text-sm font-bold text-foreground flex items-center gap-2">
+          <div className="text-base font-bold text-foreground flex items-center gap-2">
             <span>About IsItRootable</span>
-            <span className="text-[10px] px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30">
+            <span className="text-xs px-2.5 py-0.5 rounded bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30">
               Open Source
             </span>
           </div>

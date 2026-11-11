@@ -325,7 +325,7 @@ export default async function DevicePage({ params }: DevicePageProps) {
 
       {/* Semantic Breadcrumb Navigation & Share Button */}
       <div className="flex items-center justify-between gap-3 flex-wrap">
-        <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs text-muted flex-wrap">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-xs sm:text-sm text-muted flex-wrap">
           <Link href="/" className="hover:text-cyan-600 dark:hover:text-cyan-400 font-bold transition-colors">
             Home
           </Link>
@@ -349,14 +349,14 @@ export default async function DevicePage({ params }: DevicePageProps) {
       <div id="verdict" className={`rounded-2xl p-5 sm:p-8 space-y-6 ${containerClass}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="space-y-2">
-            <div className="flex items-center gap-2 font-mono text-xs text-cyan-600 dark:text-cyan-400 font-bold flex-wrap">
+            <div className="flex items-center gap-2 font-mono text-xs sm:text-sm text-cyan-600 dark:text-cyan-400 font-bold flex-wrap">
               <span className="uppercase">{device.brand}</span>
               <span>•</span>
               <span className="text-muted">Released {device.release_year}</span>
               {device.form_factor && device.form_factor !== 'phone' && (
                 <>
                   <span>•</span>
-                  <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-600 dark:text-cyan-400 uppercase text-[10px]">
+                  <span className="px-2.5 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/30 text-cyan-600 dark:text-cyan-400 uppercase text-xs font-bold">
                     {device.form_factor === 'tablet' ? 'Tablet / Pad' : device.form_factor === 'handheld' ? 'Gaming Handheld' : 'Foldable'}
                   </span>
                 </>
@@ -365,23 +365,23 @@ export default async function DevicePage({ params }: DevicePageProps) {
             <h1 className="text-2xl sm:text-4xl font-black text-foreground">
               {device.brand} {device.name}
             </h1>
-            <p className="font-mono text-xs sm:text-sm text-muted font-medium">
+            <p className="font-mono text-sm sm:text-base text-muted font-medium">
               Bootloader Unlockability, Regional Model Suffixes, Custom ROMs &amp; Hardware Capabilities
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <div className="space-y-1">
-              <div className="text-[10px] font-mono text-muted uppercase tracking-wider font-bold">Overall Verdict</div>
+              <div className="text-xs font-mono text-muted uppercase tracking-wider font-bold">Overall Verdict</div>
               <StatusBadge status={overallRoot} type="root" size="lg" />
             </div>
           </div>
         </div>
 
         {/* Google / AI Featured Snippet Direct Answer Box */}
-        <div className="p-4 rounded-xl bg-surface/90 border border-cyan-500/40 text-foreground font-mono text-xs sm:text-sm space-y-1.5 shadow-contrast-sm">
-          <div className="text-[10px] uppercase font-bold text-cyan-600 dark:text-cyan-400 tracking-wider flex items-center gap-1.5">
-            <Terminal className="w-3.5 h-3.5" />
+        <div className="p-4 sm:p-5 rounded-xl bg-surface/90 border border-cyan-500/40 text-foreground font-mono text-sm sm:text-base space-y-2 shadow-contrast-sm">
+          <div className="text-xs uppercase font-bold text-cyan-600 dark:text-cyan-400 tracking-wider flex items-center gap-2">
+            <Terminal className="w-4 h-4" />
             <span>Direct Verdict Summary</span>
           </div>
           <p className="leading-relaxed font-semibold">
@@ -404,8 +404,8 @@ export default async function DevicePage({ params }: DevicePageProps) {
 
         {/* Custom ROM Highlights if available */}
         {allRoms.length > 0 && (
-          <div className="flex flex-wrap items-center gap-2 p-3 rounded-xl bg-surface/80 border border-purple-400/40 shadow-xs">
-            <span className="inline-flex items-center gap-1 text-xs font-mono font-bold text-purple-700 dark:text-purple-300">
+          <div className="flex flex-wrap items-center gap-2 p-3 sm:p-3.5 rounded-xl bg-surface/80 border border-purple-400/40 shadow-xs">
+            <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-mono font-bold text-purple-700 dark:text-purple-300">
               <Disc className="w-4 h-4 text-purple-500" />
               Verified Custom ROMs:
             </span>
@@ -413,7 +413,7 @@ export default async function DevicePage({ params }: DevicePageProps) {
               {allRoms.map((r) => (
                 <span
                   key={r}
-                  className="font-mono text-xs px-2.5 py-0.5 rounded-md bg-purple-100 dark:bg-purple-950/60 text-purple-800 dark:text-purple-200 border border-purple-300 dark:border-purple-700 font-semibold"
+                  className="font-mono text-xs sm:text-sm px-3 py-1 rounded-md bg-purple-100 dark:bg-purple-950/60 text-purple-800 dark:text-purple-200 border border-purple-300 dark:border-purple-700 font-semibold"
                 >
                   {r}
                 </span>
@@ -423,23 +423,23 @@ export default async function DevicePage({ params }: DevicePageProps) {
         )}
 
         {/* Hardware Features Row */}
-        <div className="pt-4 sm:pt-6 border-t border-border grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 font-mono text-xs">
+        <div className="pt-4 sm:pt-6 border-t border-border grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 font-mono">
           {/* Type-C Screen Mirroring & DisplayPort Out */}
           <div
-            className={`p-3 rounded-xl border ${
+            className={`p-3.5 rounded-xl border ${
               device.hardware_features.usb_video_out
                 ? 'bg-cyan-500/10 border-cyan-500/40 text-cyan-800 dark:text-cyan-300'
                 : 'bg-surface border-border text-muted'
             }`}
           >
-            <div className="flex items-center gap-1.5 mb-1 text-[11px] uppercase tracking-wider text-muted font-bold">
-              <Monitor className="w-3.5 h-3.5 text-cyan-500" />
+            <div className="flex items-center gap-1.5 mb-1 text-xs uppercase tracking-wider text-muted font-bold">
+              <Monitor className="w-4 h-4 text-cyan-500" />
               <span>Type-C Mirroring</span>
             </div>
-            <div className="font-bold text-foreground">
+            <div className="font-bold text-foreground text-sm sm:text-base">
               {device.hardware_features.usb_video_out ? 'Supported (DP Out)' : 'Not Supported'}
             </div>
-            <div className="text-[10px] text-cyan-600 dark:text-cyan-400 truncate mt-0.5 font-medium">
+            <div className="text-xs text-cyan-600 dark:text-cyan-400 truncate mt-1 font-medium">
               {device.hardware_features.usb_video_out
                 ? (device.hardware_features.desktop_mode || 'Direct TV / Monitor Mirroring')
                 : 'USB 2.0 (Cast / Wi-Fi only)'}
@@ -448,56 +448,56 @@ export default async function DevicePage({ params }: DevicePageProps) {
 
           {/* MicroSD Slot */}
           <div
-            className={`p-3 rounded-xl border ${
+            className={`p-3.5 rounded-xl border ${
               device.hardware_features.sdcard_slot
                 ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-800 dark:text-emerald-300'
                 : 'bg-surface border-border text-muted'
             }`}
           >
-            <div className="flex items-center gap-1.5 mb-1 text-[11px] uppercase tracking-wider text-muted font-bold">
-              <HardDrive className="w-3.5 h-3.5 text-emerald-500" />
+            <div className="flex items-center gap-1.5 mb-1 text-xs uppercase tracking-wider text-muted font-bold">
+              <HardDrive className="w-4 h-4 text-emerald-500" />
               <span>MicroSD Slot</span>
             </div>
-            <div className="font-bold text-foreground">
+            <div className="font-bold text-foreground text-sm sm:text-base">
               {device.hardware_features.sdcard_slot ? 'Present' : 'None'}
             </div>
           </div>
 
           {/* Headphone Jack */}
           <div
-            className={`p-3 rounded-xl border ${
+            className={`p-3.5 rounded-xl border ${
               device.hardware_features.headphone_jack
                 ? 'bg-amber-500/10 border-amber-500/40 text-amber-800 dark:text-amber-300'
                 : 'bg-surface border-border text-muted'
             }`}
           >
-            <div className="flex items-center gap-1.5 mb-1 text-[11px] uppercase tracking-wider text-muted font-bold">
-              <Headphones className="w-3.5 h-3.5 text-amber-500" />
+            <div className="flex items-center gap-1.5 mb-1 text-xs uppercase tracking-wider text-muted font-bold">
+              <Headphones className="w-4 h-4 text-amber-500" />
               <span>3.5mm Jack</span>
             </div>
-            <div className="font-bold text-foreground">
+            <div className="font-bold text-foreground text-sm sm:text-base">
               {device.hardware_features.headphone_jack ? 'Present' : 'None'}
             </div>
           </div>
 
           {/* Variants Count */}
-          <div className="p-3 rounded-xl border bg-surface border-border text-foreground">
-            <div className="flex items-center gap-1.5 mb-1 text-[11px] uppercase tracking-wider text-muted font-bold">
-              <Terminal className="w-3.5 h-3.5 text-muted" />
+          <div className="p-3.5 rounded-xl border bg-surface border-border text-foreground">
+            <div className="flex items-center gap-1.5 mb-1 text-xs uppercase tracking-wider text-muted font-bold">
+              <Terminal className="w-4 h-4 text-muted" />
               <span>Sub-Variants</span>
             </div>
-            <div className="font-bold text-foreground">{device.variants.length} Regional Types</div>
-            <div className="text-[10px] text-muted mt-0.5 font-medium">{allModels.length} Model Codes</div>
+            <div className="font-bold text-foreground text-sm sm:text-base">{device.variants.length} Regional Types</div>
+            <div className="text-xs text-muted mt-1 font-medium">{allModels.length} Model Codes</div>
           </div>
         </div>
       </div>
 
       {/* Model Suffix Warning Notice if mixed */}
       {overallRoot === 'CONDITIONAL' && (
-        <div className="p-4 rounded-xl border border-amber-400 bg-amber-50 dark:bg-amber-950/20 text-amber-900 dark:text-amber-200 text-xs font-mono flex items-start gap-3 shadow-xs">
+        <div className="p-4 sm:p-5 rounded-xl border border-amber-400 bg-amber-50 dark:bg-amber-950/20 text-amber-900 dark:text-amber-200 text-sm font-mono flex items-start gap-3 shadow-xs">
           <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
           <div className="space-y-1">
-            <div className="font-bold text-foreground">Critical Model Suffix Notice for {device.name}</div>
+            <div className="font-bold text-foreground text-base">Critical Model Suffix Notice for {device.name}</div>
             <p className="leading-relaxed font-medium">
               Do NOT assume every {device.name} is unlockable! North American carrier variants (ending in U, U1, W) or Verizon variants have locked bootloaders, whereas International unlocked models can be rooted. Compare the exact sub-models below before buying or attempting to flash.
             </p>
