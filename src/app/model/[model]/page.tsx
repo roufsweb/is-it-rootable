@@ -461,6 +461,20 @@ export default async function ModelPage({ params }: ModelPageProps) {
               <div className="text-muted text-xs font-medium">Codename: {variant.codename}</div>
             </div>
 
+            {variant.cpu_architecture && (
+              <div className="p-3.5 rounded-lg bg-surface-elevated border border-border space-y-1">
+                <div className="text-xs text-muted uppercase font-bold flex items-center justify-between">
+                  <span>CPU Architecture</span>
+                  <span className="text-cyan-600 dark:text-cyan-300 font-bold">{variant.cpu_architecture}</span>
+                </div>
+                {variant.cpu_cores && (
+                  <div className="text-foreground text-xs font-medium leading-relaxed pt-1 border-t border-border/50">
+                    {variant.cpu_cores}
+                  </div>
+                )}
+              </div>
+            )}
+
             <div className="p-3.5 rounded-lg bg-surface-elevated border border-border space-y-1">
               <div className="text-xs text-muted uppercase font-bold">USB-C Screen Mirroring &amp; Video Out</div>
               <div className="text-foreground font-bold flex items-center gap-2 text-sm sm:text-base">

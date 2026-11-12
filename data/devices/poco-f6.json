@@ -37,7 +37,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.0GHz Cortex-X4 & 4x 2.8GHz Cortex-A720 & 3x 2.0GHz Cortex-A520)"
     },
     {
       "models": [
@@ -61,7 +63,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.0GHz Cortex-X4 & 4x 2.8GHz Cortex-A720 & 3x 2.0GHz Cortex-A520)"
     }
   ],
   "form_factor": "phone"

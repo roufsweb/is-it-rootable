@@ -35,7 +35,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 2.63GHz Cortex-A715 & 3x 2.4GHz Cortex-A715 & 4x 1.8GHz Cortex-A510)"
     }
   ],
   "form_factor": "phone"

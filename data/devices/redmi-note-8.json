@@ -38,7 +38,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (4x 2.0GHz Kryo 260 Gold & 4x 1.8GHz Kryo 260 Silver)"
     },
     {
       "models": [
@@ -62,7 +64,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (4x 2.0GHz Kryo 260 Gold & 4x 1.8GHz Kryo 260 Silver)"
     }
   ],
   "form_factor": "phone"

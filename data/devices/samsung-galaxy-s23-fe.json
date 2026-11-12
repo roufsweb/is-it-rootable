@@ -35,7 +35,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 2.8GHz Cortex-X2 & 3x 2.52GHz Cortex-A710 & 4x 1.82GHz Cortex-A510)"
     },
     {
       "models": [
@@ -55,7 +57,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.0GHz Cortex-X2 & 3x 2.5GHz Cortex-A710 & 4x 1.8GHz Cortex-A510)"
     },
     {
       "models": [
@@ -78,7 +82,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.0GHz Cortex-X2 & 3x 2.5GHz Cortex-A710 & 4x 1.8GHz Cortex-A510)"
     }
   ],
   "form_factor": "phone"

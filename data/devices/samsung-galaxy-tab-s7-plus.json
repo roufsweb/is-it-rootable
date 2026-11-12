@@ -35,7 +35,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/c/samsung-galaxy-tab-s7.11413/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.1GHz Kryo 585 & 3x 2.42GHz Kryo 585 & 4x 1.8GHz Kryo 585)"
     },
     {
       "models": [
@@ -53,7 +55,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/c/samsung-galaxy-tab-s7.11413/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.1GHz Kryo 585 & 3x 2.42GHz Kryo 585 & 4x 1.8GHz Kryo 585)"
     }
   ]
 }

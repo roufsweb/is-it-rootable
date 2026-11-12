@@ -34,7 +34,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 2.4GHz Kryo 475 Prime & 1x 2.2GHz Kryo 475 Gold & 6x 1.8GHz Kryo 475 Silver)"
     }
   ],
   "form_factor": "phone"

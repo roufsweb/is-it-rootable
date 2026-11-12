@@ -35,7 +35,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 2.84GHz Kryo 585 & 3x 2.42GHz Kryo 585 & 4x 1.8GHz Kryo 585)"
     },
     {
       "models": [
@@ -56,7 +58,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 2.84GHz Kryo 585 & 3x 2.42GHz Kryo 585 & 4x 1.8GHz Kryo 585)"
     },
     {
       "models": [
@@ -79,7 +83,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 2.84GHz Kryo 585 & 3x 2.42GHz Kryo 585 & 4x 1.8GHz Kryo 585)"
     }
   ],
   "form_factor": "phone"

@@ -38,7 +38,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.35GHz Cortex-X3 & 3x 3.0GHz Cortex-A715 & 4x 2.0GHz Cortex-A510)"
     },
     {
       "models": [
@@ -62,7 +64,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.35GHz Cortex-X3 & 3x 3.0GHz Cortex-A715 & 4x 2.0GHz Cortex-A510)"
     }
   ],
   "form_factor": "phone"

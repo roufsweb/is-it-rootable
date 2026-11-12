@@ -37,7 +37,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A / ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (Helio P35 or Exynos 850 depending on model)"
     },
     {
       "models": [
@@ -58,7 +60,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A / ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (Helio P35 or Exynos 850 depending on model)"
     }
   ],
   "form_factor": "phone"

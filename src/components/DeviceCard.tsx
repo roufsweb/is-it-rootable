@@ -85,8 +85,13 @@ export function DeviceCard({ device }: DeviceCardProps) {
         <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-sm font-mono text-muted mb-3">
           {device.soc && (
             <span className="inline-flex items-center gap-1.5 text-foreground font-medium">
-              <Cpu className="w-3.5 h-3.5 text-muted shrink-0" />
+              <Cpu className="w-3.5 h-3.5 text-cyan-500 shrink-0" />
               <span className="truncate max-w-[200px] sm:max-w-none">{device.soc}</span>
+            </span>
+          )}
+          {device.cpu_architecture && (
+            <span className="text-cyan-600 dark:text-cyan-300 font-bold px-1.5 py-0.5 rounded bg-surface-elevated border border-border text-[11px] sm:text-xs">
+              {device.cpu_architecture.split(',')[0]}
             </span>
           )}
           {device.codenames && (

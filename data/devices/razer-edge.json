@@ -33,7 +33,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.4-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.0GHz Kryo Prime & 3x 2.4GHz Kryo Gold & 4x 1.8GHz Kryo Silver)"
     },
     {
       "models": [
@@ -51,7 +53,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.4-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.0GHz Kryo Prime & 3x 2.4GHz Kryo Gold & 4x 1.8GHz Kryo Silver)"
     }
   ]
 }

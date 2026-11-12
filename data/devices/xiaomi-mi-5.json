@@ -36,7 +36,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A (64-bit)",
+      "cpu_cores": "Quad-core (2x 2.15GHz Kryo & 2x 1.6GHz Kryo)"
     },
     {
       "models": [
@@ -60,7 +62,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A (64-bit)",
+      "cpu_cores": "Quad-core (2x 2.15GHz Kryo & 2x 1.6GHz Kryo)"
     }
   ],
   "form_factor": "phone"

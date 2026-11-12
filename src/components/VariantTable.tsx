@@ -47,9 +47,15 @@ export function VariantTable({ variants, brand, name }: VariantTableProps) {
                     {variant.region}
                   </span>
                 </div>
-                <div className="flex items-center gap-2 text-xs sm:text-sm font-mono text-muted">
-                  <Cpu className="w-4 h-4 text-cyan-500" />
+                <div className="flex items-center gap-2 text-xs sm:text-sm font-mono text-muted flex-wrap">
+                  <Cpu className="w-4 h-4 text-cyan-500 shrink-0" />
                   <span>SoC: <strong className="text-foreground">{variant.soc}</strong></span>
+                  {variant.cpu_architecture && (
+                    <>
+                      <span className="opacity-40">•</span>
+                      <span>Arch: <strong className="text-foreground">{variant.cpu_architecture}</strong></span>
+                    </>
+                  )}
                 </div>
               </div>
 
@@ -162,6 +168,21 @@ export function VariantTable({ variants, brand, name }: VariantTableProps) {
                     </div>
                   </div>
                 </div>
+
+                {/* CPU Architecture & Cores Breakdown */}
+                {variant.cpu_cores && (
+                  <div className="p-3 rounded-lg bg-surface-elevated border border-border">
+                    <div className="text-xs font-mono text-muted uppercase tracking-wider font-semibold mb-1 flex items-center justify-between">
+                      <span>CPU Microarchitecture</span>
+                      {variant.cpu_architecture && (
+                        <span className="text-cyan-600 dark:text-cyan-400 font-bold">{variant.cpu_architecture}</span>
+                      )}
+                    </div>
+                    <div className="font-mono text-xs text-foreground font-medium leading-relaxed">
+                      {variant.cpu_cores}
+                    </div>
+                  </div>
+                )}
 
                 {/* Useful Links */}
                 {variant.links && Object.keys(variant.links).length > 0 && (

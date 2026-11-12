@@ -36,7 +36,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.39GHz Cortex-X4 & 3x 3.1GHz Cortex-A720 & 2x 2.9GHz Cortex-A720 & 2x 2.2GHz Cortex-A520)"
     },
     {
       "models": [
@@ -56,7 +58,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.39GHz Cortex-X4 & 3x 3.1GHz Cortex-A720 & 2x 2.9GHz Cortex-A720 & 2x 2.2GHz Cortex-A520)"
     },
     {
       "models": [
@@ -79,7 +83,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.39GHz Cortex-X4 & 3x 3.1GHz Cortex-A720 & 2x 2.9GHz Cortex-A720 & 2x 2.2GHz Cortex-A520)"
     }
   ],
   "form_factor": "foldable"

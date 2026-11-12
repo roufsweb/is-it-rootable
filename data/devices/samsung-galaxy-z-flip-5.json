@@ -35,7 +35,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/c/samsung-galaxy-z-flip-5.12785/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.36GHz Cortex-X3 & 2x 2.8GHz Cortex-A715 & 2x 2.8GHz Cortex-A710 & 3x 2.0GHz Cortex-A510)"
     },
     {
       "models": [
@@ -55,7 +57,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/c/samsung-galaxy-z-flip-5.12785/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.36GHz Cortex-X3 & 2x 2.8GHz Cortex-A715 & 2x 2.8GHz Cortex-A710 & 3x 2.0GHz Cortex-A510)"
     }
   ]
 }

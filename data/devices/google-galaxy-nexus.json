@@ -36,7 +36,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Dual-core 1.2GHz Cortex-A9"
     }
   ],
   "form_factor": "phone"

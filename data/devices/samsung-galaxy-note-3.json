@@ -38,7 +38,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core Krait 400 or Octa-core Exynos 5420"
     },
     {
       "models": [
@@ -61,7 +63,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 2.26GHz Krait 400"
     },
     {
       "models": [
@@ -84,7 +88,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 2.26GHz Krait 400"
     }
   ],
   "form_factor": "phone"

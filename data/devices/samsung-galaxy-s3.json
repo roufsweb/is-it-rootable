@@ -43,7 +43,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 1.4GHz Cortex-A9"
     },
     {
       "models": [
@@ -66,7 +68,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Dual-core 1.5GHz Krait"
     },
     {
       "models": [
@@ -91,7 +95,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 1.4GHz Cortex-A9"
     }
   ],
   "form_factor": "phone"

@@ -36,7 +36,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (4x 2.4GHz Cortex-A78 & 4x 2.0GHz Cortex-A55)"
     },
     {
       "models": [
@@ -57,7 +59,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (4x 2.4GHz Cortex-A78 & 4x 2.0GHz Cortex-A55)"
     },
     {
       "models": [
@@ -80,7 +84,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (4x 2.4GHz Cortex-A78 & 4x 2.0GHz Cortex-A55)"
     }
   ],
   "form_factor": "phone"

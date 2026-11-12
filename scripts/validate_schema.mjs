@@ -82,6 +82,14 @@ function validateDevice(filePath, data) {
       errors.push(`${vPrefix} missing "soc"`);
     }
 
+    if (v.cpu_architecture !== undefined && (typeof v.cpu_architecture !== 'string' || !v.cpu_architecture.trim())) {
+      errors.push(`${vPrefix} "cpu_architecture" must be a non-empty string`);
+    }
+
+    if (v.cpu_cores !== undefined && (typeof v.cpu_cores !== 'string' || !v.cpu_cores.trim())) {
+      errors.push(`${vPrefix} "cpu_cores" must be a non-empty string`);
+    }
+
     if (!VALID_BOOTLOADER.includes(v.bootloader_unlockable)) {
       errors.push(`${vPrefix} invalid bootloader_unlockable: "${v.bootloader_unlockable}". Must be one of ${VALID_BOOTLOADER.join(', ')}`);
     }

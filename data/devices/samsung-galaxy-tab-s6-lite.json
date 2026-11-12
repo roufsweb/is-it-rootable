@@ -35,7 +35,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A / ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (Exynos 9611 or Snapdragon 720G depending on model)"
     },
     {
       "models": [
@@ -53,7 +55,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A / ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (Exynos 9611 or Snapdragon 720G depending on model)"
     },
     {
       "models": [
@@ -77,7 +81,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A / ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (Exynos 9611 or Snapdragon 720G depending on model)"
     }
   ],
   "form_factor": "tablet"

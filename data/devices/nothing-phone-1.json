@@ -33,7 +33,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 2.5GHz Cortex-A78 & 3x 2.4GHz Cortex-A78 & 4x 1.8GHz Cortex-A55)"
     }
   ],
   "form_factor": "phone"

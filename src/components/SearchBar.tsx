@@ -51,6 +51,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
   const [statusFilter, setStatusFilter] = useState<'ALL' | RootStatus>('ALL');
   const [brandFilter, setBrandFilter] = useState<string>('ALL');
   const [socFilter, setSocFilter] = useState<string>('ALL');
+  const [archFilter, setArchFilter] = useState<string>('ALL');
 
   // Feature Toggles
   const [filterVideoOut, setFilterVideoOut] = useState(false);
@@ -95,6 +96,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     const s = params.get('verdict') as RootStatus;
     const b = params.get('brand');
     const soc = params.get('soc');
+    const arch = params.get('arch');
     const sort = params.get('sort') as SortOption;
 
     if (q) setQuery(q);
@@ -102,6 +104,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     if (s && ['FULL', 'CONDITIONAL', 'LOCKED'].includes(s)) setStatusFilter(s);
     if (b) setBrandFilter(b);
     if (soc) setSocFilter(soc);
+    if (arch) setArchFilter(arch);
     if (sort) setSortBy(sort);
     if (params.get('dp') === '1') setFilterVideoOut(true);
     if (params.get('sd') === '1') setFilterSdCard(true);
@@ -118,6 +121,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     if (statusFilter !== 'ALL') params.set('verdict', statusFilter);
     if (brandFilter !== 'ALL') params.set('brand', brandFilter);
     if (socFilter !== 'ALL') params.set('soc', socFilter);
+    if (archFilter !== 'ALL') params.set('arch', archFilter);
     if (sortBy !== 'NEWEST') params.set('sort', sortBy);
     if (filterVideoOut) params.set('dp', '1');
     if (filterSdCard) params.set('sd', '1');
@@ -133,6 +137,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     statusFilter,
     brandFilter,
     socFilter,
+    archFilter,
     sortBy,
     filterVideoOut,
     filterSdCard,
@@ -198,13 +203,18 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
       items = items.filter((d) => d.overallRoot === statusFilter);
     }
 
-    // 6. Feature filters
+    // 6. Filter by CPU Architecture
+    if (archFilter !== 'ALL') {
+      items = items.filter((d) => (d.cpu_architecture || '').includes(archFilter));
+    }
+
+    // 7. Feature filters
     if (filterVideoOut) items = items.filter((d) => d.usb_video_out);
     if (filterSdCard) items = items.filter((d) => d.sdcard_slot);
     if (filterHeadphone) items = items.filter((d) => d.headphone_jack);
     if (filterRoms) items = items.filter((d) => d.custom_roms && d.custom_roms.length > 0);
 
-    // 7. Sort Order
+    // 8. Sort Order
     if (!trimmed) {
       items = [...items].sort((a, b) => {
         switch (sortBy) {
@@ -236,6 +246,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     formFactor,
     brandFilter,
     socFilter,
+    archFilter,
     statusFilter,
     filterVideoOut,
     filterSdCard,
@@ -250,6 +261,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     setStatusFilter('ALL');
     setBrandFilter('ALL');
     setSocFilter('ALL');
+    setArchFilter('ALL');
     setSortBy('NEWEST');
     setFilterVideoOut(false);
     setFilterSdCard(false);
@@ -263,6 +275,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
     statusFilter !== 'ALL' ||
     brandFilter !== 'ALL' ||
     socFilter !== 'ALL' ||
+    archFilter !== 'ALL' ||
     sortBy !== 'NEWEST' ||
     filterVideoOut ||
     filterSdCard ||
@@ -280,7 +293,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder='Search 350+ devices by model ("SM-S928B", "cheetah"), name ("Tab S9", "Pixel 9"), or ROM...'
+            placeholder='Search 350+ devices by model ("SM-S928B"), name ("Pixel 9"), arch ("ARMv9"), or ROM...'
             className="w-full pl-10 sm:pl-12 pr-16 sm:pr-24 py-3.5 sm:py-4 rounded-xl bg-surface/90 border border-border text-foreground placeholder-muted font-mono text-sm sm:text-base focus:outline-none focus:border-border-hover focus:ring-1 focus:ring-white/15 transition-all shadow-tactile-sm"
           />
           {query ? (
@@ -408,7 +421,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
 
       {/* 3. Secondary Bento Filter Toolbar (Grid on Tablet/Mobile) */}
       <div className="p-3.5 sm:p-4 rounded-xl border border-border bg-surface/80 backdrop-blur-md shadow-tactile-card space-y-3 font-mono text-xs sm:text-sm w-full min-w-0">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 items-end">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-2.5 sm:gap-3.5 items-end">
           {/* Dropdown 1: SORT */}
           <div className="space-y-1.5">
             <label className="text-xs uppercase font-bold text-muted tracking-wider flex items-center gap-1.5">
@@ -484,6 +497,24 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
                   {s.label}
                 </option>
               ))}
+            </select>
+          </div>
+
+          {/* Dropdown 5: CPU ARCHITECTURE */}
+          <div className="space-y-1.5 col-span-2 lg:col-span-1">
+            <label className="text-xs uppercase font-bold text-muted tracking-wider flex items-center gap-1.5">
+              <Cpu className="w-3.5 h-3.5 text-cyan-500" />
+              <span>CPU Arch</span>
+            </label>
+            <select
+              value={archFilter}
+              onChange={(e) => setArchFilter(e.target.value)}
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
+            >
+              <option value="ALL">All Archs</option>
+              <option value="ARMv9">ARMv9 (Pure 64-bit)</option>
+              <option value="ARMv8">ARMv8 (64-bit)</option>
+              <option value="ARMv7">ARMv7 (Legacy 32-bit)</option>
             </select>
           </div>
         </div>

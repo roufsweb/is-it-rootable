@@ -37,7 +37,9 @@
       "links": {
         "xda": "https://xdaforums.com/",
         "github": "https://github.com/tiann/KernelSU"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Nona-core (1x 3.00GHz Cortex-X3 & 4x 2.45GHz Cortex-A715 & 4x 2.15GHz Cortex-A510)"
     },
     {
       "models": [
@@ -55,7 +57,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Nona-core (1x 3.00GHz Cortex-X3 & 4x 2.45GHz Cortex-A715 & 4x 2.15GHz Cortex-A510)"
     }
   ],
   "form_factor": "phone"

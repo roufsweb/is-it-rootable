@@ -37,7 +37,9 @@
       "links": {
         "xda": "https://xdaforums.com/",
         "github": "https://github.com/tiann/KernelSU"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A (64-bit)",
+      "cpu_cores": "Quad-core (2x 2.34GHz Kryo & 2x 2.19GHz Kryo)"
     },
     {
       "models": [
@@ -55,7 +57,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A (64-bit)",
+      "cpu_cores": "Quad-core (2x 2.34GHz Kryo & 2x 2.19GHz Kryo)"
     }
   ],
   "form_factor": "phone"

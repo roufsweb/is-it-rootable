@@ -34,7 +34,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (2x 2.3GHz Kryo 465 Gold & 6x 1.8GHz Kryo 465 Silver)"
     },
     {
       "models": [
@@ -52,7 +54,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (2x 2.3GHz Kryo 465 Gold & 6x 1.8GHz Kryo 465 Silver)"
     }
   ],
   "form_factor": "phone"

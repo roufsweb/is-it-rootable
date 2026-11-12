@@ -34,7 +34,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/c/oneplus-open.12811/"
-      }
+      },
+      "cpu_architecture": "ARMv9.0-A (64-bit)",
+      "cpu_cores": "Octa-core (1x 3.2GHz Cortex-X3 & 2x 2.8GHz Cortex-A715 & 2x 2.8GHz Cortex-A710 & 3x 2.0GHz Cortex-A510)"
     }
   ]
 }

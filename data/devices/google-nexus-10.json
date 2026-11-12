@@ -35,7 +35,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Dual-core 1.7GHz Cortex-A15"
     }
   ],
   "form_factor": "phone"

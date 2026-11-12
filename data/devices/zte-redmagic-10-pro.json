@@ -32,7 +32,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv9.2-A (64-bit)",
+      "cpu_cores": "Octa-core (2x 4.32GHz Phoenix L + 6x 3.53GHz Phoenix M - Qualcomm Oryon)"
     }
   ],
   "form_factor": "phone"

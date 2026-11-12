@@ -36,7 +36,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (2x 2.0GHz Kryo 460 & 6x 1.8GHz Kryo 460)"
     }
   ],
   "form_factor": "phone"

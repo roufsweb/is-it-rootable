@@ -33,7 +33,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/c/google-pixel-c.4947/"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A (64-bit)",
+      "cpu_cores": "Octa-core (4x 1.9GHz Cortex-A57 & 4x 1.3GHz Cortex-A53)"
     }
   ]
 }

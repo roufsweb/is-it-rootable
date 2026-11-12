@@ -39,7 +39,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv8.0-A / ARMv7-A",
+      "cpu_cores": "Octa-core Exynos 5433 or Quad-core Snapdragon 805"
     },
     {
       "models": [
@@ -64,7 +66,9 @@
       "custom_roms": [],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 2.7GHz Krait 450"
     },
     {
       "models": [
@@ -87,7 +91,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 2.7GHz Krait 450"
     }
   ],
   "form_factor": "phone"

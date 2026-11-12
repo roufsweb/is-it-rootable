@@ -16,6 +16,8 @@ export interface Variant {
   codename: string;
   region: string;
   soc: string;
+  cpu_architecture?: string;
+  cpu_cores?: string;
   bootloader_unlockable: BootloaderStatus;
   unlock_method: string;
   root_status: RootStatus;
@@ -55,6 +57,8 @@ export interface SearchItem {
   rawModels: string[];
   soc: string;
   soc_family: string;
+  cpu_architecture?: string;
+  cpu_cores?: string;
   overallRoot: RootStatus;
   overallBootloader: BootloaderStatus;
   usb_video_out: boolean;
@@ -67,6 +71,8 @@ export interface SearchItem {
     region: string;
     models: string[];
     soc: string;
+    cpu_architecture?: string;
+    cpu_cores?: string;
     root_status: RootStatus;
     bootloader_unlockable: BootloaderStatus;
     custom_roms?: string[];

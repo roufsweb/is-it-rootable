@@ -34,7 +34,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/c/nvidia-shield-tablet.3448/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 2.2GHz Cortex-A15"
     }
   ]
 }

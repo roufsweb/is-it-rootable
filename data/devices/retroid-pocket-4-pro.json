@@ -33,7 +33,9 @@
       ],
       "links": {
         "github": "https://github.com/bkerler/mtkclient"
-      }
+      },
+      "cpu_architecture": "ARMv8.2-A (64-bit)",
+      "cpu_cores": "Octa-core (4x 2.6GHz Cortex-A78 & 4x 2.0GHz Cortex-A55)"
     }
   ]
 }

@@ -43,7 +43,9 @@
       ],
       "links": {
         "xda": "https://xdaforums.com/"
-      }
+      },
+      "cpu_architecture": "ARMv7-A (32-bit)",
+      "cpu_cores": "Quad-core 1.7GHz Krait 300"
     }
   ],
   "form_factor": "phone"

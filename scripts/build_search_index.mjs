@@ -104,6 +104,8 @@ function main() {
     const tokenizedModels = tokenizeModels(allModels);
     const allCodenames = Array.from(new Set(device.variants.map(v => v.codename).filter(Boolean)));
     const allSoc = Array.from(new Set(device.variants.map(v => v.soc).filter(Boolean)));
+    const allCpuArchs = Array.from(new Set(device.variants.map(v => v.cpu_architecture).filter(Boolean)));
+    const allCpuCores = Array.from(new Set(device.variants.map(v => v.cpu_cores).filter(Boolean)));
     const allRoms = Array.from(new Set(device.variants.flatMap(v => v.custom_roms || [])));
 
     const overallRoot = getOverallRootStatus(device.variants);
@@ -124,6 +126,8 @@ function main() {
       rawModels: allModels,
       soc: allSoc.join(', '),
       soc_family: socFamily,
+      cpu_architecture: allCpuArchs.join(', '),
+      cpu_cores: allCpuCores.join(' | '),
       custom_roms: allRoms,
       overallRoot,
       overallBootloader,
@@ -136,6 +140,8 @@ function main() {
         region: v.region,
         models: v.models,
         soc: v.soc,
+        cpu_architecture: v.cpu_architecture,
+        cpu_cores: v.cpu_cores,
         root_status: v.root_status,
         bootloader_unlockable: v.bootloader_unlockable,
         custom_roms: v.custom_roms || []
