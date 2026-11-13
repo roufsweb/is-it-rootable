@@ -81,7 +81,7 @@ export default function AboutPage() {
               href={SITE_CONFIG.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-background font-bold transition-colors shadow-xs text-xs sm:text-sm"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-colors shadow-xs text-xs sm:text-sm"
             >
               <span>Live Platform: {SITE_CONFIG.url.replace(/^https?:\/\//, '')}</span>
               <ExternalLink className="w-4 h-4" />

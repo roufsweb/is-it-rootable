@@ -116,7 +116,7 @@ export function DonateButton() {
                 <button
                   type="button"
                   onClick={handleCopy}
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-background font-bold transition-colors cursor-pointer text-xs sm:text-sm"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-colors cursor-pointer text-xs sm:text-sm"
                 >
                   {copied ? (
                     <>

@@ -110,10 +110,10 @@ export function DeviceCard({ device }: DeviceCardProps) {
             <div
               className={`text-sm sm:text-base font-black truncate mt-0.5 ${
                 isFull
-                  ? 'text-emerald-500'
+                  ? 'text-emerald-700 dark:text-emerald-400'
                   : isLocked
-                  ? 'text-rose-500'
-                  : 'text-amber-500'
+                  ? 'text-rose-700 dark:text-rose-400'
+                  : 'text-amber-700 dark:text-amber-400'
               }`}
             >
               {isFull ? 'Full Root' : isLocked ? 'Hardware Locked' : 'Conditional Bit'}

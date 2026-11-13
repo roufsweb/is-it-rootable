@@ -294,7 +294,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder='Search 350+ devices by model ("SM-S928B"), name ("Pixel 9"), arch ("ARMv9"), or ROM...'
-            className="w-full pl-10 sm:pl-12 pr-16 sm:pr-24 py-3.5 sm:py-4 rounded-xl bg-surface/90 border border-border text-foreground placeholder-muted font-mono text-sm sm:text-base focus:outline-none focus:border-border-hover focus:ring-1 focus:ring-white/15 transition-all shadow-tactile-sm"
+            className="w-full pl-10 sm:pl-12 pr-16 sm:pr-24 py-3.5 sm:py-4 rounded-xl bg-surface border border-border text-foreground placeholder:text-muted font-mono text-base focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500/20 transition-all shadow-tactile-sm"
           />
           {query ? (
             <button
@@ -328,7 +328,13 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
           }`}
         >
           <span>All Devices</span>
-          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
+          <span
+            className={`text-xs px-2 py-0.5 rounded font-black ${
+              statusFilter === 'ALL' && !filterVideoOut && !filterRoms
+                ? 'bg-background/20 text-background'
+                : 'bg-surface-elevated text-foreground'
+            }`}
+          >
             {stats.all}
           </span>
         </button>
@@ -345,7 +351,13 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         >
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" />
           <span>Full Root</span>
-          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
+          <span
+            className={`text-xs px-2 py-0.5 rounded font-black ${
+              statusFilter === 'FULL'
+                ? 'bg-background/20 text-background'
+                : 'bg-surface-elevated text-foreground'
+            }`}
+          >
             {stats.fullRoot}
           </span>
         </button>
@@ -362,7 +374,13 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         >
           <span className="w-2.5 h-2.5 rounded-full bg-amber-500 shrink-0" />
           <span>Conditional</span>
-          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
+          <span
+            className={`text-xs px-2 py-0.5 rounded font-black ${
+              statusFilter === 'CONDITIONAL'
+                ? 'bg-background/20 text-background'
+                : 'bg-surface-elevated text-foreground'
+            }`}
+          >
             {stats.conditional}
           </span>
         </button>
@@ -379,7 +397,13 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         >
           <span className="w-2.5 h-2.5 rounded-full bg-rose-500 shrink-0" />
           <span>Locked</span>
-          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
+          <span
+            className={`text-xs px-2 py-0.5 rounded font-black ${
+              statusFilter === 'LOCKED'
+                ? 'bg-background/20 text-background'
+                : 'bg-surface-elevated text-foreground'
+            }`}
+          >
             {stats.locked}
           </span>
         </button>
@@ -396,7 +420,13 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         >
           <Monitor className="w-4 h-4 text-muted shrink-0" />
           <span>DisplayPort / DeX</span>
-          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
+          <span
+            className={`text-xs px-2 py-0.5 rounded font-black ${
+              filterVideoOut
+                ? 'bg-background/20 text-background'
+                : 'bg-surface-elevated text-foreground'
+            }`}
+          >
             {stats.videoOut}
           </span>
         </button>
@@ -413,7 +443,13 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
         >
           <Disc className="w-4 h-4 text-muted shrink-0" />
           <span>Custom ROMs</span>
-          <span className="text-xs px-2 py-0.5 rounded bg-black/15 dark:bg-white/20 font-black">
+          <span
+            className={`text-xs px-2 py-0.5 rounded font-black ${
+              filterRoms
+                ? 'bg-background/20 text-background'
+                : 'bg-surface-elevated text-foreground'
+            }`}
+          >
             {stats.roms}
           </span>
         </button>
@@ -431,7 +467,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-base sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="NEWEST">Release (Newest)</option>
               <option value="OLDEST">Release (Oldest)</option>
@@ -450,7 +486,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             <select
               value={brandFilter}
               onChange={(e) => setBrandFilter(e.target.value)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-base sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="ALL">All Brands ({availableBrands.length})</option>
               {availableBrands.map((b) => (
@@ -470,7 +506,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             <select
               value={formFactor}
               onChange={(e) => setFormFactor(e.target.value as 'ALL' | FormFactor)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-base sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="ALL">All Types ({stats.all})</option>
               <option value="phone">Phones ({stats.phone})</option>
@@ -489,7 +525,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             <select
               value={socFilter}
               onChange={(e) => setSocFilter(e.target.value)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-base sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="ALL">All Chipsets</option>
               {SOC_FAMILIES.map((s) => (
@@ -509,7 +545,7 @@ export function SearchBar({ initialDevices }: SearchBarProps) {
             <select
               value={archFilter}
               onChange={(e) => setArchFilter(e.target.value)}
-              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-xs sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
+              className="w-full bg-surface-elevated border border-border rounded-lg px-3 py-2.5 text-foreground font-semibold text-base sm:text-sm focus:outline-none focus:border-border-hover cursor-pointer"
             >
               <option value="ALL">All Archs</option>
               <option value="ARMv9">ARMv9 (Pure 64-bit)</option>

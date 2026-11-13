@@ -10,16 +10,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        surface: 'var(--surface)',
-        'surface-elevated': 'var(--surface-elevated)',
-        'surface-card': 'var(--surface-card)',
+        background: 'rgb(var(--background) / <alpha-value>)',
+        foreground: 'rgb(var(--foreground) / <alpha-value>)',
+        surface: 'rgb(var(--surface) / <alpha-value>)',
+        'surface-elevated': 'rgb(var(--surface-elevated) / <alpha-value>)',
+        'surface-card': 'rgb(var(--surface-card) / <alpha-value>)',
         border: 'var(--border)',
         'border-subtle': 'var(--border-subtle)',
         'border-card': 'var(--border-card)',
         'border-hover': 'var(--border-hover)',
-        muted: 'var(--muted)',
+        muted: 'rgb(var(--muted) / <alpha-value>)',
         primary: {
           DEFAULT: '#06b6d4',
           foreground: '#041624',
